@@ -31,7 +31,7 @@ const Testimonials = () => {
                         />
                         {/* Thẻ div em */}
                         <div
-                            className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[375px] sm:h-[200px] bg-[#353543] bg-opacity-85 p-2">
+                            className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[375px] sm:h-[200px] bg-[#272727] bg-opacity-85 p-2">
                             <h3 className="text-[22px] sm:text-[32px] font-semibold text-white">John Doe</h3>
                             <p className="text-[16px] sm:text-[20px] font-medium text-[#BEAB81] italic">VinHomes</p>
                             <p className="text-[13px] sm:text-[17px] text-[#CECECE] mt-2">
@@ -50,7 +50,7 @@ const Testimonials = () => {
                         />
                         {/* Thẻ div em */}
                         <div
-                            className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[375px] sm:h-[200px] bg-[#353543] bg-opacity-85 p-2">
+                            className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[375px] sm:h-[200px] bg-[#272727] bg-opacity-85 p-2">
                             <h3 className="text-[22px] sm:text-[32px] font-semibold text-white">John Doe</h3>
                             <p className="text-[16px] sm:text-[20px] font-medium text-[#BEAB81] italic">VinHomes</p>
                             <p className="text-[13px] sm:text-[17px] text-[#CECECE] mt-2">
@@ -67,11 +67,11 @@ const Testimonials = () => {
                         <img
                             src="/assets/images/herosection/11.png"
                             alt="Customer Testimonial"
-                            className="w-full h-full object-cover"
+                            className="w-full h-full sm:w-[650px] object-cover"
                         />
                         {/* Thẻ div em */}
                         <div
-                            className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[375px] sm:h-[200px] bg-[#353543] bg-opacity-85 p-2">
+                            className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[375px] sm:h-[200px] bg-[#272727] bg-opacity-85 p-2">
                             <h3 className="text-[22px] sm:text-[32px] font-semibold text-white">John Doe</h3>
                             <p className="text-[16px] sm:text-[20px] font-medium text-[#BEAB81] italic">VinHomes</p>
                             <p className="text-[13px] sm:text-[17px] text-[#CECECE] mt-2">
@@ -86,11 +86,11 @@ const Testimonials = () => {
                         <img
                             src="/assets/images/herosection/11.png"
                             alt="Customer Testimonial"
-                            className="w-full h-full object-cover"
+                            className="w-full h-full sm:w-[650px] object-cover"
                         />
                         {/* Thẻ div em */}
                         <div
-                            className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[375px] sm:h-[200px] bg-[#353543] bg-opacity-85 p-2">
+                            className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[375px] sm:h-[200px] bg-[#272727] bg-opacity-85 p-2">
                             <h3 className="text-[22px] sm:text-[32px] font-semibold text-white">John Doe</h3>
                             <p className="text-[16px] sm:text-[20px] font-medium text-[#BEAB81] italic">VinHomes</p>
                             <p className="text-[13px] sm:text-[17px] text-[#CECECE] mt-2">
@@ -154,11 +154,11 @@ const Testimonials = () => {
                         <img
                             src="/assets/images/herosection/11.png"
                             alt="Customer Testimonial"
-                            className="w-full h-full object-cover"
+                            className="w-full h-full sm:w-[650px] object-cover"
                         />
                         {/* Thẻ div em */}
                         <div
-                            className="absolute bottom-0 left-0 w-[375px] h-[200px] bg-[#353543] bg-opacity-85 p-2">
+                            className="absolute bottom-0 left-0 w-[375px] h-[200px] bg-[#272727] bg-opacity-85 p-2">
                             <h3 className="text-[32px] font-semibold text-white">John Doe</h3>
                             <p className="text-[20px] font-medium text-[#BEAB81] italic">VinHomes</p>
                             <p className="text-[17px] text-[#CECECE] mt-2">
@@ -173,11 +173,11 @@ const Testimonials = () => {
                         <img
                             src="/assets/images/herosection/11.png"
                             alt="Customer Testimonial"
-                            className="w-full h-full object-cover"
+                            className="w-full h-full sm:w-[650px] object-cover"
                         />
                         {/* Thẻ div em */}
                         <div
-                            className="absolute bottom-0 left-0 w-[375px] h-[200px] bg-[#353543] bg-opacity-85 p-2">
+                            className="absolute bottom-0 left-0 w-[375px] h-[200px] bg-[#272727] bg-opacity-85 p-2">
                             <h3 className="text-[32px] font-semibold text-white">John Doe</h3>
                             <p className="text-[20px] font-medium text-[#BEAB81] italic">VinHomes</p>
                             <p className="text-[17px] text-[#CECECE] mt-2">

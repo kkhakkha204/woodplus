@@ -24,7 +24,7 @@ const HomePage = () => {
                 ></div>
 
                 {/* Lớp phủ màu đen nhẹ */}
-                <div className="absolute inset-0 bg-black bg-opacity-5"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-15"></div>
 
                 {/* Nội dung chính */}
                 <div
@@ -58,7 +58,8 @@ const HomePage = () => {
 
                     <div className="text-center mt-12 space-x-1 flex justify-center items-center">
                         {/* Nút Liên hệ */}
-                        <button
+                        <Link
+                            to="/dự-án"
                             className=" w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}
@@ -66,16 +67,17 @@ const HomePage = () => {
                             {!isHovered ? (
                                 <TbArrowForwardUp className="inline-block text-[25px]"/>
                             ) : (
-                                "Liên hệ"
+                                "Xem dự án"
                             )}
-                        </button>
+                        </Link>
 
                         {/* Nút Tư vấn */}
-                        <button
+                        <Link
+                            to="/liên-hệ"
                             className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[15px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
                         >
                             Tư vấn
-                        </button>
+                        </Link>
                     </div>
 
                 </div>
@@ -106,7 +108,7 @@ const HomePage = () => {
 
             <DarkSpacing/>
 
-            <div className="w-full flex justify-center items-center mb-[18px]">
+            <div className="w-full flex justify-center items-center mb-[18px] pb-8">
 
                 <div className="w-full max-w-[1620px]">
 
@@ -121,8 +123,8 @@ const HomePage = () => {
                         </div>
 
 
-                        <div className="flex-col justify-center">
-                            <Link to="">
+                        <div className="flex-col justify-center sm:-mt-[150px]">
+                            <Link to="/thiết-kế">
                                 <img
                                     src="/assets/images/service/service3.jpg"
                                     alt="Dịch vụ R"
@@ -130,7 +132,13 @@ const HomePage = () => {
                                 />
                             </Link>
                             <div className="text-center">
-                                <h2 className="font-medium text-[28px] text-[#BEAB81] mt-6">Dịch vụ thiết kế</h2>
+                                <Link
+                                    to="/thiết-kế"
+                                    className="flex items-center justify-center font-medium text-[28px] text-[#BEAB81] mt-6 hover:text-white"
+                                >
+                                    Dịch vụ thiết kế
+                                    <span className="ml-14 text-[30px]">&rarr;</span>
+                                </Link>
                                 <p className="w-[300px] sm:w-[400px] mx-auto text-[13px] 2xl:text-[17px] font-normal text-[#CECECE] mt-4">
                                     Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui ducimus
                                     soluta qui assumenda aliquam quo deserunt quidem?
@@ -140,7 +148,7 @@ const HomePage = () => {
 
 
                         <div className="flex-col justify-center">
-                            <Link to="">
+                            <Link to="/liên-hệ">
                                 <img
                                     src="/assets/images/service/service1.jpg"
                                     alt="Dịch vụ R"
@@ -149,7 +157,13 @@ const HomePage = () => {
                             </Link>
 
                             <div className="text-center">
-                                <h2 className="font-medium text-[28px] text-[#BEAB81] mt-6">Dịch vụ thi công</h2>
+                                <Link
+                                    to="/liên-hệ"
+                                    className="flex items-center justify-center font-medium text-[28px] text-[#BEAB81] mt-6 hover:text-white"
+                                >
+                                    Dịch vụ trọn gói
+                                    <span className="ml-14 text-[30px]">&rarr;</span>
+                                </Link>
                                 <p className="w-[300px] sm:w-[400px] mx-auto text-[13px] 2xl:text-[17px] font-normal text-[#CECECE] mt-4">
                                     Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui ducimus
                                     soluta qui assumenda aliquam quo deserunt quidem?
@@ -158,8 +172,8 @@ const HomePage = () => {
                         </div>
 
 
-                        <div className="flex-col justify-center">
-                            <Link to="">
+                        <div className="flex-col sm:-mt-[150px] justify-center">
+                            <Link to="/thi-công">
                                 <img
                                     src="/assets/images/service/services2.jpg"
                                     alt="Dịch vụ R"
@@ -167,34 +181,19 @@ const HomePage = () => {
                                 />
                             </Link>
                             <div className="text-center">
-                                <h2 className="font-medium text-[28px] text-[#BEAB81] mt-6">Dịch vụ trọn gói</h2>
+                                <Link
+                                    to="/thi-công"
+                                    className="flex items-center justify-center font-medium text-[28px] text-[#BEAB81] mt-6 hover:text-white"
+                                >
+                                    Dịch vụ thi công
+                                    <span className="ml-14 text-[30px]">&rarr;</span>
+                                </Link>
                                 <p className="w-[300px] sm:w-[400px] mx-auto text-[13px] 2xl:text-[17px] font-normal text-[#CECECE] mt-4">
                                     Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui ducimus
                                     soluta qui assumenda aliquam quo deserunt quidem?
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div className="text-center mt-12 space-x-1 flex justify-center items-center">
-                        {/* Nút Liên hệ */}
-                        <button
-                            className=" w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                            onMouseEnter={() => setIsHovered(true)}
-                            onMouseLeave={() => setIsHovered(false)}
-                        >
-                            {!isHovered ? (
-                                <TbArrowForwardUp className="inline-block text-[25px]"/>
-                            ) : (
-                                "Liên hệ"
-                            )}
-                        </button>
-
-                        {/* Nút Tư vấn */}
-                        <button
-                            className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[15px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
-                        >
-                            Tư vấn
-                        </button>
                     </div>
 
                 </div>
@@ -223,7 +222,8 @@ const HomePage = () => {
                                 {/* Nút Liên hệ */}
                                 <div className="text-center mt-12 space-x-1 flex justify-center items-center">
                                     {/* Nút Liên hệ */}
-                                    <button
+                                    <Link
+                                        to="/giới-thiệu"
                                         className=" w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
                                         onMouseEnter={() => setIsHovered(true)}
                                         onMouseLeave={() => setIsHovered(false)}
@@ -231,16 +231,17 @@ const HomePage = () => {
                                         {!isHovered ? (
                                             <TbArrowForwardUp className="inline-block text-[25px]"/>
                                         ) : (
-                                            "Liên hệ"
+                                            "Xem thêm"
                                         )}
-                                    </button>
+                                    </Link>
 
                                     {/* Nút Tư vấn */}
-                                    <button
+                                    <Link
+                                        to="/liên-hệ"
                                         className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[15px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
                                     >
                                         Tư vấn
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

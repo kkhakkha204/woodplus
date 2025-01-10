@@ -72,7 +72,7 @@ const Project = () => {
                 {/* Lớp chứa ảnh nền với filter brightness */}
                 <div
                     className="absolute inset-0 bg-cover bg-center"
-                    style={{backgroundImage: "url('/assets/images/herosection/11.png')", filter: "brightness(1)"}}
+                    style={{backgroundImage: "url('/assets/images/banner/banner3.jpg')", filter: "brightness(1)"}}
                 ></div>
 
                 {/* Lớp phủ màu đen nhẹ */}

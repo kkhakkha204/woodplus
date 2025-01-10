@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Slider from "react-slick";
 import { TbArrowForwardUp } from "react-icons/tb";
+import {Link} from "react-router-dom";
 
 const ProjectSection = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -11,16 +12,16 @@ const ProjectSection = () => {
 
     // Danh sách ảnh và mô tả
     const leftImages = [
-        { src: "/assets/images/herosection/hero.jpg", description: "HaNoi 2024" },
-        { src: "/assets/images/herosection/hero4.webp", description: "HaNoi 2025" },
+        { src: "/assets/images/herosection/hero.jpg", description: "VinhomesOceanPark Indochine 2024" },
+        { src: "/assets/images/herosection/hero4.webp", description: "HaNoi Indochine 2025" },
     ];
     const centerImages = [
-        { src: "/assets/images/herosection/hero3.webp", description: "HaNoi 2024" },
-        { src: "/assets/images/herosection/hero6.jpg", description: "HaNoi 2025" },
+        { src: "/assets/images/herosection/hero3.webp", description: "HaNoi Indochine 2024" },
+        { src: "/assets/images/herosection/hero6.jpg", description: "HaNoi Indochine 2025" },
     ];
     const rightImages = [
-        { src: "/assets/images/herosection/hero2.jpg", description: "HaNoi 2024" },
-        { src: "/assets/images/herosection/hero5.webp", description: "HaNoi 2025" },
+        { src: "/assets/images/herosection/hero2.jpg", description: "HaNoi Indochine 2024" },
+        { src: "/assets/images/herosection/hero5.webp", description: "HaNoi Indochine 2025" },
     ];
 
     // useEffect để thiết lập các bộ hẹn giờ
@@ -77,6 +78,7 @@ const ProjectSection = () => {
                         <div className="flex justify-between w-[385px] text-white">
                             <span>{leftImages[leftImageIndex].description.split(" ")[0]}</span>
                             <span>{leftImages[leftImageIndex].description.split(" ")[1]}</span>
+                            <span>{leftImages[leftImageIndex].description.split(" ")[2]}</span>
                         </div>
                         <img
                             src={leftImages[leftImageIndex].src}
@@ -95,6 +97,7 @@ const ProjectSection = () => {
                         <div className="flex justify-between w-[770px] text-white">
                             <span>{centerImages[centerImageIndex].description.split(" ")[0]}</span>
                             <span>{centerImages[centerImageIndex].description.split(" ")[1]}</span>
+                            <span>{centerImages[centerImageIndex].description.split(" ")[2]}</span>
                         </div>
                     </div>
 
@@ -103,6 +106,7 @@ const ProjectSection = () => {
                         <div className="flex justify-between w-[385px] text-white">
                             <span>{rightImages[rightImageIndex].description.split(" ")[0]}</span>
                             <span>{rightImages[rightImageIndex].description.split(" ")[1]}</span>
+                            <span>{rightImages[rightImageIndex].description.split(" ")[2]}</span>
                         </div>
                         <img
                             src={rightImages[rightImageIndex].src}
@@ -211,7 +215,8 @@ const ProjectSection = () => {
 
                 <div className="text-center mt-12 space-x-1 flex justify-center items-center">
                     {/* Nút Liên hệ */}
-                    <button
+                    <Link
+                        to="/dự-án"
                         className=" w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
@@ -219,16 +224,17 @@ const ProjectSection = () => {
                         {!isHovered ? (
                             <TbArrowForwardUp className="inline-block text-[25px]"/>
                         ) : (
-                            "Liên hệ"
+                            "Xem dự án"
                         )}
-                    </button>
+                    </Link>
 
                     {/* Nút Tư vấn */}
-                    <button
+                    <Link
+                        to="/liên-hệ"
                         className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[15px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
                     >
                         Tư vấn
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>
