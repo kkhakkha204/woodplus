@@ -1,6 +1,6 @@
 // src/NewsPage.js
 import React, { useEffect, useState } from 'react'
-import fetchPosts from '../../fetchPosts'
+import fetchPosts from '../fetchPosts'
 
 const NewsPage = () => {
     const [posts, setPosts] = useState([])
