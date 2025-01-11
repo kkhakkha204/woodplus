@@ -12,6 +12,7 @@ import Construction from "./pages/Construction";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
+import NewsPage from "./pages/NewsPage";
 
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
                     <Route path="/dự-án" element={<Project />} />
                     <Route path="/liên-hệ" element={<Contact />} />
                     <Route path="/blog" element={<Blog />} />
+                    <Route path="/new" element={<NewsPage />} />
                 </Routes>
 
                 {/* Footer */}

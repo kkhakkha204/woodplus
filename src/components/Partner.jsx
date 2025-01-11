@@ -109,14 +109,14 @@ const PartnerSection = () => {
                     <div className="flex justify-center">
                         <div
                             className="divpn w-[250px] h-[120px] bg-opacity-85 bg-[#FFFFFF] rounded-[10px] flex items-center justify-center">
-                            <img src="/assets/images/logo/a.png" alt="Logo đối tác 1" className="w-[200px] h-auto"/>
+                            <img src="/assets/images/partner/p1.png" alt="Logo đối tác 1" className="w-[200px] h-auto"/>
                         </div>
                     </div>
                     {/* Cột 2 */}
                     <div className="flex justify-center">
                         <div
                             className="divpn w-[250px] h-[120px] bg-opacity-85 bg-[#FFFFFF] rounded-[10px] flex items-center justify-center">
-                            <img src="/assets/images/logo/a.png" alt="Logo đối tác 2" className="w-[200px] h-auto"/>
+                            <img src="/assets/images/partner/p2.png" alt="Logo đối tác 2" className="w-[200px] h-auto grayscale"/>
                         </div>
                     </div>
                     {/* Cột 3 */}

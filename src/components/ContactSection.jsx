@@ -39,7 +39,7 @@ const ContactSection = () => {
                                 htmlFor="danhxung-left"
                                 className="block text-lg font-medium text-white mb-2"
                             >
-                                Danh xưng: <span className="text-red-500">*</span>
+                                Danh xưng: <span>( <span className="text-red-500">*</span> )</span>
                             </label>
                             <input
                                 id="danhxung-left"
@@ -55,7 +55,7 @@ const ContactSection = () => {
                                 htmlFor="so-dien-thoai"
                                 className="block text-lg font-medium text-white mb-2"
                             >
-                                Số điện thoại: <span className="text-red-500">*</span>
+                                Số điện thoại: <span>( <span className="text-red-500">*</span> )</span>
                             </label>
                             <input
                                 id="so-dien-thoai"

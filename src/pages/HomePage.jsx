@@ -249,7 +249,7 @@ const HomePage = () => {
 
                         <div className="w-full mt-6 sm:mb-4">
                             <img
-                                src="/assets/images/aboutus/aboutus1.webp"
+                                src="/assets/images/aboutus/aboutus4.jpg"
                                 alt="About Us"
                                 className="w-[350px] h-[250px] mx-auto sm:w-[650px] sm:h-[450px] object-cover grayscale"
                             />
@@ -264,7 +264,7 @@ const HomePage = () => {
                     {/* Right Column (divr) */}
                     <div className="sm:col-span-2 flex justify-center items-center">
                         <img
-                            src="/assets/images/aboutus/aboutus2.jpg"
+                            src="/assets/images/aboutus/aboutus5.jpg"
                             alt="About Us Right"
                             className=" w-[350px] h-[250px] mx-auto sm:w-[940px] sm:h-[850px] object-cover grayscale"
 

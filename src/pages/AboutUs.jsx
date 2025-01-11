@@ -101,8 +101,8 @@ const AboutUs = () => {
                         <div>
                             <div className="lg:sticky lg:pb-16 top-0">
                                 <div className="pt-2 ">
-                                    <p className="text-[16px] sm:text-[22px]">16 March - 2024</p>
-                                    <h1 className="text-[18px] sm:text-[20px] text-[#BEAB81]">80% faster widgets</h1>
+                                    <p className="text-[16px] sm:text-[22px]">2005 - 2010</p>
+                                    <h1 className="text-[18px] sm:text-[20px] text-[#BEAB81]">Đặt nền móng</h1>
                                 </div>
                             </div>
                         </div>
@@ -111,12 +111,9 @@ const AboutUs = () => {
                                 <div className="mx-auto "><img className="aspect-[4/3] object-cover"
                                                                src="/assets/images/herosection/11.png"
                                                                alt="#_"/>
-                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE]">In
-                                        our latest
-                                        update, we've revolutionized the
-                                        performance of our widgets, achieving a remarkable 80% increase in loading
-                                        speeds. This breakthrough ensures a seamless experience across all Snowpeaks
-                                        widgets.</p>
+                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE]">Giai đoạn này đánh dấu sự ra đời của thương hiệu với tầm nhìn mang đến những giải pháp thiết kế nội thất độc đáo và hiện đại. Ban đầu, công ty chỉ tập trung vào các dự án nhỏ như căn hộ và nhà phố, nhưng với sự đam mê và nỗ lực không ngừng, chúng tôi đã xây dựng được đội ngũ sáng tạo và gây dựng niềm tin từ những khách hàng đầu tiên.
+
+                                    </p>
 
                                 </div>
                             </div>
@@ -126,8 +123,8 @@ const AboutUs = () => {
                         <div>
                             <div className="lg:sticky lg:pb-16 top-0">
                                 <div className="pt-2 ">
-                                    <p className="text-[16px] sm:text-[22px]">16 March - 2024</p>
-                                    <h1 className="text-[18px] sm:text-[20px] text-[#BEAB81]">80% faster widgets</h1>
+                                    <p className="text-[16px] sm:text-[22px]">2011 - 2018</p>
+                                    <h1 className="text-[18px] sm:text-[20px] text-[#BEAB81]">Vươn xa</h1>
                                 </div>
                             </div>
                         </div>
@@ -136,12 +133,7 @@ const AboutUs = () => {
                                 <div className="mx-auto "><img className="aspect-[4/3] object-cover"
                                                                src="/assets/images/herosection/11.png"
                                                                alt="#_"/>
-                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE]">In
-                                        our latest
-                                        update, we've revolutionized the
-                                        performance of our widgets, achieving a remarkable 80% increase in loading
-                                        speeds. This breakthrough ensures a seamless experience across all Snowpeaks
-                                        widgets.</p>
+                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE]">Đây là thời kỳ bùng nổ với hàng loạt dự án lớn tại các thành phố lớn. Công ty mở rộng quy mô, đầu tư vào công nghệ thiết kế 3D tiên tiến và xây dựng mối quan hệ hợp tác với các đối tác cung cấp vật liệu nội thất cao cấp. Những công trình nổi bật như biệt thự, showroom và khách sạn sang trọng đã khẳng định vị thế thương hiệu trên thị trường.</p>
 
                                 </div>
                             </div>
@@ -151,20 +143,15 @@ const AboutUs = () => {
                         <div>
                             <div className="lg:sticky lg:pb-16 top-0">
                                 <div className="pt-2 ">
-                                    <p className="text-[16px] sm:text-[22px]">16 March - 2024</p>
-                                    <h1 className="text-[18px] sm:text-[20px] text-[#BEAB81]">80% faster widgets</h1>
+                                    <p className="text-[16px] sm:text-[22px]">2019 - nay</p>
+                                    <h1 className="text-[18px] sm:text-[20px] text-[#BEAB81]">Hướng đến tương lai</h1>
                                 </div>
                             </div>
                         </div>
                         <div className="lg:col-span-2 pt-2">
                             <div className="flex-shrink-0">
                                 <div className="mx-auto ">
-                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE]">In
-                                        our latest
-                                        update, we've revolutionized the
-                                        performance of our widgets, achieving a remarkable 80% increase in loading
-                                        speeds. This breakthrough ensures a seamless experience across all Snowpeaks
-                                        widgets.</p>
+                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE]">Công ty tập trung vào việc ứng dụng công nghệ thông minh trong thiết kế nội thất, như hệ thống nhà thông minh (smart home) và vật liệu bền vững. Ngoài ra, chúng tôi không ngừng đổi mới phong cách thiết kế để phù hợp với xu hướng toàn cầu, mang lại những không gian sống không chỉ đẹp mà còn tối ưu công năng và thân thiện với môi trường.</p>
 
                                 </div>
                             </div>

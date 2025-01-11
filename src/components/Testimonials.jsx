@@ -25,18 +25,17 @@ const Testimonials = () => {
                     {/* Thẻ div anh */}
                     <div className="relative w-full h-[300px] sm:h-[400px] mx-auto sm:mx-0">
                         <img
-                            src="/assets/images/herosection/11.png"
+                            src="/assets/images/testimonials/test1.jpg"
                             alt="Customer Testimonial"
                             className="w-full h-full object-cover"
                         />
                         {/* Thẻ div em */}
                         <div
                             className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[375px] sm:h-[200px] bg-[#272727] bg-opacity-85 p-2">
-                            <h3 className="text-[22px] sm:text-[32px] font-semibold text-white">John Doe</h3>
-                            <p className="text-[16px] sm:text-[20px] font-medium text-[#BEAB81] italic">VinHomes</p>
+                            <h3 className="text-[22px] sm:text-[32px] font-semibold text-white">Anh Đức Quân</h3>
+                            <p className="text-[16px] sm:text-[20px] font-medium text-[#BEAB81] italic">Eco City Thanh Trì </p>
                             <p className="text-[13px] sm:text-[17px] text-[#CECECE] mt-2">
-                                "WoodPlus provides outstanding quality and exceptional customer service. Their
-                                furniture has transformed my home into a beautiful and cozy space."
+                                "Nhà đẹp, hiện đại với giá hợp lý, đội ngũ tư vấn trẻ trung, chuyên nghiệp, nhiệt tình. Highly recommend!"
                             </p>
                         </div>
                     </div>
@@ -44,18 +43,17 @@ const Testimonials = () => {
                     {/* Thẻ div anh */}
                     <div className="relative w-full h-[300px] sm:h-[400px] mx-auto sm:mx-0">
                         <img
-                            src="/assets/images/herosection/11.png"
+                            src="/assets/images/testimonials/test2.webp"
                             alt="Customer Testimonial"
                             className="w-full h-full object-cover"
                         />
                         {/* Thẻ div em */}
                         <div
                             className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[375px] sm:h-[200px] bg-[#272727] bg-opacity-85 p-2">
-                            <h3 className="text-[22px] sm:text-[32px] font-semibold text-white">John Doe</h3>
-                            <p className="text-[16px] sm:text-[20px] font-medium text-[#BEAB81] italic">VinHomes</p>
+                            <h3 className="text-[22px] sm:text-[32px] font-semibold text-white">Youtuber Lê Hoàng Nam</h3>
+                            <p className="text-[16px] sm:text-[20px] font-medium text-[#BEAB81] italic">VinHomes Ocean Park </p>
                             <p className="text-[13px] sm:text-[17px] text-[#CECECE] mt-2">
-                                "WoodPlus provides outstanding quality and exceptional customer service. Their
-                                furniture has transformed my home into a beautiful and cozy space."
+                                "Nhà không chỉ đẹp mà còn khiến mọi người trầm trồ, tự hào. Mong phong cách Indochine trở nên phổ biến, cảm ơn ekip WoodPlus đã biến ý tưởng thành hiện thực."
                             </p>
                         </div>
                     </div>
@@ -65,18 +63,19 @@ const Testimonials = () => {
                     {/* Thẻ div anh */}
                     <div className="relative w-full h-[300px] sm:h-[400px] mx-auto sm:mx-0">
                         <img
-                            src="/assets/images/herosection/11.png"
+                            src="/assets/images/testimonials/test1.jpg"
                             alt="Customer Testimonial"
                             className="w-full h-full sm:w-[650px] object-cover"
                         />
                         {/* Thẻ div em */}
                         <div
                             className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[375px] sm:h-[200px] bg-[#272727] bg-opacity-85 p-2">
-                            <h3 className="text-[22px] sm:text-[32px] font-semibold text-white">John Doe</h3>
-                            <p className="text-[16px] sm:text-[20px] font-medium text-[#BEAB81] italic">VinHomes</p>
+                            <h3 className="text-[22px] sm:text-[32px] font-semibold text-white">Anh Đức Quân</h3>
+                            <p className="text-[16px] sm:text-[20px] font-medium text-[#BEAB81] italic">Eco City Thanh
+                                Trì </p>
                             <p className="text-[13px] sm:text-[17px] text-[#CECECE] mt-2">
-                                "WoodPlus provides outstanding quality and exceptional customer service. Their
-                                furniture has transformed my home into a beautiful and cozy space."
+                                "Nhà đẹp, hiện đại với giá hợp lý, đội ngũ tư vấn trẻ trung, chuyên nghiệp, nhiệt tình.
+                                Highly recommend!"
                             </p>
                         </div>
                     </div>
@@ -84,18 +83,20 @@ const Testimonials = () => {
                     {/* Thẻ div anh */}
                     <div className="relative w-full h-[300px] sm:h-[400px] mx-auto sm:mx-0">
                         <img
-                            src="/assets/images/herosection/11.png"
+                            src="/assets/images/testimonials/test2.webp"
                             alt="Customer Testimonial"
                             className="w-full h-full sm:w-[650px] object-cover"
                         />
                         {/* Thẻ div em */}
                         <div
                             className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[375px] sm:h-[200px] bg-[#272727] bg-opacity-85 p-2">
-                            <h3 className="text-[22px] sm:text-[32px] font-semibold text-white">John Doe</h3>
-                            <p className="text-[16px] sm:text-[20px] font-medium text-[#BEAB81] italic">VinHomes</p>
+                            <h3 className="text-[22px] sm:text-[32px] font-semibold text-white">Youtuber Lê Hoàng
+                                Nam</h3>
+                            <p className="text-[16px] sm:text-[20px] font-medium text-[#BEAB81] italic">VinHomes Ocean
+                                Park </p>
                             <p className="text-[13px] sm:text-[17px] text-[#CECECE] mt-2">
-                                "WoodPlus provides outstanding quality and exceptional customer service. Their
-                                furniture has transformed my home into a beautiful and cozy space."
+                                "Nhà không chỉ đẹp mà còn khiến mọi người trầm trồ, tự hào. Mong phong cách Indochine
+                                trở nên phổ biến, cảm ơn ekip WoodPlus đã biến ý tưởng thành hiện thực."
                             </p>
                         </div>
                     </div>
@@ -152,7 +153,7 @@ const Testimonials = () => {
                     {/* Thẻ div anh */}
                     <div className="relative w-full h-[400px]">
                         <img
-                            src="/assets/images/herosection/11.png"
+                            src="/assets/images/testimonials/test3.jpg"
                             alt="Customer Testimonial"
                             className="w-full h-full sm:w-[650px] object-cover"
                         />
@@ -171,7 +172,7 @@ const Testimonials = () => {
                     {/* Thẻ div anh */}
                     <div className="relative w-full h-[400px]">
                         <img
-                            src="/assets/images/herosection/11.png"
+                            src="/assets/images/testimonials/test4.jpg"
                             alt="Customer Testimonial"
                             className="w-full h-full sm:w-[650px] object-cover"
                         />
