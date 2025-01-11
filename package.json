@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@portabletext/react": "^3.2.0",
     "@sanity/client": "^6.24.3",
+    "@sanity/image-url": "^1.1.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
