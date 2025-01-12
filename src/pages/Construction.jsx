@@ -4,6 +4,7 @@ import DarkSpacing from "../components/DarkSpacing";
 import LightSpacing from "../components/LightSpacing";
 import ContactSection from "../components/ContactSection";
 import LightProjectSection from "../components/LightProjectSection";
+import ProjectSection from "../components/ProjectSection";
 
 const Construction = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -141,9 +142,9 @@ const Construction = () => {
             </div>
 
 
-            <LightSpacing/>
+            <DarkSpacing/>
 
-            <LightProjectSection/>
+            <ProjectSection/>
 
             <DarkSpacing/>
 

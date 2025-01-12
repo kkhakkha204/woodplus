@@ -93,24 +93,23 @@ const Design = () => {
 
             <DarkSpacing/>
 
-            <section className=" relative">
+            <section className="relative">
                 <div
                     className="absolute h-[36.5rem] w-full top-0 bg-gradient-to-r from-indigo-600 to-violet-600 -z-10"></div>
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="mb-10 text-center">
                         <h2 className="font-Tangerine text-[22px] 2xl:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h2>
-                        <h1 className="text-[32px] 2xl:text-[48px] font-medium text-[#FFFFFF] mt-2">Tổng quan bảng giá thiết kế</h1>
+                        <h1 className="text-[32px] 2xl:text-[48px] font-medium text-[#FFFFFF] mt-2">Tổng quan bảng giá
+                            thiết kế</h1>
                     </div>
 
                     <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-8 lg:space-y-0 lg:items-center">
 
                         <div
-                            className="group relative flex flex-col mx-auto w-full max-w-sm transition-all duration-300 border-t-[1px] border-[#757575]  p-4 xl:p-8  ">
+                            className="group relative flex flex-col mx-auto w-full max-w-sm transition-all duration-300 border-t-[1px] border-[#757575] p-4 xl:p-8">
                             <div className="border-b border-solid border-[#757575] pb-9 mb-9">
-
                                 <h3 className="font-manrope text-[20px] sm:text-[24px] font-bold mb-7 text-center text-[#BEAB81]">Thiết
-                                    kế Nội thất
-                                </h3>
+                                    kế Nội thất</h3>
                                 <div className="flex items-center justify-center">
                                     <span
                                         className="font-manrope text-[20px] sm:text-4xl font-medium text-white">200.000vnd</span>
@@ -121,54 +120,44 @@ const Design = () => {
 
                             <ul className="mb-12 ml-[120px] sm:ml-[85px] space-y-1 text-center text-[13px] sm:text-[17px] text-[#CECECE]">
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Chuyên gia AI tư vấn thiết kế nội thất</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Phân tích nhu cầu và không gian</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Đưa ra các lựa chọn phù hợp với ngân sách</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Tư vấn chọn vật liệu và màu sắc</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Hỗ trợ thay đổi thiết kế theo yêu cầu</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Gợi ý các xu hướng thiết kế mới nhất</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Hướng dẫn lựa chọn đồ nội thất tối ưu</span>
                                 </li>
                             </ul>
                             <a href="javascript:"
-                               className="py-2.5 px-5 bg-[#e7e5e4] shadow-sm rounded-full transition-all duration-500 text-base text-black font-semibold text-center w-fit mx-auto group-hover:bg-[#BEAB81] group-hover:text-[#0F0F0F] ">Purchase
-                                Plan</a>
-
+                               className="py-2.5 px-5 bg-[#e7e5e4] shadow-sm rounded-full transition-all duration-500 text-base text-black font-semibold text-center w-fit mx-auto group-hover:bg-[#BEAB81] group-hover:text-[#0F0F0F]">Liên
+                                hệ</a>
                         </div>
 
                         <div
-                            className="group relative flex flex-col mx-auto w-full max-w-sm transition-all duration-300 border-t-[1px] border-[#757575]  p-4 xl:p-8  ">
+                            className="group relative flex flex-col mx-auto w-full max-w-sm transition-all duration-300 border-t-[1px] border-[#757575] p-4 xl:p-8">
                             <div className="border-b border-solid border-[#757575] pb-9 mb-9">
-
                                 <h3 className="font-manrope text-[20px] sm:text-[24px] font-bold mb-7 text-center text-[#BEAB81]">Thiết
-                                    kế Nội thất
-                                </h3>
+                                    kế Nội thất</h3>
                                 <div className="flex items-center justify-center">
                                     <span
                                         className="font-manrope text-[20px] sm:text-4xl font-medium text-white">200.000vnd</span>
@@ -179,106 +168,91 @@ const Design = () => {
 
                             <ul className="mb-12 ml-[120px] sm:ml-[85px] space-y-1 text-center text-[13px] sm:text-[17px] text-[#CECECE]">
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Chuyên gia AI tư vấn thiết kế nội thất</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Phân tích nhu cầu và không gian</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Đưa ra các lựa chọn phù hợp với ngân sách</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Tư vấn chọn vật liệu và màu sắc</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Hỗ trợ thay đổi thiết kế theo yêu cầu</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Gợi ý các xu hướng thiết kế mới nhất</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Hướng dẫn lựa chọn đồ nội thất tối ưu</span>
                                 </li>
                             </ul>
                             <a href="javascript:"
-                               className="py-2.5 px-5 bg-[#e7e5e4] shadow-sm rounded-full transition-all duration-500 text-base text-black font-semibold text-center w-fit mx-auto group-hover:bg-[#BEAB81] group-hover:text-[#0F0F0F] ">Purchase
-                                Plan</a>
-
+                               className="py-2.5 px-5 bg-[#e7e5e4] shadow-sm rounded-full transition-all duration-500 text-base text-black font-semibold text-center w-fit mx-auto group-hover:bg-[#BEAB81] group-hover:text-[#0F0F0F]">Liên
+                                hệ</a>
                         </div>
 
                         <div
-                            className="group relative flex flex-col mx-auto w-full max-w-sm transition-all duration-300 border-t-[1px] border-[#757575]  p-4 xl:p-8  ">
+                            className="group relative flex flex-col mx-auto w-full max-w-sm transition-all duration-300 border-t-[1px] border-[#757575] p-4 xl:p-8">
                             <div className="border-b border-solid border-[#757575] pb-9 mb-9">
-
                                 <h3 className="font-manrope text-[20px] sm:text-[24px] font-bold mb-7 text-center text-[#BEAB81]">Thiết
-                                    kế Nội thất
-                                </h3>
+                                    kế Nội thất</h3>
                                 <div className="flex items-center justify-center">
-                                    <span className="font-manrope text-[20px] sm:text-4xl font-medium text-white">200.000vnd</span>
-                                    <span className="text-[18px] sm:text-[20px] text-[#CECECE] sm:mt-2 ml-3">|&nbsp; m2</span>
+                                    <span
+                                        className="font-manrope text-[20px] sm:text-4xl font-medium text-white">200.000vnd</span>
+                                    <span
+                                        className="text-[18px] sm:text-[20px] text-[#CECECE] sm:mt-2 ml-3">|&nbsp; m2</span>
                                 </div>
                             </div>
 
                             <ul className="mb-12 ml-[120px] sm:ml-[85px] space-y-1 text-center text-[13px] sm:text-[17px] text-[#CECECE]">
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Chuyên gia AI tư vấn thiết kế nội thất</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Phân tích nhu cầu và không gian</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Đưa ra các lựa chọn phù hợp với ngân sách</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Tư vấn chọn vật liệu và màu sắc</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Hỗ trợ thay đổi thiết kế theo yêu cầu</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Gợi ý các xu hướng thiết kế mới nhất</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
-
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>AI advisor for a day</span>
+                                    <span>Hướng dẫn lựa chọn đồ nội thất tối ưu</span>
                                 </li>
                             </ul>
                             <a href="javascript:"
-                               className="py-2.5 px-5 bg-[#e7e5e4] shadow-sm rounded-full transition-all duration-500 text-base text-black font-semibold text-center w-fit mx-auto group-hover:bg-[#BEAB81] group-hover:text-[#0F0F0F] ">Purchase
-                                Plan</a>
-
+                               className="py-2.5 px-5 bg-[#e7e5e4] shadow-sm rounded-full transition-all duration-500 text-base text-black font-semibold text-center w-fit mx-auto group-hover:bg-[#BEAB81] group-hover:text-[#0F0F0F]">Liên
+                                hệ</a>
                         </div>
+
                     </div>
-
                 </div>
             </section>
+
 
             <DarkSpacing/>
 

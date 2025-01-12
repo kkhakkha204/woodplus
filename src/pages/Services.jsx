@@ -23,7 +23,7 @@ const Services = () => {
                     }}
                 ></div>
                 {/* Lớp phủ màu đen nhẹ */}
-                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-30"></div>
 
                 {/* Nội dung chính */}
                 <div className=" w-full h-full flex flex-col justify-between items-center text-white relative z-10">
@@ -119,9 +119,8 @@ const Services = () => {
                                     lượng dịch vụ
                                 </dt>
                                 <dd className="text-[13px] sm:text-[17px] mt-2 text-[#CECECE]">Sự hài lòng của quý khách
-                                    chính là kim chỉ nam cho mọi hoạt động của WoodPlus.
-                                    Với lòng tận tụy và niềm đam mê sâu sắc, chúng tôi tự hào mang đến những dịch vụ
-                                    hoàn hảo, vượt xa mong đợi của bạn.
+                                    chính là kim chỉ nam cho mọi hoạt động của WoodPlus. Với lòng tận tụy và niềm đam mê
+                                    sâu sắc, chúng tôi tự hào mang đến những dịch vụ hoàn hảo, vượt xa mong đợi của bạn.
                                 </dd>
                             </div>
                         </div>
@@ -134,10 +133,12 @@ const Services = () => {
                             </svg>
 
                             <div className="ml-3 -mt-1">
-                                <dt className="text-[16px] sm:text-[20px] font-medium text-white">Quisque at urna</dt>
-                                <dd className="text-[13px] sm:text-[17px] mt-2 text-[#CECECE]">Vivamus ultricies
-                                    bibendum tortor, molestie
-                                    imperdiet justo cursus eu. Donec quis arcu magna. Integer tempor egestas dolor.
+                                <dt className="text-[16px] sm:text-[20px] font-medium text-white">Đảm bảo vật liệu cao
+                                    cấp
+                                </dt>
+                                <dd className="text-[13px] sm:text-[17px] mt-2 text-[#CECECE]">Mỗi sản phẩm đều được chế
+                                    tác từ những vật liệu chất lượng cao, đảm bảo độ bền và tính thẩm mỹ vượt trội, đáp
+                                    ứng mọi nhu cầu của khách hàng.
                                 </dd>
                             </div>
                         </div>
@@ -150,10 +151,12 @@ const Services = () => {
                             </svg>
 
                             <div className="ml-3 -mt-1">
-                                <dt className="text-[16px] sm:text-[20px] font-medium text-white">Quisque at urna</dt>
-                                <dd className="text-[13px] sm:text-[17px] mt-2 text-[#CECECE]">Vivamus ultricies
-                                    bibendum tortor, molestie
-                                    imperdiet justo cursus eu. Donec quis arcu magna. Integer tempor egestas dolor.
+                                <dt className="text-[16px] sm:text-[20px] font-medium text-white">Đội ngũ chuyên
+                                    nghiệp
+                                </dt>
+                                <dd className="text-[13px] sm:text-[17px] mt-2 text-[#CECECE]">Đội ngũ của chúng tôi gồm
+                                    các chuyên gia có kinh nghiệm, luôn tận tâm và sáng tạo để mang đến những giải pháp
+                                    tối ưu nhất cho khách hàng.
                                 </dd>
                             </div>
                         </div>
@@ -166,15 +169,17 @@ const Services = () => {
                             </svg>
 
                             <div className="ml-3 -mt-1">
-                                <dt className="text-[16px] sm:text-[20px] font-medium text-white">Quisque at urna</dt>
-                                <dd className="text-[13px] sm:text-[17px] mt-2 text-[#CECECE]">Vivamus ultricies
-                                    bibendum tortor, molestie
-                                    imperdiet justo cursus eu. Donec quis arcu magna. Integer tempor egestas dolor.
+                                <dt className="text-[16px] sm:text-[20px] font-medium text-white">Dịch vụ hậu mãi chu
+                                    đáo
+                                </dt>
+                                <dd className="text-[13px] sm:text-[17px] mt-2 text-[#CECECE]">Chúng tôi không chỉ mang
+                                    đến sản phẩm chất lượng mà còn cung cấp dịch vụ hậu mãi tận tình, đồng hành cùng
+                                    khách hàng trong suốt hành trình sử dụng sản phẩm.
                                 </dd>
                             </div>
                         </div>
-
                     </dl>
+
                 </div>
             </div>
             <DarkSpacing/>
@@ -275,7 +280,13 @@ const Services = () => {
                 </div>
             </div>
 
+
+            <div className="hidden lg:block">
             <LightSpacing/>
+            </div>
+            <div className="lg:hidden">
+            <DarkSpacing/>
+            </div>
             <div className="w-full text-white bg-[#e7e5e4]">
                 {/* divcon */}
                 <div className="w-full max-w-[1620px] bg-[#0F0F0F] mx-auto pb-14">
