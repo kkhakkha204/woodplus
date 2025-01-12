@@ -121,32 +121,29 @@ const Design = () => {
                             <ul className="mb-12 ml-[120px] sm:ml-[85px] space-y-1 text-center text-[13px] sm:text-[17px] text-[#CECECE]">
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Chuyên gia AI tư vấn thiết kế nội thất</span>
+                                    <span>Hiện đại</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Phân tích nhu cầu và không gian</span>
+                                    <span>Tân cổ điển</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Đưa ra các lựa chọn phù hợp với ngân sách</span>
+                                    <span>Cổ điển</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Tư vấn chọn vật liệu và màu sắc</span>
+                                    <span>Bắc Âu, Nhật Bản,..</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Hỗ trợ thay đổi thiết kế theo yêu cầu</span>
+                                    <span>Cao cấp, sang trọng </span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Gợi ý các xu hướng thiết kế mới nhất</span>
+                                    <span>Tặng 50% chi phí TK khi thi công</span>
                                 </li>
-                                <li className="flex items-center space-x-3.5">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Hướng dẫn lựa chọn đồ nội thất tối ưu</span>
-                                </li>
+
                             </ul>
                             <a href="javascript:"
                                className="py-2.5 px-5 bg-[#e7e5e4] shadow-sm rounded-full transition-all duration-500 text-base text-black font-semibold text-center w-fit mx-auto group-hover:bg-[#BEAB81] group-hover:text-[#0F0F0F]">Liên
@@ -169,32 +166,34 @@ const Design = () => {
                             <ul className="mb-12 ml-[120px] sm:ml-[85px] space-y-1 text-center text-[13px] sm:text-[17px] text-[#CECECE]">
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Chuyên gia AI tư vấn thiết kế nội thất</span>
+                                    <span>
+Lập ý tưởng kiến trúc</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Phân tích nhu cầu và không gian</span>
+                                    <span>Hoàn thiện hồ sơ thi công
+</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Đưa ra các lựa chọn phù hợp với ngân sách</span>
+                                    <span>Tư vấn biện pháp thi công
+</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Tư vấn chọn vật liệu và màu sắc</span>
+                                    <span>
+Giám sát tác giả</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Hỗ trợ thay đổi thiết kế theo yêu cầu</span>
+                                    <span>
+Hỗ trợ Hồ sơ Cấp phép XD</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Gợi ý các xu hướng thiết kế mới nhất</span>
+                                    <span>Tiến độ từ 25-30 ngày</span>
                                 </li>
-                                <li className="flex items-center space-x-3.5">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Hướng dẫn lựa chọn đồ nội thất tối ưu</span>
-                                </li>
+
                             </ul>
                             <a href="javascript:"
                                className="py-2.5 px-5 bg-[#e7e5e4] shadow-sm rounded-full transition-all duration-500 text-base text-black font-semibold text-center w-fit mx-auto group-hover:bg-[#BEAB81] group-hover:text-[#0F0F0F]">Liên
@@ -217,32 +216,34 @@ const Design = () => {
                             <ul className="mb-12 ml-[120px] sm:ml-[85px] space-y-1 text-center text-[13px] sm:text-[17px] text-[#CECECE]">
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Chuyên gia AI tư vấn thiết kế nội thất</span>
+                                    <span>
+Lập ý tưởng kiến trúc</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Phân tích nhu cầu và không gian</span>
+                                    <span>Hoàn thiện hồ sơ thi công
+</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Đưa ra các lựa chọn phù hợp với ngân sách</span>
+                                    <span>Tư vấn biện pháp thi công
+</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Tư vấn chọn vật liệu và màu sắc</span>
+                                    <span>
+Giám sát tác giả</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Hỗ trợ thay đổi thiết kế theo yêu cầu</span>
+                                    <span>
+Hỗ trợ Hồ sơ Cấp phép XD</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Gợi ý các xu hướng thiết kế mới nhất</span>
+                                    <span>Tiến độ từ 25-30 ngày</span>
                                 </li>
-                                <li className="flex items-center space-x-3.5">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Hướng dẫn lựa chọn đồ nội thất tối ưu</span>
-                                </li>
+
                             </ul>
                             <a href="javascript:"
                                className="py-2.5 px-5 bg-[#e7e5e4] shadow-sm rounded-full transition-all duration-500 text-base text-black font-semibold text-center w-fit mx-auto group-hover:bg-[#BEAB81] group-hover:text-[#0F0F0F]">Liên
