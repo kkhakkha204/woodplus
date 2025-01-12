@@ -38,26 +38,26 @@ const AboutUs = () => {
                     <div
                         className="w-full h-[100px] bg-[#0F0F0F] border-y-[2px] border-white flex items-center justify-center">
     <span
-        className="text-[32px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] font-bold text-center tracking-[2%]">
-        SLOGAN <span
-        className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text">WOODPLUS</span> SLOGAN
+        className="text-[36px] sm:text-[46px] md:text-[52px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] font-bold text-center ">
+        Khám phá thương hiệu <span
+        className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text">WoodPlus</span>
     </span>
                     </div>
 
 
                     {/* Thẻ divbot */}
                     <div
-                        className="w-full max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 md:grid-cols-2 justify-between items-center ">
+                        className="w-full max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 lg:grid-cols-2 justify-between items-center ">
                         {/* Mô tả bên trái */}
-                        <div className="w-full md:w-1/2">
-                            <p className="w-[300px] mx-auto sm:mt-[200px] text-center sm:text-left sm:text-[20px] text-white">We
+                        <div className="w-full lg:w-1/2">
+                            <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[22px] max-w-[250px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto lg:mt-[200px] text-center lg:text-left text-white">We
                                 are a passionate team committed to <br/>delivering
                                 the best products and services to our customers. Our mission is to bring quality
                                 and innovation to every home.</p>
                         </div>
 
                         {/* Nút liên hệ và tư vấn */}
-                        <div className="text-center sm:flex justify-start md:justify-end sm:mt-[230px] space-x-1">
+                        <div className="text-center lg:flex justify-start lg:justify-end lg:mt-[230px] space-x-1">
                             {/* Nút Liên hệ */}
                             <button
                                 className="w-[90px] h-[35px] sm:w-[100px] sm:h-[40px] md:w-[125px] md:h-[45px] bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
@@ -67,7 +67,7 @@ const AboutUs = () => {
                                 {/* Hiển thị icon nếu chưa hover */}
                                 {!isHovered ? (
                                     <TbArrowForwardUp
-                                        className="inline-block text-[25px] sm:text-[30px] md:text-[35px] mb-[0.1rem]"/>
+                                        className="inline-block text-[25px] "/>
                                 ) : (
                                     "Liên hệ"
                                 )}
@@ -91,8 +91,8 @@ const AboutUs = () => {
                 <div
                     className="mx-auto max-w-[1020px] px-8  md:px-12 lg:px-16 divide-y prose text-white prose-sm prose-headings:font-normal prose-headings:text-xl space-y-12">
                     <div className="text-center mb-12">
-                        <h2 className="font-Tangerine text-[22px] 2xl:text-[28px] font-bold text-[#AF9A70] ">WoodPlus</h2>
-                        <h1 className="text-[26px] 2xl:text-[48px] font-medium text-white mt-2">Lịch Sử WoodPlus</h1>
+                        <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70] ">WoodPlus</h3>
+                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white mt-2">Lịch Sử WoodPlus</h2>
 
                     </div>
 
@@ -169,30 +169,15 @@ const AboutUs = () => {
                          className="relative block px-6 md:px-10">
 
 
-                    <div className="relative mx-auto max-w-5xl text-center">
 
-                        <div className="text-center mb-4">
-                            <h2 className="font-Tangerine text-[22px] 2xl:text-[28px] font-bold text-[#AF9A70] ">WoodPlus</h2>
-                            <h1 className="text-[26px] 2xl:text-[48px] font-medium text-white ">Lịch Sử
-                                WoodPlus</h1>
-
-                        </div>
-                        <p
-                            className="mx-auto w-full max-w-xl bg-transparent text-center font-medium text-[13px] sm:text-[17px] tracking-wide text-[#CECECE]">
-                            Our templates allow for maximum customization. No technical skills required – our intuitive
-                            design tools
-                            let
-                            you get the job done easily.
-                        </p>
-                    </div>
 
 
                     <div
-                        className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
+                        className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-3">
                         <div className=" px-8 text-center shadow">
 
-                            <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Customizable</h3>
-                            <p className="my-1 mb-0 text-[13px] sm:text-[17px] font-normal text-[#CECECE]">Tailor your
+                            <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Giá trị cốt lõi</h3>
+                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Tailor your
                                 landing page's
                                 look
                                 and feel, from the color scheme to the font size, to the design of the page.
@@ -202,8 +187,8 @@ const AboutUs = () => {
 
                         <div className=" px-8 text-center shadow">
 
-                            <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Customizable</h3>
-                            <p className="my-1 mb-0 text-[13px] sm:text-[17px] font-normal text-[#CECECE]">Tailor your
+                            <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Tầm nhìn</h3>
+                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Tailor your
                                 landing page's
                                 look
                                 and feel, from the color scheme to the font size, to the design of the page.
@@ -213,8 +198,8 @@ const AboutUs = () => {
 
                         <div className=" px-8 text-center shadow">
 
-                            <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Customizable</h3>
-                            <p className="my-1 mb-0 text-[13px] sm:text-[17px] font-normal text-[#CECECE]">Tailor your
+                            <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Sứ mệnh</h3>
+                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Tailor your
                                 landing page's
                                 look
                                 and feel, from the color scheme to the font size, to the design of the page.
@@ -253,8 +238,8 @@ const AboutUs = () => {
                 <div className="w-full max-w-[1620px] bg-[#0F0F0F] mx-auto pb-[40px]">
                     {/* Thẻ divtext */}
                     <div className="text-center mb-12">
-                        <h2 className="font-Tangerine text-[22px] 2xl:text-[28px] font-bold text-[#AF9A70] ">WoodPlus</h2>
-                        <h1 className="text-[26px] 2xl:text-[48px] font-medium text-white mt-2">Đội ngũ của
+                        <h2 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70] ">WoodPlus</h2>
+                        <h1 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white mt-2">Đội ngũ của
                             WoodPlus</h1>
                         <p className="mx-auto w-[350px] sm:w-[700px] text-[13px] 2xl:text-[17px] font-normal text-[#CECECE] mt-4">
                             Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui ducimus
@@ -265,14 +250,14 @@ const AboutUs = () => {
 
                     {/* Thẻ đội ngũ */}
                     <div
-                        className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+                        className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
 
-                        <div className="grid gap-16 sm:grid-cols-2 lg:grid-cols-3">
+                        <div className="grid gap-16 lg:grid-cols-3">
                         <div>
                                 <div
                                     className="relative overflow-hidden transition duration-300 transform shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                                     <img
-                                        className="object-cover w-64 mx-auto sm:w-full h-72 md:h-64 xl:h-96"
+                                        className="object-cover w-64 mx-auto sm:w-80 lg:w-full h-72 sm:h-96 lg:h-64 xl:h-96"
                                         src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
                                         alt="Person"
                                     />
@@ -293,7 +278,7 @@ const AboutUs = () => {
                                 <div
                                     className="relative overflow-hidden transition duration-300 transform shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                                     <img
-                                        className="object-cover w-64 mx-auto sm:w-full h-72 md:h-64 xl:h-96"
+                                        className="object-cover w-64 mx-auto sm:w-80 lg:w-full h-72 sm:h-96 lg:h-64 xl:h-96"
                                         src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
                                         alt="Person"
                                     />
@@ -314,7 +299,7 @@ const AboutUs = () => {
                                 <div
                                     className="relative overflow-hidden transition duration-300 transform shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                                     <img
-                                        className="object-cover w-64 mx-auto sm:w-full h-72 md:h-64 xl:h-96"
+                                        className="object-cover w-64 mx-auto sm:w-80 lg:w-full h-72 sm:h-96 lg:h-64 xl:h-96"
                                         src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
                                         alt="Person"
                                     />

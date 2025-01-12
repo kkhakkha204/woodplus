@@ -79,11 +79,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .slick-dots li button:before {
   color: white; /* Thay đổi màu của dots thành trắng */
-
+  font-size: 7px;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #eae6de; /* Thay đổi màu của dot đang hoạt động (nếu cần) */
+  color: #FFFFFF; /* Thay đổi màu của dot đang hoạt động (nếu cần) */
 }
+
 
 

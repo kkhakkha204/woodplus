@@ -32,13 +32,13 @@ const HomePage = () => {
 
 
                     {/* Dòng text phía trên */}
-                    <p className=" text-[14px] sm:text-[18px] md:text-[20px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px] font-bold text-center italic ">
+                    <p className=" text-[15px] sm:text-[18px] md:text-[20px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px] font-bold text-center italic ">
                         Công ty thiết kế – kiến trúc – thi công
                     </p>
 
                     {/* Câu slogan */}
                     <h1
-                        className="text-[32px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] text-center font-bold"
+                        className="text-[36px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] text-center font-bold"
                     >
                         Kiến tạo nhà đẹp tinh tế
                         <h1 className="-mt-3 2xl:-mt-7"
@@ -50,7 +50,7 @@ const HomePage = () => {
                         </h1>
 
                     </h1>
-                    <p className="text-center text-[13px] 2xl:text-[20px] mt-2 max-w-[200px] 2xl:max-w-lg">
+                    <p className="text-center text-[14px] tracking-[0.01rem] sm:text-[15px] md:text-[17px] lg:text-[20px] mt-2 max-w-[250px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px]">
                         "Nhà không chỉ để ở, mà phải đẹp, phải khiến mọi người trầm trồ. Đến với WoodPlus, biến ngôi nhà
                         của bạn thành tổ ấm đáng tự hào."
                     </p>
@@ -112,34 +112,34 @@ const HomePage = () => {
 
                 <div className="w-full max-w-[1620px]">
 
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
-                        <div className="col-span-1 sm:col-span-3 text-center mb-8">
-                            <h2 className="font-Tangerine text-[22px] 2xl:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h2>
-                            <h1 className="text-[34px] 2xl:text-[48px] font-medium text-white 2xl:mt-2">Dịch vụ</h1>
-                            <p className="w-[300px] mx-auto sm:w-[450px] text-[13px] 2xl:text-[17px] font-normal text-[#CECECE] mt-4">
+                        <div className="col-span-1 lg:col-span-3 text-center lg:mb-8">
+                            <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70] ">WoodPlus</h3>
+                            <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white ">Dịch vụ</h2>
+                            <p className="w-[260px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
                                 WoodPlus mang đến các giải pháp trọn gói cho thiết kế và thi công nội thất, tập trung vào việc cá nhân hóa không gian sống, kết hợp hài hòa giữa công năng và thẩm mỹ. Chúng tôi đặc biệt nổi bật với các phong cách thời thượng như Indochine và Wabi Sabi, mang đến không gian sống đẳng cấp và thanh lịch.
                             </p>
                         </div>
 
 
-                        <div className="flex-col justify-center sm:-mt-[150px]">
+                        <div className="flex-col justify-center lg:-mt-[150px] mb-4 lg:ml-8 2xl:ml-0">
                             <Link to="/thiết-kế">
                                 <img
                                     src="/assets/images/service/service3.jpg"
                                     alt="Dịch vụ R"
-                                    className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[600px] object-cover"
+                                    className="mx-auto w-[320px] h-[260px]  sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
                                 />
                             </Link>
                             <div className="text-center">
                                 <Link
                                     to="/thiết-kế"
-                                    className="flex items-center justify-center font-medium text-[28px] text-[#BEAB81] mt-6 hover:text-white"
+                                    className="flex items-center justify-center font-medium text-[24px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[34px] text-[#BEAB81] mt-2 lg:mt-6 hover:text-white"
                                 >
                                     Dịch vụ thiết kế
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
-                                <p className="w-[300px] sm:w-[400px] mx-auto text-[13px] 2xl:text-[17px] font-normal text-[#CECECE] mt-4">
+                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
                                     Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui ducimus
                                     soluta qui assumenda aliquam quo deserunt quidem?
                                 </p>
@@ -147,24 +147,24 @@ const HomePage = () => {
                         </div>
 
 
-                        <div className="flex-col justify-center">
+                        <div className="flex-col justify-center mb-4">
                             <Link to="/liên-hệ">
                                 <img
                                     src="/assets/images/service/service1.jpg"
                                     alt="Dịch vụ R"
-                                    className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[600px] object-cover"
+                                    className="mx-auto w-[320px] h-[260px]  sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
                                 />
                             </Link>
 
                             <div className="text-center">
                                 <Link
                                     to="/liên-hệ"
-                                    className="flex items-center justify-center font-medium text-[28px] text-[#BEAB81] mt-6 hover:text-white"
+                                    className="flex items-center justify-center font-medium text-[24px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[34px] text-[#BEAB81] mt-2 lg:mt-6 hover:text-white"
                                 >
                                     Dịch vụ trọn gói
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
-                                <p className="w-[300px] sm:w-[400px] mx-auto text-[13px] 2xl:text-[17px] font-normal text-[#CECECE] mt-4">
+                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
                                     Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui ducimus
                                     soluta qui assumenda aliquam quo deserunt quidem?
                                 </p>
@@ -172,23 +172,23 @@ const HomePage = () => {
                         </div>
 
 
-                        <div className="flex-col sm:-mt-[150px] justify-center">
+                        <div className="flex-col lg:-mt-[150px] justify-center mb-4 lg:mr-4 2xl:mr-0">
                             <Link to="/thi-công">
                                 <img
                                     src="/assets/images/service/services2.jpg"
                                     alt="Dịch vụ R"
-                                    className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[600px] object-cover"
+                                    className="mx-auto w-[320px] h-[260px]  sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
                                 />
                             </Link>
                             <div className="text-center">
                                 <Link
                                     to="/thi-công"
-                                    className="flex items-center justify-center font-medium text-[28px] text-[#BEAB81] mt-6 hover:text-white"
+                                    className="flex items-center justify-center font-medium text-[24px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[34px] text-[#BEAB81] mt-2 lg:mt-6 hover:text-white"
                                 >
                                     Dịch vụ thi công
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
-                                <p className="w-[300px] sm:w-[400px] mx-auto text-[13px] 2xl:text-[17px] font-normal text-[#CECECE] mt-4">
+                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
                                     Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui ducimus
                                     soluta qui assumenda aliquam quo deserunt quidem?
                                 </p>
@@ -203,22 +203,22 @@ const HomePage = () => {
             <LightSpacing/>
 
             <div className="w-full flex bg-[#e7e5e4] justify-center items-center ">
-                <div className="w-full max-w-[1620px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <div className="w-full max-w-[1620px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {/* Left Column (divl) */}
-                    <div className="flex flex-col justify-center items-start sm:col-span-1 ">
+                    <div className="flex flex-col justify-center items-start lg:col-span-1 ">
                         <div className="w-full flex flex-col justify-center items-center text-center">
-                            <h2 className="font-Tangerine text-[22px] 2xl:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h2>
-                            <h1 className="text-[26px] 2xl:text-[48px] font-medium text-[#222222] ">Về WoodPlus</h1>
-                            <p className="w-[300px] sm:w-full text-[13px] 2xl:text-[17px] font-normal text-[#535353] mt-4">
+                            <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
+                            <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#222222] ">Về WoodPlus</h2>
+                            <p className="w-[260px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#535353] mt-4">
                                 Công ty Cổ phần Nội Thất WoodPlus là đơn vị uy tín hàng đầu trong lĩnh vực tư vấn thiết
                                 kế, thi công nội thất và ngoại thất tại Hà Nội và trên toàn quốc.
                             </p>
 
-                            <p className="hidden sm:block w-[300px] sm:w-full text-[13px] 2xl:text-[17px] font-normal text-[#535353] mt-4">
+                            <p className="hidden lg:block w-[260px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] text-[#535353] mt-4">
                                 Với hơn 8 năm kinh nghiệm, WoodPlus chuyên thực hiện các công trình dân dụng và công
                                 cộng như nhà lô, biệt thự, nội thất chung cư, nhà hàng, quán cafe, văn phòng và dịch vụ xây nhà trọn gói.
                             </p>
-                            <div className="flex sm:mt-12 space-x-1 ">
+                            <div className="flex lg:mt-12 space-x-1 ">
                                 {/* Nút Liên hệ */}
                                 <div className="text-center mt-12 space-x-1 flex justify-center items-center">
                                     {/* Nút Liên hệ */}
@@ -247,14 +247,14 @@ const HomePage = () => {
                         </div>
 
 
-                        <div className="w-full mt-6 sm:mb-4">
+                        <div className="w-full mt-6 lg:mb-4">
                             <img
                                 src="/assets/images/aboutus/aboutus4.jpg"
                                 alt="About Us"
-                                className="w-[350px] h-[250px] mx-auto sm:w-[650px] sm:h-[450px] object-cover grayscale"
+                                className="w-[350px] h-[250px] mx-auto lg:ml-4 2xl:ml-0 sm:w-[490px] sm:h-[300px] md:w-[520px] md:h-[350px] lg:w-[600px] lg:h-[400px] 2xl:w-[650px] 2xl:h-[450px] object-cover grayscale"
                             />
                         </div>
-                        <p className="text-center mx-auto sm:hidden w-[300px] sm:w-full text-[13px] 2xl:text-[17px] font-normal text-[#535353] mt-4">
+                        <p className="text-center mx-auto lg:hidden w-[260px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] text-[#535353] mt-4">
                             Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui ducimus
                             soluta qui assumenda aliquam quo deserunt quidem? Ut libero doloresSit debitis ab
                             officia nihil At quam atque sed cupiditate obcaecati.
@@ -262,11 +262,11 @@ const HomePage = () => {
                     </div>
 
                     {/* Right Column (divr) */}
-                    <div className="sm:col-span-2 flex justify-center items-center">
+                    <div className="lg:col-span-2 flex justify-center items-center lg:ml-8 2xl:ml-0">
                         <img
                             src="/assets/images/aboutus/aboutus5.jpg"
                             alt="About Us Right"
-                            className=" w-[350px] h-[250px] mx-auto sm:w-[940px] sm:h-[850px] object-cover grayscale"
+                            className=" w-[350px] h-[250px] mx-auto sm:w-[580px] sm:h-[350px] md:w-[640px] md:h-[420px] lg:w-[840px] lg:h-[750px] 2xl:w-[940px] 2xl:h-[850px] object-cover grayscale"
 
                         />
                     </div>

@@ -120,11 +120,11 @@ const Navbar = () => {
                         Liên hệ
                         <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-[#BEAB81] transition-all duration-300 group-hover:w-full"></span>
                     </Link>
-                    <Link to="/blog" className="hover:text-[#BEAB81] relative group">
+                    <Link to="/news" className="hover:text-[#BEAB81] relative group">
                         Tin tức
                         <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-[#BEAB81] transition-all duration-300 group-hover:w-full"></span>
                     </Link>
-                    <a href="#consult" className="text-[#BEAB81] italic relative group">
+                    <a href="/liên-hệ" className="text-[#BEAB81] italic relative group">
                         Tư vấn miễn phí
                         <span className="absolute left-0 -bottom-1 w-full h-[1px] bg-[#BEAB81] transition-all duration-300"></span>
                     </a>
@@ -187,7 +187,7 @@ const Navbar = () => {
                         Liên hệ
                     </Link>
                     <Link
-                        to="/blog"
+                        to="/news"
                         className="block py-4 px-4 hover:bg-[#3F3935]"
                         onClick={() => setMenuOpen(false)}
                     >

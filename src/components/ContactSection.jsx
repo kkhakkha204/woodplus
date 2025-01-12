@@ -24,16 +24,16 @@ const ContactSection = () => {
         >
             <div className="w-full max-w-[1620px] bg-[#0F0F0F] mx-auto relative">
                 <div className="text-center mb-12">
-                    <h2 className="font-Tangerine text-[22px] 2xl:text-[28px] font-bold text-[#AF9A70]">
+                    <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">
                         WoodPlus
+                    </h3>
+                    <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white mt-2">
+                        Liên hệ nhận tư vấn miễn phí
                     </h2>
-                    <h1 className="text-[26px] 2xl:text-[48px] font-medium text-white mt-2">
-                        Liên hệ để nhận tư vấn miễn phí
-                    </h1>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-48 sm:mx-[200px]">
-                    <div className="sm:w-full w-[350px] mx-auto relative">
+                <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-48 lg:mx-[200px]">
+                    <div className="lg:w-full w-[350px] mx-auto md:ml-36 lg:ml-0 relative">
                         <div className="mb-6">
                             <label
                                 htmlFor="danhxung-left"
@@ -47,7 +47,7 @@ const ContactSection = () => {
                                 placeholder="Nhập danh xưng (Bắt buộc)"
                                 value={danhXung}
                                 onChange={(e) => setDanhXung(e.target.value)}
-                                className="w-[350px] sm:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
+                                className="w-[350px] sm:w-[420px] md:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>
                         <div className="mb-6">
@@ -63,12 +63,12 @@ const ContactSection = () => {
                                 placeholder="Nhập số điện thoại (Bắt buộc)"
                                 value={soDienThoai}
                                 onChange={(e) => setSoDienThoai(e.target.value)}
-                                className="w-[350px] sm:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
+                                className="w-[350px] sm:w-[420px] md:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>
                     </div>
 
-                    <div className="sm:w-full w-[350px] mx-auto relative">
+                    <div className="lg:w-full w-[350px] mx-auto md:ml-36 lg:ml-0 relative">
                         <div className="mb-6">
                             <label
                                 htmlFor="email"
@@ -80,7 +80,7 @@ const ContactSection = () => {
                                 id="email"
                                 type="text"
                                 placeholder="Nhập Email"
-                                className="w-[350px] sm:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
+                                className="w-[350px] sm:w-[420px] md:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>
                         <div className="mb-6">
@@ -94,7 +94,7 @@ const ContactSection = () => {
                                 id="nhu-cau"
                                 type="text"
                                 placeholder="Viết nhu cầu bạn muốn gửi tới chúng tôi"
-                                className="w-[350px] sm:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
+                                className="w-[350px] sm:w-[420px] md:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>
                     </div>

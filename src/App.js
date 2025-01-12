@@ -35,7 +35,7 @@ const App = () => {
                     <Route path="/thi-công" element={<Construction />} />
                     <Route path="/dự-án" element={<Project />} />
                     <Route path="/liên-hệ" element={<Contact />} />
-                    <Route path="/blog" element={<Blog />} />
+
                     <Route path="/news" element={<NewsList />} />
                     <Route path="/news/:slug" element={<NewsDetail />} />
 

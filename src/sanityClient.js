@@ -17,3 +17,4 @@ client
     .fetch('*[_type == "news"]')
     .then((data) => console.log('Data from Sanity:', data))
     .catch((err) => console.error('Sanity error:', err));
+

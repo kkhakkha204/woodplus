@@ -22,7 +22,7 @@ const Footer = () => {
                     <img
                         src="/assets/images/footer/footer1.png"
                         alt="Logo"
-                        className="w-[120px] h-[65.49px] sm:w-[350px] sm:h-[191px] object-cover"
+                        className="w-[120px] h-[65.49px] sm:w-[150px] sm:h-[81.86px] lg:w-[350px] lg:h-[191px] object-cover"
                     />
                 </div>
 
