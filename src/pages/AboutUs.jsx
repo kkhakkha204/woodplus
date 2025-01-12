@@ -109,7 +109,7 @@ const AboutUs = () => {
                         <div className="lg:col-span-2 pt-2">
                             <div className="flex-shrink-0">
                                 <div className="mx-auto "><img className="aspect-[4/3] object-cover"
-                                                               src="/assets/images/herosection/11.png"
+                                                               src="/assets/images/aboutus/aboutus4.jpg"
                                                                alt="#_"/>
                                     <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE]">Giai đoạn này đánh dấu sự ra đời của thương hiệu với tầm nhìn mang đến những giải pháp thiết kế nội thất độc đáo và hiện đại. Ban đầu, công ty chỉ tập trung vào các dự án nhỏ như căn hộ và nhà phố, nhưng với sự đam mê và nỗ lực không ngừng, chúng tôi đã xây dựng được đội ngũ sáng tạo và gây dựng niềm tin từ những khách hàng đầu tiên.
 
@@ -131,7 +131,7 @@ const AboutUs = () => {
                         <div className="lg:col-span-2 pt-2">
                             <div className="flex-shrink-0">
                                 <div className="mx-auto "><img className="aspect-[4/3] object-cover"
-                                                               src="/assets/images/herosection/11.png"
+                                                               src="/assets/images/herosection/hero3.webp"
                                                                alt="#_"/>
                                     <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE]">Đây là thời kỳ bùng nổ với hàng loạt dự án lớn tại các thành phố lớn. Công ty mở rộng quy mô, đầu tư vào công nghệ thiết kế 3D tiên tiến và xây dựng mối quan hệ hợp tác với các đối tác cung cấp vật liệu nội thất cao cấp. Những công trình nổi bật như biệt thự, showroom và khách sạn sang trọng đã khẳng định vị thế thương hiệu trên thị trường.</p>
 
@@ -258,7 +258,7 @@ const AboutUs = () => {
                                     className="relative overflow-hidden transition duration-300 transform shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                                     <img
                                         className="object-cover w-64 mx-auto sm:w-80 lg:w-full h-72 sm:h-96 lg:h-64 xl:h-96"
-                                        src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                                        src="/assets/images/aboutus/aboutus4.jpg"
                                         alt="Person"
                                     />
                                     <div
@@ -279,7 +279,7 @@ const AboutUs = () => {
                                     className="relative overflow-hidden transition duration-300 transform shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                                     <img
                                         className="object-cover w-64 mx-auto sm:w-80 lg:w-full h-72 sm:h-96 lg:h-64 xl:h-96"
-                                        src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                                        src="/assets/images/aboutus/aboutus4.jpg"
                                         alt="Person"
                                     />
                                     <div
@@ -300,7 +300,7 @@ const AboutUs = () => {
                                     className="relative overflow-hidden transition duration-300 transform shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                                     <img
                                         className="object-cover w-64 mx-auto sm:w-80 lg:w-full h-72 sm:h-96 lg:h-64 xl:h-96"
-                                        src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                                        src="/assets/images/aboutus/aboutus4.jpg"
                                         alt="Person"
                                     />
                                     <div
