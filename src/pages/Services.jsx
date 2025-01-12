@@ -180,15 +180,17 @@ const Services = () => {
             <DarkSpacing/>
 
             {/* Thẻ divcha */}
-            <div className="w-full text-white bg-[#e7e5e4] ">
-                {/* divcon */}
-                <div className="w-full max-w-[1620px] bg-[#0F0F0F] mx-auto py-14 ">
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="w-full flex justify-center items-center mb-[18px] pb-8">
 
-                        <div className="col-span-1 sm:col-span-3 text-center mb-8">
-                            <h2 className="font-Tangerine text-[22px] 2xl:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h2>
-                            <h1 className="text-[34px] 2xl:text-[48px] font-medium text-white 2xl:mt-2">Dịch vụ</h1>
-                            <p className="w-[300px] mx-auto sm:w-[450px] text-[13px] 2xl:text-[17px] font-normal text-[#CECECE] mt-4">
+                <div className="w-full max-w-[1620px]">
+
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                        <div className="col-span-1 lg:col-span-3 text-center lg:mb-8">
+                            <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70] ">WoodPlus</h3>
+                            <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white ">Dịch
+                                vụ</h2>
+                            <p className="w-[260px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
                                 WoodPlus mang đến các giải pháp trọn gói cho thiết kế và thi công nội thất, tập trung
                                 vào việc cá nhân hóa không gian sống, kết hợp hài hòa giữa công năng và thẩm mỹ. Chúng
                                 tôi đặc biệt nổi bật với các phong cách thời thượng như Indochine và Wabi Sabi, mang đến
@@ -197,17 +199,23 @@ const Services = () => {
                         </div>
 
 
-                        <div className="flex-col justify-center">
-                            <Link to="">
+                        <div className="flex-col justify-center lg:-mt-[150px] mb-4 lg:ml-8 2xl:ml-0">
+                            <Link to="/thiết-kế">
                                 <img
-                                    src="/assets/images/herosection/11.png"
+                                    src="/assets/images/service/service3.jpg"
                                     alt="Dịch vụ R"
-                                    className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[600px] object-cover"
+                                    className="mx-auto w-[320px] h-[260px]  sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
                                 />
                             </Link>
                             <div className="text-center">
-                                <h2 className="font-medium text-[28px] text-[#BEAB81] mt-6">Dịch vụ thiết kế</h2>
-                                <p className="w-[300px] sm:w-[400px] mx-auto text-[13px] 2xl:text-[17px] font-normal text-[#CECECE] mt-4">
+                                <Link
+                                    to="/thiết-kế"
+                                    className="flex items-center justify-center font-medium text-[24px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[34px] text-[#BEAB81] mt-2 lg:mt-6 hover:text-white"
+                                >
+                                    Dịch vụ thiết kế
+                                    <span className="ml-14 text-[30px]">&rarr;</span>
+                                </Link>
+                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
                                     Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui ducimus
                                     soluta qui assumenda aliquam quo deserunt quidem?
                                 </p>
@@ -215,18 +223,24 @@ const Services = () => {
                         </div>
 
 
-                        <div className="flex-col justify-center">
-                            <Link to="">
+                        <div className="flex-col justify-center mb-4">
+                            <Link to="/liên-hệ">
                                 <img
-                                    src="/assets/images/herosection/11.png"
+                                    src="/assets/images/service/service1.jpg"
                                     alt="Dịch vụ R"
-                                    className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[600px] object-cover"
+                                    className="mx-auto w-[320px] h-[260px]  sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
                                 />
                             </Link>
 
                             <div className="text-center">
-                                <h2 className="font-medium text-[28px] text-[#BEAB81] mt-6">Dịch vụ thi công</h2>
-                                <p className="w-[300px] sm:w-[400px] mx-auto text-[13px] 2xl:text-[17px] font-normal text-[#CECECE] mt-4">
+                                <Link
+                                    to="/liên-hệ"
+                                    className="flex items-center justify-center font-medium text-[24px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[34px] text-[#BEAB81] mt-2 lg:mt-6 hover:text-white"
+                                >
+                                    Dịch vụ trọn gói
+                                    <span className="ml-14 text-[30px]">&rarr;</span>
+                                </Link>
+                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
                                     Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui ducimus
                                     soluta qui assumenda aliquam quo deserunt quidem?
                                 </p>
@@ -234,23 +248,30 @@ const Services = () => {
                         </div>
 
 
-                        <div className="flex-col justify-center">
-                            <Link to="">
+                        <div className="flex-col lg:-mt-[150px] justify-center mb-4 lg:mr-4 2xl:mr-0">
+                            <Link to="/thi-công">
                                 <img
-                                    src="/assets/images/herosection/11.png"
+                                    src="/assets/images/service/services2.jpg"
                                     alt="Dịch vụ R"
-                                    className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[600px] object-cover"
+                                    className="mx-auto w-[320px] h-[260px]  sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
                                 />
                             </Link>
                             <div className="text-center">
-                                <h2 className="font-medium text-[28px] text-[#BEAB81] mt-6">Dịch vụ trọn gói</h2>
-                                <p className="w-[300px] sm:w-[400px] mx-auto text-[13px] 2xl:text-[17px] font-normal text-[#CECECE] mt-4">
+                                <Link
+                                    to="/thi-công"
+                                    className="flex items-center justify-center font-medium text-[24px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[34px] text-[#BEAB81] mt-2 lg:mt-6 hover:text-white"
+                                >
+                                    Dịch vụ thi công
+                                    <span className="ml-14 text-[30px]">&rarr;</span>
+                                </Link>
+                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
                                     Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui ducimus
                                     soluta qui assumenda aliquam quo deserunt quidem?
                                 </p>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -277,7 +298,8 @@ const Services = () => {
                             </div>
 
                             {/* divquy (3 quy trình) */}
-                            <div className="w-[350px] sm:w-[600px] grid grid-cols-2 md:grid-cols-3 sm:gap-6 text-center">
+                            <div
+                                className="w-[350px] sm:w-[600px] grid grid-cols-2 md:grid-cols-3 sm:gap-6 text-center">
                                 {/* Quy trình */}
                                 {[
                                     {id: 1, text: 'Trao đổi ý tưởng và yêu cầu với kiến trúc sư.'},
