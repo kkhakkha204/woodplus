@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import Slider from "react-slick";
 import { TbArrowForwardUp } from "react-icons/tb";
 import {Link} from "react-router-dom";
-
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 const ProjectSection = () => {
     const [isHovered, setIsHovered] = useState(false);
     // State để quản lý ảnh và mô tả cho từng phần
@@ -23,6 +23,30 @@ const ProjectSection = () => {
         { src: "/assets/images/herosection/hero2.jpg", description: "HaNoi Indochine 2024" },
         { src: "/assets/images/herosection/hero5.webp", description: "HaNoi Indochine 2025" },
     ];
+    const NextArrow = (props) => {
+        const { onClick } = props;
+        return (
+            <div
+                className="absolute bg-[#0F0F0F] top-[33.8%] right-4 transform -translate-y-1/2 z-10 cursor-pointer"
+                onClick={onClick}
+            >
+                <ChevronRightIcon className="h-16 w-10 text-white hover:text-gray-300" />
+            </div>
+        );
+    };
+
+// Nút "Prev"
+    const PrevArrow = (props) => {
+        const { onClick } = props;
+        return (
+            <div
+                className="absolute bg-[#0F0F0F] top-[33.8%] left-4 transform -translate-y-1/2 z-10 cursor-pointer"
+                onClick={onClick}
+            >
+                <ChevronLeftIcon className="h-16 w-10 text-white hover:text-gray-300" />
+            </div>
+        );
+    };
 
     // useEffect để thiết lập các bộ hẹn giờ
     useEffect(() => {
@@ -50,10 +74,13 @@ const ProjectSection = () => {
         dots: true,
 
         infinite: true,
-        speed: 650,
+        speed: 550,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+        arrow: true,
+        fade: true
     };
 
     return (

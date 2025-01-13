@@ -86,5 +86,32 @@ body::-webkit-scrollbar-thumb:hover {
   color: #FFFFFF; /* Thay đổi màu của dot đang hoạt động (nếu cần) */
 }
 
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.custom-next {
+  right: 10px; /* Căn phải */
+}
+
+.custom-prev {
+  left: 10px; /* Căn trái */
+}
+
+.custom-arrow:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+
 
 
