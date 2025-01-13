@@ -9,11 +9,11 @@ const Footer = () => {
                 <div className="w-1/3 border-r border-[#AF9A70]">
                     <div className="h-1/2 flex items-center justify-center border-b border-[#AF9A70]">
                         {/* Nội dung của divleftcon 1 */}
-                        <p className="text-[13px] sm:text-[17px]">Liên hệ: (+84) 123 456 789</p>
+                        <p className="text-[13px] sm:text-[17px]"></p>
                     </div>
                     <div className="h-1/2 flex items-center justify-center">
                         {/* Nội dung của divleftcon 2 */}
-                        <p className="text-[13px] sm:text-[17px]">Email: info@example.com</p>
+                        <p className="text-[13px] sm:text-[17px]"></p>
                     </div>
                 </div>
 
@@ -30,11 +30,11 @@ const Footer = () => {
                 <div className="w-1/3 border-l border-[#AF9A70]">
                     <div className="h-1/2 flex items-center justify-center border-b border-[#AF9A70]">
                         {/* Nội dung của divrightcon 1 */}
-                        <p className="text-[13px] sm:text-[17px]">123 Đường ABC, TP.HCM</p>
+                        <p className="text-[13px] sm:text-[17px]"></p>
                     </div>
                     <div className="h-1/2 flex items-center justify-center">
                         {/* Nội dung của divrightcon 2 */}
-                        <p className="text-[13px] sm:text-[17px]">8:00 - 18:00</p>
+                        <p className="text-[13px] sm:text-[17px]"></p>
                     </div>
                 </div>
             </div>

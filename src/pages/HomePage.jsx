@@ -24,7 +24,7 @@ const HomePage = () => {
                 ></div>
 
                 {/* Lớp phủ màu đen nhẹ */}
-                <div className="absolute inset-0 bg-black bg-opacity-15"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
 
                 {/* Nội dung chính */}
                 <div
@@ -38,7 +38,7 @@ const HomePage = () => {
 
                     {/* Câu slogan */}
                     <h1
-                        className="text-[36px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] text-center font-bold"
+                        className="text-[30px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] text-center font-bold"
                     >
                         Kiến tạo nhà đẹp tinh tế
                         <h1 className="-mt-3 2xl:-mt-7"

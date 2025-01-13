@@ -22,7 +22,7 @@ const App = () => {
     return (
         <Router>
             <ScrollToTop />
-            <div className="relative min-h-screen w-screen overflow-hidden font-oswald">
+            <div className="relative min-h-screen w-screen overflow-hidden font-noto">
                 {/* Navbar */}
                 <Navbar />
 
