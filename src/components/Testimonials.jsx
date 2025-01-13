@@ -4,7 +4,7 @@ import {TbArrowForwardUp} from "react-icons/tb";
 const Testimonials = () => {
     const [isHovered, setIsHovered] = useState(false);
     return (
-        <div className="w-full flex justify-center items-center">
+        <div className="w-full flex justify-center items-center pt-14 sm:pt-0">
             {/* Thẻ div cha */}
             <div className="w-full max-w-[1620px] grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Thẻ div right */}
@@ -16,18 +16,17 @@ const Testimonials = () => {
                             <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white ">Khách
                                 hàng nói
                                 gì về WoodPlus</h2>
-                            <p className="w-[260px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
+                            <p className="w-[290px] sm:w-[410px] md:w-[450px] lg:w-[400px] xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
                                 WoodPlus đã được khách hàng tin tưởng và lựa chọn, khẳng định sự chuyên nghiệp trong
                                 từng chi tiết. Đội ngũ kiến trúc sư, kỹ sư và thợ tay nghề cao luôn đặt sự sáng tạo, tâm
-                                huyết vào mỗi công trình, mang đến giải pháp không gian tối ưu nhất, phù hợp với nhu cầu
-                                và mong muốn của từng vị gia chủ.
+                                huyết vào mỗi công trình.
                             </p>
                         </div>
                     </div>
 
 
                     {/* Thẻ div anh */}
-                    <div className="relative w-[600px] md:w-full h-[300px] md:h-[400px] mx-auto md:mx-0">
+                    <div className="relative w-[350px] sm:w-[600px] md:w-full h-[300px] md:h-[400px] mx-auto md:mx-0">
                         <img
                             src="/assets/images/testimonials/test1.jpg"
                             alt="Customer Testimonial"
@@ -35,7 +34,7 @@ const Testimonials = () => {
                         />
                         {/* Thẻ div em */}
                         <div
-                            className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[300px] sm:h-[180px] md:w-[375px] md:h-[200px] bg-[#272727] bg-opacity-85 p-2">
+                            className="absolute bottom-0 left-0 w-3/4 h-1/2 sm:w-[300px] sm:h-[180px] md:w-[375px] md:h-[200px] bg-[#0F0F0F] bg-opacity-85 p-2">
                             <h3 className="text-[20px] sm:text-[22px] md:text-[24px] xl:text-[28px] 2xl:text-[28px] font-medium text-white">Anh
                                 Đức Quân</h3>
                             <p className="text-[15px] sm:text-[16px] md:text-[17px] lg-[18px] xl:text-[19px] font-medium text-[#BEAB81] italic">Eco
@@ -48,7 +47,7 @@ const Testimonials = () => {
                     </div>
 
                     {/* Thẻ div anh */}
-                    <div className="relative w-[600px] md:w-full h-[300px] md:h-[400px] mx-auto md:mx-0">
+                    <div className="relative w-[350px] sm:w-[600px] md:w-full h-[300px] md:h-[400px] mx-auto md:mx-0">
                         <img
                             src="/assets/images/testimonials/test2.webp"
                             alt="Customer Testimonial"
@@ -56,7 +55,7 @@ const Testimonials = () => {
                         />
                         {/* Thẻ div em */}
                         <div
-                            className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[300px] sm:h-[180px] md:w-[375px] md:h-[200px] bg-[#272727] bg-opacity-85 p-2">
+                            className="absolute bottom-0 left-0 w-3/4 h-1/2 sm:w-[300px] sm:h-[180px] md:w-[375px] md:h-[200px] bg-[#0F0F0F] bg-opacity-85 p-2">
                             <h3 className="text-[20px] sm:text-[22px] md:text-[24px] xl:text-[28px] 2xl:text-[28px] font-medium text-white">Anh
                                 Đức Quân</h3>
                             <p className="text-[15px] sm:text-[16px] md:text-[17px] lg-[18px] xl:text-[19px] font-medium text-[#BEAB81] italic">Eco
@@ -71,7 +70,7 @@ const Testimonials = () => {
                 {/* Thẻ div left */}
                 <div className="relative space-y-8">
                     {/* Thẻ div anh */}
-                    <div className="relative w-[600px] md:w-full h-[300px] md:h-[400px] mx-auto md:mx-0">
+                    <div className="relative  w-[350px] sm:w-[600px]  md:w-full h-[300px] md:h-[400px] mx-auto md:mx-0">
                         <img
                             src="/assets/images/testimonials/test1.jpg"
                             alt="Customer Testimonial"
@@ -79,7 +78,7 @@ const Testimonials = () => {
                         />
                         {/* Thẻ div em */}
                         <div
-                            className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[300px] sm:h-[180px] md:w-full md:h-[200px] lg:w-[375px] bg-[#272727] bg-opacity-85 p-2">
+                            className="absolute bottom-0 left-0 w-3/4 h-1/2 sm:w-[300px] sm:h-[180px] md:w-full md:h-[200px] lg:w-[375px] bg-[#0F0F0F] bg-opacity-85 p-2">
                             <h3 className="text-[20px] sm:text-[22px] xl:text-[28px] 2xl:text-[28px] font-medium text-white">Anh
                                 Đức Quân</h3>
                             <p className="text-[15px] sm:text-[16px] md:text-[17px] lg-[18px] xl:text-[19px] font-medium text-[#BEAB81] italic">Eco
@@ -92,7 +91,7 @@ const Testimonials = () => {
                     </div>
 
                     {/* Thẻ div anh */}
-                    <div className="relative w-[600px] md:w-full h-[300px] md:h-[400px] mx-auto md:mx-0">
+                    <div className="relative  w-[350px] sm:w-[600px]  md:w-full h-[300px] md:h-[400px] mx-auto md:mx-0">
                         <img
                             src="/assets/images/testimonials/test2.webp"
                             alt="Customer Testimonial"
@@ -100,7 +99,7 @@ const Testimonials = () => {
                         />
                         {/* Thẻ div em */}
                         <div
-                            className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[300px] sm:h-[180px] md:w-full md:h-[200px] lg:w-[375px] bg-[#272727] bg-opacity-85 p-2">
+                            className="absolute bottom-0 left-0 w-3/4 h-1/2 sm:w-[300px] sm:h-[180px] md:w-full md:h-[200px] lg:w-[375px] bg-[#0F0F0F] bg-opacity-85 p-2">
                             <h3 className="text-[20px] sm:text-[22px] xl:text-[28px] 2xl:text-[28px] font-medium text-white">Anh
                                 Đức Quân</h3>
                             <p className="text-[15px] sm:text-[16px] md:text-[17px] lg-[18px] xl:text-[19px] font-medium text-[#BEAB81] italic">Eco
@@ -114,11 +113,9 @@ const Testimonials = () => {
 
                     {/* Thẻ div text */}
                     <div className="text-center md:text-left w-full md:w-[600px]">
-                        <p className="w-[350px] sm:w-[500px] md:w-[380px] lg:w-[400px] xl:w-[450px] mx-auto md:mx-0 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
-                            Khách hàng của WoodPlus không chỉ đánh giá cao về chất lượng sản phẩm, mà còn cảm nhận được
-                            sự tận tâm của đội ngũ trong mỗi dự án. Với 45 nhân sự đầy nhiệt huyết, chúng tôi cam kết
-                            tiếp tục cung cấp các giải pháp nội thất đẳng cấp, tạo nên những không gian sống "Giá trị
-                            thật, chất lượng thật" đến với khách hàng.
+                        <p className="w-[270px] sm:w-[500px] md:w-[380px] lg:w-[490px] xl:w-[530px] 2xl:w-[630px] mx-auto md:mx-0 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
+                            Khách hàng không chỉ đánh giá cao về chất lượng sản phẩm, mà còn cảm nhận được
+                            sự tận tâm của đội ngũ trong mỗi dự án.Chúng tôi cam kết cung cấp các giải pháp "Giá trị thật, chất lượng thật" đến với khách hàng.
                         </p>
 
                     </div>
@@ -134,11 +131,10 @@ const Testimonials = () => {
                         <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white ">Khách
                             hàng nói
                             gì về WoodPlus</h2>
-                        <p className="w-[260px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
+                        <p className="w-[260px] sm:w-[310px] md:w-[350px] lg:w-[490px] xl:w-[530px] 2xl:w-[630px] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
                             WoodPlus đã được khách hàng tin tưởng và lựa chọn, khẳng định sự chuyên nghiệp trong
                             từng chi tiết. Đội ngũ kiến trúc sư, kỹ sư và thợ tay nghề cao luôn đặt sự sáng tạo, tâm
-                            huyết vào mỗi công trình, mang đến giải pháp không gian tối ưu nhất, phù hợp với nhu cầu
-                            và mong muốn của từng vị gia chủ.
+                            huyết vào mỗi công trình.
                         </p>
                     </div>
 
@@ -151,7 +147,7 @@ const Testimonials = () => {
                         />
                         {/* Thẻ div em */}
                         <div
-                            className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[300px] sm:h-[180px] md:w-full md:h-[200px] lg:w-[375px] bg-[#272727] bg-opacity-85 p-2">
+                            className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[300px] sm:h-[180px] md:w-full md:h-[200px] lg:w-[375px] bg-[#0F0F0F] bg-opacity-85 p-2">
                             <h3 className="text-[20px] sm:text-[22px] xl:text-[28px] 2xl:text-[28px] font-medium text-white">Anh
                                 Đức Quân</h3>
                             <p className="text-[15px] sm:text-[16px] md:text-[17px] lg-[18px] xl:text-[19px] font-medium text-[#BEAB81] italic">Eco
@@ -172,7 +168,7 @@ const Testimonials = () => {
                         />
                         {/* Thẻ div em */}
                         <div
-                            className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[300px] sm:h-[180px] md:w-full md:h-[200px] lg:w-[375px] bg-[#272727] bg-opacity-85 p-2">
+                            className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[300px] sm:h-[180px] md:w-full md:h-[200px] lg:w-[375px] bg-[#0F0F0F] bg-opacity-85 p-2">
                             <h3 className="text-[20px] sm:text-[22px] xl:text-[28px] 2xl:text-[28px] font-medium text-white">Anh
                                 Đức Quân</h3>
                             <p className="text-[15px] sm:text-[16px] md:text-[17px] lg-[18px] xl:text-[19px] font-medium text-[#BEAB81] italic">Eco

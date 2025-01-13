@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 const ContactSection = () => {
-    const [danhXung, setDanhXung] = useState("");
+    const [ten, setten] = useState("");
     const [soDienThoai, setSoDienThoai] = useState("");
     const [popupMessage, setPopupMessage] = useState("");
     const [showPopup, setShowPopup] = useState(false);
 
     const handleSubmit = () => {
-        if (!danhXung.trim() || !soDienThoai.trim()) {
+        if (!ten.trim() || !soDienThoai.trim()) {
             setPopupMessage("Bạn chưa nhập đủ thông tin!");
         } else {
             setPopupMessage("Thông tin của bạn đã được gửi thành công!");
@@ -19,7 +19,7 @@ const ContactSection = () => {
 
     return (
         <div
-            className="w-full flex justify-center items-center bg-cover bg-center"
+            className="w-full flex justify-center items-center bg-cover bg-center mt-14 sm:mt-0"
             style={{ backgroundImage: "url('/assets/images/herosection/11.png')" }}
         >
             <div className="w-full max-w-[1620px] bg-[#0F0F0F] mx-auto relative">
@@ -36,17 +36,17 @@ const ContactSection = () => {
                     <div className="lg:w-full w-[350px] mx-auto md:ml-36 lg:ml-0 relative">
                         <div className="mb-6">
                             <label
-                                htmlFor="danhxung-left"
+                                htmlFor="ten-left"
                                 className="block text-lg font-medium text-white mb-2"
                             >
-                                Danh xưng: <span>( <span className="text-red-500">*</span> )</span>
+                                Họ tên: <span>( <span className="text-red-500">*</span> )</span>
                             </label>
                             <input
-                                id="danhxung-left"
+                                id="ten-left"
                                 type="text"
-                                placeholder="Nhập danh xưng (Bắt buộc)"
-                                value={danhXung}
-                                onChange={(e) => setDanhXung(e.target.value)}
+                                placeholder="Nhập Họ tên (Bắt buộc)"
+                                value={ten}
+                                onChange={(e) => setten(e.target.value)}
                                 className="w-[350px] sm:w-[420px] md:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>

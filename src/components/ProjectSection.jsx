@@ -27,7 +27,7 @@ const ProjectSection = () => {
         const { onClick } = props;
         return (
             <div
-                className="absolute bg-[#0F0F0F] top-[33.8%] right-4 transform -translate-y-1/2 z-10 cursor-pointer"
+                className="absolute bg-[#0F0F0F] top-[33.8%] right-4 sm:right-6 md:right-8 transform -translate-y-1/2 z-10 cursor-pointer"
                 onClick={onClick}
             >
                 <ChevronRightIcon className="h-16 w-10 text-white hover:text-gray-300" />
@@ -40,7 +40,7 @@ const ProjectSection = () => {
         const { onClick } = props;
         return (
             <div
-                className="absolute bg-[#0F0F0F] top-[33.8%] left-4 transform -translate-y-1/2 z-10 cursor-pointer"
+                className="absolute bg-[#0F0F0F] top-[33.8%] left-4 sm:left-6 md:left-8 transform -translate-y-1/2 z-10 cursor-pointer"
                 onClick={onClick}
             >
                 <ChevronLeftIcon className="h-16 w-10 text-white hover:text-gray-300" />
@@ -84,17 +84,16 @@ const ProjectSection = () => {
     };
 
     return (
-        <div className="">
+        <div className="pt-14 sm:pt-0">
             {/* divcha */}
             <div className="max-w-[1620px] mx-auto ">
                 {/* divcon */}
                 <div className="text-center flex-col mb-8">
                     <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70] ">WoodPlus</h3>
-                    <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white ">Dự án nổi bật</h2>
-                    <p className="w-[300px] sm:w-[310px] md:w-[350px] lg:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
+                    <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white">Dự án nổi bật</h2>
+                    <p className="w-[330px] sm:w-[310px] md:w-[350px] lg:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
                         WoodPlus tự hào đã thực hiện hơn 1.000 dự án thiết kế và thi công nội thất, với 998 dự án hoàn
-                        thành trong suốt 8 năm hoạt động. Đội ngũ WoodPlus không ngừng sáng tạo và hoàn thiện từng chi
-                        tiết để mang lại không gian sống thể hiện dấu ấn cá nhân độc bản của gia chủ.
+                        thành trong suốt 8 năm hoạt động.
                     </p>
                 </div>
 
