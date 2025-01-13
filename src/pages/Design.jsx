@@ -34,10 +34,10 @@ const Design = () => {
                     {/* Thẻ divcut */}
                     <div className="w-full h-[100px] flex items-center justify-center">
                         {/* divcutl */}
-                        <div className="w-[130%] sm:w-[50%] h-[80%] sm:h-[100px] bg-[#0F0F0F] border-r-2 border-y-2">
+                        <div className="w-[180%] sm:w-[50%] h-[70%] sm:h-[100px] bg-[#0F0F0F] border-r-2 border-y-2">
                             <span
-                                className="pl-2 sm:pl-8 text-[32px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] font-bold text-left sm:text-center tracking-[2%]">SLOGAN <span
-                                className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text">WOODPLUS</span></span>
+                                className="pl-2 sm:pl-8 text-[32px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] font-bold text-left sm:text-center tracking-[2%]">Dịch vụ<span
+                                className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text"> thiết kế</span></span>
                         </div>
 
                         {/* divcutr */}
@@ -53,7 +53,7 @@ const Design = () => {
                         className="w-full max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 md:grid-cols-2 justify-between items-center ">
                         {/* Mô tả bên trái */}
                         <div className="w-full md:w-1/2">
-                            <p className="w-[300px] mx-auto sm:mt-[200px] text-center sm:text-left sm:text-[20px] text-white">We
+                            <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[22px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto sm:mt-[200px] text-center sm:text-left text-white">We
                                 are a passionate team committed to <br/>delivering
                                 the best products and services to our customers. Our mission is to bring quality
                                 and innovation to every home.</p>
@@ -87,26 +87,26 @@ const Design = () => {
                 </div>
             </div>
 
-            <DarkSpacing/>
+            <div className="hidden sm:block"><DarkSpacing/></div>
 
             <ProjectSection/>
 
-            <DarkSpacing/>
+            <div className="hidden sm:block"><DarkSpacing/></div>
 
-            <section className="relative">
-                <div
-                    className="absolute h-[36.5rem] w-full top-0 bg-gradient-to-r from-indigo-600 to-violet-600 -z-10"></div>
+            <section className="relative pt-14 sm:pt-0">
+            <div
+                    className="absolute h-[36.5rem] w-full top-0 -z-10"></div>
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="mb-10 text-center">
-                        <h2 className="font-Tangerine text-[22px] 2xl:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h2>
-                        <h1 className="text-[32px] 2xl:text-[48px] font-medium text-[#FFFFFF] mt-2">Tổng quan bảng giá
-                            thiết kế</h1>
+                        <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
+                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Tổng quan bảng giá
+                            thiết kế</h2>
                     </div>
 
                     <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-8 lg:space-y-0 lg:items-center">
 
                         <div
-                            className="group relative flex flex-col mx-auto w-full max-w-sm transition-all duration-300 border-t-[1px] border-[#757575] p-4 xl:p-8">
+                            className="group relative flex flex-col mx-auto w-full max-w-sm transition-all duration-300 p-4 xl:p-8">
                             <div className="border-b border-solid border-[#757575] pb-9 mb-9">
                                 <h3 className="font-manrope text-[20px] sm:text-[24px] font-bold mb-7 text-center text-[#BEAB81]">Thiết
                                     kế Nội thất</h3>
@@ -118,18 +118,14 @@ const Design = () => {
                                 </div>
                             </div>
 
-                            <ul className="mb-12 ml-[120px] sm:ml-[85px] space-y-1 text-center text-[13px] sm:text-[17px] text-[#CECECE]">
+                            <ul className="mb-12 ml-[80px] sm:ml-[85px] space-y-1 text-center text-[13px] sm:text-[17px] text-[#CECECE]">
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
                                     <span>Hiện đại</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Tân cổ điển</span>
-                                </li>
-                                <li className="flex items-center space-x-3.5">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Cổ điển</span>
+                                    <span>Cổ điển, Tân cổ điển</span>
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
@@ -141,7 +137,7 @@ const Design = () => {
                                 </li>
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
-                                    <span>Tặng 50% chi phí TK khi thi công</span>
+                                    <span className="text-left">Tặng 50% chi phí TK khi thi công</span>
                                 </li>
 
                             </ul>
@@ -151,7 +147,7 @@ const Design = () => {
                         </div>
 
                         <div
-                            className="group relative flex flex-col mx-auto w-full max-w-sm transition-all duration-300 border-t-[1px] border-[#757575] p-4 xl:p-8">
+                            className="group relative flex flex-col mx-auto w-full max-w-sm transition-all duration-300 p-4 xl:p-8">
                             <div className="border-b border-solid border-[#757575] pb-9 mb-9">
                                 <h3 className="font-manrope text-[20px] sm:text-[24px] font-bold mb-7 text-center text-[#BEAB81]">Thiết
                                     kế Nội thất</h3>
@@ -163,7 +159,7 @@ const Design = () => {
                                 </div>
                             </div>
 
-                            <ul className="mb-12 ml-[120px] sm:ml-[85px] space-y-1 text-center text-[13px] sm:text-[17px] text-[#CECECE]">
+                            <ul className="mb-12 ml-[80px] sm:ml-[85px] space-y-1 text-center text-[13px] sm:text-[17px] text-[#CECECE]">
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
                                     <span>
@@ -201,7 +197,7 @@ Hỗ trợ Hồ sơ Cấp phép XD</span>
                         </div>
 
                         <div
-                            className="group relative flex flex-col mx-auto w-full max-w-sm transition-all duration-300 border-t-[1px] border-[#757575] p-4 xl:p-8">
+                            className="group relative flex flex-col mx-auto w-full max-w-sm transition-all duration-300 p-4 xl:p-8">
                             <div className="border-b border-solid border-[#757575] pb-9 mb-9">
                                 <h3 className="font-manrope text-[20px] sm:text-[24px] font-bold mb-7 text-center text-[#BEAB81]">Thiết
                                     kế Nội thất</h3>
@@ -213,7 +209,7 @@ Hỗ trợ Hồ sơ Cấp phép XD</span>
                                 </div>
                             </div>
 
-                            <ul className="mb-12 ml-[120px] sm:ml-[85px] space-y-1 text-center text-[13px] sm:text-[17px] text-[#CECECE]">
+                            <ul className="mb-12 ml-[80px] sm:ml-[85px] space-y-1 text-center text-[13px] sm:text-[17px] text-[#CECECE]">
                                 <li className="flex items-center space-x-3.5">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#BEAB81]"></span>
                                     <span>
@@ -255,20 +251,16 @@ Hỗ trợ Hồ sơ Cấp phép XD</span>
             </section>
 
 
-            <DarkSpacing/>
+            <div className="hidden sm:block"><DarkSpacing/></div>
 
             {/* Thẻ div cha */}
-            <div className="w-full text-white">
+            <div className="w-full text-white pt-14 sm:pt-0">
                 {/* div con */}
                 <div className="w-full max-w-[1620px] mx-auto pb-14 px-4 sm:px-6 lg:px-8">
                     {/* div text */}
                     <div className="mb-10 text-center">
-                        <h2 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[28px] font-bold text-[#AF9A70]">
-                            WoodPlus Blog
-                        </h2>
-                        <h1 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium text-[#FFFFFF] mt-2">
-                            Những bài viết mới nhất
-                        </h1>
+                        <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
+                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Xu hướng và tin tức</h2>
                     </div>
 
                     {/* div desc */}

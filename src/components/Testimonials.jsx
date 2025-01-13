@@ -113,9 +113,9 @@ const Testimonials = () => {
 
                     {/* Thẻ div text */}
                     <div className="text-center md:text-left w-full md:w-[600px]">
-                        <p className="w-[270px] sm:w-[500px] md:w-[380px] lg:w-[490px] xl:w-[530px] 2xl:w-[630px] mx-auto md:mx-0 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
+                        <p className="w-[350px] sm:w-[500px] md:w-[380px] lg:w-[490px] xl:w-[530px] 2xl:w-[630px] mx-auto md:mx-0 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
                             Khách hàng không chỉ đánh giá cao về chất lượng sản phẩm, mà còn cảm nhận được
-                            sự tận tâm của đội ngũ trong mỗi dự án.Chúng tôi cam kết cung cấp các giải pháp "Giá trị thật, chất lượng thật" đến với khách hàng.
+                            sự tận tâm của đội ngũ trong mỗi dự án.Chúng tôi cam kết cung cấp các giải pháp "Giá trị thật, chất lượng thật" đến khách hàng.
                         </p>
 
                     </div>

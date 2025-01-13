@@ -79,17 +79,15 @@ const Project = () => {
                 <div className="absolute inset-0 bg-black bg-opacity-0"></div>
             </div>
 
-            <DarkSpacing/>
+            <div className="hidden sm:block"><DarkSpacing/></div>
 
             {/* Thẻ divcha */}
-            <div className="w-full text-white">
+            <div className="w-full text-white pt-14 sm:pt-0">
                 <div className="w-full max-w-[1620px] mx-auto pb-14 px-4">
                     {/* Phần tiêu đề */}
                     <div className="mb-10 text-center">
-                        <h2 className="font-Tangerine text-[22px] 2xl:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h2>
-                        <h1 className="text-[26px] 2xl:text-[48px] font-medium text-white mt-2">
-                            Không gian sống của người truyền cảm hứng
-                        </h1>
+                        <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
+                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Ngôi nhà của người truyền cảm hứng</h2>
                     </div>
 
                     {/* Các không gian */}
@@ -144,9 +142,8 @@ const Project = () => {
                 <div className="max-w-[1620px] mx-auto pb-14 px-4">
                     {/* Tiêu đề */}
                     <div className="mb-10 text-center">
-                        <h2 className="font-Tangerine text-[22px] 2xl:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h2>
-                        <h1 className="text-[26px] 2xl:text-[48px] font-medium text-[#0F0F0F] mt-2">Các công trình
-                            khác</h1>
+                        <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
+                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#0F0F0F] mt-2">Các công trình khác</h2>
                     </div>
 
                     {/* Grid các công trình */}

@@ -28,7 +28,7 @@ const ContactSection = () => {
                         WoodPlus
                     </h3>
                     <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white mt-2">
-                        Liên hệ nhận tư vấn miễn phí
+                        Nhận tư vấn miễn phí
                     </h2>
                 </div>
 

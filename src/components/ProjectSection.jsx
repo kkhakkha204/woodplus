@@ -251,21 +251,30 @@ const ProjectSection = () => {
                     {/* Nút Liên hệ */}
                     <Link
                         to="/dự-án"
-                        className=" w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
+                        className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
                     >
-                        {!isHovered ? (
-                            <TbArrowForwardUp className="inline-block text-[25px]"/>
-                        ) : (
-                            "Xem dự án"
-                        )}
+                        {/* Hiển thị icon trên màn hình lớn */}
+                        <span className="hidden sm:inline text-[18px]">
+        {!isHovered ? (
+            <TbArrowForwardUp className="inline-block text-[25px]"/>
+        ) : (
+            "Xem thêm"
+        )}
+    </span>
+
+                        {/* Hiển thị chữ trên điện thoại và máy tính bảng */}
+                        <span className="sm:hidden text-[14px] font-semibold">
+        Xem thêm
+    </span>
                     </Link>
+
 
                     {/* Nút Tư vấn */}
                     <Link
                         to="/liên-hệ"
-                        className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[15px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
+                        className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
                     >
                         Tư vấn
                     </Link>

@@ -11,7 +11,7 @@ import Design from "./pages/Design";
 import Construction from "./pages/Construction";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
-import Blog from "./pages/Blog";
+
 import NewsList from "./pages/NewsList";
 import NewsDetail from "./pages/NewsDetail";
 

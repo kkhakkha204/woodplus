@@ -20,10 +20,11 @@ module.exports = {
       keyframes: {
 
       },
+
     },
   },
   plugins: [
-
+    require('@tailwindcss/typography')
   ],
 };
 

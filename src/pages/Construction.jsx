@@ -42,10 +42,10 @@ const Construction = () => {
                             <div className="absolute top-1/2 left-0 w-full border-t-2 border-white"></div>
                         </div>
                         {/* divcutl */}
-                        <div className="w-[130%] sm:w-[50%] h-[80%] sm:h-[100px] bg-[#0F0F0F] border-l-2 border-y-2">
+                        <div className="w-[180%] sm:w-[50%] h-[70%] sm:h-[100px] bg-[#0F0F0F] border-l-2 border-y-2">
                             <span
-                                className="pl-4 sm:pl-8 text-[32px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] font-bold text-left sm:text-center tracking-[2%]">SLOGAN <span
-                                className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text">WOODPLUS</span></span>
+                                className="pl-5 sm:pl-8 text-[32px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] font-bold text-left sm:text-center tracking-[2%]">Dịch vụ<span
+                                className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text"> thi công</span></span>
                         </div>
                     </div>
 
@@ -55,7 +55,7 @@ const Construction = () => {
                         className="w-full max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 md:grid-cols-2 justify-between items-center ">
                         {/* Mô tả bên trái */}
                         <div className="w-full md:w-1/2">
-                            <p className="w-[300px] mx-auto sm:mt-[200px] text-center sm:text-left sm:text-[20px] text-white">We
+                            <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[22px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto sm:mt-[200px] text-center sm:text-left text-white">We
                                 are a passionate team committed to <br/>delivering
                                 the best products and services to our customers. Our mission is to bring quality
                                 and innovation to every home.</p>
@@ -89,41 +89,42 @@ const Construction = () => {
                 </div>
             </div>
 
-            <DarkSpacing/>
+            <div className="hidden sm:block"><DarkSpacing/></div>
 
             {/* Thẻ divcha */}
-            <div className="w-full bg-[#e7e5e4]">
+            <div className="w-full bg-[#e7e5e4] mt-14 sm:mt-0">
                 {/* divcon */}
-                <div className="w-full max-w-[1620px] bg-[#0F0F0F] mx-auto pb-14 px-4 sm:px-6 lg:px-8 flex flex-wrap lg:flex-nowrap items-start justify-between">
+                <div
+                    className="w-full max-w-[1620px] bg-[#0F0F0F] mx-auto pb-14 px-4 sm:px-6 lg:px-8 flex flex-wrap lg:flex-nowrap items-start justify-between">
                     {/* divl */}
                     <div className="w-full lg:w-[44%] mb-8 lg:mb-0 text-center sm:text-left">
                         {/* divtext */}
                         <div className="mb-6">
-                            <h2 className="font-Tangerine text-[22px] 2xl:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h2>
-                            <h1 className="text-[26px] 2xl:text-[48px] font-medium text-[#FFFFFF] ">
-                                Dịch vụ chúng tôi cung cấp
-                            </h1>
+                            <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
+                            <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Dịch
+                                vụ cung cấp</h2>
                         </div>
 
                         {/* divdesc */}
                         {[
                             {
-                                title: "Dịch vụ 1",
+                                title: "Thi công nội thất",
                                 description:
-                                    "Chúng tôi cung cấp dịch vụ thiết kế và thi công nội thất cao cấp, đảm bảo sự hài lòng của khách hàng với chất lượng và thẩm mỹ vượt trội.",
+                                    "Cung cấp dịch vụ thi công nội thất chuyên nghiệp, đảm bảo chất lượng và thẩm mỹ cao, mang lại không gian sống hoàn hảo cho khách hàng.",
                             },
                             {
-                                title: "Dịch vụ 2",
+                                title: "Xây nhà trọn gói",
                                 description:
-                                    "Chúng tôi mang đến giải pháp nội thất thông minh, tối ưu không gian sống và làm việc, đáp ứng nhu cầu hiện đại của khách hàng.",
+                                    "Dịch vụ xây nhà trọn gói từ thiết kế đến thi công, cam kết đáp ứng mọi yêu cầu về công năng và phong cách, mang lại không gian sống tiện nghi và hiện đại.",
                             },
                             {
-                                title: "Dịch vụ 3",
+                                title: "Sửa nhà trọn gói",
                                 description:
-                                    "Dịch vụ tư vấn và bảo trì nội thất, đảm bảo chất lượng lâu dài và tiết kiệm chi phí cho khách hàng.",
+                                    "Dịch vụ sửa chữa và nâng cấp nhà toàn diện, tối ưu chi phí và thời gian, mang đến không gian sống mới mẻ và tiện nghi cho khách hàng.",
                             },
+
                         ].map((service, index) => (
-                            <div key={index} className="mb-10 text-center sm:text-left mx-auto w-[300px] sm:w-[500px]">
+                            <div key={index} className="mb-10 text-center sm:text-left mx-auto w-[330px] sm:w-[500px]">
                                 <h2 className="text-[20px] sm:text-[24px] font-medium text-[#AF9A70]">{service.title}</h2>
                                 <p className="text-[13px] sm:text-[17px] text-[#CECECE]">{service.description}</p>
                             </div>
@@ -142,24 +143,20 @@ const Construction = () => {
             </div>
 
 
-            <DarkSpacing/>
+            <div className="hidden sm:block"><DarkSpacing/></div>
 
             <ProjectSection/>
 
-            <DarkSpacing/>
+            <div className="hidden sm:block"><DarkSpacing/></div>
 
-            {/* Thẻ div cha */}
-            <div className="w-full text-white">
+            <div className="w-full text-white pt-14 sm:pt-0">
                 {/* div con */}
                 <div className="w-full max-w-[1620px] mx-auto pb-14 px-4 sm:px-6 lg:px-8">
                     {/* div text */}
                     <div className="mb-10 text-center">
-                        <h2 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[28px] font-bold text-[#AF9A70]">
-                            WoodPlus Blog
-                        </h2>
-                        <h1 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-medium text-[#FFFFFF] mt-2">
-                            Những bài viết mới nhất
-                        </h1>
+                        <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
+                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Xu
+                            hướng và tin tức</h2>
                     </div>
 
                     {/* div desc */}
@@ -216,7 +213,7 @@ const Construction = () => {
                 </div>
             </div>
 
-            <DarkSpacing/>
+            <div className="hidden sm:block"><DarkSpacing/></div>
 
             <ContactSection/>
 

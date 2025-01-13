@@ -13,7 +13,7 @@ const Navbar = () => {
             const currentScrollY = window.scrollY;
 
             // Kiểm tra độ trong suốt
-            setIsTransparent(currentScrollY <= 800);
+            setIsTransparent(currentScrollY <= 50);
 
             // Ẩn hoặc hiển thị menu
             if (currentScrollY > lastScrollY && currentScrollY > 100) {
