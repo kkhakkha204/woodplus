@@ -4,7 +4,7 @@ import {TbArrowForwardUp} from "react-icons/tb";
 const Testimonials = () => {
     const [isHovered, setIsHovered] = useState(false);
     return (
-        <div className="w-full flex justify-center items-center pt-14 sm:pt-0">
+        <div className="w-full flex justify-center items-center pt-14 md:pt-0">
             {/* Thẻ div cha */}
             <div className="w-full max-w-[1620px] grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Thẻ div right */}
@@ -56,13 +56,10 @@ const Testimonials = () => {
                         {/* Thẻ div em */}
                         <div
                             className="absolute bottom-0 left-0 w-3/4 h-1/2 sm:w-[300px] sm:h-[180px] md:w-[375px] md:h-[200px] bg-[#0F0F0F] bg-opacity-85 p-2">
-                            <h3 className="text-[20px] sm:text-[22px] md:text-[24px] xl:text-[28px] 2xl:text-[28px] font-medium text-white">Anh
-                                Đức Quân</h3>
-                            <p className="text-[15px] sm:text-[16px] md:text-[17px] lg-[18px] xl:text-[19px] font-medium text-[#BEAB81] italic">Eco
-                                City Thanh Trì </p>
+                            <h3 className="text-[20px] sm:text-[22px] md:text-[24px] xl:text-[28px] 2xl:text-[28px] font-medium text-white">Youtuber Lê Hoàng Nam</h3>
+                            <p className="text-[15px] sm:text-[16px] md:text-[17px] lg-[18px] xl:text-[19px] font-medium text-[#BEAB81] italic">Ocean Park  </p>
                             <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[17px] text-[#CECECE] mt-2">
-                                "Nhà đẹp, hiện đại với giá hợp lý, đội ngũ tư vấn trẻ trung, chuyên nghiệp, nhiệt tình.
-                                Highly recommend!"
+                                "Nhà không chỉ đẹp mà còn khiến mọi người trầm trồ, tự hào. Mong phong cách Indochine trở nên phổ biến, cảm ơn ekip WoodPlus đã biến ý tưởng thành hiện thực."
                             </p>
                         </div>
                     </div>
@@ -79,13 +76,10 @@ const Testimonials = () => {
                         {/* Thẻ div em */}
                         <div
                             className="absolute bottom-0 left-0 w-3/4 h-1/2 sm:w-[300px] sm:h-[180px] md:w-full md:h-[200px] lg:w-[375px] bg-[#0F0F0F] bg-opacity-85 p-2">
-                            <h3 className="text-[20px] sm:text-[22px] xl:text-[28px] 2xl:text-[28px] font-medium text-white">Anh
-                                Đức Quân</h3>
-                            <p className="text-[15px] sm:text-[16px] md:text-[17px] lg-[18px] xl:text-[19px] font-medium text-[#BEAB81] italic">Eco
-                                City Thanh Trì </p>
+                            <h3 className="text-[20px] sm:text-[22px] xl:text-[28px] 2xl:text-[28px] font-medium text-white">Chị Hiền Nguyễn</h3>
+                            <p className="text-[15px] sm:text-[16px] md:text-[17px] lg-[18px] xl:text-[19px] font-medium text-[#BEAB81] italic">Biệt thự La Phù  </p>
                             <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[17px] text-[#CECECE] mt-2">
-                                "Nhà đẹp, hiện đại với giá hợp lý, đội ngũ tư vấn trẻ trung, chuyên nghiệp, nhiệt tình.
-                                Highly recommend!"
+                                "Ngôi nhà là tâm huyết, và chọn WoodPlus là quyết định sáng suốt. Cảm ơn đội ngũ đã mang đến căn nhà đúng mong muốn của gia đình."
                             </p>
                         </div>
                     </div>
@@ -100,13 +94,10 @@ const Testimonials = () => {
                         {/* Thẻ div em */}
                         <div
                             className="absolute bottom-0 left-0 w-3/4 h-1/2 sm:w-[300px] sm:h-[180px] md:w-full md:h-[200px] lg:w-[375px] bg-[#0F0F0F] bg-opacity-85 p-2">
-                            <h3 className="text-[20px] sm:text-[22px] xl:text-[28px] 2xl:text-[28px] font-medium text-white">Anh
-                                Đức Quân</h3>
-                            <p className="text-[15px] sm:text-[16px] md:text-[17px] lg-[18px] xl:text-[19px] font-medium text-[#BEAB81] italic">Eco
-                                City Thanh Trì </p>
+                            <h3 className="text-[20px] sm:text-[22px] xl:text-[28px] 2xl:text-[28px] font-medium text-white">Chị Yến</h3>
+                            <p className="text-[15px] sm:text-[16px] md:text-[17px] lg-[18px] xl:text-[19px] font-medium text-[#BEAB81] italic">Duplex Royal City  </p>
                             <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[17px] text-[#CECECE] mt-2">
-                                "Nhà đẹp, hiện đại với giá hợp lý, đội ngũ tư vấn trẻ trung, chuyên nghiệp, nhiệt tình.
-                                Highly recommend!"
+                                "Dù mặt bằng căn hộ khó, WoodPlus vẫn hoàn thiện tối đa cả thẩm mỹ lẫn công năng. Đội ngũ trẻ đầy tâm huyết đã biến mọi ý tưởng thành hiện thực."
                             </p>
                         </div>
                     </div>
@@ -169,13 +160,10 @@ const Testimonials = () => {
                         {/* Thẻ div em */}
                         <div
                             className="absolute bottom-0 left-0 w-[250px] h-[150px] sm:w-[300px] sm:h-[180px] md:w-full md:h-[200px] lg:w-[375px] bg-[#0F0F0F] bg-opacity-85 p-2">
-                            <h3 className="text-[20px] sm:text-[22px] xl:text-[28px] 2xl:text-[28px] font-medium text-white">Anh
-                                Đức Quân</h3>
-                            <p className="text-[15px] sm:text-[16px] md:text-[17px] lg-[18px] xl:text-[19px] font-medium text-[#BEAB81] italic">Eco
-                                City Thanh Trì </p>
+                            <h3 className="text-[20px] sm:text-[22px] xl:text-[28px] 2xl:text-[28px] font-medium text-white">Youtuber Lê Hoàng Nam</h3>
+                            <p className="text-[15px] sm:text-[16px] md:text-[17px] lg-[18px] xl:text-[19px] font-medium text-[#BEAB81] italic">Ocean Park </p>
                             <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[17px] text-[#CECECE] mt-2">
-                                "Nhà đẹp, hiện đại với giá hợp lý, đội ngũ tư vấn trẻ trung, chuyên nghiệp, nhiệt tình.
-                                Highly recommend!"
+                                "Nhà không chỉ đẹp mà còn khiến mọi người trầm trồ, tự hào. Mong phong cách Indochine trở nên phổ biến, cảm ơn ekip WoodPlus đã biến ý tưởng thành hiện thực."
                             </p>
                         </div>
                     </div>

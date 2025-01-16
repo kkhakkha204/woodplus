@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { client, urlFor } from "../sanityClient";
+import { Link } from "react-router-dom";
 
 const BlogSection = () => {
     const [posts, setPosts] = useState([]);
@@ -34,15 +35,16 @@ const BlogSection = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {posts.map((post, index) => (
-                        <div
+                        <Link
+                            to={`/news/${post.slug.current}`}
                             key={post.slug.current}
-                            className="w-full mx-auto max-w-[500px] bg-[#0F0F0F] p-4 rounded-lg transition-all duration-300 hover:shadow-lg"
+                            className="w-full mx-auto max-w-[500px] bg-[#0F0F0F] p-4 rounded-lg transition-all duration-300 hover:shadow-lg hover:bg-[#1A1A1A]"
                         >
                             {/* Hình ảnh bài viết */}
                             <img
                                 src={urlFor(post.mainImage).url()}
                                 alt={post.title}
-                                className="w-full h-[200px] sm:h-[250px] lg:h-[305px] object-cover rounded-lg"
+                                className="w-full h-[200px] sm:h-[250px] lg:h-[305px] object-cover rounded-lg transition-transform duration-300 hover:scale-105"
                             />
                             {/* Tiêu đề */}
                             <h3 className="text-[20px] sm:text-[22px] font-medium text-white mt-4">
@@ -60,7 +62,7 @@ const BlogSection = () => {
                             <p className="text-[12px] sm:text-[14px] text-[#CECECE] mt-2">
                                 {new Date(post.publishedAt).toLocaleDateString("vi-VN")}
                             </p>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

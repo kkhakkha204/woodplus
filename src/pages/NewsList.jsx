@@ -49,7 +49,7 @@ const NewsList = () => {
 
 
     return (
-        <main className="bg-[#0F0F0F] pt-20 sm:pt-20">
+        <main className="bg-[#0F0F0F] py-20 sm:py-20">
             <div className="container mx-auto px-4">
                 {/* Hero Section */}
                 <div className="relative bg-cover bg-center h-[300px] md:h-[400px]">

@@ -52,7 +52,7 @@ const AboutUs = () => {
                         {/* Mô tả bên trái */}
                         <div className="w-full lg:w-1/2">
                             <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[22px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto lg:mt-[200px] text-center lg:text-left text-white">We
-                                are a passionate team committed to <br/>delivering
+                                are a passionate team committed to delivering
                                 the best products and services to our customers. Our mission is to bring quality
                                 and innovation to every home.</p>
                         </div>
@@ -186,7 +186,6 @@ const AboutUs = () => {
                 </div>
             </section>
 
-            <div className="hidden md:block"><DarkSpacing/></div>
 
             <div className="">
 
@@ -199,11 +198,7 @@ const AboutUs = () => {
                         <div className=" px-8 text-center shadow">
 
                             <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Giá trị cốt lõi</h3>
-                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Tailor
-                                your
-                                landing page's
-                                look
-                                and feel, from the color scheme to the font size, to the design of the page.
+                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Chúng tôi đặt khách hàng làm trung tâm, cam kết mang đến những giải pháp thiết kế nội thất sáng tạo, chất lượng và bền vững, đồng thời không ngừng đổi mới để đáp ứng mọi nhu cầu đa dạng.
                             </p>
                         </div>
 
@@ -211,11 +206,7 @@ const AboutUs = () => {
                         <div className=" px-8 text-center shadow">
 
                             <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Tầm nhìn</h3>
-                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Tailor
-                                your
-                                landing page's
-                                look
-                                and feel, from the color scheme to the font size, to the design of the page.
+                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Trở thành thương hiệu dẫn đầu trong lĩnh vực thiết kế và thi công nội thất, mang lại giá trị vượt trội và kiến tạo không gian sống đẳng cấp cho khách hàng trên toàn cầu.
                             </p>
                         </div>
 
@@ -223,11 +214,7 @@ const AboutUs = () => {
                         <div className=" px-8 text-center shadow">
 
                             <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Sứ mệnh</h3>
-                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Tailor
-                                your
-                                landing page's
-                                look
-                                and feel, from the color scheme to the font size, to the design of the page.
+                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Kiến tạo không gian sống tinh tế và tiện nghi, kết hợp hài hòa giữa thẩm mỹ và công năng, góp phần nâng cao chất lượng cuộc sống và truyền cảm hứng qua từng thiết kế.
                             </p>
                         </div>
                     </div>

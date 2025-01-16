@@ -38,7 +38,7 @@ const Navbar = () => {
     return (
         <div
             className={`navbarcha w-full border-b-[1px] border-[#757575] font-medium tracking-[5%] text-[18px] text-[#FFFFFF] fixed top-0 left-0 z-50 pointer-events-auto transition-transform duration-300 ${
-                isTransparent ? "bg-opacity-50 bg-[#272727]" : "bg-opacity-90 bg-[#272727]"
+                isTransparent ? "bg-opacity-50 bg-[#272727]" : "bg-opacity-95 bg-[#272727]"
             } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
         >
             <div className="div1 w-full xl:max-w-[1250px] 2xl:max-w-[1620px] mx-auto flex justify-between items-center h-[80px] sm:h-[90px]">

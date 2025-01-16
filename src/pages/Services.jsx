@@ -35,7 +35,28 @@ const Services = () => {
 
 
                     {/* Thẻ divcut */}
-                    <div className="w-full h-[170px] sm:h-[230px] relative">
+                    <div className="hidden md:block w-full h-[170px] sm:h-[230px] relative">
+                        {/* divcutleft */}
+                        <div
+                            className="w-[80.40%] sm:w-[60.05%] h-[80px] sm:h-[100px] bg-[#0F0F0F] border-t-[2px] border-r-[2px] absolute top-0 left-0 flex items-center justify-center">
+                            {/* Nội dung cho divcutleft */}
+                            <span
+                                className="text-[34px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] font-bold text-center tracking-[2%]">Cung cấp dịch vụ<span
+                                className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text"> tận tâm</span></span>
+                        </div>
+
+                        {/* divcutright */}
+                        <div
+                            className="w-[80.05%] sm:w-[65%] h-[80px] sm:h-[100px] bg-[#0F0F0F] border-b-[2px] border-l-[2px] absolute -bottom-2 sm:-bottom-4 right-0 flex items-center ">
+                            {/* Nội dung cho divcutright */}
+                            <span
+                                className="text-[34px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] font-bold ml-6 sm:ml-44 text-center tracking-[2%]">tạo dựng giá trị
+                            <span
+                                className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text"> bền lâu.</span></span>
+                        </div>
+                    </div>
+
+                    <div className="md:hidden w-full h-[170px] sm:h-[230px] relative">
                         {/* divcutleft */}
                         <div
                             className="w-[80.40%] sm:w-[60.05%] h-[80px] sm:h-[100px] bg-[#0F0F0F] border-t-[2px] border-r-[2px] absolute top-0 left-0 flex items-center justify-center">
@@ -47,10 +68,10 @@ const Services = () => {
 
                         {/* divcutright */}
                         <div
-                            className="w-[80.05%] sm:w-[65%] h-[80px] sm:h-[100px] bg-[#0F0F0F] border-b-[2px] border-l-[2px] absolute -bottom-2 sm:-bottom-0 right-0 flex items-center ">
+                            className="w-[80.05%] sm:w-[65%] h-[80px] sm:h-[100px] bg-[#0F0F0F] border-b-[2px] border-l-[2px] absolute -bottom-2 sm:-bottom-4 right-0 flex items-center ">
                             {/* Nội dung cho divcutright */}
                             <span
-                                className="text-[34px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] font-bold ml-6 sm:ml-44 text-center tracking-[2%]">giá trị
+                                className="text-[34px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] font-bold ml-6 sm:ml-44 text-center tracking-[2%]">Giá trị
                             <span
                                 className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text"> bền lâu.</span></span>
                         </div>
@@ -187,7 +208,7 @@ const Services = () => {
                         </div>
                     </dl>
                     <div
-                        className="text-center sm:mt-[230px] space-x-1 flex justify-center md:justify-end items-center">
+                        className="text-center space-x-1 flex justify-center items-center mt-10">
                         {/* Nút Liên hệ */}
                         <Link
                             to="/dự-án"

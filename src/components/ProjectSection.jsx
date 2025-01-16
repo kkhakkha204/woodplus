@@ -84,7 +84,7 @@ const ProjectSection = () => {
     };
 
     return (
-        <div className="pt-14 sm:pt-0">
+        <div className="pt-14 md:pt-0">
             {/* divcha */}
             <div className="max-w-[1620px] mx-auto ">
                 {/* divcon */}

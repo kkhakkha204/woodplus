@@ -152,7 +152,7 @@ const HomePage = () => {
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
                                 <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
-                                    Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui
+                                    Chúng tôi mang đến những ý tưởng thiết kế sáng tạo, độc đáo, phù hợp với phong cách và nhu cầu riêng của từng khách hàng, tạo nên không gian sống hoàn hảo.
                                 </p>
                             </div>
                         </div>
@@ -175,7 +175,7 @@ const HomePage = () => {
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
                                 <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
-                                    Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui
+                                    Từ ý tưởng đến hoàn thiện, chúng tôi cung cấp giải pháp toàn diện, đảm bảo mọi chi tiết được thực hiện đồng bộ, chuyên nghiệp và đúng tiến độ.
                                 </p>
                             </div>
                         </div>
@@ -197,7 +197,7 @@ const HomePage = () => {
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
                                 <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
-                                    Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui
+                                    Đội ngũ thi công lành nghề của chúng tôi cam kết biến bản vẽ thiết kế thành hiện thực với chất lượng cao và sự tỉ mỉ trong từng công đoạn.
                                 </p>
                             </div>
                         </div>
