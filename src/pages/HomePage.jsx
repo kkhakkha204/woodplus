@@ -16,7 +16,7 @@ const HomePage = () => {
         <main className="bg-[#0F0F0F]">
             {/* HeroSection */}
             <div
-                className="h-[550px] sm:h-[650px] lg:h-[750px] xl:h-[800px] 2xl:h-[900px] w-full bg-cover bg-center relative">
+                className="h-[550px] sm:h-[600px] lg:h-[750px] xl:h-[800px] 2xl:h-[800px] w-full bg-cover bg-center relative">
                 {/* Lớp chứa ảnh nền với filter brightness */}
                 <div
                     className="absolute inset-0 bg-cover bg-center"
@@ -59,12 +59,12 @@ const HomePage = () => {
                         {/* Nút Liên hệ */}
                         <Link
                             to="/dự-án"
-                            className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
+                            className="w-[100px] h-[35px] sm:w-[115px] sm:h-[36px] lg:w-[125px] lg:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}
                         >
                             {/* Hiển thị icon trên màn hình lớn */}
-                            <span className="hidden sm:inline text-[18px]">
+                            <span className="hidden lg:inline text-[18px]">
         {!isHovered ? (
             <TbArrowForwardUp className="inline-block text-[25px]" />
         ) : (
@@ -73,7 +73,7 @@ const HomePage = () => {
     </span>
 
                             {/* Hiển thị chữ trên điện thoại và máy tính bảng */}
-                            <span className="sm:hidden text-[14px] font-semibold">
+                            <span className="lg:hidden text-[14px] sm:text-[15px] font-semibold">
         Xem dự án
     </span>
                         </Link>
@@ -82,7 +82,7 @@ const HomePage = () => {
                         {/* Nút Tư vấn */}
                         <Link
                             to="/liên-hệ"
-                            className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
+                            className="w-[100px] h-[35px] sm:w-[115px] sm:h-[36px] lg:w-[125px] lg:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[15px] lg:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
                         >
                             Tư vấn
                         </Link>
@@ -110,14 +110,14 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
             <ProjectSection/>
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
 
-            <div className="w-full flex justify-center items-center mb-[18px] pt-14 sm:pt-0 pb-8">
+            <div className="w-full flex justify-center items-center mb-[18px] pt-14 md:pt-0 pb-8">
 
                 <div className="w-full max-w-[1620px]">
 
@@ -292,15 +292,15 @@ const HomePage = () => {
             </div>
 
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
             <Testimonials/>
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
             <ContactSection/>
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
         </main>
     );
 };

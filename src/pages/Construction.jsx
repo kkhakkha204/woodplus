@@ -5,6 +5,8 @@ import LightSpacing from "../components/LightSpacing";
 import ContactSection from "../components/ContactSection";
 import LightProjectSection from "../components/LightProjectSection";
 import ProjectSection from "../components/ProjectSection";
+import {Link} from "react-router-dom";
+import BlogSection from "../components/BlogSection";
 
 const Construction = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -17,8 +19,8 @@ const Construction = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
-                        backgroundImage: "url('/assets/images/aboutus/12.jpg')",
-                        filter: "brightness(0.85) grayscale(1)"
+                        backgroundImage: "url('/assets/images/banner/banner1.jpg')",
+                        filter: "brightness(0.85)"
                     }}
                 ></div>
                 {/* Lớp phủ màu đen nhẹ */}
@@ -42,7 +44,7 @@ const Construction = () => {
                             <div className="absolute top-1/2 left-0 w-full border-t-2 border-white"></div>
                         </div>
                         {/* divcutl */}
-                        <div className="w-[180%] sm:w-[50%] h-[70%] sm:h-[100px] bg-[#0F0F0F] border-l-2 border-y-2">
+                        <div className="w-[180%] sm:w-[50%] h-[60%] sm:h-[100px] bg-[#0F0F0F] border-l-2 border-y-2">
                             <span
                                 className="pl-5 sm:pl-8 text-[32px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] font-bold text-left sm:text-center tracking-[2%]">Dịch vụ<span
                                 className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text"> thi công</span></span>
@@ -62,37 +64,47 @@ const Construction = () => {
                         </div>
 
                         {/* Nút liên hệ và tư vấn */}
-                        <div className="text-center sm:flex justify-start md:justify-end sm:mt-[230px] space-x-1">
+                        <div
+                            className="text-center sm:mt-[230px] space-x-1 flex justify-center md:justify-end items-center">
                             {/* Nút Liên hệ */}
-                            <button
-                                className="w-[90px] h-[35px] sm:w-[100px] sm:h-[40px] md:w-[125px] md:h-[45px] bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                                onMouseEnter={() => setIsHovered(true)} // Thay đổi trạng thái khi hover
-                                onMouseLeave={() => setIsHovered(false)} // Trở lại trạng thái ban đầu khi rời chuột
+                            <Link
+                                to="/dự-án"
+                                className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
+                                onMouseEnter={() => setIsHovered(true)}
+                                onMouseLeave={() => setIsHovered(false)}
                             >
-                                {/* Hiển thị icon nếu chưa hover */}
-                                {!isHovered ? (
-                                    <TbArrowForwardUp
-                                        className="inline-block text-[25px] sm:text-[30px] md:text-[35px] mb-[0.1rem]"/>
-                                ) : (
-                                    "Liên hệ"
-                                )}
-                            </button>
+                                {/* Hiển thị icon trên màn hình lớn */}
+                                <span className="hidden sm:inline text-[18px]">
+        {!isHovered ? (
+            <TbArrowForwardUp className="inline-block text-[25px]"/>
+        ) : (
+            "Liên hệ"
+        )}
+    </span>
+
+                                {/* Hiển thị chữ trên điện thoại và máy tính bảng */}
+                                <span className="sm:hidden text-[14px] font-semibold">
+        Liên hệ
+    </span>
+                            </Link>
+
 
                             {/* Nút Tư vấn */}
-                            <button
-                                className="w-[90px] h-[35px] sm:w-[100px] sm:h-[40px] md:w-[125px] md:h-[45px]  bg-[#272727] text-[#C4B58E] font-semibold text-[15px] sm:text-[16px] md:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
+                            <Link
+                                to="/liên-hệ"
+                                className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
                             >
                                 Tư vấn
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
             {/* Thẻ divcha */}
-            <div className="w-full bg-[#e7e5e4] mt-14 sm:mt-0">
+            <div className="w-full bg-[#e7e5e4] mt-14 md:mt-0">
                 {/* divcon */}
                 <div
                     className="w-full max-w-[1620px] bg-[#0F0F0F] mx-auto pb-14 px-4 sm:px-6 lg:px-8 flex flex-wrap lg:flex-nowrap items-start justify-between">
@@ -143,80 +155,18 @@ const Construction = () => {
             </div>
 
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
             <ProjectSection/>
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
-            <div className="w-full text-white pt-14 sm:pt-0">
-                {/* div con */}
-                <div className="w-full max-w-[1620px] mx-auto pb-14 px-4 sm:px-6 lg:px-8">
-                    {/* div text */}
-                    <div className="mb-10 text-center">
-                        <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
-                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Xu
-                            hướng và tin tức</h2>
-                    </div>
+            <BlogSection/>
 
-                    {/* div desc */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {/* Blog Post */}
-                        {[
-                            {
-                                img: "/assets/images/herosection/11.png",
-                                title: "Tiêu đề bài viết",
-                                category: "Thiết kế nội thất",
-                                description:
-                                    "Đây là mô tả ngắn gọn về bài viết, giới thiệu nội dung chính mà người đọc có thể quan tâm.",
-                                date: "01/01/2025",
-                            },
-                            {
-                                img: "/assets/images/herosection/11.png",
-                                title: "Tiêu đề bài viết",
-                                category: "Thi công nội thất",
-                                description:
-                                    "Đây là mô tả ngắn gọn về bài viết, giới thiệu nội dung chính mà người đọc có thể quan tâm.",
-                                date: "02/01/2025",
-                            },
-                            {
-                                img: "/assets/images/herosection/11.png",
-                                title: "Tiêu đề bài viết",
-                                category: "Phong cách sống",
-                                description:
-                                    "Đây là mô tả ngắn gọn về bài viết, giới thiệu nội dung chính mà người đọc có thể quan tâm.",
-                                date: "03/01/2025",
-                            },
-                        ].map((post, index) => (
-                            <div
-                                key={index}
-                                className="w-full bg-[#0F0F0F] p-4 rounded-lg transition-all duration-300 hover:shadow-lg"
-                            >
-                                <img
-                                    src={post.img}
-                                    alt={`Blog ${index + 1}`}
-                                    className="w-full h-[200px] sm:h-[250px] lg:h-[305px] object-cover rounded-lg"
-                                />
-                                <h3 className="text-[20px] sm:text-[22px] font-medium text-white mt-4">
-                                    {post.title}
-                                </h3>
-                                <p className="text-[14px] sm:text-[16px] text-[#BEAB81] italic">
-                                    Thể loại: {post.category}
-                                </p>
-                                <p className="text-[14px] sm:text-[16px] text-[#CECECE] mt-2">
-                                    {post.description}
-                                </p>
-                                <p className="text-[12px] sm:text-[14px] text-[#CECECE] mt-2">{post.date}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
             <ContactSection/>
-
+            <div className="hidden md:block"><DarkSpacing/></div>
         </main>
     );
 };

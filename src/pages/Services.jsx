@@ -102,9 +102,9 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
-            <div className="pt-14 sm:pt-0">
+            <div className="pt-14 md:pt-0">
                 <div className="px-4 mx-auto max-w-[1620px] sm:px-6 lg:px-8">
                     <div className="max-w-3xl mx-auto text-center">
                         <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
@@ -186,10 +186,11 @@ const Services = () => {
                             </div>
                         </div>
                     </dl>
-                    <div className="text-center mt-12 space-x-1 flex justify-center items-center">
+                    <div
+                        className="text-center sm:mt-[230px] space-x-1 flex justify-center md:justify-end items-center">
                         {/* Nút Liên hệ */}
                         <Link
-                            to="/liên-hệ"
+                            to="/dự-án"
                             className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}
@@ -220,10 +221,10 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
             {/* Thẻ divcha */}
-            <div className="w-full flex justify-center items-center mb-[18px] pt-14 sm:pt-0 pb-8">
+            <div className="w-full flex justify-center items-center mb-[18px] pt-14 md:pt-0 pb-8">
 
                 <div className="w-full max-w-[1620px]">
 
@@ -405,14 +406,14 @@ const Services = () => {
             </div>
 
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
             <Testimonials/>
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
             <ContactSection/>
-
+            <div className="hidden md:block"><DarkSpacing/></div>
         </main>
     );
 };

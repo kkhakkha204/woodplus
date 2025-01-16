@@ -6,9 +6,9 @@ const Testimonials = () => {
     return (
         <div className="w-full flex justify-center items-center pt-14 sm:pt-0">
             {/* Thẻ div cha */}
-            <div className="w-full max-w-[1620px] grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="w-full max-w-[1620px] grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Thẻ div right */}
-                <div className="flex md:hidden flex-col space-y-8">
+                <div className="flex lg:hidden flex-col space-y-8">
                     {/* Thẻ div text */}
                     <div className="flex justify-center items-center text-center">
                         <div className="text-center">
@@ -26,7 +26,7 @@ const Testimonials = () => {
 
 
                     {/* Thẻ div anh */}
-                    <div className="relative w-[350px] sm:w-[600px] md:w-full h-[300px] md:h-[400px] mx-auto md:mx-0">
+                    <div className="relative w-[350px] sm:w-[600px] md:w-[650px] 2xl:w-full h-[300px] md:h-[400px] mx-auto ">
                         <img
                             src="/assets/images/testimonials/test1.jpg"
                             alt="Customer Testimonial"
@@ -47,7 +47,7 @@ const Testimonials = () => {
                     </div>
 
                     {/* Thẻ div anh */}
-                    <div className="relative w-[350px] sm:w-[600px] md:w-full h-[300px] md:h-[400px] mx-auto md:mx-0">
+                    <div className="relative w-[350px] sm:w-[600px] md:w-[650px] 2xl:w-full h-[300px] md:h-[400px] mx-auto ">
                         <img
                             src="/assets/images/testimonials/test2.webp"
                             alt="Customer Testimonial"
@@ -70,7 +70,7 @@ const Testimonials = () => {
                 {/* Thẻ div left */}
                 <div className="relative space-y-8">
                     {/* Thẻ div anh */}
-                    <div className="relative  w-[350px] sm:w-[600px]  md:w-full h-[300px] md:h-[400px] mx-auto md:mx-0">
+                    <div className="relative  w-[350px] sm:w-[600px]  md:w-[650px] 2xl:w-full h-[300px] md:h-[400px] mx-auto">
                         <img
                             src="/assets/images/testimonials/test1.jpg"
                             alt="Customer Testimonial"
@@ -91,7 +91,7 @@ const Testimonials = () => {
                     </div>
 
                     {/* Thẻ div anh */}
-                    <div className="relative  w-[350px] sm:w-[600px]  md:w-full h-[300px] md:h-[400px] mx-auto md:mx-0">
+                    <div className="relative  w-[350px] sm:w-[600px]  md:w-[650px] 2xl:w-full h-[300px] md:h-[400px] mx-auto">
                         <img
                             src="/assets/images/testimonials/test2.webp"
                             alt="Customer Testimonial"
@@ -112,8 +112,8 @@ const Testimonials = () => {
                     </div>
 
                     {/* Thẻ div text */}
-                    <div className="text-center md:text-left w-full md:w-[600px]">
-                        <p className="w-[350px] sm:w-[500px] md:w-[380px] lg:w-[490px] xl:w-[530px] 2xl:w-[630px] mx-auto md:mx-0 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
+                    <div className="text-center lg:text-left w-full mx-auto md:w-[650px] 2xl:w-full">
+                        <p className="w-[350px] sm:w-[500px] md:w-[380px] lg:w-[490px] xl:w-[530px] 2xl:w-[630px] mx-auto lg:mx-0 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
                             Khách hàng không chỉ đánh giá cao về chất lượng sản phẩm, mà còn cảm nhận được
                             sự tận tâm của đội ngũ trong mỗi dự án.Chúng tôi cam kết cung cấp các giải pháp "Giá trị thật, chất lượng thật" đến khách hàng.
                         </p>
@@ -124,7 +124,7 @@ const Testimonials = () => {
                 </div>
 
                 {/* Thẻ div right */}
-                <div className="hidden md:flex flex-col space-y-8">
+                <div className="hidden lg:flex flex-col space-y-8">
                     {/* Thẻ div text */}
                     <div className="text-left">
                         <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px]  font-bold text-[#AF9A70]">WoodPlus</h3>
@@ -139,7 +139,7 @@ const Testimonials = () => {
                     </div>
 
                     {/* Thẻ div anh */}
-                    <div className="relative w-[600px] md:w-full h-[300px] md:h-[400px] mx-auto md:mx-0">
+                    <div className="relative w-[600px] md:w-[650px] 2xl:w-full h-[300px] md:h-[400px] mx-auto md:mx-0">
                         <img
                             src="/assets/images/testimonials/test3.jpg"
                             alt="Customer Testimonial"
@@ -160,7 +160,7 @@ const Testimonials = () => {
                     </div>
 
                     {/* Thẻ div anh */}
-                    <div className="relative w-[600px] md:w-full h-[300px] md:h-[400px] mx-auto md:mx-0">
+                    <div className="relative w-[600px] md:w-[650px] 2xl:w-full h-[300px] md:h-[400px] mx-auto md:mx-0">
                         <img
                             src="/assets/images/testimonials/test4.jpg"
                             alt="Customer Testimonial"

@@ -140,7 +140,7 @@ const NewsDetail = () => {
                             <img
                                 src={urlFor(news.authorImage).url()}
                                 alt={news.authorName}
-                                className="w-16 h-16 rounded-full mr-4"
+                                className="w-12 h-12 rounded-xl mr-4"
                             />
                         )}
                         <p className="text-[#CECECE]">

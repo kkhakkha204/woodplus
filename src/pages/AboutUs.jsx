@@ -58,14 +58,16 @@ const AboutUs = () => {
                         </div>
 
                         {/* Nút liên hệ và tư vấn */}
-                        <div className="text-center lg:flex justify-start lg:justify-end lg:mt-[230px] space-x-1">
+                        <div
+                            className="text-center sm:mt-[230px] space-x-1 flex justify-center md:justify-end items-center">
                             {/* Nút Liên hệ */}
                             <Link
-                                to="liên-hệ"
-                                className="w-[90px] h-[35px] sm:w-[100px] sm:h-[40px] md:w-[125px] md:h-[45px] bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                                onMouseEnter={() => setIsHovered(true)} // Thay đổi trạng thái khi hover
-                                onMouseLeave={() => setIsHovered(false)} // Trở lại trạng thái ban đầu khi rời chuột
+                                to="/dự-án"
+                                className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
+                                onMouseEnter={() => setIsHovered(true)}
+                                onMouseLeave={() => setIsHovered(false)}
                             >
+                                {/* Hiển thị icon trên màn hình lớn */}
                                 <span className="hidden sm:inline text-[18px]">
         {!isHovered ? (
             <TbArrowForwardUp className="inline-block text-[25px]"/>
@@ -79,13 +81,12 @@ const AboutUs = () => {
         Liên hệ
     </span>
                             </Link>
-
                             {/* Nút Tư vấn */}
                             <Link
-                                to="liên-hệ"
-                                className="w-[90px] h-[35px] sm:w-[100px] sm:h-[40px] md:w-[125px] md:h-[45px]  bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[16px] md:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
+                                to="/liên-hệ"
+                                className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
                             >
-                            Tư vấn
+                                Tư vấn
                             </Link>
                         </div>
                     </div>
@@ -93,14 +94,15 @@ const AboutUs = () => {
                 </div>
             </div>
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
             <section>
                 <div
-                    className="pt-14 sm:pt-0 mx-auto max-w-[1020px] px-8  md:px-12 lg:px-16 divide-y prose text-white prose-sm prose-headings:font-normal prose-headings:text-xl space-y-12">
+                    className="pt-14 md:pt-0 mx-auto max-w-[1020px] px-8  md:px-12 lg:px-16 divide-y divide-[#757575] text-white space-y-12">
                     <div className="text-center mb-12">
-                        <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70] ">WoodPlus</h3>
-                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white mt-2">Lịch Sử WoodPlus</h2>
+                        <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
+                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white ">Lịch
+                            sử WoodPLus</h2>
 
                     </div>
 
@@ -119,7 +121,12 @@ const AboutUs = () => {
                                 <div className="mx-auto "><img className="aspect-[4/3] object-cover"
                                                                src="/assets/images/aboutus/aboutus4.jpg"
                                                                alt="#_"/>
-                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Giai đoạn này đánh dấu sự ra đời của thương hiệu với tầm nhìn mang đến những giải pháp thiết kế nội thất độc đáo và hiện đại. Ban đầu, công ty chỉ tập trung vào các dự án nhỏ như căn hộ và nhà phố, nhưng với sự đam mê và nỗ lực không ngừng, chúng tôi đã xây dựng được đội ngũ sáng tạo và gây dựng niềm tin từ những khách hàng đầu tiên.
+                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Giai
+                                        đoạn này đánh dấu sự ra đời của thương hiệu với tầm nhìn mang đến những giải
+                                        pháp thiết kế nội thất độc đáo và hiện đại. Ban đầu, công ty chỉ tập trung vào
+                                        các dự án nhỏ như căn hộ và nhà phố, nhưng với sự đam mê và nỗ lực không ngừng,
+                                        chúng tôi đã xây dựng được đội ngũ sáng tạo và gây dựng niềm tin từ những khách
+                                        hàng đầu tiên.
 
                                     </p>
 
@@ -141,7 +148,12 @@ const AboutUs = () => {
                                 <div className="mx-auto "><img className="aspect-[4/3] object-cover"
                                                                src="/assets/images/herosection/hero3.webp"
                                                                alt="#_"/>
-                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Đây là thời kỳ bùng nổ với hàng loạt dự án lớn tại các thành phố lớn. Công ty mở rộng quy mô, đầu tư vào công nghệ thiết kế 3D tiên tiến và xây dựng mối quan hệ hợp tác với các đối tác cung cấp vật liệu nội thất cao cấp. Những công trình nổi bật như biệt thự, showroom và khách sạn sang trọng đã khẳng định vị thế thương hiệu trên thị trường.</p>
+                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Đây
+                                        là thời kỳ bùng nổ với hàng loạt dự án lớn tại các thành phố lớn. Công ty mở
+                                        rộng quy mô, đầu tư vào công nghệ thiết kế 3D tiên tiến và xây dựng mối quan hệ
+                                        hợp tác với các đối tác cung cấp vật liệu nội thất cao cấp. Những công trình nổi
+                                        bật như biệt thự, showroom và khách sạn sang trọng đã khẳng định vị thế thương
+                                        hiệu trên thị trường.</p>
 
                                 </div>
                             </div>
@@ -159,7 +171,12 @@ const AboutUs = () => {
                         <div className="lg:col-span-2 pt-2">
                             <div className="flex-shrink-0">
                                 <div className="mx-auto ">
-                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Công ty tập trung vào việc ứng dụng công nghệ thông minh trong thiết kế nội thất, như hệ thống nhà thông minh (smart home) và vật liệu bền vững. Ngoài ra, chúng tôi không ngừng đổi mới phong cách thiết kế để phù hợp với xu hướng toàn cầu, mang lại những không gian sống không chỉ đẹp mà còn tối ưu công năng và thân thiện với môi trường.</p>
+                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Công
+                                        ty tập trung vào việc ứng dụng công nghệ thông minh trong thiết kế nội thất, như
+                                        hệ thống nhà thông minh (smart home) và vật liệu bền vững. Ngoài ra, chúng tôi
+                                        không ngừng đổi mới phong cách thiết kế để phù hợp với xu hướng toàn cầu, mang
+                                        lại những không gian sống không chỉ đẹp mà còn tối ưu công năng và thân thiện
+                                        với môi trường.</p>
 
                                 </div>
                             </div>
@@ -169,7 +186,7 @@ const AboutUs = () => {
                 </div>
             </section>
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
             <div className="">
 
@@ -250,9 +267,9 @@ const AboutUs = () => {
                 </section>
             </div>
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
-            <div className="w-full bg-[#e7e5e4] text-white mt-14 sm:mt-0">
+            <div className="w-full bg-[#e7e5e4] text-white mt-14 md:mt-0">
                 {/* Section Đội ngũ WoodPlus */}
                 <div className="w-full max-w-[1620px] bg-[#0F0F0F] mx-auto pb-[40px]">
                     {/* Thẻ divtext */}
@@ -375,15 +392,15 @@ const AboutUs = () => {
             </div>
 
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
 
             <Partner/>
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
             <ContactSection/>
-
+            <div className="hidden md:block"><DarkSpacing/></div>
         </main>
     );
 };

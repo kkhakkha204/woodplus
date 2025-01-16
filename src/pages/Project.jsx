@@ -79,10 +79,10 @@ const Project = () => {
                 <div className="absolute inset-0 bg-black bg-opacity-0"></div>
             </div>
 
-            <div className="hidden sm:block"><DarkSpacing/></div>
+            <div className="hidden md:block"><DarkSpacing/></div>
 
             {/* Thẻ divcha */}
-            <div className="w-full text-white pt-14 sm:pt-0">
+            <div className="w-full text-white pt-14 md:pt-0">
                 <div className="w-full max-w-[1620px] mx-auto pb-14 px-4">
                     {/* Phần tiêu đề */}
                     <div className="mb-10 text-center">

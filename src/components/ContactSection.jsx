@@ -47,7 +47,7 @@ const ContactSection = () => {
                                 placeholder="Nhập Họ tên (Bắt buộc)"
                                 value={ten}
                                 onChange={(e) => setten(e.target.value)}
-                                className="w-[350px] sm:w-[420px] md:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
+                                className="w-[350px] sm:w-[420px] md:w-[520px] lg:w-[425px] 2xl:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>
                         <div className="mb-6">
@@ -63,7 +63,7 @@ const ContactSection = () => {
                                 placeholder="Nhập số điện thoại (Bắt buộc)"
                                 value={soDienThoai}
                                 onChange={(e) => setSoDienThoai(e.target.value)}
-                                className="w-[350px] sm:w-[420px] md:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
+                                className="w-[350px] sm:w-[420px] md:w-[520px] lg:w-[425px] 2xl:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>
                     </div>
@@ -80,7 +80,7 @@ const ContactSection = () => {
                                 id="email"
                                 type="text"
                                 placeholder="Nhập Email"
-                                className="w-[350px] sm:w-[420px] md:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
+                                className="w-[350px] sm:w-[420px] md:w-[520px] lg:w-[425px] 2xl:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>
                         <div className="mb-6">
@@ -94,7 +94,7 @@ const ContactSection = () => {
                                 id="nhu-cau"
                                 type="text"
                                 placeholder="Viết nhu cầu bạn muốn gửi tới chúng tôi"
-                                className="w-[350px] sm:w-[420px] md:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
+                                className="w-[350px] sm:w-[420px] md:w-[520px] lg:w-[425px] 2xl:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>
                     </div>
