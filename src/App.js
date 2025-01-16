@@ -14,6 +14,8 @@ import Contact from "./pages/Contact";
 
 import NewsList from "./pages/NewsList";
 import NewsDetail from "./pages/NewsDetail";
+import ProjectList from "./pages/ProjectList";
+import ProjectDetail from "./pages/ProjectDetail";
 
 
 
@@ -39,6 +41,8 @@ const App = () => {
                     <Route path="/news" element={<NewsList />} />
                     <Route path="/news/:slug" element={<NewsDetail />} />
 
+                    <Route path="/projects" element={<ProjectList />} />
+                    <Route path="/projects/:id" element={<ProjectDetail />} />
                 </Routes>
 
                 {/* Footer */}

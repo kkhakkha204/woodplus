@@ -15,7 +15,7 @@ const AboutUs = () => {
         <main className="bg-[#0F0F0F] ">
             {/* Hero Section */}
             <div
-                className="h-[550px] sm:h-[650px] lg:h-[750px] xl:h-[800px] 2xl:h-[900px] w-full bg-cover bg-center relative">
+                className="h-[550px] sm:h-[650px] lg:h-[750px] xl:h-[800px] 2xl:h-[800px] w-full bg-cover bg-center relative">
                 {/* Lớp chứa ảnh nền với filter brightness */}
                 <div
                     className="absolute inset-0 bg-cover bg-center"
@@ -48,10 +48,10 @@ const AboutUs = () => {
 
                     {/* Thẻ divbot */}
                     <div
-                        className="w-full max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 lg:grid-cols-2 justify-between items-center ">
+                        className="w-full xl:max-w-[1350px] 2xl:max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 lg:grid-cols-2 justify-between items-center ">
                         {/* Mô tả bên trái */}
                         <div className="w-full lg:w-1/2">
-                            <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[22px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto lg:mt-[200px] text-center lg:text-left text-white">We
+                            <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto lg:mt-[150px] text-center lg:text-left text-white">We
                                 are a passionate team committed to delivering
                                 the best products and services to our customers. Our mission is to bring quality
                                 and innovation to every home.</p>
@@ -59,7 +59,7 @@ const AboutUs = () => {
 
                         {/* Nút liên hệ và tư vấn */}
                         <div
-                            className="text-center sm:mt-[230px] space-x-1 flex justify-center md:justify-end items-center">
+                            className="text-center sm:mt-[200px] space-x-1 flex justify-center md:justify-end items-center">
                             {/* Nút Liên hệ */}
                             <Link
                                 to="/dự-án"

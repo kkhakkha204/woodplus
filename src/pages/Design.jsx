@@ -52,18 +52,18 @@ const Design = () => {
 
                     {/* Thẻ divbot */}
                     <div
-                        className="w-full max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 md:grid-cols-2 justify-between items-center ">
+                        className="w-full xl:max-w-[1350px] 2xl:max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 lg:grid-cols-2 justify-between items-center ">
                         {/* Mô tả bên trái */}
-                        <div className="w-full md:w-1/2">
-                            <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[22px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto sm:mt-[200px] text-center sm:text-left text-white">We
-                                are a passionate team committed to <br/>delivering
+                        <div className="w-full lg:w-1/2">
+                            <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto lg:mt-[150px] text-center lg:text-left text-white">We
+                                are a passionate team committed to delivering
                                 the best products and services to our customers. Our mission is to bring quality
                                 and innovation to every home.</p>
                         </div>
 
                         {/* Nút liên hệ và tư vấn */}
                         <div
-                            className="text-center sm:mt-[230px] space-x-1 flex justify-center md:justify-end items-center">
+                            className="text-center sm:mt-[200px] space-x-1 flex justify-center md:justify-end items-center">
                             {/* Nút Liên hệ */}
                             <Link
                                 to="/dự-án"
@@ -85,8 +85,6 @@ const Design = () => {
         Liên hệ
     </span>
                             </Link>
-
-
                             {/* Nút Tư vấn */}
                             <Link
                                 to="/liên-hệ"

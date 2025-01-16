@@ -41,16 +41,16 @@ const Services = () => {
                             className="w-[80.40%] sm:w-[60.05%] h-[80px] sm:h-[100px] bg-[#0F0F0F] border-t-[2px] border-r-[2px] absolute top-0 left-0 flex items-center justify-center">
                             {/* Nội dung cho divcutleft */}
                             <span
-                                className="text-[34px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] font-bold text-center tracking-[2%]">Cung cấp dịch vụ<span
+                                className="text-[34px] sm:text-[48px] md:text-[58px] lg:text-[60px] xl:text-[60px] 2xl:text-[68px] font-bold text-center tracking-[2%]">Cung cấp dịch vụ<span
                                 className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text"> tận tâm</span></span>
                         </div>
 
                         {/* divcutright */}
                         <div
-                            className="w-[80.05%] sm:w-[65%] h-[80px] sm:h-[100px] bg-[#0F0F0F] border-b-[2px] border-l-[2px] absolute -bottom-2 sm:-bottom-4 right-0 flex items-center ">
+                            className="w-[80.05%] sm:w-[65%] h-[80px] sm:h-[100px] bg-[#0F0F0F] border-b-[2px] border-l-[2px] absolute 2xl:-bottom-2 xl:-bottom-[13px] sm:-bottom-4 right-0 flex items-center ">
                             {/* Nội dung cho divcutright */}
                             <span
-                                className="text-[34px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] font-bold ml-6 sm:ml-44 text-center tracking-[2%]">tạo dựng giá trị
+                                className="text-[34px] sm:text-[48px] md:text-[58px] lg:text-[60px] xl:text-[60px] 2xl:text-[68px] font-bold ml-6 sm:ml-44 text-center tracking-[2%]">tạo dựng giá trị
                             <span
                                 className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text"> bền lâu.</span></span>
                         </div>
@@ -80,24 +80,26 @@ const Services = () => {
 
                     {/* Thẻ divbot */}
                     <div
-                        className="w-full max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 md:grid-cols-2 justify-between items-center ">
+                        className="w-full xl:max-w-[1350px] 2xl:max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 lg:grid-cols-2 justify-between items-center ">
                         {/* Mô tả bên trái */}
-                        <div className="w-full md:w-1/2">
-                            <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[22px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto sm:mt-[200px] text-center sm:text-left  text-white">We
-                                are a passionate team committed to <br/>delivering
+                        <div className="w-full lg:w-1/2">
+                            <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto lg:mt-[150px] text-center lg:text-left text-white">We
+                                are a passionate team committed to delivering
                                 the best products and services to our customers. Our mission is to bring quality
                                 and innovation to every home.</p>
                         </div>
 
                         {/* Nút liên hệ và tư vấn */}
-                        <div className="text-center sm:flex justify-start md:justify-end sm:mt-[230px] space-x-1">
+                        <div
+                            className="text-center sm:mt-[200px] space-x-1 flex justify-center md:justify-end items-center">
                             {/* Nút Liên hệ */}
-                            <button
-                                className="w-[90px] h-[35px] sm:w-[100px] sm:h-[40px] md:w-[125px] md:h-[45px] bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                                onMouseEnter={() => setIsHovered(true)} // Thay đổi trạng thái khi hover
-                                onMouseLeave={() => setIsHovered(false)} // Trở lại trạng thái ban đầu khi rời chuột
+                            <Link
+                                to="/dự-án"
+                                className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
+                                onMouseEnter={() => setIsHovered(true)}
+                                onMouseLeave={() => setIsHovered(false)}
                             >
-                                {/* Hiển thị icon nếu chưa hover */}
+                                {/* Hiển thị icon trên màn hình lớn */}
                                 <span className="hidden sm:inline text-[18px]">
         {!isHovered ? (
             <TbArrowForwardUp className="inline-block text-[25px]"/>
@@ -110,14 +112,14 @@ const Services = () => {
                                 <span className="sm:hidden text-[14px] font-semibold">
         Liên hệ
     </span>
-                            </button>
-
+                            </Link>
                             {/* Nút Tư vấn */}
-                            <button
-                                className="w-[90px] h-[35px] sm:w-[100px] sm:h-[40px] md:w-[125px] md:h-[45px]  bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[16px] md:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
+                            <Link
+                                to="/liên-hệ"
+                                className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
                             >
                                 Tư vấn
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
