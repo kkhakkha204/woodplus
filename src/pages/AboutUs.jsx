@@ -51,10 +51,9 @@ const AboutUs = () => {
                         className="w-full xl:max-w-[1350px] 2xl:max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 lg:grid-cols-2 justify-between items-center ">
                         {/* Mô tả bên trái */}
                         <div className="w-full lg:w-1/2">
-                            <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto lg:mt-[150px] text-center lg:text-left text-white">We
-                                are a passionate team committed to delivering
-                                the best products and services to our customers. Our mission is to bring quality
-                                and innovation to every home.</p>
+                            <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[20px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto lg:mt-[150px] text-center lg:text-left text-white">
+                                Với hơn 8 năm kinh nghiệm, WoodPlus đã khẳng định uy tín trong thi công và thiết kế nội thất nhờ cam kết "Giá trị thật – Chất lượng thật",
+                                mang đến sự hài lòng tuyệt đối.</p>
                         </div>
 
                         {/* Nút liên hệ và tư vấn */}
@@ -62,7 +61,7 @@ const AboutUs = () => {
                             className="text-center sm:mt-[200px] space-x-1 flex justify-center md:justify-end items-center">
                             {/* Nút Liên hệ */}
                             <Link
-                                to="/dự-án"
+                                to="/liên-hệ"
                                 className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
                                 onMouseEnter={() => setIsHovered(true)}
                                 onMouseLeave={() => setIsHovered(false)}
@@ -119,17 +118,11 @@ const AboutUs = () => {
                         <div className="lg:col-span-2 pt-2">
                             <div className="flex-shrink-0">
                                 <div className="mx-auto "><img className="aspect-[4/3] object-cover"
-                                                               src="/assets/images/aboutus/aboutus4.jpg"
-                                                               alt="#_"/>
+                                                               src="/assets/images/aboutus/aboutus4.jpg" alt="#_"/>
                                     <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Giai
-                                        đoạn này đánh dấu sự ra đời của thương hiệu với tầm nhìn mang đến những giải
-                                        pháp thiết kế nội thất độc đáo và hiện đại. Ban đầu, công ty chỉ tập trung vào
-                                        các dự án nhỏ như căn hộ và nhà phố, nhưng với sự đam mê và nỗ lực không ngừng,
-                                        chúng tôi đã xây dựng được đội ngũ sáng tạo và gây dựng niềm tin từ những khách
-                                        hàng đầu tiên.
-
-                                    </p>
-
+                                        đoạn này đánh dấu sự ra đời của thương hiệu với tầm nhìn thiết kế nội thất độc
+                                        đáo. Ban đầu, công ty tập trung vào các dự án nhỏ, từng bước xây dựng đội ngũ và
+                                        niềm tin từ khách hàng đầu tiên.</p>
                                 </div>
                             </div>
                         </div>
@@ -146,15 +139,11 @@ const AboutUs = () => {
                         <div className="lg:col-span-2 pt-2">
                             <div className="flex-shrink-0">
                                 <div className="mx-auto "><img className="aspect-[4/3] object-cover"
-                                                               src="/assets/images/herosection/hero3.webp"
-                                                               alt="#_"/>
-                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Đây
-                                        là thời kỳ bùng nổ với hàng loạt dự án lớn tại các thành phố lớn. Công ty mở
-                                        rộng quy mô, đầu tư vào công nghệ thiết kế 3D tiên tiến và xây dựng mối quan hệ
-                                        hợp tác với các đối tác cung cấp vật liệu nội thất cao cấp. Những công trình nổi
-                                        bật như biệt thự, showroom và khách sạn sang trọng đã khẳng định vị thế thương
-                                        hiệu trên thị trường.</p>
-
+                                                               src="/assets/images/herosection/hero3.webp" alt="#_"/>
+                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Giai
+                                        đoạn bùng nổ với nhiều dự án lớn. Công ty mở rộng quy mô, đầu tư công nghệ 3D và
+                                        hợp tác với các đối tác cung cấp vật liệu cao cấp, khẳng định vị thế qua các
+                                        công trình nổi bật.</p>
                                 </div>
                             </div>
                         </div>
@@ -172,17 +161,13 @@ const AboutUs = () => {
                             <div className="flex-shrink-0">
                                 <div className="mx-auto ">
                                     <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Công
-                                        ty tập trung vào việc ứng dụng công nghệ thông minh trong thiết kế nội thất, như
-                                        hệ thống nhà thông minh (smart home) và vật liệu bền vững. Ngoài ra, chúng tôi
-                                        không ngừng đổi mới phong cách thiết kế để phù hợp với xu hướng toàn cầu, mang
-                                        lại những không gian sống không chỉ đẹp mà còn tối ưu công năng và thân thiện
-                                        với môi trường.</p>
-
+                                        ty tập trung ứng dụng công nghệ thông minh, vật liệu bền vững và không ngừng đổi
+                                        mới phong cách để tạo ra không gian sống tối ưu, thân thiện với môi trường.</p>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
             </section>
 

@@ -53,15 +53,13 @@ const Construction = () => {
 
 
                     {/* Thẻ divbot */}
-                    {/* Thẻ divbot */}
                     <div
                         className="w-full xl:max-w-[1350px] 2xl:max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 lg:grid-cols-2 justify-between items-center ">
                         {/* Mô tả bên trái */}
                         <div className="w-full lg:w-1/2">
-                            <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto lg:mt-[150px] text-center lg:text-left text-white">We
-                                are a passionate team committed to delivering
-                                the best products and services to our customers. Our mission is to bring quality
-                                and innovation to every home.</p>
+                            <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[20px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto lg:mt-[150px] text-center lg:text-left text-white">
+                                WoodPlus cam kết thi công nội thất chuyên nghiệp, đáng tin cậy. Với đội ngũ tay nghề cao và quy trình chuẩn hóa, chúng tôi tạo nên không gian sống tiện nghi, thẩm mỹ và bền vững, đáp ứng mọi nhu cầu của gia chủ.
+                            </p>
                         </div>
 
                         {/* Nút liên hệ và tư vấn */}
@@ -69,7 +67,7 @@ const Construction = () => {
                             className="text-center sm:mt-[200px] space-x-1 flex justify-center md:justify-end items-center">
                             {/* Nút Liên hệ */}
                             <Link
-                                to="/dự-án"
+                                to="/liên-hệ"
                                 className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
                                 onMouseEnter={() => setIsHovered(true)}
                                 onMouseLeave={() => setIsHovered(false)}
@@ -150,6 +148,39 @@ const Construction = () => {
                             className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover rounded-lg"
                         />
                     </div>
+
+                </div>
+                <div className="text-center mt-12 space-x-1 flex justify-center items-center md:pb-8">
+                    {/* Nút Liên hệ */}
+                    <Link
+                        to="/dự-án"
+                        className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                    >
+                        {/* Hiển thị icon trên màn hình lớn */}
+                        <span className="hidden sm:inline text-[18px]">
+        {!isHovered ? (
+            <TbArrowForwardUp className="inline-block text-[25px]"/>
+        ) : (
+            "Xem thêm"
+        )}
+    </span>
+
+                        {/* Hiển thị chữ trên điện thoại và máy tính bảng */}
+                        <span className="sm:hidden text-[14px] font-semibold">
+        Xem thêm
+    </span>
+                    </Link>
+
+
+                    {/* Nút Tư vấn */}
+                    <Link
+                        to="/liên-hệ"
+                        className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
+                    >
+                        Tư vấn
+                    </Link>
                 </div>
             </div>
 

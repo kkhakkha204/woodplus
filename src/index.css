@@ -32,12 +32,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #000000, #302f27);
+  background: linear-gradient(180deg, #000000,  #041f1e);
 
 }
 
 body::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #fff9ce, #fff9ce); /* Gradient cho thanh cuộn */
+  background: linear-gradient(180deg, #BEAB81, #BEAB81); /* Gradient cho thanh cuộn */
   border-radius: 0px; /* Bo góc cho thanh cuộn */
 
 }

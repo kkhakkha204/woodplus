@@ -114,7 +114,7 @@ const NewsDetail = () => {
                                         <img
                                             src={urlFor(value).url()}
                                             alt={value.alt || 'Image'}
-                                            className="rounded-lg shadow-md my-4 h-[450px] object-cover w-[65%]"
+                                            className="rounded-lg shadow-md my-4 h-[300px] md:h-[450px] mx-auto object-cover w-[80%]"
                                         />
                                     ),
                                     gallery: ({ value }) => (

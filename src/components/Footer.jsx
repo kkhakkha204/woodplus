@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -20,34 +21,28 @@ const Footer = () => {
                         <p className="pb-1 text-lg text-[#BEAB81] font-medium">WoodPlus</p>
                         <ul>
                             <li>
-                                <a rel="noopener noreferrer" href="#" className="text-[#CECECE] hover:dark:text-white">Giới thiệu</a>
+                                <Link rel="noopener noreferrer" to="/giới-thiệu" className="text-[#CECECE] hover:dark:text-white">Giới thiệu</Link>
                             </li>
                             <li>
-                                <a rel="noopener noreferrer" href="#" className="text-[#CECECE] hover:dark:text-white">Dịch vụ</a>
+                                <Link rel="noopener noreferrer" to="/dịch-vụ" className="text-[#CECECE] hover:dark:text-white">Dịch vụ</Link>
                             </li>
                             <li>
-                                <a rel="noopener noreferrer" href="#" className="text-[#CECECE] hover:dark:text-white">Dự án</a>
+                                <Link rel="noopener noreferrer" to="/dự-án" className="text-[#CECECE] hover:dark:text-white">Dự án</Link>
                             </li>
                             <li>
-                                <a rel="noopener noreferrer" href="#" className="text-[#CECECE] hover:dark:text-white">Blog</a>
+                                <Link rel="noopener noreferrer" to="/news" className="text-[#CECECE] hover:dark:text-white">Blog</Link>
                             </li>
                             <li>
-                                <a rel="noopener noreferrer" href="#" className="text-[#CECECE] hover:dark:text-white">Tư vấn miễn phí</a>
+                                <Link rel="noopener noreferrer" to="/liên-hệ" className="text-[#CECECE] hover:dark:text-white">Tư vấn miễn phí</Link>
                             </li>
                         </ul>
                     </div>
                     <div className="pt-3 col-span-6 text-center md:text-left md:col-span-3">
                         <p className="pb-1 text-lg text-[#BEAB81] font-medium">Thông tin</p>
                         <ul className="text-[#CECECE]">
-                            <li>Hotline: 0325690989</li>
-                            <li>Địa chỉ: <br/> abc street, Hanoi</li>
-                            <li>Giờ hoạt động: <br/>8:00 - 22:00</li>
-                            <li>
-
-                            </li>
-                            <li>
-
-                            </li>
+                            <li>0325690989</li>
+                            <li>abc street, Hanoi</li>
+                            <li>8:00 - 22:00</li>
                         </ul>
                     </div>
                 </div>

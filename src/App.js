@@ -42,7 +42,7 @@ const App = () => {
                     <Route path="/news/:slug" element={<NewsDetail />} />
 
                     <Route path="/projects" element={<ProjectList />} />
-                    <Route path="/projects/:id" element={<ProjectDetail />} />
+                    <Route path="/project/:slug" element={<ProjectDetail />} />
                 </Routes>
 
                 {/* Footer */}

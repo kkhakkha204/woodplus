@@ -38,7 +38,7 @@ const Services = () => {
                     <div className="hidden md:block w-full h-[170px] sm:h-[230px] relative">
                         {/* divcutleft */}
                         <div
-                            className="w-[80.40%] sm:w-[60.05%] h-[80px] sm:h-[100px] bg-[#0F0F0F] border-t-[2px] border-r-[2px] absolute top-0 left-0 flex items-center justify-center">
+                            className="w-[80.40%] sm:w-[60.05%] h-[80px] sm:h-[100px] bg-[#0F0F0F] border-t-[2px] border-r-[2px] absolute 2xl:top-[8px] left-0 flex items-center justify-center">
                             {/* Nội dung cho divcutleft */}
                             <span
                                 className="text-[34px] sm:text-[48px] md:text-[58px] lg:text-[60px] xl:text-[60px] 2xl:text-[68px] font-bold text-center tracking-[2%]">Cung cấp dịch vụ<span
@@ -83,10 +83,11 @@ const Services = () => {
                         className="w-full xl:max-w-[1350px] 2xl:max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 lg:grid-cols-2 justify-between items-center ">
                         {/* Mô tả bên trái */}
                         <div className="w-full lg:w-1/2">
-                            <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[20px] 2xl:text-[22px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto lg:mt-[150px] text-center lg:text-left text-white">We
-                                are a passionate team committed to delivering
-                                the best products and services to our customers. Our mission is to bring quality
-                                and innovation to every home.</p>
+                            <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[20px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto lg:mt-[150px] text-center lg:text-left text-white">
+                                WoodPlus mang đến giải pháp nội thất toàn diện, từ thiết kế sáng tạo đến thi công chất
+                                lượng. Với đội ngũ giàu kinh nghiệm, chúng tôi tạo ra không gian đẹp, ứng dụng cao và
+                                bền vững, đồng hành cùng khách hàng đến khi hoàn thiện.
+                            </p>
                         </div>
 
                         {/* Nút liên hệ và tư vấn */}
@@ -94,7 +95,7 @@ const Services = () => {
                             className="text-center sm:mt-[200px] space-x-1 flex justify-center md:justify-end items-center">
                             {/* Nút Liên hệ */}
                             <Link
-                                to="/dự-án"
+                                to="/liên-hệ"
                                 className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
                                 onMouseEnter={() => setIsHovered(true)}
                                 onMouseLeave={() => setIsHovered(false)}
@@ -213,7 +214,7 @@ const Services = () => {
                         className="text-center space-x-1 flex justify-center items-center mt-10">
                         {/* Nút Liên hệ */}
                         <Link
-                            to="/dự-án"
+                            to="/liên-hệ"
                             className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}
@@ -282,7 +283,8 @@ const Services = () => {
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
                                 <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
-                                    Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui
+                                    Chúng tôi mang đến những ý tưởng thiết kế sáng tạo, độc đáo, phù hợp với phong cách
+                                    và nhu cầu riêng của từng khách hàng, tạo nên không gian sống hoàn hảo.
                                 </p>
                             </div>
                         </div>
@@ -306,7 +308,8 @@ const Services = () => {
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
                                 <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
-                                    Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui
+                                    Từ ý tưởng đến hoàn thiện, chúng tôi cung cấp giải pháp toàn diện, đảm bảo mọi chi
+                                    tiết được thực hiện đồng bộ, chuyên nghiệp và đúng tiến độ.
                                 </p>
                             </div>
                         </div>
@@ -329,7 +332,8 @@ const Services = () => {
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
                                 <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
-                                    Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui
+                                    Đội ngũ thi công lành nghề của chúng tôi cam kết biến bản vẽ thiết kế thành hiện
+                                    thực với chất lượng cao và sự tỉ mỉ trong từng công đoạn.
                                 </p>
                             </div>
                         </div>
