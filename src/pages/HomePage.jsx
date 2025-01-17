@@ -16,7 +16,7 @@ const HomePage = () => {
         <main className="bg-[#0F0F0F]">
             {/* HeroSection */}
             <div
-                className="h-[590px] sm:h-[640px] lg:h-[780px] xl:h-[830px] 2xl:h-[850px] w-full bg-cover bg-center relative">
+                className="h-[640px] sm:h-[700px] lg:h-[780px] xl:h-[830px] 2xl:h-[850px] w-full bg-cover bg-center relative">
                 {/* Lớp chứa ảnh nền với filter brightness */}
                 <video
                     className=" absolute inset-0 w-full h-full object-cover"
