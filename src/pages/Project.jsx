@@ -68,16 +68,21 @@ const Project = () => {
         <main className="bg-[#0F0F0F]">
             {/* HeroSection */}
             <div
-                className="h-[600px] sm:h-[650px] lg:h-[750px] xl:h-[800px] 2xl:h-[900px] w-full bg-cover bg-center relative">
-                {/* Lớp chứa ảnh nền với filter brightness */}
-                <div
-                    className="absolute inset-0 bg-cover bg-center"
-                    style={{backgroundImage: "url('/assets/images/banner/banner3.jpg')", filter: "brightness(1)"}}
-                ></div>
+                className="h-[600px] sm:h-[650px] lg:h-[750px] xl:h-[800px] 2xl:h-[900px] w-full bg-cover bg-center relative overflow-hidden">
+                {/* Video nền */}
+                <video
+                    className="absolute inset-0 w-full h-full object-cover"
+                    src="/assets/videos/video1.mp4" // Đường dẫn đến video của bạn
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                ></video>
 
                 {/* Lớp phủ màu đen nhẹ */}
-                <div className="absolute inset-0 bg-black bg-opacity-0"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
             </div>
+
 
             <div className="hidden md:block"><DarkSpacing/></div>
 

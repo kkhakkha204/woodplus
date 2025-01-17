@@ -13,17 +13,17 @@ const Services = () => {
         <main className="bg-[#0F0F0F]">
             {/* Hero Section */}
             <div
-                className="h-[550px] sm:h-[650px] lg:h-[750px] xl:h-[800px] 2xl:h-[900px] w-full bg-cover bg-center relative">
+                className="h-[580px] sm:h-[650px] lg:h-[750px] xl:h-[800px] 2xl:h-[900px] w-full bg-cover bg-center relative">
                 {/* Lớp chứa ảnh nền với filter brightness */}
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
-                        backgroundImage: "url('/assets/images/banner/banner2.webp')",
+                        backgroundImage: "url('/assets/images/banner/banner3.jpg')",
                         filter: "brightness(0.85)"
                     }}
                 ></div>
                 {/* Lớp phủ màu đen nhẹ */}
-                <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
                 {/* Nội dung chính */}
                 <div className=" w-full h-full flex flex-col justify-between items-center text-white relative z-10">

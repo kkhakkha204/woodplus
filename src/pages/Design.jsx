@@ -23,7 +23,7 @@ const Design = () => {
                     }}
                 ></div>
                 {/* Lớp phủ màu đen nhẹ */}
-                <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
                 {/* Nội dung chính */}
                 <div className=" w-full h-full flex flex-col justify-between items-center text-white relative z-10">
@@ -36,7 +36,7 @@ const Design = () => {
                     {/* Thẻ divcut */}
                     <div className="w-full h-[100px] flex items-center justify-center">
                         {/* divcutl */}
-                        <div className="w-[180%] sm:w-[50%] h-[60%] sm:h-[100px] bg-[#0F0F0F] border-r-2 border-y-2">
+                        <div className="w-[180%] sm:w-[50%] h-[70%] sm:h-[100px] bg-[#0F0F0F] border-r-2 border-y-2">
                             <span
                                 className="pl-2 sm:pl-8 text-[32px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] font-bold text-left sm:text-center tracking-[2%]">Dịch vụ<span
                                 className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text"> thiết kế</span></span>
