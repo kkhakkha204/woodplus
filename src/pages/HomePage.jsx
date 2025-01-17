@@ -18,13 +18,17 @@ const HomePage = () => {
             <div
                 className="h-[550px] sm:h-[600px] lg:h-[750px] xl:h-[800px] 2xl:h-[800px] w-full bg-cover bg-center relative">
                 {/* Lớp chứa ảnh nền với filter brightness */}
-                <div
-                    className="absolute inset-0 bg-cover bg-center"
-                    style={{backgroundImage: "url('/assets/images/banner/banner1.jpg')", filter: "brightness(0.85)"}}
-                ></div>
+                <video
+                    className=" absolute inset-0 w-full h-full object-cover"
+                    src="/assets/videos/video3.mp4" // Đường dẫn đến video của bạn
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                ></video>
 
                 {/* Lớp phủ màu đen nhẹ */}
-                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
                 {/* Nội dung chính */}
                 <div
