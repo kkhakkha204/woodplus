@@ -71,14 +71,21 @@ const Project = () => {
                 className="h-[600px] sm:h-[650px] lg:h-[750px] xl:h-[800px] 2xl:h-[900px] w-full bg-cover bg-center relative overflow-hidden">
                 {/* Video nền */}
                 <video
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="hidden md:block absolute inset-0 w-full h-full object-cover"
                     src="/assets/videos/video1.mp4" // Đường dẫn đến video của bạn
                     autoPlay
                     loop
                     muted
                     playsInline
                 ></video>
-
+                <video
+                    className="md:hidden absolute inset-0 w-full h-full object-cover"
+                    src="/assets/videos/video2.mp4" // Đường dẫn đến video của bạn
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                ></video>
                 {/* Lớp phủ màu đen nhẹ */}
                 <div className="absolute inset-0 bg-black bg-opacity-20"></div>
             </div>
