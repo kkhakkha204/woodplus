@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const ContactSection = () => {
     const [ten, setten] = useState("");
     const [soDienThoai, setSoDienThoai] = useState("");
+    const [email, setEmail] = useState("");
+    const [nhuCau, setNhuCau] = useState("");
     const [popupMessage, setPopupMessage] = useState("");
     const [showPopup, setShowPopup] = useState(false);
 
@@ -13,34 +16,30 @@ const ContactSection = () => {
             return;
         }
 
-        const data = { ten, soDienThoai };
+        const data = {
+            Tên: ten,
+            "Số điện thoại": soDienThoai,
+            Email: email,
+            "Nhu cầu": nhuCau,
+        };
 
         try {
-            const response = await fetch(
-                "https://script.google.com/macros/s/AKfycbyZaot7atIylTYeI2Oh0vhh52emv1JzXbLdaVUMB2ATMAEXYm6UfTJf60LmQLek9IO7/exec",
-                {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(data),
-                }
-            );
-
-            if (!response.ok) {
-                throw new Error("Network response was not ok");
+            // Thay URL bên dưới bằng API endpoint của bạn từ SheetBest
+            const response = await axios.post("https://api.sheetbest.com/sheets/80ff4c9f-6d6d-4ea2-b98b-e95d60abbb91", data);
+            if (response.status === 200) {
+                setPopupMessage("Thông tin của bạn đã được gửi thành công!");
+                setten("");
+                setSoDienThoai("");
+                setEmail("");
+                setNhuCau("");
             }
-
-            const result = await response.json();
-            setPopupMessage("Thông tin của bạn đã được gửi thành công!");
         } catch (error) {
+            console.error("Lỗi khi gửi dữ liệu:", error);
             setPopupMessage("Đã xảy ra lỗi khi gửi thông tin!");
         }
 
         setShowPopup(true);
     };
-
-
 
     const closePopup = () => setShowPopup(false);
 
@@ -107,6 +106,8 @@ const ContactSection = () => {
                                 id="email"
                                 type="text"
                                 placeholder="Nhập Email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                                 className="w-[350px] sm:w-[420px] md:w-[520px] lg:w-[425px] 2xl:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>
@@ -121,6 +122,8 @@ const ContactSection = () => {
                                 id="nhu-cau"
                                 type="text"
                                 placeholder="Viết nhu cầu bạn muốn gửi tới chúng tôi"
+                                value={nhuCau}
+                                onChange={(e) => setNhuCau(e.target.value)}
                                 className="w-[350px] sm:w-[420px] md:w-[520px] lg:w-[425px] 2xl:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>
@@ -136,7 +139,6 @@ const ContactSection = () => {
                     </button>
                 </div>
 
-                {/* Pop-up */}
                 {showPopup && (
                     <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
                         <div className="bg-white p-6 rounded-lg shadow-lg text-center">
