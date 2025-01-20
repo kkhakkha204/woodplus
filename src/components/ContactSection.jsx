@@ -1,47 +1,49 @@
 import React, { useState } from "react";
 
 const ContactSection = () => {
-    const [ten, setten] = useState("");
+    const [ten, setTen] = useState("");
     const [soDienThoai, setSoDienThoai] = useState("");
+    const [email, setEmail] = useState("");
+    const [nhuCau, setNhuCau] = useState("");
     const [popupMessage, setPopupMessage] = useState("");
     const [showPopup, setShowPopup] = useState(false);
 
-    const [email, setEmail] = useState("");  // Khai báo state cho email
-    const [nhuCau, setNhuCau] = useState("");  // Khai báo state cho nhuCau
     const handleSubmit = async () => {
         if (!ten.trim() || !soDienThoai.trim()) {
             setPopupMessage("Bạn chưa nhập đủ thông tin!");
-        } else {
-            setPopupMessage("Thông tin của bạn đã được gửi thành công!");
+            setShowPopup(true);
+            return;
+        }
 
-            const formData = {
-                ten,
-                soDienThoai,
-                email,  // Dùng email đã khai báo
-                nhuCau   // Dùng nhuCau đã khai báo
-            };
+        // Formspree endpoint
+        const endpoint = "https://formspree.io/f/xzzzndao"; // Thay xxxxxx bằng endpoint của bạn
 
-            try {
-                const response = await fetch("https://script.google.com/macros/s/AKfycbweh-gypBmYln_38gmGpDLEtqpGWn2xrqANRvk32MJtfAnm4lVwWAx1txqoXJsylutC/exec", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(formData),
-                });
-                if (response.ok) {
-                    console.log("Data sent to Google Sheets successfully");
-                } else {
-                    console.log("Error sending data");
-                }
-            } catch (error) {
-                console.log("Error:", error);
+        const formData = {
+            ten,
+            soDienThoai,
+            email,
+            nhuCau,
+        };
+
+        try {
+            const response = await fetch(endpoint, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                setPopupMessage("Thông tin của bạn đã được gửi thành công!");
+            } else {
+                setPopupMessage("Có lỗi xảy ra, vui lòng thử lại sau.");
             }
+        } catch (error) {
+            setPopupMessage("Kết nối thất bại, vui lòng thử lại.");
         }
         setShowPopup(true);
     };
-
-
 
     const closePopup = () => setShowPopup(false);
 
@@ -74,7 +76,7 @@ const ContactSection = () => {
                                 type="text"
                                 placeholder="Nhập Họ tên (Bắt buộc)"
                                 value={ten}
-                                onChange={(e) => setten(e.target.value)}
+                                onChange={(e) => setTen(e.target.value)}
                                 className="w-[350px] sm:w-[420px] md:w-[520px] lg:w-[425px] 2xl:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>
@@ -108,8 +110,8 @@ const ContactSection = () => {
                                 id="email"
                                 type="text"
                                 placeholder="Nhập Email"
-                                value={email}  // Liên kết với state email
-                                onChange={(e) => setEmail(e.target.value)}  // Cập nhật state email
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                                 className="w-[350px] sm:w-[420px] md:w-[520px] lg:w-[425px] 2xl:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>
@@ -124,8 +126,8 @@ const ContactSection = () => {
                                 id="nhu-cau"
                                 type="text"
                                 placeholder="Viết nhu cầu bạn muốn gửi tới chúng tôi"
-                                value={nhuCau}  // Liên kết với state nhuCau
-                                onChange={(e) => setNhuCau(e.target.value)}  // Cập nhật state nhuCau
+                                value={nhuCau}
+                                onChange={(e) => setNhuCau(e.target.value)}
                                 className="w-[350px] sm:w-[420px] md:w-[520px] lg:w-[425px] 2xl:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>
