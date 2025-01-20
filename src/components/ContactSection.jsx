@@ -17,7 +17,7 @@ const ContactSection = () => {
 
         try {
             const response = await fetch(
-                "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec",
+                "https://script.google.com/macros/s/AKfycbyZaot7atIylTYeI2Oh0vhh52emv1JzXbLdaVUMB2ATMAEXYm6UfTJf60LmQLek9IO7/exec",
                 {
                     method: "POST",
                     headers: {
