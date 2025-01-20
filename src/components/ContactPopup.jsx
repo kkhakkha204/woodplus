@@ -24,7 +24,7 @@ const ContactPopup = () => {
         <>
             {/* Nút liên hệ */}
             <button
-                className="fixed bottom-3 right-3 sm:bottom-10 sm:right-10 bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black py-[0.22rem] px-2 sm:py-2 sm:px-4 rounded-lg border-2 font-semibold"
+                className="fixed bottom-3 right-3 sm:bottom-10 sm:right-10 bg-[#272727] text-[#BEAB81] sm:bg-gradient-to-r from-[#D0C49E] to-[#A79268] sm:text-black py-[0.22rem] px-2 sm:py-2 sm:px-4 rounded-lg border-2 font-semibold"
                 onClick={() => setIsOpen(true)}
             >
                 Tư vấn miễn phí
