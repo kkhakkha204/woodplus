@@ -6,39 +6,40 @@ const ContactSection = () => {
     const [popupMessage, setPopupMessage] = useState("");
     const [showPopup, setShowPopup] = useState(false);
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
         if (!ten.trim() || !soDienThoai.trim()) {
             setPopupMessage("Bạn chưa nhập đủ thông tin!");
             setShowPopup(true);
             return;
         }
 
-        const data = {
-            ten: ten.trim(),
-            soDienThoai: soDienThoai.trim(),
-            email: document.getElementById("email").value.trim(),
-            nhuCau: document.getElementById("nhu-cau").value.trim(),
-        };
+        const data = { ten, soDienThoai };
 
-        fetch("https://script.google.com/macros/s/AKfycbyljhL9jcPt_1J1RHXq__xbq6O2hnn-LTwHx_SCYuwpNJh_ZUjz5R4M2rQUkkHK1wma/exec", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(data),
-        })
-            .then((response) => response.json())
-            .then((result) => {
-                if (result.status === "success") {
-                    setPopupMessage("Thông tin của bạn đã được gửi thành công!");
-                } else {
-                    setPopupMessage("Có lỗi xảy ra, vui lòng thử lại!");
+        try {
+            const response = await fetch(
+                "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(data),
                 }
-                setShowPopup(true);
-            })
-            .catch(() => {
-                setPopupMessage("Không thể kết nối tới máy chủ!");
-                setShowPopup(true);
-            });
+            );
+
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+
+            const result = await response.json();
+            setPopupMessage("Thông tin của bạn đã được gửi thành công!");
+        } catch (error) {
+            setPopupMessage("Đã xảy ra lỗi khi gửi thông tin!");
+        }
+
+        setShowPopup(true);
     };
+
 
 
     const closePopup = () => setShowPopup(false);
