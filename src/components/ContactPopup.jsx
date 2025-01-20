@@ -33,7 +33,7 @@ const ContactPopup = () => {
             {/* Pop-up */}
             {isOpen && (
                 <div
-                    className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 mx-8 sm:mx-0"
+                    className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 px-8 sm:mx-0"
                     onClick={() => setIsOpen(false)} // Tắt pop-up khi click ngoài
                 >
                     <div
