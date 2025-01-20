@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 
 const ContactSection = () => {
-    const [ten, setTen] = useState("");
+    const [ten, setten] = useState("");
     const [soDienThoai, setSoDienThoai] = useState("");
-    const [email, setEmail] = useState("");
-    const [nhuCau, setNhuCau] = useState("");
     const [popupMessage, setPopupMessage] = useState("");
     const [showPopup, setShowPopup] = useState(false);
 
@@ -22,7 +20,7 @@ const ContactSection = () => {
             nhuCau: document.getElementById("nhu-cau").value.trim(),
         };
 
-        fetch("https://script.google.com/macros/s/AKfycbyljhL9jcPt_1J1RHXq__xbq6O2hnn-LTwHx_SCYuwpNJh_ZUjz5R4M2rQUkkHK1wma/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbx.../exec", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),
@@ -74,7 +72,7 @@ const ContactSection = () => {
                                 type="text"
                                 placeholder="Nhập Họ tên (Bắt buộc)"
                                 value={ten}
-                                onChange={(e) => setTen(e.target.value)}
+                                onChange={(e) => setten(e.target.value)}
                                 className="w-[350px] sm:w-[420px] md:w-[520px] lg:w-[425px] 2xl:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>
@@ -108,8 +106,6 @@ const ContactSection = () => {
                                 id="email"
                                 type="text"
                                 placeholder="Nhập Email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
                                 className="w-[350px] sm:w-[420px] md:w-[520px] lg:w-[425px] 2xl:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>
@@ -124,8 +120,6 @@ const ContactSection = () => {
                                 id="nhu-cau"
                                 type="text"
                                 placeholder="Viết nhu cầu bạn muốn gửi tới chúng tôi"
-                                value={nhuCau}
-                                onChange={(e) => setNhuCau(e.target.value)}
                                 className="w-[350px] sm:w-[420px] md:w-[520px] lg:w-[425px] 2xl:w-[520px] h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
                             />
                         </div>
