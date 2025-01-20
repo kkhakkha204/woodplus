@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import { TbArrowForwardUp } from "react-icons/tb";
+import React, {useState} from 'react';
+import {TbArrowForwardUp} from "react-icons/tb";
 import DarkSpacing from "../components/DarkSpacing";
 import LightSpacing from "../components/LightSpacing";
 import GiaTriSection from "../components/GiaTriSection";
 import ContactSection from "../components/ContactSection";
 import Partner from "../components/Partner";
 import {Link} from "react-router-dom";
+import ContactPopup from "../components/ContactPopup";
 
 
 const AboutUs = () => {
@@ -52,7 +53,8 @@ const AboutUs = () => {
                         {/* Mô tả bên trái */}
                         <div className="w-full lg:w-1/2">
                             <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[20px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto lg:mt-[150px] text-center lg:text-left text-white">
-                                Với hơn 8 năm kinh nghiệm, WoodPlus đã khẳng định uy tín trong thi công và thiết kế nội thất nhờ cam kết "Giá trị thật – Chất lượng thật",
+                                Với hơn 8 năm kinh nghiệm, WoodPlus đã khẳng định uy tín trong thi công và thiết kế nội
+                                thất nhờ cam kết "Giá trị thật – Chất lượng thật",
                                 mang đến sự hài lòng tuyệt đối.</p>
                         </div>
 
@@ -60,33 +62,37 @@ const AboutUs = () => {
                         <div
                             className="text-center sm:mt-[200px] space-x-1 flex justify-center md:justify-end items-center">
                             {/* Nút Liên hệ */}
+
                             <Link
-                                to="/liên-hệ"
-                                className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
+                                to="/dự-án"
+                                className="w-[100px] h-[35px] sm:w-[115px] sm:h-[36px] lg:w-[125px] lg:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
                                 onMouseEnter={() => setIsHovered(true)}
                                 onMouseLeave={() => setIsHovered(false)}
                             >
                                 {/* Hiển thị icon trên màn hình lớn */}
-                                <span className="hidden sm:inline text-[18px]">
+                                <span className="hidden lg:inline text-[18px]">
         {!isHovered ? (
-            <TbArrowForwardUp className="inline-block text-[25px]"/>
+            <TbArrowForwardUp className="inline-block text-[25px]" />
         ) : (
-            "Liên hệ"
+            "Xem dự án"
         )}
     </span>
 
                                 {/* Hiển thị chữ trên điện thoại và máy tính bảng */}
-                                <span className="sm:hidden text-[14px] font-semibold">
-        Liên hệ
+                                <span className="lg:hidden text-[14px] sm:text-[15px] font-semibold">
+        Xem dự án
     </span>
                             </Link>
+
+
                             {/* Nút Tư vấn */}
                             <Link
                                 to="/liên-hệ"
-                                className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
+                                className="w-[100px] h-[35px] sm:w-[115px] sm:h-[36px] lg:w-[125px] lg:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[15px] lg:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
                             >
-                                Tư vấn
+                                Liên hệ
                             </Link>
+
                         </div>
                     </div>
 
@@ -183,7 +189,10 @@ const AboutUs = () => {
                         <div className=" px-8 text-center shadow">
 
                             <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Giá trị cốt lõi</h3>
-                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Chúng tôi đặt khách hàng làm trung tâm, cam kết mang đến những giải pháp thiết kế nội thất sáng tạo, chất lượng và bền vững, đồng thời không ngừng đổi mới để đáp ứng mọi nhu cầu đa dạng.
+                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Chúng
+                                tôi đặt khách hàng làm trung tâm, cam kết mang đến những giải pháp thiết kế nội thất
+                                sáng tạo, chất lượng và bền vững, đồng thời không ngừng đổi mới để đáp ứng mọi nhu cầu
+                                đa dạng.
                             </p>
                         </div>
 
@@ -191,7 +200,9 @@ const AboutUs = () => {
                         <div className=" px-8 text-center shadow">
 
                             <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Tầm nhìn</h3>
-                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Trở thành thương hiệu dẫn đầu trong lĩnh vực thiết kế và thi công nội thất, mang lại giá trị vượt trội và kiến tạo không gian sống đẳng cấp cho khách hàng trên toàn cầu.
+                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Trở
+                                thành thương hiệu dẫn đầu trong lĩnh vực thiết kế và thi công nội thất, mang lại giá trị
+                                vượt trội và kiến tạo không gian sống đẳng cấp cho khách hàng trên toàn cầu.
                             </p>
                         </div>
 
@@ -199,7 +210,9 @@ const AboutUs = () => {
                         <div className=" px-8 text-center shadow">
 
                             <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Sứ mệnh</h3>
-                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Kiến tạo không gian sống tinh tế và tiện nghi, kết hợp hài hòa giữa thẩm mỹ và công năng, góp phần nâng cao chất lượng cuộc sống và truyền cảm hứng qua từng thiết kế.
+                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Kiến
+                                tạo không gian sống tinh tế và tiện nghi, kết hợp hài hòa giữa thẩm mỹ và công năng, góp
+                                phần nâng cao chất lượng cuộc sống và truyền cảm hứng qua từng thiết kế.
                             </p>
                         </div>
                     </div>
@@ -208,34 +221,12 @@ const AboutUs = () => {
                         {/* Nút Liên hệ */}
                         <Link
                             to="/liên-hệ"
-                            className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                            onMouseEnter={() => setIsHovered(true)}
-                            onMouseLeave={() => setIsHovered(false)}
+                            className="w-[130px] sm:w-[150px] md:w-[200px] h-[40px] md:h-[45px] bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[16px] md:text-[18px] italic rounded-xl border border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300 flex items-center justify-center"
                         >
-                            {/* Hiển thị icon trên màn hình lớn */}
-                            <span className="hidden sm:inline text-[18px]">
-        {!isHovered ? (
-            <TbArrowForwardUp className="inline-block text-[25px]"/>
-        ) : (
-            "Liên hệ"
-        )}
-    </span>
-
-                            {/* Hiển thị chữ trên điện thoại và máy tính bảng */}
-                            <span className="sm:hidden text-[14px] font-semibold">
-        Liên hệ
-    </span>
-                        </Link>
-
-
-                        {/* Nút Tư vấn */}
-                        <Link
-                            to="/liên-hệ"
-                            className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
-                        >
-                            Tư vấn
+                            Tư vấn miễn phí
                         </Link>
                     </div>
+
                 </section>
             </div>
 
@@ -331,32 +322,9 @@ const AboutUs = () => {
                         {/* Nút Liên hệ */}
                         <Link
                             to="/liên-hệ"
-                            className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                            onMouseEnter={() => setIsHovered(true)}
-                            onMouseLeave={() => setIsHovered(false)}
+                            className="w-[130px] sm:w-[150px] md:w-[200px] h-[40px] md:h-[45px] bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[16px] md:text-[18px] italic rounded-xl border border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300 flex items-center justify-center"
                         >
-                            {/* Hiển thị icon trên màn hình lớn */}
-                            <span className="hidden sm:inline text-[18px]">
-        {!isHovered ? (
-            <TbArrowForwardUp className="inline-block text-[25px]"/>
-        ) : (
-            "Liên hệ"
-        )}
-    </span>
-
-                            {/* Hiển thị chữ trên điện thoại và máy tính bảng */}
-                            <span className="sm:hidden text-[14px] font-semibold">
-        Liên hệ
-    </span>
-                        </Link>
-
-
-                        {/* Nút Tư vấn */}
-                        <Link
-                            to="/liên-hệ"
-                            className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
-                        >
-                            Tư vấn
+                            Tư vấn miễn phí
                         </Link>
                     </div>
 
@@ -373,6 +341,7 @@ const AboutUs = () => {
 
             <ContactSection/>
             <div className="hidden md:block"><DarkSpacing/></div>
+            <ContactPopup/>
         </main>
     );
 };

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { client, urlFor } from '../sanityClient';
 import DarkSpacing from '../components/DarkSpacing';
+import ContactPopup from "../components/ContactPopup";
 
 const NewsList = () => {
     const [news, setNews] = useState([]);
@@ -155,6 +156,7 @@ const NewsList = () => {
                     </button>
                 </div>
             </div>
+            <ContactPopup/>
         </main>
     );
 };

@@ -8,6 +8,7 @@ import ContactSection from "../components/ContactSection";
 import ProjectSection from "../components/ProjectSection";
 import {Link} from "react-router-dom";
 import Testimonials from "../components/Testimonials";
+import ContactPopup from "../components/ContactPopup";
 
 const HomePage = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -88,7 +89,7 @@ const HomePage = () => {
                             to="/liên-hệ"
                             className="w-[100px] h-[35px] sm:w-[115px] sm:h-[36px] lg:w-[125px] lg:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[15px] lg:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
                         >
-                            Tư vấn
+                            Liên hệ
                         </Link>
                     </div>
 
@@ -163,7 +164,7 @@ const HomePage = () => {
 
 
                         <div className="flex-col justify-center mb-4 relative">
-                            <Link to="/liên-hệ">
+                            <Link to="/trọn-gói">
                                 <img
                                     src="/assets/images/service/service1.jpg"
                                     alt="Dịch vụ R"
@@ -172,10 +173,10 @@ const HomePage = () => {
                             </Link>
                             <div className="text-center absolute bottom-0 left-0 w-full bg-[#0F0F0F] bg-opacity-85 pb-1">
                                 <Link
-                                    to="/liên-hệ"
+                                    to="/trọn-gói"
                                     className="flex items-center justify-center font-medium text-[22px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[34px] text-[#BEAB81] hover:text-white"
                                 >
-                                    Dịch vụ trọn gói
+                                    Xây dựng trọn gói
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
                                 <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
@@ -197,7 +198,7 @@ const HomePage = () => {
                                     to="/thi-công"
                                     className="flex items-center justify-center font-medium text-[22px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[34px] text-[#BEAB81] hover:text-white"
                                 >
-                                    Dịch vụ thi công
+                                    Thi công nội thất
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
                                 <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
@@ -262,7 +263,7 @@ const HomePage = () => {
                                         to="/liên-hệ"
                                         className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
                                     >
-                                        Tư vấn
+                                        Liên hệ
                                     </Link>
                                 </div>
                             </div>
@@ -305,6 +306,7 @@ const HomePage = () => {
             <ContactSection/>
 
             <div className="hidden md:block"><DarkSpacing/></div>
+            <ContactPopup/>
         </main>
     );
 };

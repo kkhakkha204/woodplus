@@ -94,7 +94,13 @@ const Navbar = () => {
                                     to="/thi-công"
                                     className="block py-2 px-4 hover:bg-[#3F3935]"
                                 >
-                                    Dịch vụ thi công
+                                    Thi công nội thất
+                                </Link>
+                                <Link
+                                    to="/trọn-gói"
+                                    className="block py-2 px-4 hover:bg-[#3F3935]"
+                                >
+                                    Xây dựng trọn gói
                                 </Link>
                             </div>
                         )}
@@ -153,7 +159,7 @@ const Navbar = () => {
                     </Link>
                     <Link
                         to="/dịch-vụ"
-                        className="block py-4 px-4 hover:bg-[#3F3935]"
+                        className="block py-4 px-4 hover:bg-[#3F3935] border-b-2 border-[#BEAB81]"
                         onClick={() => setMenuOpen(false)}
                     >
                         Dịch vụ
@@ -170,7 +176,14 @@ const Navbar = () => {
                         className="block py-4 px-8 bg-[#3F3935]"
                         onClick={() => setMenuOpen(false)}
                     >
-                        Dịch vụ thi công
+                        Thi công nội thất
+                    </Link>
+                    <Link
+                        to="/trọn-gói"
+                        className="block py-4 px-8 bg-[#3F3935]"
+                        onClick={() => setMenuOpen(false)}
+                    >
+                        Xây dựng trọn gói
                     </Link>
                     <Link
                         to="/dự-án"

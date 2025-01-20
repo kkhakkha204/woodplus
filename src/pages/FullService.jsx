@@ -8,7 +8,7 @@ import BlogSection from "../components/BlogSection";
 import {Link} from "react-router-dom";
 import ContactPopup from "../components/ContactPopup";
 
-const Design = () => {
+const FullService = () => {
     const [isHovered, setIsHovered] = useState(false);
     return (
         <main className="bg-[#0F0F0F] ">
@@ -37,14 +37,25 @@ const Design = () => {
                     {/* Thẻ divcut */}
                     <div className="w-full h-[100px] flex items-center justify-center">
                         {/* divcutl */}
-                        <div className="w-[180%] sm:w-[50%] h-[70%] sm:h-[100px] bg-[#0F0F0F] border-r-2 border-y-2">
-                            <span
-                                className="pl-2 sm:pl-8 text-[32px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] font-bold text-left sm:text-center tracking-[2%]">Dịch vụ<span
-                                className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text"> thiết kế</span></span>
+                        <div className="w-[30%] h-[100px] relative">
+                            {/* Đường line chia đôi chiều cao của divcutr */}
+                            <div className="absolute top-1/2 left-0 w-full border-t-2 border-white"></div>
                         </div>
 
+                        {/* divcutc */}
+                        <div
+                            className="w-[180%] sm:w-[50%] h-[70%] sm:h-[100px] bg-[#0F0F0F] border-x-2 border-y-2 flex items-center justify-center">
+    <span
+        className="pl-2 sm:pl-8 text-[32px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] font-bold text-center tracking-[2%]">
+        Xây dựng
+        <span className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text"> trọn gói
+        </span>
+    </span>
+                        </div>
+
+
                         {/* divcutr */}
-                        <div className="w-[50%] h-[100px] relative">
+                        <div className="w-[30%] h-[100px] relative">
                             {/* Đường line chia đôi chiều cao của divcutr */}
                             <div className="absolute top-1/2 left-0 w-full border-t-2 border-white"></div>
                         </div>
@@ -103,30 +114,65 @@ const Design = () => {
 
             <div className="hidden md:block"><DarkSpacing/></div>
 
-            <section className="pt-14 md:pt-0">
+            {/* Thẻ divcha */}
+            <div className="w-full  mt-14 md:mt-0">
+                {/* divcon */}
                 <div
-                    className="gap-16  px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 ">
-                    <div className="">
-                        <h3 className="text-center md:text-left font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
-                        <h2 className="text-center md:text-left text-[28px] sm:text-[34px] md:text-[40px] lg:text-[46px] font-bold text-[#FFFFFF] mt-2">Nơi hiện thực hóa ý tưởng của bạn</h2>
-                        <p className="text-center md:text-left text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] text-[#CECECE] font-normal">
-                            We are strategists, designers and developers. Innovators and problem
-                            solvers. Small enough to be simple and quick, but big enough to deliver the scope you want
-                            at the pace you need. Small enough to be simple and quick, but big enough to deliver the
-                            scope you want at the pace you need.
-                        </p>
+                    className="w-full max-w-[1620px] bg-[#0F0F0F] mx-auto pb-14 px-4 sm:px-6 lg:px-8 flex flex-wrap lg:flex-nowrap items-start justify-between">
+                    {/* divl */}
+                    <div className="w-full lg:w-[44%] mb-8 lg:mb-0 text-center sm:text-left">
+                        {/* divtext */}
+                        <div className="mb-6">
+                            <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
+                            <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Dịch
+                                vụ cung cấp</h2>
+                        </div>
+
+                        {/* divdesc */}
+                        {[
+                            {
+                                title: "Thi công nội thất",
+                                description:
+                                    "Cung cấp dịch vụ thi công nội thất chuyên nghiệp, đảm bảo chất lượng và thẩm mỹ cao, mang lại không gian sống hoàn hảo cho khách hàng.",
+                            },
+                            {
+                                title: "Xây nhà trọn gói",
+                                description:
+                                    "Dịch vụ xây nhà trọn gói từ thiết kế đến thi công, cam kết đáp ứng mọi yêu cầu về công năng và phong cách, mang lại không gian sống tiện nghi và hiện đại.",
+                            },
+                            {
+                                title: "Sửa nhà trọn gói",
+                                description:
+                                    "Dịch vụ sửa chữa và nâng cấp nhà toàn diện, tối ưu chi phí và thời gian, mang đến không gian sống mới mẻ và tiện nghi cho khách hàng.",
+                            },
+
+                        ].map((service, index) => (
+                            <div key={index} className="mb-10 text-center sm:text-left mx-auto w-[330px] sm:w-[500px]">
+                                <h2 className="text-[20px] sm:text-[24px] font-medium text-[#AF9A70]">{service.title}</h2>
+                                <p className="text-[13px] sm:text-[17px] text-[#CECECE]">{service.description}</p>
+                            </div>
+                        ))}
                     </div>
 
-                    <div className="grid grid-cols-2 gap-4 mt-8">
-                        <img className="w-full "
-                             src="/assets/images/service/services2.jpg"
-                             alt="office content 1"/>
-                        <img className="mt-4 w-full lg:mt-10 "
-                             src="/assets/images/service/service3.jpg"
-                             alt="office content 2"/>
+                    {/* divr */}
+                    <div className="w-full sm:pt-12 pr-3 lg:w-[54%]">
+                        <img
+                            src="/assets/images/herosection/11.png"
+                            alt="Dịch vụ cung cấp"
+                            className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover rounded-lg"
+                        />
                     </div>
+
                 </div>
-            </section>
+                <div className="text-center mt-12 space-x-1 flex justify-center items-center md:pb-8">
+                    {/* Nút Liên hệ */}
+                    <button
+                        className="w-[120px] sm:w-[150px] md:w-[200px] h-[40px] sm:h-[45px] bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[16px] md:text-[18px] italic rounded-xl border border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
+                    >
+                        Tư vấn miễn phí
+                    </button>
+                </div>
+            </div>
 
             <div className="hidden md:block"><DarkSpacing/></div>
 
@@ -135,7 +181,7 @@ const Design = () => {
                     className="absolute h-[36.5rem] w-full top-0 -z-10"></div>
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="mb-10 text-center">
-                        <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
+                    <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
                         <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Tổng
                             quan bảng giá
                             thiết kế</h2>
@@ -277,12 +323,11 @@ Hỗ trợ Hồ sơ Cấp phép XD</span>
                     </div>
                     <div className="text-center mt-12 space-x-1 flex justify-center items-center">
                         {/* Nút Liên hệ */}
-                        <Link
-                            to="/liên-hệ"
-                            className="w-[130px] sm:w-[150px] md:w-[200px] h-[40px] md:h-[45px] bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[16px] md:text-[18px] italic rounded-xl border border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300 flex items-center justify-center"
+                        <button
+                            className="w-[120px] sm:w-[150px] md:w-[200px] h-[40px] sm:h-[45px] bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[16px] md:text-[18px] italic rounded-xl border border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
                         >
                             Tư vấn miễn phí
-                        </Link>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -306,4 +351,4 @@ Hỗ trợ Hồ sơ Cấp phép XD</span>
     );
 };
 
-export default Design;
+export default FullService;

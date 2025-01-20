@@ -276,7 +276,7 @@ const ProjectSection = () => {
                         to="/liên-hệ"
                         className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
                     >
-                        Tư vấn
+                        Liên hệ
                     </Link>
                 </div>
             </div>

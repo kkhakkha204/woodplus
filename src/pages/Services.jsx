@@ -5,6 +5,7 @@ import ContactSection from "../components/ContactSection";
 import LightSpacing from "../components/LightSpacing";
 import Testimonials from "../components/Testimonials";
 import {Link} from "react-router-dom";
+import ContactPopup from "../components/ContactPopup";
 
 const Services = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -38,7 +39,7 @@ const Services = () => {
                     <div className="hidden md:block w-full h-[170px] sm:h-[230px] relative">
                         {/* divcutleft */}
                         <div
-                            className="w-[80.40%] sm:w-[60.05%] h-[80px] sm:h-[100px] bg-[#0F0F0F] border-t-[2px] border-r-[2px] absolute 2xl:top-[8px] left-0 flex items-center justify-center">
+                            className="w-[80.40%] sm:w-[60.05%] h-[80px] sm:h-[100px] bg-[#0F0F0F] border-t-[2px] border-r-[2px] absolute 2xl:top-[9px] left-0 flex items-center justify-center">
                             {/* Nội dung cho divcutleft */}
                             <span
                                 className="text-[34px] sm:text-[48px] md:text-[58px] lg:text-[60px] xl:text-[60px] 2xl:text-[68px] font-bold text-center tracking-[2%]">Cung cấp dịch vụ<span
@@ -95,31 +96,33 @@ const Services = () => {
                             className="text-center sm:mt-[200px] space-x-1 flex justify-center md:justify-end items-center">
                             {/* Nút Liên hệ */}
                             <Link
-                                to="/liên-hệ"
-                                className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
+                                to="/dự-án"
+                                className="w-[100px] h-[35px] sm:w-[115px] sm:h-[36px] lg:w-[125px] lg:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
                                 onMouseEnter={() => setIsHovered(true)}
                                 onMouseLeave={() => setIsHovered(false)}
                             >
                                 {/* Hiển thị icon trên màn hình lớn */}
-                                <span className="hidden sm:inline text-[18px]">
+                                <span className="hidden lg:inline text-[18px]">
         {!isHovered ? (
-            <TbArrowForwardUp className="inline-block text-[25px]"/>
+            <TbArrowForwardUp className="inline-block text-[25px]" />
         ) : (
-            "Liên hệ"
+            "Xem dự án"
         )}
     </span>
 
                                 {/* Hiển thị chữ trên điện thoại và máy tính bảng */}
-                                <span className="sm:hidden text-[14px] font-semibold">
-        Liên hệ
+                                <span className="lg:hidden text-[14px] sm:text-[15px] font-semibold">
+        Xem dự án
     </span>
                             </Link>
+
+
                             {/* Nút Tư vấn */}
                             <Link
                                 to="/liên-hệ"
-                                className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
+                                className="w-[100px] h-[35px] sm:w-[115px] sm:h-[36px] lg:w-[125px] lg:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[15px] lg:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
                             >
-                                Tư vấn
+                                Liên hệ
                             </Link>
                         </div>
                     </div>
@@ -210,37 +213,13 @@ const Services = () => {
                             </div>
                         </div>
                     </dl>
-                    <div
-                        className="text-center space-x-1 flex justify-center items-center mt-10">
+                    <div className="text-center mt-12 space-x-1 flex justify-center items-center">
                         {/* Nút Liên hệ */}
                         <Link
                             to="/liên-hệ"
-                            className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                            onMouseEnter={() => setIsHovered(true)}
-                            onMouseLeave={() => setIsHovered(false)}
+                            className="w-[130px] sm:w-[150px] md:w-[200px] h-[40px] md:h-[45px] bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[16px] md:text-[18px] italic rounded-xl border border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300 flex items-center justify-center"
                         >
-                            {/* Hiển thị icon trên màn hình lớn */}
-                            <span className="hidden sm:inline text-[18px]">
-        {!isHovered ? (
-            <TbArrowForwardUp className="inline-block text-[25px]"/>
-        ) : (
-            "Liên hệ"
-        )}
-    </span>
-
-                            {/* Hiển thị chữ trên điện thoại và máy tính bảng */}
-                            <span className="sm:hidden text-[14px] font-semibold">
-        Liên hệ
-    </span>
-                        </Link>
-
-
-                        {/* Nút Tư vấn */}
-                        <Link
-                            to="/liên-hệ"
-                            className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
-                        >
-                            Tư vấn
+                            Tư vấn miễn phí
                         </Link>
                     </div>
                 </div>
@@ -397,36 +376,13 @@ const Services = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="text-center mt-4 space-x-1 flex justify-center items-center">
+                    <div className="text-center mt-12 space-x-1 flex justify-center items-center">
                         {/* Nút Liên hệ */}
                         <Link
                             to="/liên-hệ"
-                            className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                            onMouseEnter={() => setIsHovered(true)}
-                            onMouseLeave={() => setIsHovered(false)}
+                            className="w-[130px] sm:w-[150px] md:w-[200px] h-[40px] md:h-[45px] bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[16px] md:text-[18px] italic rounded-xl border border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300 flex items-center justify-center"
                         >
-                            {/* Hiển thị icon trên màn hình lớn */}
-                            <span className="hidden sm:inline text-[18px]">
-        {!isHovered ? (
-            <TbArrowForwardUp className="inline-block text-[25px]"/>
-        ) : (
-            "Liên hệ"
-        )}
-    </span>
-
-                            {/* Hiển thị chữ trên điện thoại và máy tính bảng */}
-                            <span className="sm:hidden text-[14px] font-semibold">
-        Liên hệ
-    </span>
-                        </Link>
-
-
-                        {/* Nút Tư vấn */}
-                        <Link
-                            to="/liên-hệ"
-                            className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
-                        >
-                            Tư vấn
+                            Tư vấn miễn phí
                         </Link>
                     </div>
                 </div>
@@ -441,6 +397,7 @@ const Services = () => {
 
             <ContactSection/>
             <div className="hidden md:block"><DarkSpacing/></div>
+            <ContactPopup/>
         </main>
     );
 };

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { TbArrowForwardUp } from "react-icons/tb";
 import DarkSpacing from "../components/DarkSpacing";
 import LightSpacing from "../components/LightSpacing";
+import ContactPopup from "../components/ContactPopup";
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -166,6 +167,7 @@ const Contact = () => {
                     </div>
                 </div>
             )}
+            <ContactPopup/>
         </main>
     );
 };
