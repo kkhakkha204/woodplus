@@ -8,42 +8,40 @@ const ContactSection = () => {
     const [popupMessage, setPopupMessage] = useState("");
     const [showPopup, setShowPopup] = useState(false);
 
-    const handleSubmit = async () => {
+    const handleSubmit = () => {
         if (!ten.trim() || !soDienThoai.trim()) {
             setPopupMessage("Bạn chưa nhập đủ thông tin!");
             setShowPopup(true);
             return;
         }
 
-        // Formspree endpoint
-        const endpoint = "https://formspree.io/f/xzzzndao"; // Thay xxxxxx bằng endpoint của bạn
-
-        const formData = {
-            ten,
-            soDienThoai,
-            email,
-            nhuCau,
+        const data = {
+            ten: ten.trim(),
+            soDienThoai: soDienThoai.trim(),
+            email: document.getElementById("email").value.trim(),
+            nhuCau: document.getElementById("nhu-cau").value.trim(),
         };
 
-        try {
-            const response = await fetch(endpoint, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData),
+        fetch("https://script.google.com/macros/s/AKfycbyljhL9jcPt_1J1RHXq__xbq6O2hnn-LTwHx_SCYuwpNJh_ZUjz5R4M2rQUkkHK1wma/exec", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+        })
+            .then((response) => response.json())
+            .then((result) => {
+                if (result.status === "success") {
+                    setPopupMessage("Thông tin của bạn đã được gửi thành công!");
+                } else {
+                    setPopupMessage("Có lỗi xảy ra, vui lòng thử lại!");
+                }
+                setShowPopup(true);
+            })
+            .catch(() => {
+                setPopupMessage("Không thể kết nối tới máy chủ!");
+                setShowPopup(true);
             });
-
-            if (response.ok) {
-                setPopupMessage("Thông tin của bạn đã được gửi thành công!");
-            } else {
-                setPopupMessage("Có lỗi xảy ra, vui lòng thử lại sau.");
-            }
-        } catch (error) {
-            setPopupMessage("Kết nối thất bại, vui lòng thử lại.");
-        }
-        setShowPopup(true);
     };
+
 
     const closePopup = () => setShowPopup(false);
 
