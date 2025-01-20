@@ -98,7 +98,7 @@ const ContactPopup = () => {
                             </div>
 
                             {/* Thông báo lỗi hoặc thành công */}
-                            {error && <p className="text-center text-red-500 text-sm mb-4">{error}</p>}
+                            {error && <p className="text-center text-red-600 text-sm mb-4">{error}</p>}
                             {success && <p className="text-center text-[#BEAB81] text-sm mb-4">{success}</p>}
 
                             <div className="text-center my-2">

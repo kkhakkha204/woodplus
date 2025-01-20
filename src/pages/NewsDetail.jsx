@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { client, urlFor } from '../sanityClient';
 import { useParams } from 'react-router-dom';
 import { PortableText } from '@portabletext/react';
-import ContactPopup from "../components/ContactPopup";
 
 const NewsDetail = () => {
     const { slug } = useParams();
@@ -177,7 +176,6 @@ const NewsDetail = () => {
 
 
             </div>
-            <ContactPopup/>
         </main>
     );
 };
