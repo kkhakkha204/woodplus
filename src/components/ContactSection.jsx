@@ -20,7 +20,7 @@ const ContactSection = () => {
             nhuCau: document.getElementById("nhu-cau").value.trim(),
         };
 
-        fetch("https://script.google.com/macros/s/AKfycbx.../exec", {
+        fetch("https://script.google.com/macros/s/AKfycbyljhL9jcPt_1J1RHXq__xbq6O2hnn-LTwHx_SCYuwpNJh_ZUjz5R4M2rQUkkHK1wma/exec", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),
