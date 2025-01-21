@@ -111,7 +111,7 @@ const ContactSection = () => {
 
                 {/* Pop-up */}
                 {showPopup && (
-                    <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
+                    <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50">
                         <div className="bg-white p-6 rounded-lg shadow-lg text-center">
                             <p className="text-lg font-medium text-black">{popupMessage}</p>
                             <button

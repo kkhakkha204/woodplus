@@ -10,6 +10,7 @@ import {Link} from "react-router-dom";
 import Testimonials from "../components/Testimonials";
 import ContactPopup from "../components/ContactPopup";
 
+
 const HomePage = () => {
     const [isHovered, setIsHovered] = useState(false);
 

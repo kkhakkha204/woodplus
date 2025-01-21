@@ -20,6 +20,7 @@ import FullService from "./pages/FullService";
 
 
 
+
 const App = () => {
     return (
         <Router>
@@ -44,6 +45,7 @@ const App = () => {
 
                     <Route path="/projects" element={<ProjectList />} />
                     <Route path="/project/:slug" element={<ProjectDetail />} />
+
                 </Routes>
 
                 {/* Footer */}
