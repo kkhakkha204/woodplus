@@ -9,15 +9,13 @@ import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import Design from "./pages/Design";
 import Construction from "./pages/Construction";
-import Project from "./pages/Project";
 import Contact from "./pages/Contact";
-
 import NewsList from "./pages/NewsList";
 import NewsDetail from "./pages/NewsDetail";
 import ProjectList from "./pages/ProjectList";
 import ProjectDetail from "./pages/ProjectDetail";
 import FullService from "./pages/FullService";
-import ContactPopup from "./components/ContactPopup";
+
 
 
 
@@ -38,7 +36,7 @@ const App = () => {
                     <Route path="/thiết-kế" element={<Design />} />
                     <Route path="/thi-công" element={<Construction />} />
                     <Route path="/trọn-gói" element={<FullService />} />
-                    <Route path="/dự-án" element={<Project />} />
+
                     <Route path="/liên-hệ" element={<Contact />} />
 
                     <Route path="/news" element={<NewsList />} />

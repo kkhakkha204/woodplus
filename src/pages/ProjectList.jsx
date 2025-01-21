@@ -1,8 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { client, urlFor } from '../sanityClient';
+import React, {useState, useEffect} from 'react';
+import {client, urlFor} from '../sanityClient';
+import DarkSpacing from "../components/DarkSpacing";
+import {TbArrowForwardUp} from "react-icons/tb";
+import LightSpacing from "../components/LightSpacing";
+import ContactSection from "../components/ContactSection";
 
 const ProjectList = () => {
     const [featuredProjects, setFeaturedProjects] = useState([]);
+    const [isHovered, setIsHovered] = useState(false);
     const [projects, setProjects] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const projectsPerPage = 6;
@@ -12,15 +17,21 @@ const ProjectList = () => {
         client
             .fetch(
                 `*[_type == "project" && isFeatured == true] | order(completionDate desc) {
-          _id,
-          title,
-          slug,
-          mainImage
-        }`
+              _id,
+              title,
+              slug,
+              mainImage,
+              clientName,
+              clientJob,
+              excerpt,
+              location,
+              completionDate
+            }`
             )
             .then((data) => setFeaturedProjects(data))
             .catch(console.error);
     }, []);
+
 
     // Fetch all projects
     useEffect(() => {
@@ -48,85 +59,152 @@ const ProjectList = () => {
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
-        <div className="container mx-auto px-4">
-            {/* Hero Section */}
-            <section className="hero bg-gray-200 py-12 text-center">
-                <h1 className="text-4xl font-bold">Dự án của chúng tôi</h1>
-                <p className="text-gray-600 mt-4">
-                    Khám phá các dự án nổi bật và những câu chuyện thành công từ khách hàng của chúng tôi.
-                </p>
-            </section>
+        <main className="bg-[#0F0F0F]">
 
-            {/* Featured Projects Section */}
-            <section className="featured-projects py-12">
-                <h2 className="text-3xl font-bold mb-6">Dự án nổi bật</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {featuredProjects.map((project) => (
-                        <div key={project._id} className="bg-white shadow rounded-lg p-4">
-                            <img
-                                src={urlFor(project.mainImage).url()}
-                                alt={project.title}
-                                className="w-full h-48 object-cover rounded"
-                            />
-                            <h3 className="text-xl font-semibold mt-4">{project.title}</h3>
+
+            {/* HeroSection */}
+            <div
+                className="h-[600px] sm:h-[650px] lg:h-[750px] xl:h-[800px] 2xl:h-[900px] w-full bg-cover bg-center relative overflow-hidden">
+                {/* Video nền */}
+                <video
+                    className="hidden md:block absolute inset-0 w-full h-full object-cover"
+                    src="/assets/videos/video1.mp4" // Đường dẫn đến video của bạn
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                ></video>
+                <video
+                    className="md:hidden absolute inset-0 w-full h-full object-cover"
+                    src="/assets/videos/video2.mp4" // Đường dẫn đến video của bạn
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                ></video>
+                {/* Lớp phủ màu đen nhẹ */}
+                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+            </div>
+
+
+            <div className="hidden md:block"><DarkSpacing/></div>
+
+            <div className="w-full text-white pt-14 md:pt-0">
+                <div className="w-full max-w-[1620px] mx-auto pb-14 px-4">
+                    {/* Phần tiêu đề */}
+                    <div className="mb-10 text-center">
+                        <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
+                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Ngôi
+                            nhà của người truyền cảm hứng</h2>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {featuredProjects.map((project) => (
+
                             <a
                                 href={`/project/${project.slug.current}`}
-                                className="text-blue-500 mt-4 inline-block"
-                            >
-                                Xem chi tiết
+                                key={project._id} className="bg-[#0F0F0F] p-4 rounded-lg flex-col block shadow overflow-hidden group">
+                                <img
+                                    src={urlFor(project.mainImage).url()}
+                                    alt={project.title}
+                                    className="w-full h-[200px] sm:h-[250px] md:h-[300px] object-cover rounded-lg"
+                                />
+                                <h3 className="text-[20px] text-center sm:text-[24px] font-medium text-white mt-4 group-hover:text-[#BEAB81] transition-colors duration-300">
+                                    {project.title}
+                                </h3>
+                                <p className="text-[16px] text-center sm:text-[18px] text-gray-200">
+                                    {project.clientName} - {project.clientJob}
+                                </p>
+                                <p className="text-[14px] text-center sm:text-[16px] text-[#CECECE] mt-2">{project.excerpt}</p>
+                                <p className="text-[16px] text-center sm:text-[18px] text-[#BEAB81] italic mt-2">
+                                    {project.location} - {new Date(project.completionDate).toLocaleDateString("vi-VN")}
+                                </p>
                             </a>
-                        </div>
-                    ))}
-                </div>
-            </section>
+                        ))}
+                    </div>
 
-            {/* All Projects Section */}
-            <section className="all-projects py-12">
-                <h2 className="text-3xl font-bold mb-6">Danh sách tất cả dự án</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {currentProjects.map((project) => (
-                        <div key={project._id} className="bg-white shadow rounded-lg p-4">
-                            <img
-                                src={urlFor(project.mainImage).url()}
-                                alt={project.title}
-                                className="w-full h-48 object-cover rounded"
-                            />
-                            <h3 className="text-xl font-semibold mt-4">{project.title}</h3>
-                            <p className="text-gray-600 mt-2">{project.excerpt}</p>
-                            <p className="text-sm text-gray-500">
-                                {project.location} |{' '}
-                                {new Date(project.completionDate).toLocaleDateString()}
-                            </p>
+
+                    {/* Nút liên hệ và tư vấn */}
+                    <div className="text-center mt-12 space-x-1 flex justify-center items-center">
+                        {/* Nút Liên hệ */}
+                        <button
+                            className=" w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
+                            onMouseEnter={() => setIsHovered(true)}
+                            onMouseLeave={() => setIsHovered(false)}
+                        >
+                            {!isHovered ? (
+                                <TbArrowForwardUp className="inline-block text-[25px]"/>
+                            ) : (
+                                "Liên hệ"
+                            )}
+                        </button>
+
+                        {/* Nút Tư vấn */}
+                        <button
+                            className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[15px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
+                        >
+                            Tư vấn
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <LightSpacing/>
+
+            <div className="w-full text-white bg-[#e7e5e4]">
+                {/* Container chính */}
+                <div className="max-w-[1620px] mx-auto pb-14 px-4">
+                    {/* Tiêu đề */}
+                    <div className="mb-10 text-center">
+                        <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
+                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#0F0F0F] mt-2">Các
+                            công trình khác</h2>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {currentProjects.map((project) => (
                             <a
                                 href={`/project/${project.slug.current}`}
-                                className="text-blue-500 mt-4 inline-block"
-                            >
-                                Xem chi tiết
+                                key={project._id} className="bg-[#0F0F0F] p-3 rounded-lg block shadow overflow-hidden group">
+                                <img
+                                    src={urlFor(project.mainImage).url()}
+                                    alt={project.title}
+                                    className="w-full h-[200px] sm:h-[250px] md:h-[300px] object-cover rounded-lg"
+                                />
+                                <div className="flex justify-between text-white mt-4 group-hover:text-[#BEAB81] transition-colors duration-300">
+                                    <span>{project.location}</span>
+                                    <span>{new Date(project.completionDate).toLocaleDateString()}</span>
+                                </div>
                             </a>
-                        </div>
-                    ))}
-                </div>
+                        ))}
+                    </div>
 
-                {/* Pagination */}
-                <div className="pagination flex justify-center mt-8">
-                    {Array.from({ length: Math.ceil(projects.length / projectsPerPage) }).map(
-                        (_, index) => (
-                            <button
-                                key={index}
-                                onClick={() => paginate(index + 1)}
-                                className={`mx-2 px-4 py-2 rounded ${
-                                    currentPage === index + 1
-                                        ? 'bg-blue-500 text-white'
-                                        : 'bg-gray-200 text-gray-700'
-                                }`}
-                            >
-                                {index + 1}
-                            </button>
-                        )
-                    )}
+                    {/* Pagination */}
+                    <div className="pagination flex justify-center mt-8">
+                        {Array.from({length: Math.ceil(projects.length / projectsPerPage)}).map(
+                            (_, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => paginate(index + 1)}
+                                    className={`mx-2 px-4 py-2 rounded ${
+                                        currentPage === index + 1
+                                            ? 'bg-[#BEAB81] text-black'
+                                            : 'bg-gray-200 text-gray-700'
+                                    }`}
+                                >
+                                    {index + 1}
+                                </button>
+                            )
+                        )}
+                    </div>
                 </div>
-            </section>
-        </div>
+            </div>
+
+
+            <DarkSpacing/>
+
+            <ContactSection/>
+        </main>
     );
 };
 

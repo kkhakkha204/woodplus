@@ -70,7 +70,7 @@ const Construction = () => {
                             className="text-center sm:mt-[200px] space-x-1 flex justify-center md:justify-end items-center">
                             {/* Nút Liên hệ */}
                             <Link
-                                to="/dự-án"
+                                to="/projects"
                                 className="w-[100px] h-[35px] sm:w-[115px] sm:h-[36px] lg:w-[125px] lg:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
                                 onMouseEnter={() => setIsHovered(true)}
                                 onMouseLeave={() => setIsHovered(false)}

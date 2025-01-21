@@ -105,7 +105,7 @@ const Navbar = () => {
                             </div>
                         )}
                     </div>
-                    <Link to="/dự-án" className="hover:text-[#BEAB81] relative group">
+                    <Link to="/projects" className="hover:text-[#BEAB81] relative group">
                         Dự án
                         <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-[#BEAB81] transition-all duration-300 group-hover:w-full"></span>
                     </Link>
@@ -186,7 +186,7 @@ const Navbar = () => {
                         Xây dựng trọn gói
                     </Link>
                     <Link
-                        to="/dự-án"
+                        to="/projects"
                         className="block py-4 px-4 hover:bg-[#3F3935]"
                         onClick={() => setMenuOpen(false)}
                     >
