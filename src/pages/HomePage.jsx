@@ -9,6 +9,7 @@ import ProjectSection from "../components/ProjectSection";
 import {Link} from "react-router-dom";
 import Testimonials from "../components/Testimonials";
 import ContactPopup from "../components/ContactPopup";
+import Stat from "../components/Stat";
 
 
 const HomePage = () => {
@@ -296,7 +297,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-
+            <Stat/>
 
             <div className="hidden md:block"><DarkSpacing/></div>
 

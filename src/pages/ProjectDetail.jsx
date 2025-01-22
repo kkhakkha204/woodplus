@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { client, urlFor } from '../sanityClient';
 import { useParams } from 'react-router-dom';
 import DarkSpacing from "../components/DarkSpacing";
+import ContactSection from "../components/ContactSection";
 
 const ProjectDetail = () => {
     const { slug } = useParams();
@@ -61,9 +62,9 @@ const ProjectDetail = () => {
                 <DarkSpacing />
 
                 {/* First 2 Images (Grid 2 columns) */}
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-8">
                     {firstTwoImages.map((image, index) => (
-                        <div key={index} className="w-full h-[500px] mx-auto">
+                        <div key={index} className="w-full h-[370px] mx-auto">
                             <img
                                 src={urlFor(image).url()}
                                 alt={`Gallery image ${index + 1}`}
@@ -74,7 +75,7 @@ const ProjectDetail = () => {
                 </div>
 
                 {/* Description */}
-                <div className="text-[#CECECE] mt-10 text-[14px] tracking-[0.01rem] sm:text-[15px] md:text-[17px] lg:text-[20px]">
+                <div className="text-center text-[#CECECE] mx-4 my-10 text-[14px] tracking-[0.01rem] sm:text-[14px] md:text-[16px] lg:text-[17px] ">
                     <p>{project.description}</p>
                 </div>
 
@@ -82,7 +83,7 @@ const ProjectDetail = () => {
                 {/* Next 6 Images (Grid 3 columns) */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     {nextSixImages.map((image, index) => (
-                        <div key={index} className="w-full h-[300px]">
+                        <div key={index} className=" px-4 w-full h-[270px]">
                             <img
                                 src={urlFor(image).url()}
                                 alt={`Gallery image ${index + 3}`}
@@ -93,14 +94,14 @@ const ProjectDetail = () => {
                 </div>
 
                 {/* Description 2 */}
-                <div className="text-[#CECECE] mt-10 text-[14px] tracking-[0.01rem] sm:text-[15px] md:text-[17px] lg:text-[20px]">
+                <div className="text-center text-[#CECECE] mx-4 my-10 text-[14px] tracking-[0.01rem] sm:text-[14px] md:text-[16px] lg:text-[17px]">
                     <p>{project.description2}</p>
                 </div>
 
                 {/* Next 2 Images (Grid 2 columns) */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-8">
                     {nextTwoImages.map((image, index) => (
-                        <div key={index} className="w-full h-[300px]">
+                        <div key={index} className="w-full h-[370px] mx-auto">
                             <img
                                 src={urlFor(image).url()}
                                 alt={`Gallery image ${index + 9}`}
@@ -111,14 +112,14 @@ const ProjectDetail = () => {
                 </div>
 
                 {/* Description 3 */}
-                <div className="text-[#CECECE] mt-10 text-[14px] tracking-[0.01rem] sm:text-[15px] md:text-[17px] lg:text-[20px]">
+                <div className="text-center text-[#CECECE] mx-4 my-10 text-[14px] tracking-[0.01rem] sm:text-[14px] md:text-[16px] lg:text-[17px]">
                     <p>{project.description3}</p>
                 </div>
 
                 {/* Last 6 Images (Grid 3 columns) */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     {lastSixImages.map((image, index) => (
-                        <div key={index} className="w-full h-[300px]">
+                        <div key={index} className="px-4 w-full h-[270px]">
                             <img
                                 src={urlFor(image).url()}
                                 alt={`Gallery image ${index + 11}`}
@@ -129,11 +130,13 @@ const ProjectDetail = () => {
                 </div>
 
                 {/* Description 4 */}
-                <div className="text-[#CECECE] mt-10 text-[14px] tracking-[0.01rem] sm:text-[15px] md:text-[17px] lg:text-[20px]">
+                <div className="text-center text-[#CECECE] mx-4 my-10 text-[14px] tracking-[0.01rem] sm:text-[14px] md:text-[16px] lg:text-[17px]">
                     <p>{project.description4}</p>
                 </div>
 
             </div>
+            <DarkSpacing />
+            <ContactSection />
         </main>
     );
 };
