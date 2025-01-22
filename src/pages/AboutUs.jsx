@@ -49,7 +49,7 @@ const AboutUs = () => {
 
                     {/* Thẻ divbot */}
                     <div
-                        className="w-full xl:max-w-[1350px] 2xl:max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 lg:grid-cols-2 justify-between items-center ">
+                        className="w-full xl:max-w-[1350px] 2xl:max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 lg:grid-cols-2 justify-between items-center px-4 sm:px-6 lg:px-8">
                         {/* Mô tả bên trái */}
                         <div className="w-full lg:w-1/2">
                             <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[20px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto lg:mt-[150px] text-center lg:text-left text-white">

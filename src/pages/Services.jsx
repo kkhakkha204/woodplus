@@ -42,7 +42,7 @@ const Services = () => {
                             className="w-[80.40%] sm:w-[60.05%] h-[80px] sm:h-[100px] bg-[#0F0F0F] border-t-[2px] border-r-[2px] absolute 2xl:top-[9px] left-0 flex items-center justify-center">
                             {/* Nội dung cho divcutleft */}
                             <span
-                                className="text-[34px] sm:text-[48px] md:text-[58px] lg:text-[60px] xl:text-[60px] 2xl:text-[68px] font-bold text-center tracking-[2%]">Cung cấp dịch vụ<span
+                                className="text-[34px] sm:text-[48px] md:text-[50px] lg:text-[50px] xl:text-[53px] 2xl:text-[68px] font-bold text-center tracking-[2%]">Cung cấp dịch vụ<span
                                 className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text"> tận tâm</span></span>
                         </div>
 
@@ -51,7 +51,7 @@ const Services = () => {
                             className="w-[80.05%] sm:w-[65%] h-[80px] sm:h-[100px] bg-[#0F0F0F] border-b-[2px] border-l-[2px] absolute 2xl:-bottom-2 xl:-bottom-[13px] sm:-bottom-4 right-0 flex items-center ">
                             {/* Nội dung cho divcutright */}
                             <span
-                                className="text-[34px] sm:text-[48px] md:text-[58px] lg:text-[60px] xl:text-[60px] 2xl:text-[68px] font-bold ml-6 sm:ml-44 text-center tracking-[2%]">tạo dựng giá trị
+                                className="text-[34px] sm:text-[48px] md:text-[50px] lg:text-[50px] xl:text-[53px] 2xl:text-[68px] font-bold ml-6 2xl:ml-36 text-center tracking-[2%]">tạo dựng giá trị
                             <span
                                 className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text"> bền lâu.</span></span>
                         </div>
@@ -81,13 +81,13 @@ const Services = () => {
 
                     {/* Thẻ divbot */}
                     <div
-                        className="w-full xl:max-w-[1350px] 2xl:max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 lg:grid-cols-2 justify-between items-center ">
+                        className=" w-full xl:max-w-[1350px] 2xl:max-w-[1620px] h-[calc(50%-50px)] grid grid-cols-1 lg:grid-cols-2 justify-between items-center px-4 sm:px-6 lg:px-8">
                         {/* Mô tả bên trái */}
                         <div className="w-full lg:w-1/2">
-                            <p className="text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[20px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto lg:mt-[150px] text-center lg:text-left text-white">
-                                WoodPlus mang đến giải pháp nội thất toàn diện, từ thiết kế sáng tạo đến thi công chất
-                                lượng. Với đội ngũ giàu kinh nghiệm, chúng tôi tạo ra không gian đẹp, ứng dụng cao và
-                                bền vững, đồng hành cùng khách hàng đến khi hoàn thiện.
+                            <p className=" text-[15px] tracking-[0.01rem] sm:text-[16px] md:text-[18px] lg:text-[20px] max-w-[330px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px] mx-auto lg:mt-[150px] text-center lg:text-left text-white">
+                                WoodPlus mang đến giải pháp toàn diện, từ thiết kế sáng tạo đến thi công chất
+                                lượng. Chúng tôi tạo ra không gian đẹp, ứng dụng cao và
+                                bền vững.
                             </p>
                         </div>
 
