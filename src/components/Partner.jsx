@@ -16,8 +16,7 @@ const PartnerSection = () => {
                     <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
                     <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white mt-2">Đối tác của WoodPlus</h2>
                     <p className="mx-auto w-[330px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
-                        Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui ducimus soluta qui
-                        assumenda aliquam quo deserunt quidem?
+                        Woodplus tự hào hợp tác cùng các nhà cung cấp vật liệu hàng đầu và thương hiệu uy tín, đảm bảo chất lượng vượt trội cho mọi công trình.
                     </p>
                 </div>
 

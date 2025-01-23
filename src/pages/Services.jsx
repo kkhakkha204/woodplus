@@ -51,7 +51,7 @@ const Services = () => {
                             className="w-[80.05%] sm:w-[65%] h-[80px] sm:h-[100px] bg-[#0F0F0F] border-b-[2px] border-l-[2px] absolute 2xl:-bottom-2 xl:-bottom-[13px] sm:-bottom-4 right-0 flex items-center ">
                             {/* Nội dung cho divcutright */}
                             <span
-                                className="text-[34px] sm:text-[48px] md:text-[50px] lg:text-[50px] xl:text-[53px] 2xl:text-[68px] font-bold ml-6 2xl:ml-36 text-center tracking-[2%]">tạo dựng giá trị
+                                className="text-[34px] sm:text-[48px] md:text-[50px] lg:text-[50px] xl:text-[53px] 2xl:text-[68px] font-bold ml-6 2xl:ml-[4.5rem] text-center tracking-[2%]">tạo dựng giá trị
                             <span
                                 className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text"> bền lâu.</span></span>
                         </div>
@@ -104,7 +104,7 @@ const Services = () => {
                                 {/* Hiển thị icon trên màn hình lớn */}
                                 <span className="hidden lg:inline text-[18px]">
         {!isHovered ? (
-            <TbArrowForwardUp className="inline-block text-[25px]" />
+            <TbArrowForwardUp className="inline-block text-[25px]"/>
         ) : (
             "Xem dự án"
         )}
@@ -253,42 +253,42 @@ const Services = () => {
                                 />
                             </Link>
                             <div
-                                className="divtext absolute bottom-0 lg:bottom-[150px] left-0 w-full bg-[#0F0F0F] bg-opacity-85 text-center pb-1">
+                                className="divtext absolute bottom-0 lg:bottom-[150px] left-0 w-full bg-[#0F0F0F] bg-opacity-85 text-center p-6">
                                 <Link
                                     to="/thiết-kế"
-                                    className="flex items-center justify-center font-medium text-[22px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[34px] text-[#BEAB81] hover:text-white"
+                                    className="flex items-center justify-center font-medium text-[22px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[32px] text-[#BEAB81] hover:text-white"
                                 >
                                     Dịch vụ thiết kế
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
-                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
-                                    Chúng tôi mang đến những ý tưởng thiết kế sáng tạo, độc đáo, phù hợp với phong cách
-                                    và nhu cầu riêng của từng khách hàng, tạo nên không gian sống hoàn hảo.
+                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
+                                    Giải pháp thiết kế nội thất tinh tế. Chúng tôi hiện thực hóa ý tưởng của bạn, tạo
+                                    nên không gian sống hài hòa giữa công năng và thẩm mỹ, đậm dấu ấn cá nhân.
                                 </p>
                             </div>
                         </div>
 
 
                         <div className="flex-col justify-center mb-4 relative">
-                            <Link to="/liên-hệ">
+                            <Link to="/trọn-gói">
                                 <img
                                     src="/assets/images/service/service1.jpg"
                                     alt="Dịch vụ R"
                                     className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
                                 />
                             </Link>
-                            <div
-                                className="text-center absolute bottom-0 left-0 w-full bg-[#0F0F0F] bg-opacity-85 pb-1">
+                            <div className="text-center absolute bottom-0 left-0 w-full bg-[#0F0F0F] bg-opacity-85 p-6">
                                 <Link
-                                    to="/liên-hệ"
-                                    className="flex items-center justify-center font-medium text-[22px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[34px] text-[#BEAB81] hover:text-white"
+                                    to="/trọn-gói"
+                                    className="flex items-center justify-center font-medium text-[22px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[32px] text-[#BEAB81] hover:text-white"
                                 >
-                                    Dịch vụ trọn gói
+                                    Xây dựng trọn gói
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
-                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
-                                    Từ ý tưởng đến hoàn thiện, chúng tôi cung cấp giải pháp toàn diện, đảm bảo mọi chi
-                                    tiết được thực hiện đồng bộ, chuyên nghiệp và đúng tiến độ.
+                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
+                                    Từ thiết kế, thi công đến hoàn thiện, chúng tôi đồng hành cùng bạn trong từng giai
+                                    đoạn, đảm bảo dự án được thực hiện đúng tiến độ, tối ưu chi phí và mang đến không
+                                    gian hoàn mỹ như mong đợi.
                                 </p>
                             </div>
                         </div>
@@ -302,17 +302,17 @@ const Services = () => {
                                 />
                             </Link>
                             <div
-                                className="text-center absolute bottom-0 lg:bottom-[150px] left-0 w-full bg-[#0F0F0F] bg-opacity-85 pb-1">
+                                className="text-center absolute bottom-0 lg:bottom-[150px] left-0 w-full bg-[#0F0F0F] bg-opacity-85 p-6">
                                 <Link
                                     to="/thi-công"
-                                    className="flex items-center justify-center font-medium text-[22px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[34px] text-[#BEAB81] hover:text-white"
+                                    className="flex items-center justify-center font-medium text-[22px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[32px] text-[#BEAB81] hover:text-white"
                                 >
-                                    Dịch vụ thi công
+                                    Thi công nội thất
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
-                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
-                                    Đội ngũ thi công lành nghề của chúng tôi cam kết biến bản vẽ thiết kế thành hiện
-                                    thực với chất lượng cao và sự tỉ mỉ trong từng công đoạn.
+                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
+                                    Chúng tôi sử dụng vật liệu cao cấp, kỹ thuật hiện đại cùng đội ngũ tay nghề cao để
+                                    đảm bảo từng chi tiết đều hoàn hảo, mang lại không gian bền vững.
                                 </p>
                             </div>
                         </div>

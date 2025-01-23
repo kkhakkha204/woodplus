@@ -186,33 +186,31 @@ const AboutUs = () => {
 
                     <div
                         className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-3">
-                        <div className=" px-8 text-center shadow">
-
-                            <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Giá trị cốt lõi</h3>
-                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Chúng
-                                tôi đặt khách hàng làm trung tâm, cam kết mang đến những giải pháp thiết kế nội thất
-                                sáng tạo, chất lượng và bền vững, đồng thời không ngừng đổi mới để đáp ứng mọi nhu cầu
-                                đa dạng.
-                            </p>
-                        </div>
-
 
                         <div className=" px-8 text-center shadow">
 
                             <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Tầm nhìn</h3>
                             <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Trở
-                                thành thương hiệu dẫn đầu trong lĩnh vực thiết kế và thi công nội thất, mang lại giá trị
-                                vượt trội và kiến tạo không gian sống đẳng cấp cho khách hàng trên toàn cầu.
+                                thành thương hiệu dẫn đầu trong thiết kế và thi công nội thất, mang lại giá trị đẳng cấp
+                                và cảm hứng cho khách hàng toàn cầu.
                             </p>
                         </div>
 
+                        <div className=" px-8 text-center shadow">
+
+                            <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Giá trị cốt lõi</h3>
+                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Woodplus
+                                luôn đặt khách hàng làm trung tâm, cung cấp những giải pháp thiết kế nội thất sáng tạo,
+                                chất lượng và bền vững, giúp không gian sống hoàn hảo và đáp ứng nhu cầu thực tế
+                            </p>
+                        </div>
 
                         <div className=" px-8 text-center shadow">
 
                             <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Sứ mệnh</h3>
                             <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Kiến
-                                tạo không gian sống tinh tế và tiện nghi, kết hợp hài hòa giữa thẩm mỹ và công năng, góp
-                                phần nâng cao chất lượng cuộc sống và truyền cảm hứng qua từng thiết kế.
+                                tạo không gian sống tinh tế, tiện nghi, kết hợp thẩm mỹ và công năng, nâng cao chất
+                                lượng cuộc sống và truyền cảm hứng cho khách hàng.
                             </p>
                         </div>
                     </div>
@@ -242,8 +240,7 @@ const AboutUs = () => {
                             ngũ của
                             WoodPlus</h2>
                         <p className="mx-auto w-[330px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
-                            Sed quis doloribus Et quisquam qui nobis eligendi et adipisci temporibus qui ducimus
-                            soluta qui assumenda aliquam quo deserunt quidem?
+                            Đội ngũ Woodplus là tập hợp những chuyên gia sáng tạo, giàu kinh nghiệm và đam mê, luôn nỗ lực mang đến giải pháp thiết kế và thi công nội thất hoàn hảo cho từng dự án.
                         </p>
                     </div>
 

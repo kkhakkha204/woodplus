@@ -51,8 +51,8 @@ const Contact = () => {
                 <div className="max-w-[1200px] mx-auto bg-[#0F0F0F] p-6 md:p-8 ">
                     <div className="flex flex-wrap gap-8">
                         {/* Left Section */}
-                        <div className="w-full lg:w-[65%] bg-[#0F0F0F] text-white p-6">
-                            <h2 className="text-[28px] md:text-[36px] font-medium mb-6">Thông tin liên hệ</h2>
+                        <div className="w-full lg:w-[60%] bg-[#0F0F0F] text-white p-6">
+
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 {/* Input Fields Left */}
                                 <div>
@@ -137,16 +137,18 @@ const Contact = () => {
                         </div>
 
                         {/* Right Section */}
-                        <div className="w-full lg:w-[30%] bg-[#272727] p-6 rounded-lg">
-                            <h2 className="text-[28px] md:text-[36px] font-medium mb-6 text-white">Liên hệ nhanh</h2>
+                        <div className="w-full lg:w-[35%] bg-[#272727] p-6 rounded-lg">
+                            <h2 className="text-[20px] md:text-[24px] font-medium mb-6 text-white"> Thông tin liên
+                                hệ </h2>
                             <p className="mb-4 text-lg text-gray-100">
-                                <strong>Hotline:</strong> 0123 456 789
+                                <strong>Hotline:</strong> <br/> 096 777 5868 | 096 165 6586
                             </p>
                             <p className="mb-4 text-lg text-gray-100">
-                                <strong>Gmail:</strong> contact@example.com
+                                <strong>Gmail:</strong> nhadepwoodplus@gmail.com
                             </p>
                             <p className="mb-4 text-lg text-gray-100">
-                                <strong>Địa chỉ:</strong> 123 Đường ABC, Quận XYZ, Thành phố HCM
+                                <strong>Hà Nội:</strong> <br/> Số 16, ngách 6, ngõ 102 đường Ngụy Như Kon Tum, Nhân
+                                Chính, Thanh Xuân
                             </p>
                         </div>
                     </div>
