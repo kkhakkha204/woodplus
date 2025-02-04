@@ -145,7 +145,7 @@ const HomePage = () => {
                         <div className="flex-col justify-center lg:-mt-[150px] mb-4 lg:ml-8 2xl:ml-0 relative">
                             <Link to="/thiết-kế">
                                 <img
-                                    src="/assets/images/service/service3.jpg"
+                                    src="/assets/images/main/a6_CShading_LightMix.jpg"
                                     alt="Dịch vụ R"
                                     className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
                                 />
@@ -165,11 +165,10 @@ const HomePage = () => {
                             </div>
                         </div>
 
-
                         <div className="flex-col justify-center mb-4 relative">
                             <Link to="/trọn-gói">
                                 <img
-                                    src="/assets/images/service/service1.jpg"
+                                    src="/assets/images/main/z5104408223391_8b06dd90da0270ab0e0bef4c9b73b3c8.jpg"
                                     alt="Dịch vụ R"
                                     className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
                                 />
@@ -191,7 +190,7 @@ const HomePage = () => {
                         <div className="flex-col lg:-mt-[150px] justify-center mb-4 lg:mr-4 2xl:mr-0 relative">
                             <Link to="/thi-công">
                                 <img
-                                    src="/assets/images/service/services2.jpg"
+                                    src="/assets/images/main/z3682158122853_ffafafb7ebafde7ca4d11292dacd077d.jpg"
                                     alt="Dịch vụ R"
                                     className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
                                 />
@@ -275,7 +274,7 @@ const HomePage = () => {
 
                         <div className="w-full mt-6 lg:mb-4">
                             <img
-                                src="/assets/images/aboutus/aboutus4.jpg"
+                                src="/assets/images/main/KTS-NTK-Noi-That-WoodPlus.jpg.webp"
                                 alt="About Us"
                                 className="w-[350px] h-[250px] mx-auto lg:ml-4 2xl:ml-0 sm:w-[490px] sm:h-[300px] md:w-[520px] md:h-[350px] lg:w-[600px] lg:h-[400px] 2xl:w-[650px] 2xl:h-[450px] object-cover grayscale"
                             />

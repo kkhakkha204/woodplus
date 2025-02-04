@@ -60,13 +60,13 @@ const ContactPopup = () => {
                 className="hidden sm:block fixed bottom-1 right-1 sm:bottom-10 sm:right-10 bg-[#272727] text-[#BEAB81] sm:bg-gradient-to-r from-[#D0C49E] to-[#A79268] sm:text-black py-[0.22rem] px-2 sm:py-2 sm:px-4 border-2 font-medium sm:font-semibold hover:bg-[#A79268] transition duration-300"
                 onClick={() => setIsOpen(true)}
             >
-                Tư vấn miễn phí
+                Tư vấn KTS
             </button>
             <button
                 className="sm:hidden fixed bottom-1 right-1 sm:bottom-10 sm:right-10 bg-[#272727] text-[#BEAB81] sm:bg-gradient-to-r from-[#D0C49E] to-[#A79268] sm:text-black py-[0.42rem] px-3 sm:py-2 sm:px-4  border-2 font-medium sm:font-semibold hover:bg-[#A79268] transition duration-300"
                 onClick={() => setIsOpen(true)}
             >
-                Tư vấn
+                Tư vấn KTS
             </button>
 
             {/* Pop-up */}

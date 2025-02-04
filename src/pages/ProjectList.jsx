@@ -66,7 +66,7 @@ const ProjectList = () => {
 
             {/* HeroSection */}
             <div
-                className="h-[600px] sm:h-[650px] lg:h-[750px] xl:h-[800px] 2xl:h-[900px] w-full bg-cover bg-center relative overflow-hidden">
+                className="h-[600px] sm:h-[650px] lg:h-[750px] xl:h-[750px] 2xl:h-[800px] w-full bg-cover bg-center relative overflow-hidden">
                 {/* Video nền */}
                 <video
                     className="hidden md:block absolute inset-0 w-full h-full object-cover"
@@ -113,9 +113,6 @@ const ProjectList = () => {
                                 <h3 className="text-[20px] text-center sm:text-[24px] font-medium text-white mt-4 group-hover:text-[#BEAB81] transition-colors duration-300">
                                     {project.title}
                                 </h3>
-                                <p className="text-[16px] text-center sm:text-[18px] text-gray-200">
-                                    {project.clientName} - {project.clientJob}
-                                </p>
                                 <p className="text-[14px] text-center sm:text-[16px] text-[#CECECE] mt-2">{project.excerpt}</p>
                                 <p className="text-[16px] text-center sm:text-[18px] text-[#BEAB81] italic mt-2">
                                     {project.location} - {new Date(project.completionDate).toLocaleDateString("vi-VN")}

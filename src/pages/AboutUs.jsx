@@ -38,7 +38,7 @@ const AboutUs = () => {
                     <div className="w-full bg-[#0F0F0F] border-y-2 border-white flex items-center justify-center py-6">
                     <span
                         className="text-[28px] sm:text-[40px] md:text-[50px] lg:text-[58px] xl:text-[64px] font-bold text-center">
-                        Khám phá thương hiệu{" "}
+                        Thương hiệu{" "}
                         <span
                             className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text">
                             WoodPlus
@@ -55,9 +55,7 @@ const AboutUs = () => {
                                 Với hơn 8 năm kinh nghiệm, WoodPlus đã khẳng định uy tín trong thi công và thiết kế nội
                                 thất
                                 nhờ cam kết{" "}
-                                <strong className="text-[#D8CCA6]">"Giá trị thật – Chất lượng thật"</strong>, mang đến
-                                sự
-                                hài lòng tuyệt đối.
+                                <strong className="text-[#D8CCA6]">"Giá trị thật – Chất lượng thật"</strong>
                             </p>
                         </div>
 
