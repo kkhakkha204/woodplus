@@ -110,10 +110,9 @@ const Design = () => {
                         <h3 className="text-center md:text-left font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
                         <h2 className="text-center md:text-left text-[28px] sm:text-[34px] md:text-[40px] lg:text-[46px] font-bold text-[#FFFFFF] mt-2">Nơi hiện thực hóa ý tưởng của bạn</h2>
                         <p className="text-center md:text-left text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] text-[#CECECE] font-normal">
-                            We are strategists, designers and developers. Innovators and problem
-                            solvers. Small enough to be simple and quick, but big enough to deliver the scope you want
-                            at the pace you need. Small enough to be simple and quick, but big enough to deliver the
-                            scope you want at the pace you need.
+                            Chúng tôi là những nhà sáng tạo, nhà thiết kế và chuyên gia thi công nội thất.
+                            Tận tâm biến ý tưởng của bạn thành không gian sống hoàn mỹ, sang trọng và tinh tế.
+                            Nhanh chóng, chuyên nghiệp, đáp ứng mọi nhu cầu với chất lượng vượt trội.
                         </p>
                     </div>
 

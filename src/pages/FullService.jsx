@@ -184,7 +184,7 @@ const FullService = () => {
                     <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
                         <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Tổng
                             quan bảng giá
-                            thiết kế</h2>
+                            thi công trọn gói</h2>
                     </div>
 
                     <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-8 lg:space-y-0 lg:items-center">

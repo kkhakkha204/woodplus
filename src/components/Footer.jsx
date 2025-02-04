@@ -40,8 +40,8 @@ const Footer = () => {
                     <div className="pt-3 col-span-6 text-center md:text-left md:col-span-3">
                         <p className="pb-1 text-lg text-[#BEAB81] font-medium">Thông tin</p>
                         <ul className="text-[#CECECE]">
-                            <li>0325690989</li>
-                            <li>abc street, Hanoi</li>
+                            <li>0961656586</li>
+                            <li>16 ngõ 172 Nguyễn Tuân, Thanh Xuân, Hà Nội</li>
                             <li>8:00 - 22:00</li>
                         </ul>
                     </div>
@@ -49,22 +49,10 @@ const Footer = () => {
                 <div className="grid justify-center pt-6 lg:justify-between">
                     <div className="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
                         <span>©2025 All rights reserved</span>
-                        <a rel="noopener noreferrer" href="#">
-                            <span>Privacy policy</span>
-                        </a>
-                        <a rel="noopener noreferrer" href="#">
-                            <span>Terms of service</span>
-                        </a>
+
                     </div>
                     <div className="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
-                        <a rel="noopener noreferrer" href="#" title="Email"
-                           className="flex items-center justify-center w-10 h-10  dark:text-gray-50">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                 className="w-5 h-5">
-                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                            </svg>
-                        </a>
+
 
                     </div>
                 </div>

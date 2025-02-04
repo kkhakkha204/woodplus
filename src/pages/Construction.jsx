@@ -126,28 +126,26 @@ const Construction = () => {
                                     <h2 className="text-center md:text-left text-[28px] sm:text-[34px] md:text-[40px] lg:text-[46px] font-bold text-[#FFFFFF] mt-2">Chất
                                         lượng được khẳng định</h2>
                                     <p className="text-center md:text-left text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] text-[#CECECE] font-normal">
-                                        We are strategists, designers and developers. Innovators and problem
-                                        solvers. Small enough to be simple and quick, but big enough to deliver the
-                                        scope you want
-
+                                        Chất lượng của WoodPlus được khẳng định qua từng công trình hoàn thiện – từ bản vẽ đến thi công thực tế.
+                                        Chúng tôi cam kết sử dụng vật liệu cao cấp, áp dụng công nghệ thi công hiện đại,
+                                        và đảm bảo độ chính xác tuyệt đối trong từng chi tiết.
                                     </p>
+
+
                                 </div>
                                 <div
                                     className="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
                                     <div className="flex-col justify-start items-start inline-flex">
-                                        <h3 className="text-[#BEAB81] text-4xl font-bold font-manrope leading-normal">33+</h3>
-                                        <h6 className="text-[#CECECE] text-base font-normal leading-relaxed">Years of
-                                            Experience</h6>
+                                        <h3 className="text-[#BEAB81] text-4xl font-bold font-manrope leading-normal">1000+</h3>
+                                        <h6 className="text-[#CECECE] text-base font-normal leading-relaxed">Dự án</h6>
                                     </div>
                                     <div className="flex-col justify-start items-start inline-flex">
-                                        <h3 className="text-[#BEAB81] text-4xl font-bold font-manrope leading-normal">33+</h3>
-                                        <h6 className="text-[#CECECE] text-base font-normal leading-relaxed">Years of
-                                            Experience</h6>
+                                        <h3 className="text-[#BEAB81] text-4xl font-bold font-manrope leading-normal">998</h3>
+                                        <h6 className="text-[#CECECE] text-base font-normal leading-relaxed">Dự án hoàn thành</h6>
                                     </div>
                                     <div className="flex-col justify-start items-start inline-flex">
-                                        <h3 className="text-[#BEAB81] text-4xl font-bold font-manrope leading-normal">33+</h3>
-                                        <h6 className="text-[#CECECE] text-base font-normal leading-relaxed">Years of
-                                            Experience</h6>
+                                        <h3 className="text-[#BEAB81] text-4xl font-bold font-manrope leading-normal">98%</h3>
+                                        <h6 className="text-[#CECECE] text-base font-normal leading-relaxed">Khách hàng hài lòng</h6>
                                     </div>
                                 </div>
                             </div>
