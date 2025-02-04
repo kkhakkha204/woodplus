@@ -60,7 +60,7 @@ const ContactSection = () => {
             className="w-full flex justify-center items-center bg-cover bg-center mt-14 sm:mt-0"
             style={{ backgroundImage: "url('/assets/images/herosection/11.png')" }}
         >
-            <div className="w-full max-w-[1620px] bg-[#0F0F0F] mx-auto relative p-8">
+            <div className="w-full max-w-[1620px] bg-[#0F0F0F] mx-auto relative p-8 rounded-lg shadow-lg">
                 <div className="text-center mb-12">
                     <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">
                         WoodPlus
@@ -71,73 +71,70 @@ const ContactSection = () => {
                 </div>
 
                 {/* Form nhập thông tin */}
-                <form onSubmit={handleSubmit}>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-48 lg:mx-[200px]">
-                        <div className="lg:w-full w-[350px] mx-auto md:ml-36 lg:ml-0 relative">
-                            <div className="mb-6">
-                                <label htmlFor="ten" className="block text-lg font-medium text-white mb-2">
-                                    Họ tên: <span className="text-red-500">*</span>
-                                </label>
-                                <input
-                                    id="ten"
-                                    type="text"
-                                    placeholder="Nhập Họ tên (Bắt buộc)"
-                                    value={ten}
-                                    onChange={(e) => setTen(e.target.value)}
-                                    className="w-full h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
-                                    required
-                                />
-                            </div>
-                            <div className="mb-6">
-                                <label htmlFor="so-dien-thoai" className="block text-lg font-medium text-white mb-2">
-                                    Số điện thoại: <span className="text-red-500">*</span>
-                                </label>
-                                <input
-                                    id="so-dien-thoai"
-                                    type="tel"
-                                    placeholder="Nhập số điện thoại (Bắt buộc)"
-                                    value={soDienThoai}
-                                    onChange={(e) => setSoDienThoai(e.target.value)}
-                                    className="w-full h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
-                                    required
-                                />
-                            </div>
+                <form onSubmit={handleSubmit} className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
+                    <div className="w-full">
+                        <div className="mb-6">
+                            <label htmlFor="ten" className="block text-lg font-medium text-white mb-2">
+                                Họ tên: <span className="text-red-500">*</span>
+                            </label>
+                            <input
+                                id="ten"
+                                type="text"
+                                placeholder="Nhập Họ tên (Bắt buộc)"
+                                value={ten}
+                                onChange={(e) => setTen(e.target.value)}
+                                className="w-full h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
+                                required
+                            />
                         </div>
-
-                        <div className="lg:w-full w-[350px] mx-auto md:ml-36 lg:ml-0 relative">
-                            <div className="mb-6">
-                                <label htmlFor="email" className="block text-lg font-medium text-white mb-2">
-                                    Email:
-                                </label>
-                                <input
-                                    id="email"
-                                    type="email"
-                                    placeholder="Nhập Email"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    className="w-full h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
-                                />
-                            </div>
-                            <div className="mb-6">
-                                <label htmlFor="nhu-cau" className="block text-lg font-medium text-white mb-2">
-                                    Nhu cầu của bạn:
-                                </label>
-                                <input
-                                    id="nhu-cau"
-                                    type="text"
-                                    placeholder="Viết nhu cầu bạn muốn gửi tới chúng tôi"
-                                    value={nhuCau}
-                                    onChange={(e) => setNhuCau(e.target.value)}
-                                    className="w-full h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
-                                />
-                            </div>
+                        <div className="mb-6">
+                            <label htmlFor="so-dien-thoai" className="block text-lg font-medium text-white mb-2">
+                                Số điện thoại: <span className="text-red-500">*</span>
+                            </label>
+                            <input
+                                id="so-dien-thoai"
+                                type="tel"
+                                placeholder="Nhập số điện thoại (Bắt buộc)"
+                                value={soDienThoai}
+                                onChange={(e) => setSoDienThoai(e.target.value)}
+                                className="w-full h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
+                                required
+                            />
                         </div>
                     </div>
 
-                    <div className="text-center mb-12">
+                    <div className="w-full">
+                        <div className="mb-6">
+                            <label htmlFor="email" className="block text-lg font-medium text-white mb-2">
+                                Email:
+                            </label>
+                            <input
+                                id="email"
+                                type="email"
+                                placeholder="Nhập Email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                className="w-full h-[50px] px-4 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70]"
+                            />
+                        </div>
+                        <div className="mb-6">
+                            <label htmlFor="nhu-cau" className="block text-lg font-medium text-white mb-2">
+                                Nhu cầu của bạn:
+                            </label>
+                            <textarea
+                                id="nhu-cau"
+                                placeholder="Viết nhu cầu bạn muốn gửi tới chúng tôi"
+                                value={nhuCau}
+                                onChange={(e) => setNhuCau(e.target.value)}
+                                className="w-full h-[100px] px-4 py-2 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:ring-[#AF9A70] focus:border-[#AF9A70] resize-none"
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <div className="text-center lg:col-span-2">
                         <button
                             type="submit"
-                            className="w-[90px] h-[35px] sm:w-[100px] sm:h-[40px] md:w-[128px] md:h-[50px] bg-[#272727] text-[#C4B58E] font-semibold text-[15px] sm:text-[16px] md:text-[18px] italic rounded-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
+                            className="w-[120px] h-[45px] bg-[#272727] text-[#C4B58E] font-semibold text-[16px] rounded-lg border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
                             disabled={loading}
                         >
                             {loading ? "Đang gửi..." : "Xác nhận"}

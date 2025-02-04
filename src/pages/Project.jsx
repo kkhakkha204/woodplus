@@ -3,6 +3,8 @@ import DarkSpacing from "../components/DarkSpacing";
 import {TbArrowForwardUp} from "react-icons/tb";
 import LightSpacing from "../components/LightSpacing";
 import ContactSection from "../components/ContactSection";
+import ContactPopup from "../components/ContactPopup";
+import ZaloChatButton from "../components/ZaloChatButton";
 
 const Project = () => {
     const spaces = [
@@ -190,7 +192,8 @@ const Project = () => {
             <DarkSpacing/>
 
             <ContactSection/>
-
+            <ContactPopup/>
+            <ZaloChatButton/>
         </main>
     );
 };

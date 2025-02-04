@@ -4,6 +4,8 @@ import DarkSpacing from "../components/DarkSpacing";
 import {TbArrowForwardUp} from "react-icons/tb";
 import LightSpacing from "../components/LightSpacing";
 import ContactSection from "../components/ContactSection";
+import ContactPopup from "../components/ContactPopup";
+import ZaloChatButton from "../components/ZaloChatButton";
 
 const ProjectList = () => {
     const [featuredProjects, setFeaturedProjects] = useState([]);
@@ -94,8 +96,7 @@ const ProjectList = () => {
                     {/* Phần tiêu đề */}
                     <div className="mb-10 text-center">
                         <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
-                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Ngôi
-                            nhà của người truyền cảm hứng</h2>
+                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Dự án nổi bật</h2>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -204,6 +205,8 @@ const ProjectList = () => {
             <DarkSpacing/>
 
             <ContactSection/>
+            <ContactPopup/>
+            <ZaloChatButton/>
         </main>
     );
 };

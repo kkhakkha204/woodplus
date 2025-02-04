@@ -3,6 +3,8 @@ import { client, urlFor } from '../sanityClient';
 import { useParams } from 'react-router-dom';
 import DarkSpacing from "../components/DarkSpacing";
 import ContactSection from "../components/ContactSection";
+import ContactPopup from "../components/ContactPopup";
+import ZaloChatButton from "../components/ZaloChatButton";
 
 const ProjectDetail = () => {
     const { slug } = useParams();
@@ -137,6 +139,8 @@ const ProjectDetail = () => {
             </div>
             <DarkSpacing />
             <ContactSection />
+            <ContactPopup/>
+            <ZaloChatButton/>
         </main>
     );
 };

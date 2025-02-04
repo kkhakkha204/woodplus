@@ -10,6 +10,7 @@ import {Link} from "react-router-dom";
 import Testimonials from "../components/Testimonials";
 import ContactPopup from "../components/ContactPopup";
 import Stat from "../components/Stat";
+import ZaloChatButton from "../components/ZaloChatButton";
 
 
 const HomePage = () => {
@@ -309,6 +310,7 @@ const HomePage = () => {
 
             <div className="hidden md:block"><DarkSpacing/></div>
             <ContactPopup/>
+            <ZaloChatButton/>
         </main>
     );
 };
