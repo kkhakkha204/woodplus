@@ -64,9 +64,9 @@ const Navbar = () => {
                 </button>
                 {/* Thẻ divleft */}
                 <div className="divleft hidden xl:flex w-[663px] font-medium justify-between">
-                    <Link to="/" className="text-[#BEAB81] font-bold italic relative group">
+                    <Link to="/" className="hover:text-[#BEAB81] relative group">
                         Trang chủ
-                        <span className="absolute left-0 -bottom-1 h-[1px] bg-[#BEAB81] transition-all duration-300 w-full"></span>
+                        <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-[#BEAB81] transition-all duration-300 group-hover:w-full"></span>
                     </Link>
                     <Link to="/giới-thiệu" className="hover:text-[#BEAB81] relative group">
                         Giới thiệu

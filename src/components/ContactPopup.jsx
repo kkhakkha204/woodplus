@@ -2,21 +2,54 @@ import React, { useState } from "react";
 
 const ContactPopup = () => {
     const [isOpen, setIsOpen] = useState(false); // Quản lý trạng thái pop-up
-    const [name, setName] = useState("");
-    const [phone, setPhone] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+    const [ten, setTen] = useState(""); // Họ tên (đồng nhất với ContactSection)
+    const [soDienThoai, setSoDienThoai] = useState(""); // Số điện thoại
+    const [email, setEmail] = useState(""); // Email
+    const [nhuCau, setNhuCau] = useState(""); // Nhu cầu
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
+    const [loading, setLoading] = useState(false);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        if (!name || !phone) {
+        if (!ten.trim() || !soDienThoai.trim()) {
             setError("Họ tên và số điện thoại là bắt buộc.");
             setSuccess("");
-        } else {
-            setError("");
-            setSuccess("Cảm ơn bạn đã liên hệ với chúng tôi!");
+            return;
+        }
+
+        setLoading(true);
+
+        const formData = {
+            ten, // Họ tên (thống nhất với ContactSection)
+            soDienThoai, // Số điện thoại
+            email, // Email
+            nhuCau, // Nhu cầu (thay thế cho 'message' trước đây)
+        };
+
+        try {
+            const response = await fetch("https://formspree.io/f/xzzzndao", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                setSuccess("Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm.");
+                setError("");
+                setTen("");
+                setSoDienThoai("");
+                setEmail("");
+                setNhuCau("");
+            } else {
+                setError("Có lỗi xảy ra khi gửi thông tin.");
+            }
+        } catch (error) {
+            setError("Có lỗi xảy ra khi gửi thông tin.");
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -24,7 +57,7 @@ const ContactPopup = () => {
         <>
             {/* Nút liên hệ */}
             <button
-                className="fixed bottom-1 right-1 sm:bottom-10 sm:right-10 bg-[#272727] text-[#BEAB81] sm:bg-gradient-to-r from-[#D0C49E] to-[#A79268] sm:text-black py-[0.22rem] px-2 sm:py-2 sm:px-4 rounded-lg border-2 font-medium sm:font-semibold"
+                className="fixed bottom-1 right-1 sm:bottom-10 sm:right-10 bg-[#272727] text-[#BEAB81] sm:bg-gradient-to-r from-[#D0C49E] to-[#A79268] sm:text-black py-[0.22rem] px-2 sm:py-2 sm:px-4 rounded-lg border-2 font-medium sm:font-semibold hover:bg-[#A79268] transition duration-300"
                 onClick={() => setIsOpen(true)}
             >
                 Tư vấn miễn phí
@@ -40,33 +73,37 @@ const ContactPopup = () => {
                         className="bg-[#272727] p-6 rounded-lg w-full max-w-md"
                         onClick={(e) => e.stopPropagation()} // Ngừng sự kiện click để tránh tắt pop-up khi click vào form
                     >
-                        <h3 className="text-center font-Tangerine text-[20px] sm:text-[22px] md:text-[22px] lg:text-[24px] font-bold text-[#AF9A70]">WoodPlus</h3>
-                        <h2 className="text-2xl xl:text-[28px] font-bold text-center text-white mb-12">Nhận tư vấn miễn phí</h2>
+                        <h3 className="text-center font-Tangerine text-[20px] sm:text-[22px] md:text-[22px] lg:text-[24px] font-bold text-[#AF9A70]">
+                            WoodPlus
+                        </h3>
+                        <h2 className="text-2xl xl:text-[28px] font-bold text-center text-white mb-6">
+                            Nhận tư vấn miễn phí
+                        </h2>
                         <form onSubmit={handleSubmit}>
                             <div className="mb-4">
-                                <label htmlFor="name" className="block text-sm text-white font-medium">
-                                    Họ Tên
+                                <label htmlFor="ten" className="block text-sm text-white font-medium">
+                                    Họ Tên <span className="text-red-500">*</span>
                                 </label>
                                 <input
                                     type="text"
-                                    id="name"
-                                    value={name}
-                                    onChange={(e) => setName(e.target.value)}
-                                    className="w-full p-2 border border-gray-300 rounded mt-2"
+                                    id="ten"
+                                    value={ten}
+                                    onChange={(e) => setTen(e.target.value)}
+                                    className="w-full p-2 border border-gray-300 rounded mt-2 focus:ring-[#BEAB81] focus:border-[#BEAB81]"
                                     required
                                 />
                             </div>
 
                             <div className="mb-4">
-                                <label htmlFor="phone" className="block text-sm text-white font-medium">
-                                    Số Điện Thoại
+                                <label htmlFor="so-dien-thoai" className="block text-sm text-white font-medium">
+                                    Số Điện Thoại <span className="text-red-500">*</span>
                                 </label>
                                 <input
-                                    type="text"
-                                    id="phone"
-                                    value={phone}
-                                    onChange={(e) => setPhone(e.target.value)}
-                                    className="w-full p-2 border border-gray-300 rounded mt-2"
+                                    type="tel"
+                                    id="so-dien-thoai"
+                                    value={soDienThoai}
+                                    onChange={(e) => setSoDienThoai(e.target.value)}
+                                    className="w-full p-2 border border-gray-300 rounded mt-2 focus:ring-[#BEAB81] focus:border-[#BEAB81]"
                                     required
                                 />
                             </div>
@@ -80,36 +117,36 @@ const ContactPopup = () => {
                                     id="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
-                                    className="w-full p-2 border border-gray-300 rounded mt-2"
+                                    className="w-full p-2 border border-gray-300 rounded mt-2 focus:ring-[#BEAB81] focus:border-[#BEAB81]"
                                 />
                             </div>
 
                             <div className="mb-4">
-                                <label htmlFor="message" className="block text-sm text-white font-medium">
-                                    Lời Nhắn
+                                <label htmlFor="nhu-cau" className="block text-sm text-white font-medium">
+                                    Nhu cầu của bạn:
                                 </label>
                                 <textarea
-                                    id="message"
-                                    value={message}
-                                    onChange={(e) => setMessage(e.target.value)}
-                                    className="w-full p-2 border border-gray-300 rounded mt-2"
+                                    id="nhu-cau"
+                                    value={nhuCau}
+                                    onChange={(e) => setNhuCau(e.target.value)}
+                                    className="w-full p-2 border border-gray-300 rounded mt-2 focus:ring-[#BEAB81] focus:border-[#BEAB81]"
                                     rows="4"
                                 />
                             </div>
 
                             {/* Thông báo lỗi hoặc thành công */}
-                            {error && <p className="text-center text-red-600 text-sm mb-4">{error}</p>}
+                            {error && <p className="text-center text-red-500 text-sm mb-4">{error}</p>}
                             {success && <p className="text-center text-[#BEAB81] text-sm mb-4">{success}</p>}
 
                             <div className="text-center my-2">
                                 <button
-                                    onClick={handleSubmit}
+                                    type="submit"
                                     className="w-[90px] h-[35px] sm:w-[100px] sm:h-[40px] md:w-[128px] md:h-[42px] bg-[#D8CCA6] text-black font-semibold text-[14px] sm:text-[15px] md:text-[17px] italic rounded-[10px] border-2 border-white hover:bg-[#272727] hover:text-[#C4B58E] transition duration-300"
+                                    disabled={loading}
                                 >
-                                    Xác nhận
+                                    {loading ? "Đang gửi..." : "Xác nhận"}
                                 </button>
                             </div>
-
                         </form>
                     </div>
                 </div>
