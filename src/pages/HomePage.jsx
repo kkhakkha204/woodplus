@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 
 import {TbArrowForwardUp,} from "react-icons/tb";
@@ -15,7 +15,12 @@ import ZaloChatButton from "../components/ZaloChatButton";
 
 const HomePage = () => {
     const [isHovered, setIsHovered] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
+// Kiểm tra nếu đang dùng điện thoại
+    useEffect(() => {
+        setIsMobile(window.innerWidth < 768);
+    }, []);
     return (
         <main className="bg-[#0F0F0F]">
             {/* HeroSection */}
@@ -68,8 +73,8 @@ const HomePage = () => {
                         <Link
                             to="/projects"
                             className="w-[100px] h-[35px] sm:w-[115px] sm:h-[36px] lg:w-[125px] lg:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                            onMouseEnter={() => setIsHovered(true)}
-                            onMouseLeave={() => setIsHovered(false)}
+                            onMouseEnter={() => !isMobile && setIsHovered(true)}
+                            onMouseLeave={() => !isMobile && setIsHovered(false)}
                         >
                             {/* Hiển thị icon trên màn hình lớn */}
                             <span className="hidden lg:inline text-[18px]">

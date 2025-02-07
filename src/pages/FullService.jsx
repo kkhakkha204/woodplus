@@ -42,7 +42,7 @@ const FullService = () => {
 
                         {/* divcutc */}
                         <div
-                            className="w-[40%] sm:w-[50%] h-[70px] sm:h-[100px] bg-[#0F0F0F] border-x-2 border-y-2 flex items-center justify-center px-4 sm:px-8">
+                            className="w-[300%] sm:w-[50%] h-[70px] sm:h-[100px] bg-[#0F0F0F] border-x-2 border-y-2 flex items-center justify-center px-4 sm:px-8">
                         <span
                             className="text-[28px] sm:text-[38px] md:text-[42px] lg:text-[48px] xl:text-[52px] font-bold tracking-[1px]">
                             Xây dựng{" "}
