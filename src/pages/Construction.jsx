@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {TbArrowForwardUp} from "react-icons/tb";
 import DarkSpacing from "../components/DarkSpacing";
-
+import LightSpacing from "../components/LightSpacing";
 import ContactSection from "../components/ContactSection";
-
+import LightProjectSection from "../components/LightProjectSection";
 import ProjectSection from "../components/ProjectSection";
 import {Link} from "react-router-dom";
 import BlogSection from "../components/BlogSection";
@@ -12,12 +12,6 @@ import ZaloChatButton from "../components/ZaloChatButton";
 
 const Construction = () => {
     const [isHovered, setIsHovered] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
-
-// Kiểm tra nếu đang dùng điện thoại
-    useEffect(() => {
-        setIsMobile(window.innerWidth < 768);
-    }, []);
     return (
         <main className="bg-[#0F0F0F] ">
             {/* Hero Section */}
@@ -82,8 +76,8 @@ const Construction = () => {
                             <Link
                                 to="/projects"
                                 className="w-[110px] sm:w-[125px] lg:w-[140px] h-[40px] sm:h-[45px] lg:h-[50px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[16px] sm:text-[18px] rounded-l-lg border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                                onMouseEnter={() => !isMobile && setIsHovered(true)}
-                                onMouseLeave={() => !isMobile && setIsHovered(false)}
+                                onMouseEnter={() => setIsHovered(true)}
+                                onMouseLeave={() => setIsHovered(false)}
                             >
                             <span className="hidden lg:inline text-[18px]">
                                 {!isHovered ? (
