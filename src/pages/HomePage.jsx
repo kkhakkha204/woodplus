@@ -30,17 +30,17 @@ const HomePage = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
-                        backgroundImage: "url('/assets/images/homepage/homePageHero.jpg')",
+                        backgroundImage: "url('/assets/images/homepage/homePageHero1.jpg')",
                         filter: "brightness(0.85)",
                     }}
                 ></div>
 
                 {/* Lớp phủ màu đen nhẹ */}
-                <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-45"></div>
 
                 {/* Nội dung chính */}
                 <div
-                    className="container mx-auto w-full max-w-[1620px] h-full flex flex-col justify-center items-center text-white relative z-10">
+                    className="container mx-auto w-full max-w-[1620px] h-full flex flex-col justify-center items-center text-white relative z-10 pt-28" >
 
 
                     <p className="text-[15px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] 2xl:text-[26px] font-semibold text-center italic tracking-wide">
@@ -60,8 +60,8 @@ const HomePage = () => {
                     {/* Định nghĩa về công trình tốt */}
                     <p className="text-center text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] mt-4 max-w-[320px] sm:max-w-[380px] md:max-w-[450px] lg:max-w-[600px] 2xl:max-w-[700px] leading-relaxed">
                         Một công trình tốt là công trình đẹp về <span
-                        className="font-semibold text-[#D8CCA6]">thẩm mỹ</span>,
-                        cá nhân hóa để phù hợp với <span className="font-semibold text-[#D8CCA6]">chủ nhà.</span> Đồng hành cùng Woodplus để kiến tạo không gian sống đáng tự hào của bạn!
+                        className=" ">thẩm mỹ</span>,
+                        cá nhân hóa để phù hợp với <span className=" ">chủ nhà.</span> Đồng hành cùng Woodplus để kiến tạo không gian sống đáng tự hào của bạn!
                     </p>
 
 
@@ -99,16 +99,15 @@ const HomePage = () => {
                     <div
                         className="relative bottom-0 w-full max-w-[1200px] mx-6 sm:mx-12 md:mx-16 lg:mx-32 xl:mx-48 2xl:mx-auto h-[80px] bg-opacity-0 flex justify-between items-center">
                         {/* Dòng Tư vấn miễn phí */}
-                        <p className="text-[#B2A384] text-[12px] sm:text-[14px] lg:text-[16px] 2xl:text-[18px] font-medium mb-5 lg:mb-0 ">Tư
+                        <p className="text-[#B2A384] text-[12px] sm:text-[14px] lg:text-[16px] 2xl:text-[18px] font-medium mb-5 text-center lg:mb-0 ">Tư
                             vấn miễn phí</p>
 
                         {/* Dòng Bảo đảm tiến độ, căn giữa */}
                         <p className="text-[#B2A384] text-[12px] sm:text-[14px] lg:text-[16px] 2xl:text-[18px] font-medium text-center mb-5 lg:mb-0">Không
-                            chi phí phát sinh</p>
+                            phát sinh <br/>chi phí - tiến độ</p>
 
                         {/* Dòng Không chi phí phát sinh */}
-                        <p className="text-[#B2A384] text-[12px] sm:text-[14px] lg:text-[16px] 2xl:text-[18px] font-medium mb-5 lg:mb-0">Bảo
-                            đảm tiến độ</p>
+                        <p className="text-[#B2A384] text-[12px] sm:text-[14px] lg:text-[16px] 2xl:text-[18px] font-medium text-center mb-5 lg:mb-0">Trung thực trong <br/>sản phẩm</p>
 
                     </div>
                 </div>
@@ -132,8 +131,7 @@ const HomePage = () => {
                             <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white ">Dịch
                                 vụ</h2>
                             <p className="w-[330px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
-                                WoodPlus mang đến giải pháp trọn gói cho thiết kế và thi công nội thất,
-                                cá nhân hóa không gian sống, kết hợp hài hòa giữa công năng và thẩm mỹ.
+                                Woodplus mang đến giải pháp toàn diện cho chủ nhà từ thiết kế đến thi công hoàn thiện, trang trí nội thất, cá nhân hóa không gian sống, đảm bảo hài hòa công năng và thẩm mỹ.
                             </p>
                         </div>
 
@@ -143,7 +141,7 @@ const HomePage = () => {
                                 <img
                                     src="/assets/images/main/a6_CShading_LightMix.jpg"
                                     alt="Dịch vụ R"
-                                    className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
+                                    className="mx-auto w-[320px] h-[320px] sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
                                 />
                             </Link>
                             <div
@@ -155,8 +153,8 @@ const HomePage = () => {
                                     Dịch vụ thiết kế
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
-                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
-                                    Giải pháp thiết kế nội thất tinh tế. Chúng tôi hiện thực hóa ý tưởng của bạn, tạo nên không gian sống hài hòa giữa công năng và thẩm mỹ, đậm dấu ấn cá nhân.
+                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[11px] sm:text-[14px] md:text-[15px] lg:text-[16px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
+                                    Với quy trình thiết kế khoa học và chuyên sâu, Woodplus hiện thực hóa ngôi nhà mơ ước của bạn. Chúng tôi không chỉ nâng tầm không gian sống mà còn tạo nên sự hài hòa giữa công năng và thẩm mỹ, mang đậm dấu ấn cá nhân của mỗi gia chủ.
                                 </p>
                             </div>
                         </div>
@@ -166,7 +164,7 @@ const HomePage = () => {
                                 <img
                                     src="/assets/images/main/z5104408223391_8b06dd90da0270ab0e0bef4c9b73b3c8.jpg"
                                     alt="Dịch vụ R"
-                                    className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
+                                    className="mx-auto w-[320px] h-[320px] sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
                                 />
                             </Link>
                             <div className="text-center absolute bottom-0 left-0 w-full bg-[#0F0F0F] bg-opacity-85 pb-2 px-6">
@@ -177,8 +175,8 @@ const HomePage = () => {
                                     Xây dựng trọn gói
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
-                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
-                                    Từ thiết kế, thi công đến hoàn thiện, chúng tôi đồng hành cùng bạn trong từng giai đoạn, đảm bảo dự án được thực hiện đúng tiến độ, tối ưu chi phí và mang đến không gian hoàn mỹ như mong đợi.
+                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[11px] sm:text-[14px] md:text-[15px] lg:text-[16px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
+                                    Woodplus cung cấp dịch vụ thi công trọn gói với đội ngũ chuyên môn cao, tận tâm và trung thực trong từng công trình. Chúng tôi cam kết đồng hành chặt chẽ, đảm bảo tiến độ chuẩn xác, tối ưu chi phí, công năng hoàn hảo và minh bạch trong mọi giai đoạn thi công.
                                 </p>
                             </div>
                         </div>
@@ -188,7 +186,7 @@ const HomePage = () => {
                                 <img
                                     src="/assets/images/main/z3682158122853_ffafafb7ebafde7ca4d11292dacd077d.jpg"
                                     alt="Dịch vụ R"
-                                    className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
+                                    className="mx-auto w-[320px] h-[320px] sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
                                 />
                             </Link>
                             <div className="text-center absolute bottom-0 lg:bottom-[150px] left-0 w-full bg-[#0F0F0F] bg-opacity-85 pb-2 px-6">
@@ -199,8 +197,8 @@ const HomePage = () => {
                                     Thi công nội thất
                                     <span className="ml-14 text-[30px]">&rarr;</span>
                                 </Link>
-                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
-                                    Chúng tôi sử dụng vật liệu cao cấp, kỹ thuật hiện đại cùng đội ngũ tay nghề cao để đảm bảo từng chi tiết đều hoàn hảo, mang lại không gian bền vững.
+                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[11px] sm:text-[14px] md:text-[15px] lg:text-[16px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
+                                    Cam kết minh bạch quy trình, sử dụng vật liệu chuẩn, áp dụng kỹ thuật sản xuất hiện đại cùng đội ngũ tay nghề cao. Chúng tôi đảm bảo từng chi tiết nội thất hoàn mỹ, bền bỉ, mang đến không gian sống tinh tế, tiện nghi và trải nghiệm tốt nhất cho khách hàng.
                                 </p>
                             </div>
                         </div>

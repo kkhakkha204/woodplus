@@ -109,9 +109,9 @@ const ProjectSection = () => {
                     <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white">
                         Dự án nổi bật
                     </h2>
-                    <p className="w-[330px] sm:w-[310px] md:w-[350px] lg:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
-                        WoodPlus tự hào đã thực hiện hơn 1.000 dự án thiết kế và thi công
-                        nội thất, với 998 dự án hoàn thành trong suốt 8 năm hoạt động.
+                    <p className="w-[360px] sm:w-[310px] md:w-[350px] lg:w-[500px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
+                        Với gần 10 năm kinh nghiệm đồng hành cùng hàng trăm công trình trên khắp miền Bắc và toàn quốc.
+                        Woodplus mang đến những không gian sống tinh tế và đầy cảm hứng, đáp ứng mọi nhu cầu thẩm mỹ và công năng.
                     </p>
                 </div>
 
