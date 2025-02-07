@@ -13,7 +13,12 @@ const ProjectList = () => {
     const [projects, setProjects] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const projectsPerPage = 6;
+    const [isMobile, setIsMobile] = useState(false);
 
+// Kiểm tra nếu đang dùng điện thoại
+    useEffect(() => {
+        setIsMobile(window.innerWidth < 768);
+    }, []);
     // Fetch featured projects
     useEffect(() => {
         client
@@ -127,8 +132,8 @@ const ProjectList = () => {
                         {/* Nút Liên hệ */}
                         <button
                             className=" w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                            onMouseEnter={() => setIsHovered(true)}
-                            onMouseLeave={() => setIsHovered(false)}
+                            onMouseEnter={() => !isMobile && setIsHovered(true)}
+                            onMouseLeave={() => !isMobile && setIsHovered(false)}
                         >
                             {!isHovered ? (
                                 <TbArrowForwardUp className="inline-block text-[25px]"/>
