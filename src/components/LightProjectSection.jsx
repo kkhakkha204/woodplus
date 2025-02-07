@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import Slider from "react-slick";
 import { TbArrowForwardUp } from "react-icons/tb";
-
+import { Link } from "react-router-dom";
 const LightProjectSection = () => {
     const [isHovered, setIsHovered] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
+// Kiểm tra nếu đang dùng điện thoại
+    useEffect(() => {
+        setIsMobile(window.innerWidth < 768);
+    }, []);
     // Cấu hình slider
     const settings = {
         dots: true,
@@ -25,7 +30,9 @@ const LightProjectSection = () => {
                     <h2 className="font-Tangerine text-[22px] 2xl:text-[28px] font-bold text-[#AF9A70] ">WoodPlus</h2>
                     <h1 className="text-[26px] 2xl:text-[48px] font-medium text-[#0F0F0F]">Dự án nổi bật</h1>
                     <p className="w-[300px] sm:w-[450px] mx-auto text-[13px] 2xl:text-[17px] font-normal text-[#757575] mt-4">
-                        WoodPlus tự hào đã thực hiện hơn 1.000 dự án thiết kế và thi công nội thất, với 998 dự án hoàn thành trong suốt 8 năm hoạt động. Đội ngũ WoodPlus không ngừng sáng tạo và hoàn thiện từng chi tiết để mang lại không gian sống thể hiện dấu ấn cá nhân độc bản của gia chủ.
+                        WoodPlus tự hào đã thực hiện hơn 1.000 dự án thiết kế và thi công nội thất, với 998 dự án hoàn
+                        thành trong suốt 8 năm hoạt động. Đội ngũ WoodPlus không ngừng sáng tạo và hoàn thiện từng chi
+                        tiết để mang lại không gian sống thể hiện dấu ấn cá nhân độc bản của gia chủ.
                     </p>
                 </div>
 
@@ -170,24 +177,28 @@ const LightProjectSection = () => {
 
                 <div className="text-center mt-12 space-x-1 flex justify-center items-center">
                     {/* Nút Liên hệ */}
-                    <button
-                        className=" w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
+                    <Link
+                        to="/projects"
+                        className="w-[100px] h-[35px] sm:w-[115px] sm:h-[36px] lg:w-[125px] lg:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
+                        onMouseEnter={() => !isMobile && setIsHovered(true)}
+                        onMouseLeave={() => !isMobile && setIsHovered(false)}
                     >
-                        {!isHovered ? (
-                            <TbArrowForwardUp className="inline-block text-[25px]"/>
-                        ) : (
-                            "Liên hệ"
-                        )}
-                    </button>
+        <span className="hidden lg:inline text-[18px]">
+            {isHovered ? "Xem dự án" : <TbArrowForwardUp className="inline-block text-[25px]"/>}
+        </span>
+
+                        <span className="lg:hidden text-[14px] sm:text-[15px] font-semibold">
+            Xem dự án
+        </span>
+                    </Link>
 
                     {/* Nút Tư vấn */}
-                    <button
-                        className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[15px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
+                    <Link
+                        to="/liên-hệ"
+                        className="w-[100px] h-[35px] sm:w-[115px] sm:h-[36px] lg:w-[125px] lg:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[15px] lg:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
                     >
-                        Tư vấn
-                    </button>
+                        Liên hệ
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 
 import {TbArrowForwardUp,} from "react-icons/tb";
@@ -15,21 +15,25 @@ import ZaloChatButton from "../components/ZaloChatButton";
 
 const HomePage = () => {
     const [isHovered, setIsHovered] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
+// Kiểm tra nếu đang dùng điện thoại
+    useEffect(() => {
+        setIsMobile(window.innerWidth < 768);
+    }, []);
     return (
         <main className="bg-[#0F0F0F]">
             {/* HeroSection */}
             <div
                 className="h-[640px] sm:h-[700px] lg:h-[780px] xl:h-[830px] 2xl:h-[850px] w-full bg-cover bg-center relative">
                 {/* Lớp chứa ảnh nền với filter brightness */}
-                <video
-                    className=" absolute inset-0 w-full h-full object-cover"
-                    src="/assets/videos/video3.mp4" // Đường dẫn đến video của bạn
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                ></video>
+                <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{
+                        backgroundImage: "url('/assets/images/homepage/homePageHero.jpg')",
+                        filter: "brightness(0.85)",
+                    }}
+                ></div>
 
                 {/* Lớp phủ màu đen nhẹ */}
                 <div className="absolute inset-0 bg-black bg-opacity-40"></div>
@@ -41,7 +45,7 @@ const HomePage = () => {
 
                     {/* Dòng text phía trên */}
                     <p className=" text-[15px] sm:text-[18px] md:text-[20px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px] font-bold text-center italic ">
-                        Công ty thiết kế – kiến trúc – thi công
+                        Thiết kế -  thi công kiến trúc và nội thất
                     </p>
 
                     {/* Câu slogan */}
@@ -59,7 +63,8 @@ const HomePage = () => {
 
                     </h1>
                     <p className="text-center text-[14px] tracking-[0.01rem] sm:text-[15px] md:text-[17px] lg:text-[20px] mt-2 max-w-[280px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px]">
-                        Một ngôi nhà phải đẹp, khiến mọi người trầm trồ. Đồng hành với woodplus xây dựng một công trình đáng tự hào.
+                        Một ngôi nhà phải đẹp, khiến mọi người trầm trồ. Đồng hành với woodplus xây dựng một công trình
+                        đáng tự hào.
                     </p>
 
 
@@ -68,24 +73,17 @@ const HomePage = () => {
                         <Link
                             to="/projects"
                             className="w-[100px] h-[35px] sm:w-[115px] sm:h-[36px] lg:w-[125px] lg:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                            onMouseEnter={() => setIsHovered(true)}
-                            onMouseLeave={() => setIsHovered(false)}
+                            onMouseEnter={() => !isMobile && setIsHovered(true)}
+                            onMouseLeave={() => !isMobile && setIsHovered(false)}
                         >
-                            {/* Hiển thị icon trên màn hình lớn */}
-                            <span className="hidden lg:inline text-[18px]">
-        {!isHovered ? (
-            <TbArrowForwardUp className="inline-block text-[25px]" />
-        ) : (
-            "Xem dự án"
-        )}
-    </span>
+        <span className="hidden lg:inline text-[18px]">
+            {isHovered ? "Xem dự án" : <TbArrowForwardUp className="inline-block text-[25px]"/>}
+        </span>
 
-                            {/* Hiển thị chữ trên điện thoại và máy tính bảng */}
                             <span className="lg:hidden text-[14px] sm:text-[15px] font-semibold">
-        Xem dự án
-    </span>
+            Xem dự án
+        </span>
                         </Link>
-
 
                         {/* Nút Tư vấn */}
                         <Link
@@ -151,7 +149,7 @@ const HomePage = () => {
                                 />
                             </Link>
                             <div
-                                className="divtext absolute bottom-0 lg:bottom-[150px] left-0 w-full bg-[#0F0F0F] bg-opacity-85 text-center p-6">
+                                className="divtext absolute bottom-0 lg:bottom-[150px] left-0 w-full bg-[#0F0F0F] bg-opacity-85 text-center pb-2 px-6">
                                 <Link
                                     to="/thiết-kế"
                                     className="flex items-center justify-center font-medium text-[22px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[32px] text-[#BEAB81] hover:text-white"
@@ -173,7 +171,7 @@ const HomePage = () => {
                                     className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
                                 />
                             </Link>
-                            <div className="text-center absolute bottom-0 left-0 w-full bg-[#0F0F0F] bg-opacity-85 p-6">
+                            <div className="text-center absolute bottom-0 left-0 w-full bg-[#0F0F0F] bg-opacity-85 pb-2 px-6">
                                 <Link
                                     to="/trọn-gói"
                                     className="flex items-center justify-center font-medium text-[22px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[32px] text-[#BEAB81] hover:text-white"
@@ -195,7 +193,7 @@ const HomePage = () => {
                                     className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
                                 />
                             </Link>
-                            <div className="text-center absolute bottom-0 lg:bottom-[150px] left-0 w-full bg-[#0F0F0F] bg-opacity-85 p-6">
+                            <div className="text-center absolute bottom-0 lg:bottom-[150px] left-0 w-full bg-[#0F0F0F] bg-opacity-85 pb-2 px-6">
                                 <Link
                                     to="/thi-công"
                                     className="flex items-center justify-center font-medium text-[22px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[32px] text-[#BEAB81] hover:text-white"

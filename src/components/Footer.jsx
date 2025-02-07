@@ -40,8 +40,8 @@ const Footer = () => {
                     <div className="pt-3 col-span-6 text-center md:text-left md:col-span-3">
                         <p className="pb-1 text-lg text-[#BEAB81] font-medium">Thông tin</p>
                         <ul className="text-[#CECECE]">
-                            <li>0961656586</li>
-                            <li>16 ngõ 172 Nguyễn Tuân, Thanh Xuân, Hà Nội</li>
+                            <li>096 777 5868</li>
+                            <li>168 Đ. Nguyễn Xiển, Hạ Đình, Thanh Xuân, Hà Nội.</li>
                             <li>8:00 - 22:00</li>
                         </ul>
                     </div>

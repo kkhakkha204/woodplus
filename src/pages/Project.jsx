@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import DarkSpacing from "../components/DarkSpacing";
 import {TbArrowForwardUp} from "react-icons/tb";
 import LightSpacing from "../components/LightSpacing";
@@ -65,7 +65,12 @@ const Project = () => {
     ];
 
     const [isHovered, setIsHovered] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
+// Kiểm tra nếu đang dùng điện thoại
+    useEffect(() => {
+        setIsMobile(window.innerWidth < 768);
+    }, []);
     return (
         <main className="bg-[#0F0F0F]">
             {/* HeroSection */}

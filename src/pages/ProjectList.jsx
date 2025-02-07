@@ -6,6 +6,7 @@ import LightSpacing from "../components/LightSpacing";
 import ContactSection from "../components/ContactSection";
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
+import {Link} from "react-router-dom";
 
 const ProjectList = () => {
     const [featuredProjects, setFeaturedProjects] = useState([]);
@@ -13,7 +14,12 @@ const ProjectList = () => {
     const [projects, setProjects] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const projectsPerPage = 6;
+    const [isMobile, setIsMobile] = useState(false);
 
+// Kiểm tra nếu đang dùng điện thoại
+    useEffect(() => {
+        setIsMobile(window.innerWidth < 768);
+    }, []);
     // Fetch featured projects
     useEffect(() => {
         client
@@ -96,7 +102,8 @@ const ProjectList = () => {
                     {/* Phần tiêu đề */}
                     <div className="mb-10 text-center">
                         <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
-                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Dự án nổi bật</h2>
+                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Dự
+                            án nổi bật</h2>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -104,7 +111,8 @@ const ProjectList = () => {
 
                             <a
                                 href={`/project/${project.slug.current}`}
-                                key={project._id} className="bg-[#0F0F0F] p-4 rounded-lg flex-col block shadow overflow-hidden group">
+                                key={project._id}
+                                className="bg-[#0F0F0F] p-4 rounded-lg flex-col block shadow overflow-hidden group">
                                 <img
                                     src={urlFor(project.mainImage).url()}
                                     alt={project.title}
@@ -125,24 +133,12 @@ const ProjectList = () => {
                     {/* Nút liên hệ và tư vấn */}
                     <div className="text-center mt-12 space-x-1 flex justify-center items-center">
                         {/* Nút Liên hệ */}
-                        <button
-                            className=" w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                            onMouseEnter={() => setIsHovered(true)}
-                            onMouseLeave={() => setIsHovered(false)}
+                        <Link
+                            to="/liên-hệ"
+                            className="w-[130px] sm:w-[150px] md:w-[200px] h-[40px] md:h-[45px] bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[16px] md:text-[18px] italic rounded-xl border border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300 flex items-center justify-center"
                         >
-                            {!isHovered ? (
-                                <TbArrowForwardUp className="inline-block text-[25px]"/>
-                            ) : (
-                                "Liên hệ"
-                            )}
-                        </button>
-
-                        {/* Nút Tư vấn */}
-                        <button
-                            className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-[#272727] text-[#C4B58E] font-semibold text-[15px] sm:text-[18px] italic rounded-r-[10px] border-2 border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300"
-                        >
-                            Tư vấn
-                        </button>
+                            Tư vấn miễn phí
+                        </Link>
                     </div>
                 </div>
             </div>

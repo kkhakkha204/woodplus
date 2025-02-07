@@ -171,8 +171,7 @@ const Contact = () => {
                                 <strong>Gmail:</strong> nhadepwoodplus@gmail.com
                             </p>
                             <p className="mb-4 text-lg text-gray-100">
-                                <strong>Hà Nội:</strong> <br/> Số 16, ngách 6, ngõ 102 đường Ngụy Như Kon Tum, Nhân
-                                Chính, Thanh Xuân
+                                <strong>Địa chỉ:</strong> <br/> 168 Đ. Nguyễn Xiển, Hạ Đình, Thanh Xuân, Hà Nội.
                             </p>
                         </div>
                     </div>
