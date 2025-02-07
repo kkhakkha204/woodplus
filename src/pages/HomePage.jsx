@@ -43,29 +43,27 @@ const HomePage = () => {
                     className="container mx-auto w-full max-w-[1620px] h-full flex flex-col justify-center items-center text-white relative z-10">
 
 
-                    {/* Dòng text phía trên */}
-                    <p className=" text-[15px] sm:text-[18px] md:text-[20px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px] font-bold text-center italic ">
-                        Thiết kế -  thi công kiến trúc và nội thất
+                    <p className="text-[15px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] 2xl:text-[26px] font-semibold text-center italic tracking-wide">
+                        Tư vấn thiết kế, thi công kiến trúc - nội thất
                     </p>
 
-                    {/* Câu slogan */}
-                    <h1
-                        className="text-[34px] sm:text-[48px] md:text-[58px] lg:text-[64px] xl:text-[68px] 2xl:text-[68px] text-center font-bold"
-                    >
-                        Xây nhà đẹp tinh tế
-                        <h1 className="-mt-3 2xl:-mt-7"
-                        >
-                            đến với <span
-                            className="-mt-4 lg:-mt-6 bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text"
-                        > WoodPlus
-                        </span>
-                        </h1>
-
+                    {/* Thương hiệu */}
+                    <h1 className="text-[57px] sm:text-[75px] md:text-[83px] lg:text-[87px] xl:text-[95px] 2xl:text-[100px] text-center  font-bold uppercase mt-2">
+                        WOODPLUS
                     </h1>
-                    <p className="text-center text-[14px] tracking-[0.01rem] sm:text-[15px] md:text-[17px] lg:text-[20px] mt-2 max-w-[280px] sm:max-w-[300px] md:max-w-[380px] lg:max-w-[450px] 2xl:max-w-[450px]">
-                        Một ngôi nhà phải đẹp, khiến mọi người trầm trồ. Đồng hành với woodplus xây dựng một công trình
-                        đáng tự hào.
+
+                    {/* Giá trị thương hiệu */}
+                    <h2 className="text-[18.5px] sm:text-[22px] md:text-[24px] lg:text-[26px] xl:text-[28px] 2xl:text-[30px] text-center font-semibold tracking-wide -mt-3.5">
+                        Đồng hành - Trung thực - Tận tâm
+                    </h2>
+
+                    {/* Định nghĩa về công trình tốt */}
+                    <p className="text-center text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] mt-4 max-w-[320px] sm:max-w-[380px] md:max-w-[450px] lg:max-w-[600px] 2xl:max-w-[700px] leading-relaxed">
+                        Một công trình tốt là công trình đẹp về <span
+                        className="font-semibold text-[#D8CCA6]">thẩm mỹ</span>,
+                        cá nhân hóa để phù hợp với <span className="font-semibold text-[#D8CCA6]">chủ nhà.</span> Đồng hành cùng Woodplus để kiến tạo không gian sống đáng tự hào của bạn!
                     </p>
+
 
 
                     <div className="text-center mt-12 space-x-1 flex justify-center items-center">
