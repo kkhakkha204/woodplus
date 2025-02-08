@@ -9,49 +9,50 @@ const ContactPopup = () => {
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
     const [loading, setLoading] = useState(false);
-
+    const [popupMessage, setPopupMessage] = useState("");
+    const [showPopup, setShowPopup] = useState(false);
     const handleSubmit = async (e) => {
         e.preventDefault();
+
         if (!ten.trim() || !soDienThoai.trim()) {
-            setError("Họ tên và số điện thoại là bắt buộc.");
-            setSuccess("");
+            setPopupMessage("Bạn chưa nhập đủ thông tin!");
+            setShowPopup(true);
             return;
         }
 
         setLoading(true);
 
-        const formData = {
-            ten, // Họ tên (thống nhất với ContactSection)
-            soDienThoai, // Số điện thoại
-            email, // Email
-            nhuCau, // Nhu cầu (thay thế cho 'message' trước đây)
-        };
+        // Google Forms URL (Dùng URL formResponse)
+        const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSeSpD6Rf4Rb9od4TeeTJkcivpOWcT44TXwkZpqoqHT6tiq-eA/formResponse?usp=dialog"; // Thay bằng URL của bạn
+
+        // Tạo URL parameters với entry ID tương ứng
+        const formData = new URLSearchParams();
+        formData.append("entry.376442972", ten); // Thay entry ID chính xác
+        formData.append("entry.1809478819", soDienThoai);
+        formData.append("entry.81678036", email);
+        formData.append("entry.1473273480", nhuCau);
 
         try {
-            const response = await fetch("https://formspree.io/f/xzzzndao", {
+            await fetch(formUrl, {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData),
+                body: formData,
+                mode: "no-cors", // Chặn lỗi CORS
             });
 
-            if (response.ok) {
-                setSuccess("Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm.");
-                setError("");
-                setTen("");
-                setSoDienThoai("");
-                setEmail("");
-                setNhuCau("");
-            } else {
-                setError("Có lỗi xảy ra khi gửi thông tin.");
-            }
+            setPopupMessage("Thông tin của bạn đã được gửi thành công!");
+            setTen("");
+            setSoDienThoai("");
+            setEmail("");
+            setNhuCau("");
         } catch (error) {
-            setError("Có lỗi xảy ra khi gửi thông tin.");
+            setPopupMessage("Có lỗi xảy ra khi gửi thông tin.");
         } finally {
+            setShowPopup(true);
             setLoading(false);
         }
     };
+
+    const closePopup = () => setShowPopup(false);
 
     return (
         <>
