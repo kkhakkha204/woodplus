@@ -6,6 +6,7 @@ import Partner from "../components/Partner";
 import {Link} from "react-router-dom";
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
+import Hotline from "../components/Hotline";
 
 
 const AboutUs = () => {
@@ -318,6 +319,7 @@ const AboutUs = () => {
             <div className="hidden md:block"><DarkSpacing/></div>
             <ContactPopup/>
             <ZaloChatButton/>
+            <Hotline/>
         </main>
     );
 };

@@ -9,6 +9,7 @@ import {Link} from "react-router-dom";
 import BlogSection from "../components/BlogSection";
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
+import Hotline from "../components/Hotline";
 
 const Construction = () => {
     const [isHovered] = useState(false);
@@ -182,6 +183,7 @@ const Construction = () => {
             <div className="hidden md:block"><DarkSpacing/></div>
             <ContactPopup/>
             <ZaloChatButton/>
+            <Hotline/>
         </main>
     );
 };

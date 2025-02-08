@@ -3,6 +3,7 @@ import { client, urlFor } from '../sanityClient';
 import DarkSpacing from '../components/DarkSpacing';
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
+import Hotline from "../components/Hotline";
 
 const NewsList = () => {
     const [news, setNews] = useState([]);
@@ -159,6 +160,7 @@ const NewsList = () => {
             </div>
             <ContactPopup/>
             <ZaloChatButton/>
+            <Hotline/>
         </main>
     );
 };

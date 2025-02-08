@@ -7,6 +7,8 @@ import Testimonials from "../components/Testimonials";
 import {Link} from "react-router-dom";
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
+import ServicesSection from "../components/ServicesSection";
+import Hotline from "../components/Hotline";
 
 const Services = () => {
     const [isHovered] = useState(false);
@@ -230,102 +232,7 @@ const Services = () => {
             </div>
             <div className="hidden md:block"><DarkSpacing/></div>
 
-            {/* Thẻ divcha */}
-            <div className="w-full flex justify-center items-center mb-[18px] pt-14 md:pt-0 pb-8">
-
-                <div className="w-full max-w-[1620px]">
-
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-
-                        <div className="col-span-1 lg:col-span-3 text-center lg:mb-8">
-                            <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
-                            <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white ">Dịch
-                                vụ</h2>
-                            <p className="w-[330px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
-                                WoodPlus mang đến giải pháp trọn gói cho thiết kế và thi công nội thất,
-                                cá nhân hóa không gian sống, kết hợp hài hòa giữa công năng và thẩm mỹ.
-                            </p>
-                        </div>
-
-
-                        <div className="flex-col justify-center lg:-mt-[150px] mb-4 lg:ml-8 2xl:ml-0 relative">
-                            <Link to="/thiết-kế">
-                                <img
-                                    src="/assets/images/service/service3.jpg"
-                                    alt="Dịch vụ R"
-                                    className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
-                                />
-                            </Link>
-                            <div
-                                className="divtext absolute bottom-0 lg:bottom-[150px] left-0 w-full bg-[#0F0F0F] bg-opacity-85 text-center p-6">
-                                <Link
-                                    to="/thiết-kế"
-                                    className="flex items-center justify-center font-medium text-[22px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[32px] text-[#BEAB81] hover:text-white"
-                                >
-                                    Dịch vụ thiết kế
-                                    <span className="ml-14 text-[30px]">&rarr;</span>
-                                </Link>
-                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
-                                    Giải pháp thiết kế nội thất tinh tế. Chúng tôi hiện thực hóa ý tưởng của bạn, tạo
-                                    nên không gian sống hài hòa giữa công năng và thẩm mỹ, đậm dấu ấn cá nhân.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="flex-col justify-center mb-4 relative">
-                            <Link to="/trọn-gói">
-                                <img
-                                    src="/assets/images/service/service1.jpg"
-                                    alt="Dịch vụ R"
-                                    className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
-                                />
-                            </Link>
-                            <div className="text-center absolute bottom-0 left-0 w-full bg-[#0F0F0F] bg-opacity-85 p-6">
-                                <Link
-                                    to="/trọn-gói"
-                                    className="flex items-center justify-center font-medium text-[22px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[32px] text-[#BEAB81] hover:text-white"
-                                >
-                                    Xây dựng trọn gói
-                                    <span className="ml-14 text-[30px]">&rarr;</span>
-                                </Link>
-                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
-                                    Từ thiết kế, thi công đến hoàn thiện, chúng tôi đồng hành cùng bạn trong từng giai
-                                    đoạn, đảm bảo dự án được thực hiện đúng tiến độ, tối ưu chi phí và mang đến không
-                                    gian hoàn mỹ như mong đợi.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="flex-col lg:-mt-[150px] justify-center mb-4 lg:mr-4 2xl:mr-0 relative">
-                            <Link to="/thi-công">
-                                <img
-                                    src="/assets/images/service/services2.jpg"
-                                    alt="Dịch vụ R"
-                                    className="mx-auto w-[320px] h-[260px] sm:w-[500px] sm:h-[460px] lg:w-[370px] lg:h-[480px] xl:w-[500px] xl:h-[520px] 2xl:h-[600px] object-cover"
-                                />
-                            </Link>
-                            <div
-                                className="text-center absolute bottom-0 lg:bottom-[150px] left-0 w-full bg-[#0F0F0F] bg-opacity-85 p-6">
-                                <Link
-                                    to="/thi-công"
-                                    className="flex items-center justify-center font-medium text-[22px] sm:text-[26px] md:text-[28px] xl:text-[32px] 2xl:text-[32px] text-[#BEAB81] hover:text-white"
-                                >
-                                    Thi công nội thất
-                                    <span className="ml-14 text-[30px]">&rarr;</span>
-                                </Link>
-                                <p className="w-[280px] sm:w-[310px] md:w-[350px] 2xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] tracking-[0.01rem] font-normal text-[#CECECE] mt-1 lg:mt-4">
-                                    Chúng tôi sử dụng vật liệu cao cấp, kỹ thuật hiện đại cùng đội ngũ tay nghề cao để
-                                    đảm bảo từng chi tiết đều hoàn hảo, mang lại không gian bền vững.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
+            <ServicesSection/>
 
             <div className="hidden lg:block">
                 <LightSpacing/>
@@ -403,6 +310,7 @@ const Services = () => {
             <div className="hidden md:block"><DarkSpacing/></div>
             <ContactPopup/>
             <ZaloChatButton/>
+            <Hotline/>
         </main>
     );
 };

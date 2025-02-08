@@ -5,6 +5,7 @@ import DarkSpacing from "../components/DarkSpacing";
 import ContactSection from "../components/ContactSection";
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
+import Hotline from "../components/Hotline";
 
 const ProjectDetail = () => {
     const { slug } = useParams();
@@ -107,6 +108,7 @@ const ProjectDetail = () => {
             <ContactSection />
             <ContactPopup />
             <ZaloChatButton />
+            <Hotline/>
         </main>
     );
 };

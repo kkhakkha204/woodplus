@@ -8,6 +8,7 @@ import BlogSection from "../components/BlogSection";
 import {Link} from "react-router-dom";
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
+import Hotline from "../components/Hotline";
 
 const Design = () => {
     const [isHovered] = useState(false);
@@ -303,6 +304,7 @@ Hỗ trợ Hồ sơ Cấp phép XD</span>
             <div className="hidden md:block"><DarkSpacing/></div>
             <ContactPopup/>
             <ZaloChatButton/>
+            <Hotline/>
         </main>
     );
 };

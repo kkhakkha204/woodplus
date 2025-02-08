@@ -7,6 +7,7 @@ import ContactSection from "../components/ContactSection";
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import {Link} from "react-router-dom";
+import Hotline from "../components/Hotline";
 
 const ProjectList = () => {
     const [featuredProjects, setFeaturedProjects] = useState([]);
@@ -194,6 +195,7 @@ const ProjectList = () => {
             <ContactSection/>
             <ContactPopup/>
             <ZaloChatButton/>
+            <Hotline/>
         </main>
     );
 };

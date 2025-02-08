@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import DarkSpacing from "../components/DarkSpacing";
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
+import Hotline from "../components/Hotline";
 
 const Contact = () => {
     const [ten, setTen] = useState("");
@@ -183,6 +184,7 @@ const Contact = () => {
             )}
             <ContactPopup />
             <ZaloChatButton/>
+            <Hotline/>
         </main>
     );
 };

@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { PortableText } from '@portabletext/react';
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
+import Hotline from "../components/Hotline";
 
 const NewsDetail = () => {
     const { slug } = useParams();
@@ -180,6 +181,7 @@ const NewsDetail = () => {
             </div>
             <ContactPopup/>
             <ZaloChatButton/>
+            <Hotline/>
         </main>
     );
 };
