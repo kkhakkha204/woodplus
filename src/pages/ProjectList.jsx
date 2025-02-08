@@ -67,16 +67,15 @@ const ProjectList = () => {
 
             {/* HeroSection */}
             <div
-                className="h-[600px] sm:h-[650px] lg:h-[750px] xl:h-[750px] 2xl:h-[800px] w-full bg-cover bg-center relative overflow-hidden">
+                className="h-[600px] sm:h-[650px] lg:h-[750px] xl:h-[750px] 2xl:h-[750px] w-full bg-cover bg-center relative overflow-hidden">
                 {/* Video nền */}
-                <video
-                    className="hidden md:block absolute inset-0 w-full h-full object-cover"
-                    src="/assets/videos/video1.mp4" // Đường dẫn đến video của bạn
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                ></video>
+                <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{
+                        backgroundImage: "url('/assets/images/projectList/heroSection.jpg')",
+                        filter: "brightness(0.85)",
+                    }}
+                ></div>
                 <video
                     className="md:hidden absolute inset-0 w-full h-full object-cover"
                     src="/assets/videos/video2.mp4" // Đường dẫn đến video của bạn
