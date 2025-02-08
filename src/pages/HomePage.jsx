@@ -14,7 +14,7 @@ import ZaloChatButton from "../components/ZaloChatButton";
 
 
 const HomePage = () => {
-    const [isHovered, setIsHovered] = useState(false);
+    const [isHovered] = useState(false);
 
     return (
         <main className="bg-[#0F0F0F]">
@@ -227,8 +227,7 @@ const HomePage = () => {
                                     <Link
                                         to="/giới-thiệu"
                                         className="w-[100px] h-[35px] sm:w-[125px] sm:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                                        onMouseEnter={() => setIsHovered(true)}
-                                        onMouseLeave={() => setIsHovered(false)}
+
                                     >
                                         {/* Hiển thị icon trên màn hình lớn */}
                                         <span className="hidden sm:inline text-[18px]">
