@@ -13,6 +13,7 @@ import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import ServicesSection from "../components/ServicesSection";
 import Hotline from "../components/Hotline";
+import BackToTop from "../components/BackToTop";
 
 
 const HomePage = () => {
@@ -208,6 +209,7 @@ const HomePage = () => {
             <ContactPopup/>
             <ZaloChatButton/>
             <Hotline/>
+            <BackToTop/>
         </main>
     );
 };
