@@ -1,6 +1,3 @@
-
-
-
 import React, { useState } from 'react';
 import DarkSpacing from "../components/DarkSpacing";
 import ContactPopup from "../components/ContactPopup";

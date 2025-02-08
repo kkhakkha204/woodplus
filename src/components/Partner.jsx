@@ -1,10 +1,8 @@
-import React, {useState} from "react";
-import Slider from "react-slick";
-import {TbArrowForwardUp} from "react-icons/tb";
+import React from "react";
+
 
 const PartnerSection = () => {
-    const [isHovered, setIsHovered] = useState(false);
-    // Cấu hình cho slick slider
+
 
 
     return (

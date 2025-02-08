@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useState} from "react";
 
 
 import {TbArrowForwardUp,} from "react-icons/tb";
@@ -9,18 +9,13 @@ import ProjectSection from "../components/ProjectSection";
 import {Link} from "react-router-dom";
 import Testimonials from "../components/Testimonials";
 import ContactPopup from "../components/ContactPopup";
-import Stat from "../components/Stat";
+
 import ZaloChatButton from "../components/ZaloChatButton";
 
 
 const HomePage = () => {
     const [isHovered, setIsHovered] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
 
-// Kiểm tra nếu đang dùng điện thoại
-    useEffect(() => {
-        setIsMobile(window.innerWidth < 768);
-    }, []);
     return (
         <main className="bg-[#0F0F0F]">
             {/* HeroSection */}
@@ -71,8 +66,7 @@ const HomePage = () => {
                         <Link
                             to="/projects"
                             className="w-[100px] h-[35px] sm:w-[115px] sm:h-[36px] lg:w-[125px] lg:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                            onMouseEnter={() => !isMobile && setIsHovered(true)}
-                            onMouseLeave={() => !isMobile && setIsHovered(false)}
+
                         >
         <span className="hidden lg:inline text-[18px]">
             {isHovered ? "Xem dự án" : <TbArrowForwardUp className="inline-block text-[25px]"/>}
@@ -99,15 +93,15 @@ const HomePage = () => {
                     <div
                         className="relative bottom-0 w-full max-w-[1200px] mx-6 sm:mx-12 md:mx-16 lg:mx-32 xl:mx-48 2xl:mx-auto h-[80px] bg-opacity-0 flex justify-between items-center">
                         {/* Dòng Tư vấn miễn phí */}
-                        <p className="text-[#B2A384] text-[12px] sm:text-[14px] lg:text-[16px] 2xl:text-[18px] font-medium mb-5 text-center lg:mb-0 ">Tư
+                        <p className="text-[#B2A384] text-[11px] sm:text-[13px] lg:text-[16px] 2xl:text-[18px] font-medium mb-5 text-center lg:mb-0 ">Tư
                             vấn miễn phí</p>
 
                         {/* Dòng Bảo đảm tiến độ, căn giữa */}
-                        <p className="text-[#B2A384] text-[12px] sm:text-[14px] lg:text-[16px] 2xl:text-[18px] font-medium text-center mb-5 lg:mb-0">Không
+                        <p className="text-[#B2A384] text-[11px] sm:text-[13px] lg:text-[16px] 2xl:text-[18px] font-medium text-center mb-5 lg:mb-0">Không
                             phát sinh <br/>chi phí - tiến độ</p>
 
                         {/* Dòng Không chi phí phát sinh */}
-                        <p className="text-[#B2A384] text-[12px] sm:text-[14px] lg:text-[16px] 2xl:text-[18px] font-medium text-center mb-5 lg:mb-0">Trung thực trong <br/>sản phẩm</p>
+                        <p className="text-[#B2A384] text-[11px] sm:text-[13px] lg:text-[16px] 2xl:text-[18px] font-medium text-center mb-5 lg:mb-0">Trung thực trong <br/>sản phẩm</p>
 
                     </div>
                 </div>
@@ -131,7 +125,7 @@ const HomePage = () => {
                             <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white ">Dịch
                                 vụ</h2>
                             <p className="w-[330px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
-                                Woodplus mang đến giải pháp toàn diện cho chủ nhà từ thiết kế đến thi công hoàn thiện, trang trí nội thất, cá nhân hóa không gian sống, đảm bảo hài hòa công năng và thẩm mỹ.
+                                Woodplus mang đến giải pháp trọn gói, từ thiết kế đến thi công hoàn thiện, trang trí nội thất, cá nhân hóa không gian sống. Chúng tôi kiến tạo những công trình tinh tế, hài hòa giữa công năng & thẩm mỹ, nâng tầm giá trị sống cho chủ nhân.
                             </p>
                         </div>
 
@@ -220,13 +214,11 @@ const HomePage = () => {
                             <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#222222] ">Về
                                 WoodPlus</h2>
                             <p className="w-[300px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#535353] mt-4">
-                                Công ty Cổ phần Nội Thất WoodPlus là đơn vị uy tín hàng đầu trong lĩnh vực tư vấn thiết
-                                kế, thi công nội thất và ngoại thất tại Hà Nội và trên toàn quốc.
+                                Công ty CP Kiến trúc - Nội thất Woodplus là đơn vị uy tín hàng đầu trong lĩnh vực tư vấn thiết kế, thi công nội – ngoại thất tại khu vực phía Bắc. Với gần 10 năm kinh nghiệm và hàng trăm công trình đã hoàn thiện, Woodplus chuyên gia trong biệt thự, duplex – penthouse, liền kề, chung cư, văn phòng, quán cafe…, mang đến không gian sống đẳng cấp và tinh tế.
                             </p>
 
                             <p className="hidden lg:block w-[260px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] text-[#535353] mt-4">
-                                Với hơn 8 năm kinh nghiệm, WoodPlus chuyên thực hiện các công trình dân dụng và công
-                                cộng như nhà lô, biệt thự, nội thất chung cư, nhà hàng, quán cafe, văn phòng và dịch vụ xây nhà trọn gói.
+                                Với dịch vụ thi công trọn gói – chìa khóa trao tay, đội ngũ Kiến trúc sư & Kỹ sư dày dặn kinh nghiệm của Woodplus cam kết quy trình minh bạch, trung thực, tận tâm trong từng sản phẩm. Chúng tôi đồng hành cùng khách hàng để hiện thực hóa không gian sống hoàn mỹ, bền vững và đầy cảm hứng.
                             </p>
                             <div className="flex lg:mt-12 space-x-1 ">
                                 {/* Nút Liên hệ */}
@@ -274,9 +266,7 @@ const HomePage = () => {
                             />
                         </div>
                         <p className="text-center mx-auto lg:hidden w-[290px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] text-[#535353] mt-4">
-                            Với hơn 8 năm kinh nghiệm, WoodPlus chuyên thực hiện các công trình dân dụng và công
-                            cộng như nhà lô, biệt thự, nội thất chung cư, nhà hàng, quán cafe, văn phòng và dịch vụ xây
-                            nhà trọn gói.
+                            Với dịch vụ thi công trọn gói – chìa khóa trao tay, đội ngũ Kiến trúc sư & Kỹ sư dày dặn kinh nghiệm của Woodplus cam kết quy trình minh bạch, trung thực, tận tâm trong từng sản phẩm. Chúng tôi đồng hành cùng khách hàng để hiện thực hóa không gian sống hoàn mỹ, bền vững và đầy cảm hứng.
                         </p>
                     </div>
 
@@ -291,7 +281,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <Stat/>
+
 
             <div className="hidden md:block"><DarkSpacing/></div>
 

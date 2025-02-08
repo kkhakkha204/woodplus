@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import {TbArrowForwardUp} from "react-icons/tb";
 import DarkSpacing from "../components/DarkSpacing";
 import ContactSection from "../components/ContactSection";
@@ -9,18 +9,13 @@ import ZaloChatButton from "../components/ZaloChatButton";
 
 
 const AboutUs = () => {
-    const [isHovered, setIsHovered] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
+    const [isHovered] = useState(false);
 
-// Kiểm tra nếu đang dùng điện thoại
-    useEffect(() => {
-        setIsMobile(window.innerWidth < 768);
-    }, []);
     return (
         <main className="bg-[#0F0F0F] ">
             {/* Hero Section */}
             <div
-                className="relative w-full h-[550px] sm:h-[650px] lg:h-[750px] xl:h-[800px] 2xl:h-[800px] bg-cover bg-center">
+                className="relative w-full h-[650px] sm:h-[650px] lg:h-[750px] xl:h-[800px] 2xl:h-[800px] bg-cover bg-center">
                 {/* Lớp chứa ảnh nền với filter brightness */}
                 <div
                     className="absolute inset-0 bg-cover bg-center"
@@ -40,7 +35,7 @@ const AboutUs = () => {
                     </div>
 
                     {/* Dòng chữ nổi bật */}
-                    <div className="w-full bg-[#0F0F0F] border-y-2 border-white flex items-center justify-center py-6">
+                    <div className="w-full bg-[#0F0F0F] border-y-2 border-white flex items-center justify-center py-6 ">
                     <span
                         className="text-[28px] sm:text-[40px] md:text-[50px] lg:text-[58px] xl:text-[64px] font-bold text-center">
                         Thương hiệu{" "}
@@ -56,12 +51,8 @@ const AboutUs = () => {
                         className="w-full xl:max-w-[1350px] 2xl:max-w-[1620px] px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
                         {/* Mô tả thương hiệu */}
                         <div className="text-center lg:text-left max-w-[500px] mx-auto lg:mx-0">
-                            <p className="text-[16px] sm:text-[18px] lg:text-[20px] text-white leading-relaxed">
-                                Với hơn 8 năm kinh nghiệm, WoodPlus đã khẳng định uy tín trong thi công và thiết kế nội
-                                thất
-                                nhờ cam kết{" "}
-                                <strong className="text-[#D8CCA6]">"Giá trị thật – Chất lượng thật"</strong>
-                            </p>
+                            <p className="text-[14px] sm:text-[16px] lg:text-[18px] text-white leading-relaxed">
+                                <strong className="text-[#D8CCA6]">"Đồng hành - Trung thực - Tận tâm"</strong> là tôn chỉ giúp Woodplus khẳng định uy tín trong lòng khách hàng,từ đó không chỉ kiến tạo không gian sống tinh tế mà còn khẳng định giá trị riêng của mỗi chủ nhà.</p>
                         </div>
 
                         {/* Nút "Xem Dự Án" và "Liên Hệ" */}
@@ -70,8 +61,7 @@ const AboutUs = () => {
                             <Link
                                 to="/projects"
                                 className="w-[100px] h-[35px] sm:w-[115px] sm:h-[36px] lg:w-[125px] lg:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
-                                onMouseEnter={() => !isMobile && setIsHovered(true)}
-                                onMouseLeave={() => !isMobile && setIsHovered(false)}
+
                             >
                                 {/* Hiển thị icon trên màn hình lớn */}
                                 <span className="hidden lg:inline text-[18px]">
@@ -113,7 +103,7 @@ const AboutUs = () => {
                         <div>
                             <div className="lg:sticky lg:pb-16 top-0">
                                 <div className="pt-2 ">
-                                    <p className="text-[16px] sm:text-[22px]">2005 - 2010</p>
+                                    <p className="text-[16px] sm:text-[22px]">2015 - 2018</p>
                                     <h1 className="text-[18px] sm:text-[20px] text-[#BEAB81]">Đặt nền móng</h1>
                                 </div>
                             </div>
@@ -122,10 +112,8 @@ const AboutUs = () => {
                             <div className="flex-shrink-0">
                                 <div className="mx-auto "><img className="aspect-[4/3] object-cover"
                                                                src="/assets/images/aboutus/aboutus4.jpg" alt="#_"/>
-                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Giai
-                                        đoạn này đánh dấu sự ra đời của thương hiệu với tầm nhìn thiết kế nội thất độc
-                                        đáo. Ban đầu, công ty tập trung vào các dự án nhỏ, từng bước xây dựng đội ngũ và
-                                        niềm tin từ khách hàng đầu tiên.</p>
+                                    <p className="text-center mx-2 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Giai đoạn đánh dấu sự ra đời của thương hiệu Woodplus trên thị trường.
+                                        Với mong muốn mang đến không gian sống tối ưu, độc đáo, cty tập trung vào các dự án vừa và nhỏ, từng bước xây dựng niềm tin với khách hàng.</p>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +122,7 @@ const AboutUs = () => {
                         <div>
                             <div className="lg:sticky lg:pb-16 top-0">
                                 <div className="pt-2 ">
-                                    <p className="text-[16px] sm:text-[22px]">2011 - 2018</p>
+                                    <p className="text-[16px] sm:text-[22px]">2018 - 2020</p>
                                     <h1 className="text-[18px] sm:text-[20px] text-[#BEAB81]">Vươn xa</h1>
                                 </div>
                             </div>
@@ -143,10 +131,8 @@ const AboutUs = () => {
                             <div className="flex-shrink-0">
                                 <div className="mx-auto "><img className="aspect-[4/3] object-cover"
                                                                src="/assets/images/herosection/hero3.webp" alt="#_"/>
-                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Giai
-                                        đoạn bùng nổ với nhiều dự án lớn. Công ty mở rộng quy mô, đầu tư công nghệ 3D và
-                                        hợp tác với các đối tác cung cấp vật liệu cao cấp, khẳng định vị thế qua các
-                                        công trình nổi bật.</p>
+                                    <p className="text-center mx-3 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Giai đoạn phát triển vượt bậc của Woodplus với hàng trăm dự án lớn nhỏ, đội ngũ nhân sự được củng cố và phát triển.
+                                        đồng thời nâng cấp công nghệ, chuyên môn, quy trình thiết kế thi công để khẳng định vị thế trên thị trường.</p>
                                 </div>
                             </div>
                         </div>
@@ -155,17 +141,15 @@ const AboutUs = () => {
                         <div>
                             <div className="lg:sticky lg:pb-16 top-0">
                                 <div className="pt-2 ">
-                                    <p className="text-[16px] sm:text-[22px]">2019 - nay</p>
+                                    <p className="text-[16px] sm:text-[22px]">2021 - nay</p>
                                     <h1 className="text-[18px] sm:text-[20px] text-[#BEAB81]">Hướng đến tương lai</h1>
                                 </div>
                             </div>
                         </div>
-                        <div className="lg:col-span-2 pt-2">
+                        <div className="lg:col-span-2 sm:pt-2 -mt-12 sm:-mt-0">
                             <div className="flex-shrink-0">
                                 <div className="mx-auto ">
-                                    <p className="text-center line-clamp-4 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Công
-                                        ty tập trung ứng dụng công nghệ thông minh, vật liệu bền vững và không ngừng đổi
-                                        mới phong cách để tạo ra không gian sống tối ưu, thân thiện với môi trường.</p>
+                                    <p className="text-center mx-3 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Với tầm nhìn trở thành công ty Hàng đầu Việt Nam trong lĩnh vực thiết kế - thi công trọn gói, Woodplus tập trung tối ưu hóa quy trình, áp dụng công nghệ vào thiết kế và sản xuất, không ngừng đổi mới, cập nhật chuyên môn để tạo ra không gian sống đẳng cấp - cá nhân hóa - thân thiện với môi trường, đem lại giá trị thật cho khách hàng.</p>
                                 </div>
                             </div>
                         </div>
@@ -187,27 +171,24 @@ const AboutUs = () => {
                         <div className=" px-8 text-center shadow">
 
                             <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Tầm nhìn</h3>
-                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Trở
-                                thành thương hiệu dẫn đầu trong thiết kế và thi công nội thất, mang lại giá trị đẳng cấp
-                                và cảm hứng cho khách hàng toàn cầu.
+                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Woodplus hướng tới trở thành thương hiệu hàng đầu Việt Nam trong thiết kế – thi công trọn gói,
+                                tạo nên không gian sống đẳng cấp, cá nhân hóa, phù hợp với từng khách hàng.
                             </p>
                         </div>
 
                         <div className=" px-8 text-center shadow">
 
                             <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Giá trị cốt lõi</h3>
-                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Woodplus
-                                luôn đặt khách hàng làm trung tâm, cung cấp những giải pháp thiết kế nội thất sáng tạo,
-                                chất lượng và bền vững, giúp không gian sống hoàn hảo và đáp ứng nhu cầu thực tế
+                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Woodplus luôn đặt khách hàng làm trung tâm, cung cấp giải pháp toàn diện trong thiết kế - thi công.
+                                Với tôn chỉ Đồng hành – Trung thực – Tận tâm, mang lại không gian sống hoàn hảo, đáp ứng trọn vẹn nhu cầu của khách hàng.
                             </p>
                         </div>
 
                         <div className=" px-8 text-center shadow">
 
                             <h3 className="mt-1 text-[16px] sm:text-[22px] text-[#BeAB81]">Sứ mệnh</h3>
-                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Kiến
-                                tạo không gian sống tinh tế, tiện nghi, kết hợp thẩm mỹ và công năng, nâng cao chất
-                                lượng cuộc sống và truyền cảm hứng cho khách hàng.
+                            <p className="my-1 mb-0 text-[13px] sm:text-[14px] lg:text-[17px] font-normal text-[#CECECE]">Woodplus kiến tạo không gian sống phù hợp,
+                                mang đến sản phẩm – dịch vụ chất lượng, nâng cao đời sống, bảo vệ sức khỏe người sử dụng và hướng đến sự phát triển bền vững.
                             </p>
                         </div>
                     </div>

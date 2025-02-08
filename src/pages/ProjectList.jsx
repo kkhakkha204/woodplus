@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {client, urlFor} from '../sanityClient';
 import DarkSpacing from "../components/DarkSpacing";
-import {TbArrowForwardUp} from "react-icons/tb";
+
 import LightSpacing from "../components/LightSpacing";
 import ContactSection from "../components/ContactSection";
 import ContactPopup from "../components/ContactPopup";
@@ -10,16 +10,11 @@ import {Link} from "react-router-dom";
 
 const ProjectList = () => {
     const [featuredProjects, setFeaturedProjects] = useState([]);
-    const [isHovered, setIsHovered] = useState(false);
+
     const [projects, setProjects] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const projectsPerPage = 6;
-    const [isMobile, setIsMobile] = useState(false);
 
-// Kiểm tra nếu đang dùng điện thoại
-    useEffect(() => {
-        setIsMobile(window.innerWidth < 768);
-    }, []);
     // Fetch featured projects
     useEffect(() => {
         client
