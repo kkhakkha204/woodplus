@@ -9,6 +9,7 @@ import {Link} from "react-router-dom";
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import Hotline from "../components/Hotline";
+import BackToTop from "../components/BackToTop";
 
 const FullService = () => {
     const [isHovered] = useState(false);
@@ -22,7 +23,7 @@ const FullService = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
-                        backgroundImage: "url('/assets/images/banner/banner1.jpg')",
+                        backgroundImage: "url('/assets/images/homepage/homePageHero.jpg')",
                         filter: "brightness(0.85)",
                     }}
                 ></div>
@@ -153,7 +154,7 @@ const FullService = () => {
                     {/* divr */}
                     <div className="w-full sm:pt-12 pr-3 lg:w-[54%]">
                         <img
-                            src="/assets/images/herosection/11.png"
+                            src="/assets/images/fullService/z4120609811956_7a668e8639982fe05b20365d3c88a7cc.jpg"
                             alt="Dịch vụ cung cấp"
                             className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover rounded-lg"
                         />
@@ -188,8 +189,7 @@ const FullService = () => {
                         <div
                             className="group relative flex flex-col mx-auto w-full max-w-sm transition-all duration-300 p-4 xl:p-8">
                             <div className="border-b border-solid border-[#757575] pb-9 mb-9">
-                                <h3 className="font-manrope text-[20px] sm:text-[24px] font-bold mb-7 text-center text-[#BEAB81]">Thiết
-                                    kế Nội thất</h3>
+                                <h3 className="font-manrope text-[20px] sm:text-[24px] font-bold mb-7 text-center text-[#BEAB81]">Thi công nội thất</h3>
                                 <div className="flex items-center justify-center">
                                     <span
                                         className="font-manrope text-[20px] sm:text-4xl font-medium text-white">200.000vnd</span>
@@ -226,8 +226,7 @@ const FullService = () => {
                         <div
                             className="group relative flex flex-col mx-auto w-full max-w-sm transition-all duration-300 p-4 xl:p-8">
                             <div className="border-b border-solid border-[#757575] pb-9 mb-9">
-                                <h3 className="font-manrope text-[20px] sm:text-[24px] font-bold mb-7 text-center text-[#BEAB81]">Thiết
-                                    kế Nội thất</h3>
+                                <h3 className="font-manrope text-[20px] sm:text-[24px] font-bold mb-7 text-center text-[#BEAB81]">Xây nhà trọn gói</h3>
                                 <div className="flex items-center justify-center">
                                     <span
                                         className="font-manrope text-[20px] sm:text-4xl font-medium text-white">200.000vnd</span>
@@ -273,8 +272,7 @@ Hỗ trợ Hồ sơ Cấp phép XD</span>
                         <div
                             className="group relative flex flex-col mx-auto w-full max-w-sm transition-all duration-300 p-4 xl:p-8">
                             <div className="border-b border-solid border-[#757575] pb-9 mb-9">
-                                <h3 className="font-manrope text-[20px] sm:text-[24px] font-bold mb-7 text-center text-[#BEAB81]">Thiết
-                                    kế Nội thất</h3>
+                                <h3 className="font-manrope text-[20px] sm:text-[24px] font-bold mb-7 text-center text-[#BEAB81]">Sửa nhà trọn gói</h3>
                                 <div className="flex items-center justify-center">
                                     <span
                                         className="font-manrope text-[20px] sm:text-4xl font-medium text-white">200.000vnd</span>
@@ -345,6 +343,8 @@ Hỗ trợ Hồ sơ Cấp phép XD</span>
             <ContactPopup/>
             <ZaloChatButton/>
             <Hotline/>
+            <BackToTop/>
+
         </main>
     );
 };

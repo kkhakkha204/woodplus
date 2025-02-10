@@ -9,6 +9,7 @@ import {Link} from "react-router-dom";
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import Hotline from "../components/Hotline";
+import BackToTop from "../components/BackToTop";
 
 const Design = () => {
     const [isHovered] = useState(false);
@@ -22,7 +23,7 @@ const Design = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
-                        backgroundImage: "url('/assets/images/banner/banner1.jpg')",
+                        backgroundImage: "url('/assets/images/homepage/homePageHero.jpg')",
                         filter: "brightness(0.85)",
                     }}
                 ></div>
@@ -120,10 +121,10 @@ const Design = () => {
 
                     <div className="grid grid-cols-2 gap-4 mt-8">
                         <img className="w-full "
-                             src="/assets/images/service/services2.jpg"
+                             src="/assets/images/design/z5104407624136_b202160f1fa046915782a2a50c5d4c22.jpg"
                              alt="office content 1"/>
                         <img className="mt-4 w-full lg:mt-10 "
-                             src="/assets/images/service/service3.jpg"
+                             src="/assets/images/design/z5496472501103_10f51337ffccbd7399f9eda89a8a59fb.jpg"
                              alt="office content 2"/>
                     </div>
                 </div>
@@ -305,6 +306,8 @@ Hỗ trợ Hồ sơ Cấp phép XD</span>
             <ContactPopup/>
             <ZaloChatButton/>
             <Hotline/>
+            <BackToTop/>
+
         </main>
     );
 };

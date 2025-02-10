@@ -4,6 +4,7 @@ import DarkSpacing from '../components/DarkSpacing';
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import Hotline from "../components/Hotline";
+import BackToTop from "../components/BackToTop";
 
 const NewsList = () => {
     const [news, setNews] = useState([]);
@@ -161,6 +162,8 @@ const NewsList = () => {
             <ContactPopup/>
             <ZaloChatButton/>
             <Hotline/>
+            <BackToTop/>
+
         </main>
     );
 };

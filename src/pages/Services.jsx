@@ -9,6 +9,8 @@ import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import ServicesSection from "../components/ServicesSection";
 import Hotline from "../components/Hotline";
+import BackToTop from "../components/BackToTop";
+import WorkProcess from "../components/WorkProcess";
 
 const Services = () => {
     const [isHovered] = useState(false);
@@ -22,7 +24,7 @@ const Services = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
-                        backgroundImage: "url('/assets/images/banner/banner3.jpg')",
+                        backgroundImage: "url('/assets/images/homepage/homePageHero.jpg')",
                         filter: "brightness(0.85)",
                     }}
                 ></div>
@@ -238,68 +240,68 @@ const Services = () => {
                 <LightSpacing/>
             </div>
 
-            <div className="w-full text-white bg-[#e7e5e4]">
-                {/* divcon */}
-                <div className="w-full max-w-[1620px] bg-[#0F0F0F] mx-auto">
-                    {/* divanh (background image) */}
-                    <div
-                        className="relative w-full max-w-[1500px] mx-auto h-auto bg-cover bg-center"
-                        style={{backgroundImage: 'url(/assets/images/herosection/11.png)'}}
-                    >
-                        {/* divdesc */}
-                        <div
-                            className="relative w-full max-w-[900px] mx-auto flex flex-col items-center bg-[#0F0F0F] p-6 sm:py-16">
-                            {/* divtext */}
-                            <div className="text-center mb-10">
-                                <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
-                                <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white ">Quy
-                                    trình làm việc</h2>
-                            </div>
+            {/*<div className="w-full text-white bg-[#e7e5e4]">*/}
+            {/*    /!* divcon *!/*/}
+            {/*    <div className="w-full max-w-[1620px] bg-[#0F0F0F] mx-auto">*/}
+            {/*        /!* divanh (background image) *!/*/}
+            {/*        <div*/}
+            {/*            className="relative w-full max-w-[1500px] mx-auto h-auto bg-cover bg-center"*/}
+            {/*            style={{backgroundImage: 'url(/assets/images/herosection/11.png)'}}*/}
+            {/*        >*/}
+            {/*            /!* divdesc *!/*/}
+            {/*            <div*/}
+            {/*                className="relative w-full max-w-[900px] mx-auto flex flex-col items-center bg-[#0F0F0F] p-6 sm:py-16">*/}
+            {/*                /!* divtext *!/*/}
+            {/*                <div className="text-center mb-10">*/}
+            {/*                    <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>*/}
+            {/*                    <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white ">Quy*/}
+            {/*                        trình làm việc</h2>*/}
+            {/*                </div>*/}
 
-                            {/* divquy (3 quy trình) */}
-                            <div
-                                className="w-[350px] sm:w-[600px] grid grid-cols-2 md:grid-cols-3 sm:gap-6 text-center">
-                                {/* Quy trình */}
-                                {[
-                                    {id: 1, text: 'Trao đổi ý tưởng và yêu cầu với kiến trúc sư.'},
-                                    {id: 2, text: 'Khảo sát hiện trạng công trình thiết kế.'},
-                                    {id: 3, text: 'Ký hợp đồng, lập bản vẽ 2D và chọn vật liệu.'},
-                                    {id: 4, text: 'Thiết kế 3D với hình ảnh minh họa nội thất.'},
-                                    {id: 5, text: 'Duyệt và thẩm định thiết kế với khách hàng.'},
-                                    {id: 6, text: 'Bàn giao hồ sơ và hoàn tất hợp đồng.'},
-                                    {id: 7, text: 'Tư vấn và thương thảo hợp đồng.'},
-                                    {id: 8, text: 'Gia công sản phẩm tại xưởng WoodPlus.'},
-                                    {id: 9, text: 'Thi công lắp đặt nội thất tại nhà khách hàng'},
-                                    {id: 10, text: 'Bàn giao – Nghiệm thu – Thanh lý – Bảo hành'},
-                                ].map((item) => (
-                                    <div
-                                        key={item.id}
-                                        className={`px-4 py-1 rounded-md bg-transparent ${
-                                            item.id === 10
-                                                ? 'md:col-span-3 sm:flex sm:flex-col items-center justify-center text-center sm:w-[200px] mx-auto'
-                                                : ''
-                                        }`}
-                                    >
-                                        <h3 className="text-[24px] md:text-[36px] font-bold text-[#BEAB81]">{`${item.id}`}</h3>
-                                        <p className="text-[14px] md:text-[16px] text-[#CECECE] mt-1">{item.text}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                    <div className="text-center mt-12 space-x-1 flex justify-center items-center">
-                        {/* Nút Liên hệ */}
-                        <Link
-                            to="/liên-hệ"
-                            className="w-[130px] sm:w-[150px] md:w-[200px] h-[40px] md:h-[45px] bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[16px] md:text-[18px] italic rounded-xl border border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300 flex items-center justify-center"
-                        >
-                            Tư vấn miễn phí
-                        </Link>
-                    </div>
-                </div>
-            </div>
+            {/*                /!* divquy (3 quy trình) *!/*/}
+            {/*                <div*/}
+            {/*                    className="w-[350px] sm:w-[600px] grid grid-cols-2 md:grid-cols-3 sm:gap-6 text-center">*/}
+            {/*                    /!* Quy trình *!/*/}
+            {/*                    {[*/}
+            {/*                        {id: 1, text: 'Trao đổi ý tưởng và yêu cầu với kiến trúc sư.'},*/}
+            {/*                        {id: 2, text: 'Khảo sát hiện trạng công trình thiết kế.'},*/}
+            {/*                        {id: 3, text: 'Ký hợp đồng, lập bản vẽ 2D và chọn vật liệu.'},*/}
+            {/*                        {id: 4, text: 'Thiết kế 3D với hình ảnh minh họa nội thất.'},*/}
+            {/*                        {id: 5, text: 'Duyệt và thẩm định thiết kế với khách hàng.'},*/}
+            {/*                        {id: 6, text: 'Bàn giao hồ sơ và hoàn tất hợp đồng.'},*/}
+            {/*                        {id: 7, text: 'Tư vấn và thương thảo hợp đồng.'},*/}
+            {/*                        {id: 8, text: 'Gia công sản phẩm tại xưởng WoodPlus.'},*/}
+            {/*                        {id: 9, text: 'Thi công lắp đặt nội thất tại nhà khách hàng'},*/}
+            {/*                        {id: 10, text: 'Bàn giao – Nghiệm thu – Thanh lý – Bảo hành'},*/}
+            {/*                    ].map((item) => (*/}
+            {/*                        <div*/}
+            {/*                            key={item.id}*/}
+            {/*                            className={`px-4 py-1 rounded-md bg-transparent ${*/}
+            {/*                                item.id === 10*/}
+            {/*                                    ? 'md:col-span-3 sm:flex sm:flex-col items-center justify-center text-center sm:w-[200px] mx-auto'*/}
+            {/*                                    : ''*/}
+            {/*                            }`}*/}
+            {/*                        >*/}
+            {/*                            <h3 className="text-[24px] md:text-[36px] font-bold text-[#BEAB81]">{`${item.id}`}</h3>*/}
+            {/*                            <p className="text-[14px] md:text-[16px] text-[#CECECE] mt-1">{item.text}</p>*/}
+            {/*                        </div>*/}
+            {/*                    ))}*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*        <div className="text-center mt-12 space-x-1 flex justify-center items-center">*/}
+            {/*            /!* Nút Liên hệ *!/*/}
+            {/*            <Link*/}
+            {/*                to="/liên-hệ"*/}
+            {/*                className="w-[130px] sm:w-[150px] md:w-[200px] h-[40px] md:h-[45px] bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[16px] md:text-[18px] italic rounded-xl border border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300 flex items-center justify-center"*/}
+            {/*            >*/}
+            {/*                Tư vấn miễn phí*/}
+            {/*            </Link>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
 
-
+            <WorkProcess/>
             <div className="hidden md:block"><DarkSpacing/></div>
 
             <Testimonials/>
@@ -311,6 +313,8 @@ const Services = () => {
             <ContactPopup/>
             <ZaloChatButton/>
             <Hotline/>
+            <BackToTop/>
+
         </main>
     );
 };

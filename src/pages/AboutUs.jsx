@@ -7,6 +7,7 @@ import {Link} from "react-router-dom";
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import Hotline from "../components/Hotline";
+import BackToTop from "../components/BackToTop";
 
 
 const AboutUs = () => {
@@ -112,7 +113,7 @@ const AboutUs = () => {
                         <div className="lg:col-span-2 pt-2">
                             <div className="flex-shrink-0">
                                 <div className="mx-auto "><img className="aspect-[4/3] object-cover"
-                                                               src="/assets/images/aboutus/aboutus4.jpg" alt="#_"/>
+                                                               src="/assets/images/main/KTS-NTK-Noi-That-WoodPlus.jpg.webp" alt="#_"/>
                                     <p className="text-center mx-2 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Giai đoạn đánh dấu sự ra đời của thương hiệu Woodplus trên thị trường.
                                         Với mong muốn mang đến không gian sống tối ưu, độc đáo, cty tập trung vào các dự án vừa và nhỏ, từng bước xây dựng niềm tin với khách hàng.</p>
                                 </div>
@@ -131,7 +132,7 @@ const AboutUs = () => {
                         <div className="lg:col-span-2 pt-2">
                             <div className="flex-shrink-0">
                                 <div className="mx-auto "><img className="aspect-[4/3] object-cover"
-                                                               src="/assets/images/herosection/hero3.webp" alt="#_"/>
+                                                               src="/assets/images/main/217395835_2562316044076646_8211301783410783980_n.jpg" alt="#_"/>
                                     <p className="text-center mx-3 text-[13px] sm:text-[17px] text-[#CECECE] mt-2">Giai đoạn phát triển vượt bậc của Woodplus với hàng trăm dự án lớn nhỏ, đội ngũ nhân sự được củng cố và phát triển.
                                         đồng thời nâng cấp công nghệ, chuyên môn, quy trình thiết kế thi công để khẳng định vị thế trên thị trường.</p>
                                 </div>
@@ -320,6 +321,7 @@ const AboutUs = () => {
             <ContactPopup/>
             <ZaloChatButton/>
             <Hotline/>
+            <BackToTop/>
         </main>
     );
 };

@@ -10,6 +10,7 @@ import BlogSection from "../components/BlogSection";
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import Hotline from "../components/Hotline";
+import BackToTop from "../components/BackToTop";
 
 const Construction = () => {
     const [isHovered] = useState(false);
@@ -23,7 +24,7 @@ const Construction = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
-                        backgroundImage: "url('/assets/images/banner/banner1.jpg')",
+                        backgroundImage: "url('/assets/images/homepage/homePageHero.jpg')",
                         filter: "brightness(0.85)",
                     }}
                 ></div>
@@ -114,11 +115,11 @@ const Construction = () => {
                                 className="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
                                 {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
                                 <img className="  object-cover"
-                                     src="https://pagedone.io/asset/uploads/1717741205.png" alt="about Us image"/>
+                                     src="/assets/images/contruction/20_CShading_LightMix.jpg" alt="about Us image"/>
                             </div>
                             {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
                             <img className="sm:ml-0 ml-auto object-cover"
-                                 src="https://pagedone.io/asset/uploads/1717741215.png"
+                                 src="/assets/images/contruction/n7_Interactive-LightMix.jpg"
                                  alt="about Us image"/>
                         </div>
                         <div className="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
@@ -143,9 +144,8 @@ const Construction = () => {
                                         <h6 className="text-[#CECECE] text-base font-normal leading-relaxed">Dự án</h6>
                                     </div>
                                     <div className="flex-col justify-start items-start inline-flex">
-                                        <h3 className="text-[#BEAB81] text-4xl font-bold font-manrope leading-normal">998</h3>
-                                        <h6 className="text-[#CECECE] text-base font-normal leading-relaxed">Dự án hoàn
-                                            thành</h6>
+                                        <h3 className="text-[#BEAB81] text-4xl font-bold font-manrope leading-normal">50+</h3>
+                                        <h6 className="text-[#CECECE] text-base font-normal leading-relaxed">Nhân sự chuyên nghiệp</h6>
                                     </div>
                                     <div className="flex-col justify-start items-start inline-flex">
                                         <h3 className="text-[#BEAB81] text-4xl font-bold font-manrope leading-normal">98%</h3>
@@ -184,6 +184,8 @@ const Construction = () => {
             <ContactPopup/>
             <ZaloChatButton/>
             <Hotline/>
+            <BackToTop/>
+
         </main>
     );
 };

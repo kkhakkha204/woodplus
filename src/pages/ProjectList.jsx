@@ -8,6 +8,7 @@ import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import {Link} from "react-router-dom";
 import Hotline from "../components/Hotline";
+import BackToTop from "../components/BackToTop";
 
 const ProjectList = () => {
     const [featuredProjects, setFeaturedProjects] = useState([]);
@@ -164,6 +165,10 @@ const ProjectList = () => {
                                     <span>{project.location}</span>
                                     <span>{new Date(project.completionDate).toLocaleDateString()}</span>
                                 </div>
+                                <div
+                                    className="flex text-center text-white mt-4 group-hover:text-[#BEAB81] transition-colors duration-300 border-t py-1">
+                                    <span>{project.excerpt}</span>
+                                </div>
                             </a>
                         ))}
                     </div>
@@ -196,6 +201,8 @@ const ProjectList = () => {
             <ContactPopup/>
             <ZaloChatButton/>
             <Hotline/>
+            <BackToTop/>
+
         </main>
     );
 };

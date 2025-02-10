@@ -5,6 +5,7 @@ import { PortableText } from '@portabletext/react';
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import Hotline from "../components/Hotline";
+import BackToTop from "../components/BackToTop";
 
 const NewsDetail = () => {
     const { slug } = useParams();
@@ -182,6 +183,8 @@ const NewsDetail = () => {
             <ContactPopup/>
             <ZaloChatButton/>
             <Hotline/>
+            <BackToTop/>
+
         </main>
     );
 };

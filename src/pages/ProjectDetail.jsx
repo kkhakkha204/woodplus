@@ -6,6 +6,7 @@ import ContactSection from "../components/ContactSection";
 import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import Hotline from "../components/Hotline";
+import BackToTop from "../components/BackToTop";
 
 const ProjectDetail = () => {
     const { slug } = useParams();
@@ -109,6 +110,8 @@ const ProjectDetail = () => {
             <ContactPopup />
             <ZaloChatButton />
             <Hotline/>
+            <BackToTop/>
+
         </main>
     );
 };
