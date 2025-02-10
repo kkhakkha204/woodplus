@@ -6,6 +6,7 @@ import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import Hotline from "../components/Hotline";
 import BackToTop from "../components/BackToTop";
+import GalleryDisplay from "../components/GalleryDisplay";
 
 const NewsDetail = () => {
     const { slug } = useParams();
@@ -13,7 +14,6 @@ const NewsDetail = () => {
     const [relatedPosts, setRelatedPosts] = useState([]);
 
     useEffect(() => {
-        // Fetch the news detail
         client
             .fetch(
                 `*[_type == "news" && slug.current == $slug][0] {
@@ -31,7 +31,6 @@ const NewsDetail = () => {
             .then((data) => {
                 setNews(data);
 
-                // Fetch related posts by category title (limit to 4)
                 if (data?.categoryTitle) {
                     client
                         .fetch(
@@ -58,13 +57,9 @@ const NewsDetail = () => {
             <div className="container mx-auto px-4 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {/* Main Content */}
                 <article className="lg:col-span-2">
-                    {/* Title */}
                     <h1 className="text-4xl font-bold text-white mb-4">{news.title}</h1>
-
-                    {/* Excerpt */}
                     <p className="text-lg text-[#CECECE] italic mb-4">{news.excerpt}</p>
 
-                    {/* Category and Date */}
                     <div className="flex items-center text-sm text-[#CECECE] mb-6">
                         <span className="bg-gray-200 text-black px-3 py-1 rounded-full mr-4">
                             {news.categoryTitle}
@@ -72,7 +67,6 @@ const NewsDetail = () => {
                         <span>{new Date(news.publishedAt).toLocaleDateString()}</span>
                     </div>
 
-                    {/* Main Image */}
                     <img
                         src={urlFor(news.mainImage).url()}
                         alt={news.title}
@@ -121,18 +115,8 @@ const NewsDetail = () => {
                                             className="rounded-lg shadow-md my-4 h-[300px] md:h-[450px] mx-auto object-cover w-[80%]"
                                         />
                                     ),
-                                    gallery: ({ value }) => (
-                                        <div className="grid grid-cols-2 gap-4 my-6">
-                                            {value.images.map((image, index) => (
-                                                <img
-                                                    key={index}
-                                                    src={urlFor(image).url()}
-                                                    alt={image.alt || `Gallery image ${index + 1}`}
-                                                    className="rounded-lg shadow-md"
-                                                />
-                                            ))}
-                                        </div>
-                                    ),
+                                    gallery: ({ value }) => <GalleryDisplay images={value.images} layout={value.layout} />,
+
                                 },
                             }}
                         />
@@ -160,31 +144,26 @@ const NewsDetail = () => {
                         {relatedPosts.map((post) => (
                             <li key={post.slug.current} className="flex flex-col items-start">
                                 <a href={`/news/${post.slug.current}`} className="w-full">
-                                    {/* Image */}
                                     <img
                                         src={urlFor(post.mainImage).url()}
                                         alt={post.title}
                                         className="w-full h-44 object-cover rounded-lg shadow-md mb-3"
                                     />
-                                    {/* Title */}
                                     <span className="text-black hover:text-gray-900 font-medium block mb-2">
-                        {post.title}
-                    </span>
-                                    {/* Excerpt */}
+                                        {post.title}
+                                    </span>
                                     <p className="text-[#757575] text-sm">{post.excerpt}</p>
                                 </a>
                             </li>
                         ))}
                     </ul>
                 </aside>
-
-
             </div>
-            <ContactPopup/>
-            <ZaloChatButton/>
-            <Hotline/>
-            <BackToTop/>
 
+            <ContactPopup />
+            <ZaloChatButton />
+            <Hotline />
+            <BackToTop />
         </main>
     );
 };
