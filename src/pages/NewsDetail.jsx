@@ -12,6 +12,7 @@ const NewsDetail = () => {
     const { slug } = useParams();
     const [news, setNews] = useState(null);
     const [relatedPosts, setRelatedPosts] = useState([]);
+    const [tableOfContents, setTableOfContents] = useState([]);
 
     useEffect(() => {
         client
@@ -30,6 +31,23 @@ const NewsDetail = () => {
             )
             .then((data) => {
                 setNews(data);
+
+                // Trích xuất mục lục từ nội dung
+                if (data?.content) {
+                    const toc = [];
+                    let headingCount = 1; // Để tạo id duy nhất cho mỗi tiêu đề
+
+                    data.content.forEach((block) => {
+                        if (block.style && ["h2", "h3"].includes(block.style)) {
+                            const id = `heading-${headingCount}`;
+                            toc.push({ id, text: block.children[0].text, level: block.style });
+                            block._key = id; // Thêm ID vào từng tiêu đề trong content
+                            headingCount++;
+                        }
+                    });
+
+                    setTableOfContents(toc);
+                }
 
                 if (data?.categoryTitle) {
                     client
@@ -73,29 +91,48 @@ const NewsDetail = () => {
                         className="w-full h-96 object-cover rounded-lg shadow-lg mb-6"
                     />
 
+                    {/* Mục lục bài viết */}
+                    {tableOfContents.length > 0 && (
+                        <nav className="bg-gray-900 p-4 rounded-lg shadow-md mb-6 text-white">
+                            <h3 className="text-xl font-semibold mb-2">Mục lục</h3>
+                            <ul className="space-y-2">
+                                {tableOfContents.map((item) => (
+                                    <li key={item.id} className={`ml-${item.level === "h3" ? "4" : "0"}`}>
+                                        <a
+                                            href={`#${item.id}`}
+                                            className="text-indigo-400 hover:text-indigo-600 transition-all duration-300"
+                                        >
+                                            {item.text}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
+                    )}
+
                     {/* Content */}
                     <div className="prose lg:prose-lg prose-gray max-w-none">
                         <PortableText
                             value={news.content}
                             components={{
                                 block: {
-                                    h1: ({ children }) => (
-                                        <h1 className="text-4xl font-bold text-white">{children}</h1>
+                                    h1: ({ children,node }) => (
+                                        <h1 id={node._key} className="text-4xl font-bold text-white">{children}</h1>
                                     ),
-                                    h2: ({ children }) => (
-                                        <h2 className="text-3xl font-semibold text-white">{children}</h2>
+                                    h2: ({ children,node }) => (
+                                        <h2 id={node._key} className="text-3xl font-semibold text-white">{children}</h2>
                                     ),
-                                    h3: ({ children }) => (
-                                        <h3 className="text-2xl font-semibold text-white">{children}</h3>
+                                    h3: ({ children,node }) => (
+                                        <h3 id={node._key} className="text-2xl font-semibold text-white">{children}</h3>
                                     ),
-                                    h4: ({ children }) => (
-                                        <h4 className="text-xl font-medium text-white">{children}</h4>
+                                    h4: ({ children,node }) => (
+                                        <h4 id={node._key} className="text-xl font-medium text-white">{children}</h4>
                                     ),
-                                    h5: ({ children }) => (
-                                        <h5 className="text-lg font-medium text-white">{children}</h5>
+                                    h5: ({ children,node }) => (
+                                        <h5 id={node._key} className="text-lg font-medium text-white">{children}</h5>
                                     ),
-                                    h6: ({ children }) => (
-                                        <h6 className="text-base font-medium text-white">{children}</h6>
+                                    h6: ({ children,node }) => (
+                                        <h6 id={node._key} className="text-base font-medium text-white">{children}</h6>
                                     ),
                                     normal: ({ children }) => <p className="text-white">{children}</p>,
                                 },
