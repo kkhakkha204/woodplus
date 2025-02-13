@@ -28,7 +28,7 @@ const FullService = () => {
                     }}
                 ></div>
                 {/* Lớp phủ màu đen nhẹ */}
-                <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
 
                 {/* Nội dung chính */}
                 <div className="relative z-10 flex flex-col justify-between items-center text-white w-full h-full">

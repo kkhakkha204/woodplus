@@ -34,7 +34,7 @@ const HomePage = () => {
                 ></div>
 
                 {/* Lớp phủ màu đen nhẹ */}
-                <div className="absolute inset-0 bg-black bg-opacity-45"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-30"></div>
 
                 {/* Nội dung chính */}
                 <div
@@ -187,7 +187,7 @@ const HomePage = () => {
                     {/* Right Column (divr) */}
                     <div className="lg:col-span-2 flex justify-center items-center lg:ml-8 2xl:ml-0">
                         <img
-                            src="/assets/images/aboutus/aboutus5.jpg"
+                            src="/assets/images/herosection/hero.jpg"
                             alt="About Us Right"
                             className=" w-[350px] h-[250px] mx-auto sm:w-[580px] sm:h-[350px] md:w-[640px] md:h-[420px] lg:w-[840px] lg:h-[750px] 2xl:w-[940px] 2xl:h-[850px] object-cover grayscale"
 
