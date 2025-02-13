@@ -74,7 +74,7 @@ const Contact = () => {
 
             <DarkSpacing />
 
-            <div className="bg-[#e7e5e4]" style={{ backgroundImage: 'url(/assets/images/herosection/11.png)' }}>
+            <div className="bg-[#e7e5e4] bg-cover " style={{ backgroundImage: 'url(/assets/images/homepage/homePageHero1.jpg)' }}>
                 {/* Wrapper */}
                 <div className="max-w-[1200px] mx-auto bg-[#0F0F0F] p-6 md:p-8">
                     <div className="flex flex-wrap gap-8">

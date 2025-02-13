@@ -55,7 +55,7 @@ const ContactSection = () => {
     return (
         <div
             className="w-full flex justify-center items-center bg-cover bg-center mt-14 sm:mt-0"
-            style={{ backgroundImage: "url('/assets/images/herosection/11.png')" }}
+            style={{ backgroundImage: "url('/assets/images/homepage/homePageHero1.jpg')" }}
         >
             <div className="w-full max-w-[1620px] bg-[#0F0F0F] mx-auto relative p-8 rounded-lg shadow-lg">
                 <div className="text-center mb-12">
