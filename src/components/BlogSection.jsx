@@ -30,7 +30,7 @@ const BlogSection = () => {
                     <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">
                         WoodPlus
                     </h3>
-                    <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">
+                    <h2 className="text-[24px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">
                         Xu hướng và tin tức
                     </h2>
                 </div>
@@ -50,7 +50,7 @@ const BlogSection = () => {
                                 className="w-full h-[200px] sm:h-[250px] lg:h-[305px] object-cover rounded-lg transition-transform duration-300 hover:scale-105"
                             />
                             {/* Tiêu đề */}
-                            <h3 className="text-[20px] sm:text-[22px] font-medium text-white mt-4">
+                            <h3 className="text-[17px] sm:text-[22px] font-medium text-white mt-4">
                                 {post.title}
                             </h3>
                             {/* Thể loại */}
@@ -58,7 +58,7 @@ const BlogSection = () => {
                                 Thể loại: {post.category}
                             </p>
                             {/* Mô tả ngắn */}
-                            <p className="text-[14px] sm:text-[16px] text-[#CECECE] mt-2">
+                            <p className="text-[13px] sm:text-[16px] text-[#CECECE] mt-2">
                                 {post.excerpt}
                             </p>
                             {/* Ngày đăng */}

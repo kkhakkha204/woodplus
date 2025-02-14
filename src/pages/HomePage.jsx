@@ -126,7 +126,7 @@ const HomePage = () => {
                     <div className="flex flex-col justify-center items-start lg:col-span-1 ">
                         <div className="w-full flex flex-col justify-center items-center text-center">
                             <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
-                            <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#222222] ">Về
+                            <h2 className="text-[24px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#222222] ">Về
                                 WoodPlus</h2>
                             <p className="w-[300px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#535353] mt-4">
                                 Công ty CP Kiến trúc - Nội thất Woodplus là đơn vị uy tín hàng đầu trong lĩnh vực tư vấn thiết kế, thi công nội – ngoại thất tại khu vực phía Bắc. Với gần 10 năm kinh nghiệm và hàng trăm công trình đã hoàn thiện, Woodplus chuyên gia trong biệt thự, duplex – penthouse, liền kề, chung cư, văn phòng, quán cafe…, mang đến không gian sống đẳng cấp và tinh tế.

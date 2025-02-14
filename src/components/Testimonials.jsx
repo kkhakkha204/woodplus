@@ -11,7 +11,7 @@ const Testimonials = () => {
                         <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">
                             WoodPlus
                         </h3>
-                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white">
+                        <h2 className="text-[24px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white">
                             Khách hàng nói gì về WoodPlus
                         </h2>
                         <p className="w-[290px] sm:w-[410px] md:w-[450px] lg:w-[400px] xl:w-[450px] mx-auto text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] text-[#CECECE] mt-4">

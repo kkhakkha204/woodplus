@@ -62,7 +62,7 @@ const ContactSection = () => {
                     <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">
                         WoodPlus
                     </h3>
-                    <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white mt-2">
+                    <h2 className="text-[24px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white mt-2">
                         Nhận tư vấn miễn phí
                     </h2>
                 </div>

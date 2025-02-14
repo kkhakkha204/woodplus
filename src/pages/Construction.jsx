@@ -48,7 +48,7 @@ const Construction = () => {
                         <div
                             className="w-[75%] sm:w-[50%] h-[70px] sm:h-[100px] bg-[#0F0F0F] border-l-2 border-y-2 flex items-center justify-start px-4 sm:px-8">
                         <span
-                            className="text-[28px] sm:text-[38px] md:text-[42px] lg:text-[48px] xl:text-[52px] font-bold tracking-[1px]">
+                            className="text-[28px] sm:text-[38px] md:text-[42px] lg:text-[48px] xl:text-[52px] font-bold">
                             Dịch vụ{" "}
                             <span
                                 className="bg-gradient-to-r from-[#D8CCA6] via-[#AA956B] to-[#D8CCA6] text-transparent bg-clip-text">
@@ -62,14 +62,14 @@ const Construction = () => {
                     <div
                         className="w-full xl:max-w-[1350px] 2xl:max-w-[1620px] px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
                         {/* Mô tả thương hiệu */}
-                        <div className="text-center lg:text-left max-w-[500px] mx-auto lg:mx-0">
+                        <div className="text-center lg:text-left max-w-[540px] mx-auto lg:mx-0">
                             <p className="text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-white leading-relaxed">
                                 WoodPlus cam kết{" "}
                                 <strong className="text-[#D8CCA6]">thi công nội thất chuyên nghiệp, đáng tin
                                     cậy</strong>.
-                                Với đội ngũ tay nghề cao và quy trình chuẩn hóa, chúng tôi tạo nên không gian sống tiện
+                                Với đội ngũ tay nghề cao và quy trình chuẩn hóa, chúng tôi tạo nên không gian sống <br/> tiện
                                 nghi,
-                                thẩm mỹ và bền vững, đáp ứng mọi nhu cầu của gia chủ.
+                                thẩm mỹ và bền vững, đáp ứng <br/> mọi nhu cầu của gia chủ.
                             </p>
                         </div>
 
@@ -111,23 +111,31 @@ const Construction = () => {
                     <div className="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
                         <div
                             className="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
+                            {/* Ảnh 1 */}
                             <div
-                                className="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
-                                {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-                                <img className="  object-cover"
-                                     src="/assets/images/contruction/20_CShading_LightMix.jpg" alt="about Us image"/>
+                                className=" sm:pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
+                                <img
+                                    className="w-full sm:w-auto max-h-[250px] sm:max-h-[400px] lg:max-h-none object-cover"
+                                    src="/assets/images/contruction/20_CShading_LightMix.jpg"
+                                    alt="about Us image"
+                                />
                             </div>
-                            {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-                            <img className="sm:ml-0 ml-auto object-cover"
-                                 src="/assets/images/contruction/n7_Interactive-LightMix.jpg"
-                                 alt="about Us image"/>
+
+                            {/* Ảnh 2 */}
+                            <img
+                                className="w-full sm:w-auto max-h-[250px] sm:max-h-[400px] lg:max-h-none object-cover sm:ml-0 ml-auto"
+                                src="/assets/images/contruction/n7_Interactive-LightMix.jpg"
+                                alt="about Us image"
+                            />
                         </div>
+
                         <div className="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
                             <div className="w-full flex-col justify-center items-start gap-8 flex">
                                 <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
                                     <h3 className="text-center md:text-left font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
-                                    <h2 className="text-center md:text-left text-[28px] sm:text-[34px] md:text-[40px] lg:text-[46px] font-bold text-[#FFFFFF] mt-2">Chất
-                                        lượng được khẳng định</h2>
+                                    <h2 className="text-center md:text-left text-[24px] sm:text-[34px] md:text-[40px] lg:text-[38px] font-bold text-[#FFFFFF] mt-2">Khẳng
+                                        định chất
+                                        lượng</h2>
                                     <p className="text-center md:text-left text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] text-[#CECECE] font-normal">
                                         Chất lượng của WoodPlus được khẳng định qua từng công trình hoàn thiện – từ bản
                                         vẽ đến thi công thực tế.
@@ -137,22 +145,23 @@ const Construction = () => {
 
 
                                 </div>
-                                <div
-                                    className="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
-                                    <div className="flex-col justify-start items-start inline-flex">
-                                        <h3 className="text-[#BEAB81] text-4xl font-bold font-manrope leading-normal">1000+</h3>
-                                        <h6 className="text-[#CECECE] text-base font-normal leading-relaxed">Dự án</h6>
+                                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full text-center lg:text-left">
+                                    <div className="flex flex-col items-center lg:items-start">
+                                        <h3 className="text-[#BEAB81] text-2xl font-bold font-manrope leading-normal">1000+</h3>
+                                        <h6 className="text-[#CECECE] text-[0.85rem] sm:text-base font-normal leading-relaxed">Dự án</h6>
                                     </div>
-                                    <div className="flex-col justify-start items-start inline-flex">
-                                        <h3 className="text-[#BEAB81] text-4xl font-bold font-manrope leading-normal">50+</h3>
-                                        <h6 className="text-[#CECECE] text-base font-normal leading-relaxed">Nhân sự chuyên nghiệp</h6>
+                                    <div className="flex flex-col items-center lg:items-start">
+                                        <h3 className="text-[#BEAB81] text-2xl font-bold font-manrope leading-normal">50+</h3>
+                                        <h6 className="text-[#CECECE] text-[0.85rem] sm:text-base font-normal leading-relaxed">Nhân sự
+                                            chuyên nghiệp</h6>
                                     </div>
-                                    <div className="flex-col justify-start items-start inline-flex">
-                                        <h3 className="text-[#BEAB81] text-4xl font-bold font-manrope leading-normal">98%</h3>
-                                        <h6 className="text-[#CECECE] text-base font-normal leading-relaxed">Khách hàng
+                                    <div className="flex flex-col items-center lg:items-start">
+                                        <h3 className="text-[#BEAB81] text-2xl font-bold font-manrope leading-normal">98%</h3>
+                                        <h6 className="text-[#CECECE] text-[0.85rem] sm:text-base font-normal leading-relaxed">Khách hàng
                                             hài lòng</h6>
                                     </div>
                                 </div>
+
                             </div>
                             <div className="text-center mt-12 space-x-1 flex justify-center items-center">
                                 {/* Nút Liên hệ */}

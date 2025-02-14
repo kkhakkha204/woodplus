@@ -63,10 +63,10 @@ const Contact = () => {
             <div className="relative bg-cover bg-center h-[300px] md:h-[400px]">
                 <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
                     <h2 className="font-Tangerine text-[22px] 2xl:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h2>
-                    <h1 className="text-[36px] md:text-[48px] lg:text-[68px] font-bold mb-4">
+                    <h1 className="text-[28px] md:text-[48px] lg:text-[68px] font-bold mb-4">
                         Liên hệ với WoodPlus
                     </h1>
-                    <p className="text-[18px] md:text-[22px] lg:text-[28px] max-w-2xl">
+                    <p className="text-[15px] md:text-[22px] lg:text-[28px] max-w-2xl">
                         Chúng tôi luôn sẵn sàng hỗ trợ bạn. Đừng ngần ngại liên hệ để nhận được sự tư vấn và hỗ trợ tốt nhất!
                     </p>
                 </div>
@@ -74,9 +74,9 @@ const Contact = () => {
 
             <DarkSpacing />
 
-            <div className="bg-[#e7e5e4] bg-cover " style={{ backgroundImage: 'url(/assets/images/homepage/homePageHero1.jpg)' }}>
+            <div className="bg-[#e7e5e4] bg-cover pb-20">
                 {/* Wrapper */}
-                <div className="max-w-[1200px] mx-auto bg-[#0F0F0F] p-6 md:p-8">
+                <div className="max-w-[1200px] mx-auto bg-[#0F0F0F] p-6 md:p-8 rounded-b-3xl">
                     <div className="flex flex-wrap gap-8">
                         {/* Left Section */}
                         <div className="w-full lg:w-[60%] bg-[#0F0F0F] text-white p-6">

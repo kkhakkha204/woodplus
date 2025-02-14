@@ -61,16 +61,15 @@ const Design = () => {
                     <div
                         className="w-full xl:max-w-[1350px] 2xl:max-w-[1620px] px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
                         {/* Mô tả thương hiệu */}
-                        <div className="text-center lg:text-left max-w-[500px] mx-auto lg:mx-0">
+                        <div className="text-center lg:text-left max-w-[510px] mx-auto lg:mx-0">
                             <p className="text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-white leading-relaxed">
-                                WoodPlus tự hào mang đến{" "}
-                                <strong className="text-[#D8CCA6]">dịch vụ thiết kế nội thất chuyên nghiệp</strong>, kết
-                                hợp
-                                hài hòa giữa nghệ thuật sáng tạo và giải pháp thực tế. Chúng tôi tạo nên không gian sống
-                                tối
-                                ưu cả về thẩm mỹ và công năng.
+                                WoodPlus tự hào mang đến dịch vụ{" "} <br/>
+                                <strong className="text-[#D8CCA6]">thiết kế nội thất chuyên nghiệp</strong>, kết
+                                hợp hài hòa giữa nghệ thuật sáng tạo và giải pháp thực tế. <br/> Chúng tôi tạo nên không
+                                gian sống tối ưu cả về <br/> thẩm mỹ và công năng.
                             </p>
                         </div>
+
 
                         {/* Nút "Xem Dự Án" và "Liên Hệ" */}
                         <div className="text-center mt-12 space-x-1 flex justify-center items-center">
@@ -111,12 +110,13 @@ const Design = () => {
                     <div className="">
                         <h3 className="text-center md:text-left font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
                         <h2 className="text-center md:text-left text-[28px] sm:text-[34px] md:text-[40px] lg:text-[46px] font-bold text-[#FFFFFF] mt-2">Nơi
-                            hiện thực hóa ý tưởng của bạn</h2>
-                        <p className="text-center md:text-left text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] text-[#CECECE] font-normal">
+                            hiện thực hóa <br/> ý tưởng của bạn</h2>
+                        <p className="text-center md:text-left text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] mt-2 text-[#CECECE] font-normal leading-relaxed [text-wrap:balance]">
                             Chúng tôi là những nhà sáng tạo, nhà thiết kế và chuyên gia thi công nội thất.
-                            Tận tâm biến ý tưởng của bạn thành không gian sống hoàn mỹ, sang trọng và tinh tế.
+                            Tận tâm biến ý tưởng của bạn thành br không gian sống hoàn mỹ, sang trọng và tinh tế.
                             Nhanh chóng, chuyên nghiệp, đáp ứng mọi nhu cầu với chất lượng vượt trội.
                         </p>
+
                     </div>
 
                     <div className="grid grid-cols-2 gap-4 mt-8">
@@ -138,9 +138,10 @@ const Design = () => {
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="mb-10 text-center">
                         <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
-                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Tổng
+                        <h2 className=" text-[24px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Tổng
                             quan bảng giá
                             thiết kế</h2>
+
                     </div>
 
                     <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-8 lg:space-y-0 lg:items-center">

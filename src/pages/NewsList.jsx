@@ -63,11 +63,11 @@ const NewsList = () => {
                         <h2 className="font-Tangerine text-[22px] 2xl:text-[28px] font-bold text-[#AF9A70]">
                             WoodPlus
                         </h2>
-                        <h1 className="text-[36px] md:text-[48px] lg:text-[68px] font-bold mb-4">
+                        <h1 className="text-[28px] md:text-[48px] lg:text-[68px] font-bold mb-4">
                             Xu hướng và tin tức
                         </h1>
-                        <p className="text-[18px] md:text-[22px] lg:text-[28px] max-w-2xl">
-                            Chúng tôi cập nhật những tin tức mới nhất về
+                        <p className="text-[16px] md:text-[22px] lg:text-[28px] max-w-2xl">
+                            Chúng tôi cập nhật những tin tức mới nhất về lĩnh vực thiết kế và thi công nội thất
                         </p>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ const NewsList = () => {
 
                 {/* Danh sách bài viết */}
                 <div className="my-8">
-                    <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-center text-white ">Danh sách bài viết</h2>
+                    <h2 className="text-[24px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-center text-white ">Danh sách bài viết</h2>
                     {/* Category Filter */}
                     <div className="my-6">
                         <label htmlFor="category-filter" className="block text-lg font-semibold mb-2">
@@ -115,10 +115,10 @@ const NewsList = () => {
                                 />
                                 <div className="py-4">
                                     {/* Tiêu đề bài viết */}
-                                    <h3 className="text-xl text-white font-medium group-hover:text-[#BEAB81] transition-colors duration-300">
+                                    <h3 className=" text-lg sm:text-xl text-white font-medium group-hover:text-[#BEAB81] transition-colors duration-300">
                                         {item.title}
                                     </h3>
-                                    <span className="font-medium text-[#CECECE]">Thể loại:</span>{' '}
+                                    <span className="font-medium text-[14px] sm:text-[16px] text-[#CECECE]">Thể loại:</span>{' '}
                                     <button
                                         onClick={(e) => {
                                             e.preventDefault(); // Ngăn chặn chuyển hướng khi nhấn nút thể loại
@@ -130,7 +130,7 @@ const NewsList = () => {
                                     </button>
                                     {' '}
                                     {/* Tóm tắt bài viết */}
-                                    <p className="text-[#CECECE] mt-2">{item.excerpt}</p>
+                                    <p className="text-[#CECECE] text-[13px] sm:text-[16px] mt-2">{item.excerpt}</p>
                                     {/* Thông tin thêm */}
                                     <p className="font-medium text-[#CECECE] mt-2">
                                         <span className="font-medium">Tác giả:</span> {item.authorName}

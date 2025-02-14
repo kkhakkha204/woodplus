@@ -78,14 +78,6 @@ const ProjectList = () => {
                         filter: "brightness(0.85)",
                     }}
                 ></div>
-                <video
-                    className="md:hidden absolute inset-0 w-full h-full object-cover"
-                    src="/assets/videos/video2.mp4" // Đường dẫn đến video của bạn
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                ></video>
                 {/* Lớp phủ màu đen nhẹ */}
                 <div className="absolute inset-0 bg-black bg-opacity-20"></div>
             </div>
@@ -98,7 +90,7 @@ const ProjectList = () => {
                     {/* Phần tiêu đề */}
                     <div className="mb-10 text-center">
                         <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
-                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Dự
+                        <h2 className="text-[24px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Dự
                             án nổi bật</h2>
                     </div>
 
@@ -114,11 +106,11 @@ const ProjectList = () => {
                                     alt={project.title}
                                     className="w-full h-[200px] sm:h-[250px] md:h-[300px] object-cover rounded-lg"
                                 />
-                                <h3 className="text-[20px] text-center sm:text-[24px] font-medium text-white mt-4 group-hover:text-[#BEAB81] transition-colors duration-300">
+                                <h3 className="text-[18px] text-center sm:text-[24px] font-medium text-white mt-4 group-hover:text-[#BEAB81] transition-colors duration-300">
                                     {project.title}
                                 </h3>
-                                <p className="text-[14px] text-center sm:text-[16px] text-[#CECECE] mt-2">{project.excerpt}</p>
-                                <p className="text-[16px] text-center sm:text-[18px] text-[#BEAB81] italic mt-2">
+                                <p className="text-[13px] text-center sm:text-[16px] text-[#CECECE] mt-2">{project.excerpt}</p>
+                                <p className="text-[15px] text-center sm:text-[18px] text-[#BEAB81] italic mt-2">
                                     {project.location} - {new Date(project.completionDate).toLocaleDateString("vi-VN")}
                                 </p>
                             </a>
@@ -147,7 +139,7 @@ const ProjectList = () => {
                     {/* Tiêu đề */}
                     <div className="mb-10 text-center">
                         <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
-                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#0F0F0F] mt-2">Các
+                        <h2 className="text-[24px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#0F0F0F] mt-2">Các
                             công trình khác</h2>
                     </div>
 
@@ -161,12 +153,12 @@ const ProjectList = () => {
                                     alt={project.title}
                                     className="w-full h-[200px] sm:h-[250px] md:h-[300px] object-cover rounded-lg"
                                 />
-                                <div className="flex justify-between text-white mt-4 group-hover:text-[#BEAB81] transition-colors duration-300">
+                                <div className="flex text-[15px] sm:text-[18px] justify-between text-white mt-4 group-hover:text-[#BEAB81] transition-colors duration-300">
                                     <span>{project.location}</span>
                                     <span>{new Date(project.completionDate).toLocaleDateString()}</span>
                                 </div>
                                 <div
-                                    className="flex text-center text-white mt-4 group-hover:text-[#BEAB81] transition-colors duration-300 border-t py-1">
+                                    className="flex text-[13px] text-center sm:text-[16px] text-white mt-4 group-hover:text-[#BEAB81] transition-colors duration-300 border-t py-1">
                                     <span>{project.excerpt}</span>
                                 </div>
                             </a>

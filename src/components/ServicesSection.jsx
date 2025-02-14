@@ -11,7 +11,7 @@ const ServicesSection = () => {
 
                     <div className="col-span-1 lg:col-span-3 text-center lg:mb-8">
                         <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
-                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white ">Dịch
+                        <h2 className="text-[24px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white ">Dịch
                             vụ</h2>
                         <p className="w-[330px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] mx-auto text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
                             Woodplus mang đến giải pháp trọn gói, từ thiết kế đến thi công hoàn thiện, trang trí nội
@@ -33,7 +33,7 @@ const ServicesSection = () => {
                             className="divtext absolute bottom-0 lg:bottom-[150px] left-0 w-full bg-[#0F0F0F] bg-opacity-85 text-center pb-2 px-6">
                             <Link
                                 to="/thiết-kế"
-                                className="flex items-center justify-center font-medium text-[22px] sm:text-[24px] md:text-[26px] xl:text-[30px] 2xl:text-[30px] text-[#BEAB81] hover:text-white"
+                                className="flex items-center justify-center font-medium text-[20px] sm:text-[24px] md:text-[26px] xl:text-[30px] 2xl:text-[30px] text-[#BEAB81] hover:text-white"
                             >
                                 Dịch vụ thiết kế
                                 <span className="ml-14 text-[30px]">&rarr;</span>
@@ -58,7 +58,7 @@ const ServicesSection = () => {
                             className="text-center absolute bottom-0 left-0 w-full bg-[#0F0F0F] bg-opacity-85 pb-2 px-6">
                             <Link
                                 to="/trọn-gói"
-                                className="flex items-center justify-center font-medium text-[22px] sm:text-[24px] md:text-[26px] xl:text-[30px] 2xl:text-[30px] text-[#BEAB81] hover:text-white"
+                                className="flex items-center justify-center font-medium text-[20px] sm:text-[24px] md:text-[26px] xl:text-[30px] 2xl:text-[30px] text-[#BEAB81] hover:text-white"
                             >
                                 Xây dựng trọn gói
                                 <span className="ml-14 text-[30px]">&rarr;</span>
@@ -83,7 +83,7 @@ const ServicesSection = () => {
                             className="text-center absolute bottom-0 lg:bottom-[150px] left-0 w-full bg-[#0F0F0F] bg-opacity-85 pb-2 px-6">
                             <Link
                                 to="/thi-công"
-                                className="flex items-center justify-center font-medium text-[22px] sm:text-[24px] md:text-[26px] xl:text-[30px] 2xl:text-[30px] text-[#BEAB81] hover:text-white"
+                                className="flex items-center justify-center font-medium text-[20px] sm:text-[24px] md:text-[26px] xl:text-[30px] 2xl:text-[30px] text-[#BEAB81] hover:text-white"
                             >
                                 Thi công nội thất
                                 <span className="ml-14 text-[30px]">&rarr;</span>

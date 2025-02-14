@@ -121,7 +121,7 @@ const FullService = () => {
                         {/* divtext */}
                         <div className="mb-6">
                             <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
-                            <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Dịch
+                            <h2 className="text-[24px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Dịch
                                 vụ cung cấp</h2>
                         </div>
 
@@ -145,7 +145,7 @@ const FullService = () => {
 
                         ].map((service, index) => (
                             <div key={index} className="mb-10 text-center sm:text-left mx-auto w-[330px] sm:w-[500px]">
-                                <h2 className="text-[20px] sm:text-[24px] font-medium text-[#AF9A70]">{service.title}</h2>
+                                <h2 className="text-[18px] sm:text-[24px] font-medium text-[#AF9A70]">{service.title}</h2>
                                 <p className="text-[13px] sm:text-[17px] text-[#CECECE]">{service.description}</p>
                             </div>
                         ))}
@@ -179,8 +179,8 @@ const FullService = () => {
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="mb-10 text-center">
                         <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70]">WoodPlus</h3>
-                        <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Tổng
-                            quan bảng giá
+                        <h2 className="text-[24px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#FFFFFF] mt-2">Tổng
+                            quan bảng giá <br/>
                             thi công trọn gói</h2>
                     </div>
 
