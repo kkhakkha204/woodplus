@@ -110,8 +110,8 @@ const ProjectList = () => {
                                     {project.title}
                                 </h3>
                                 <p className="text-[13px] text-center sm:text-[16px] text-[#CECECE] mt-2">{project.excerpt}</p>
-                                <p className="text-[15px] text-center sm:text-[18px] text-[#BEAB81] italic mt-2">
-                                    {project.location} - {new Date(project.completionDate).toLocaleDateString("vi-VN")}
+                                <p className="text-[13px] text-center sm:text-[16px] text-[#BEAB81] mt-1">
+                                    {project.location}
                                 </p>
                             </a>
                         ))}
@@ -153,12 +153,12 @@ const ProjectList = () => {
                                     alt={project.title}
                                     className="w-full h-[200px] sm:h-[250px] md:h-[300px] object-cover rounded-lg"
                                 />
-                                <div className="flex text-[15px] sm:text-[18px] justify-between text-white mt-4 group-hover:text-[#BEAB81] transition-colors duration-300">
-                                    <span>{project.location}</span>
-                                    <span>{new Date(project.completionDate).toLocaleDateString()}</span>
+                                <div className="flex text-[15px] sm:text-[18px] justify-center text-white mt-4 group-hover:text-[#BEAB81] transition-colors duration-300">
+                                    <span>{project.title}</span>
+
                                 </div>
                                 <div
-                                    className="flex text-[13px] text-center sm:text-[16px] text-white mt-4 group-hover:text-[#BEAB81] transition-colors duration-300 border-t py-1">
+                                    className="flex text-[13px] text-center sm:text-[16px] text-gray-300 mt-4 group-hover:text-[#BEAB81] transition-colors duration-300 border-t py-1">
                                     <span>{project.excerpt}</span>
                                 </div>
                             </a>
