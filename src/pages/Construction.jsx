@@ -11,11 +11,33 @@ import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import Hotline from "../components/Hotline";
 import BackToTop from "../components/BackToTop";
+import {useSEO} from "../hooks/useSEO";
+import SEO from "../components/SEO";
 
 const Construction = () => {
     const [isHovered] = useState(false);
 
+    const { seoData } = useSEO('/thi-công');
+
+    const defaultSEO = {
+        metaTitle: 'Thi công nội thất - Wood Plus',
+        metaDescription: 'Dịch vụ thi công nội thất gỗ chuyên nghiệp, đảm bảo chất lượng và tiến độ',
+        metaKeywords: ['thi công nội thất', 'thi công nội thất gỗ', 'xây dựng nội thất']
+    };
+
+    const seo = seoData || defaultSEO;
     return (
+        <>
+            <SEO
+                title={seo.metaTitle}
+                description={seo.metaDescription}
+                keywords={seo.metaKeywords || []}
+                ogImage={seo.ogImage}
+                ogTitle={seo.ogTitle}
+                ogDescription={seo.ogDescription}
+                pathname="/thi-công"
+            />
+
         <main className="bg-[#0F0F0F] ">
             {/* Hero Section */}
             <div
@@ -196,6 +218,7 @@ const Construction = () => {
             <BackToTop/>
 
         </main>
+        </>
     );
 };
 

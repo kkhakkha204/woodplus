@@ -5,6 +5,8 @@ import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import Hotline from "../components/Hotline";
 import BackToTop from "../components/BackToTop";
+import {useSEO} from "../hooks/useSEO";
+import SEO from "../components/SEO";
 
 const NewsList = () => {
     const [news, setNews] = useState([]);
@@ -51,8 +53,27 @@ const NewsList = () => {
         setPage(1); // Reset lại trang khi thay đổi thể loại
     };
 
+    const { seoData } = useSEO('/news');
 
+    const defaultSEO = {
+        metaTitle: 'Tin tức - Wood Plus',
+        metaDescription: 'Dịch vụ thiết kế và thi công nội thất trọn gói từ A-Z, tiết kiệm thời gian và chi phí',
+        metaKeywords: ['thi công trọn gói', 'nội thất trọn gói', 'gói nội thất hoàn thiện']
+    };
+
+    const seo = seoData || defaultSEO;
     return (
+        <>
+            <SEO
+                title={seo.metaTitle}
+                description={seo.metaDescription}
+                keywords={seo.metaKeywords || []}
+                ogImage={seo.ogImage}
+                ogTitle={seo.ogTitle}
+                ogDescription={seo.ogDescription}
+                pathname="/news"
+            />
+
         <main className="bg-[#0F0F0F] py-20 sm:py-20">
             <div className="container mx-auto px-4">
                 {/* Hero Section */}
@@ -128,13 +149,7 @@ const NewsList = () => {
                                     >
                                         {item.categoryTitle}
                                     </button>
-                                    {' '}
-                                    {/* Tóm tắt bài viết */}
-                                    <p className="text-[#CECECE] text-[13px] sm:text-[16px] mt-2">{item.excerpt}</p>
-                                    {/* Thông tin thêm */}
-                                    <p className="font-medium text-[#CECECE] mt-2">
-                                        <span className="font-medium">Tác giả:</span> {item.authorName}
-                                    </p>
+
                                 </div>
                             </a>
                         ))}
@@ -165,6 +180,7 @@ const NewsList = () => {
             <BackToTop/>
 
         </main>
+        </>
     );
 };
 

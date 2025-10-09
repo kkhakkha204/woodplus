@@ -14,12 +14,34 @@ import ZaloChatButton from "../components/ZaloChatButton";
 import ServicesSection from "../components/ServicesSection";
 import Hotline from "../components/Hotline";
 import BackToTop from "../components/BackToTop";
+import {useSEO} from "../hooks/useSEO";
+import SEO from "../components/SEO";
 
 
 const HomePage = () => {
     const [isHovered] = useState(false);
+    const { seoData, loading } = useSEO('/');
 
+    const defaultSEO = {
+        metaTitle: 'Wood Plus - Thi công nội thất gỗ cao cấp',
+        metaDescription: 'Chuyên thiết kế và thi công nội thất gỗ cao cấp tại Việt Nam',
+        metaKeywords: ['nội thất gỗ', 'thi công nội thất', 'thiết kế nội thất']
+    };
+
+    const seo = seoData || defaultSEO;
     return (
+        <>
+
+            <SEO
+                title={seo.metaTitle}
+                description={seo.metaDescription}
+                keywords={seo.metaKeywords || []}
+                ogImage={seo.ogImage}
+                ogTitle={seo.ogTitle}
+                ogDescription={seo.ogDescription}
+                pathname="/"
+            />
+
         <main className="bg-[#0F0F0F]">
             {/* HeroSection */}
             <div
@@ -211,6 +233,7 @@ const HomePage = () => {
             <Hotline/>
             <BackToTop/>
         </main>
+        </>
     );
 };
 

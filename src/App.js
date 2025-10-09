@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 import Navbar from "./components/Navbar";
 
 import HomePage from "./pages/HomePage";
@@ -16,11 +17,6 @@ import ProjectList from "./pages/ProjectList";
 import ProjectDetail from "./pages/ProjectDetail";
 import FullService from "./pages/FullService";
 
-
-
-
-
-
 const App = () => {
     return (
         <Router>
@@ -28,7 +24,7 @@ const App = () => {
             <div className="relative min-h-screen w-screen overflow-hidden font-noto">
                 {/* Navbar */}
                 <Navbar />
-
+                <HelmetProvider>
                 {/* Routes */}
                 <Routes>
                     <Route path="/" element={<HomePage />} />
@@ -47,7 +43,7 @@ const App = () => {
                     <Route path="/project/:slug" element={<ProjectDetail />} />
 
                 </Routes>
-
+                </HelmetProvider>
                 {/* Footer */}
                 <Footer />
             </div>
@@ -56,10 +52,3 @@ const App = () => {
 };
 
 export default App;
-//375
-//678
-//768
-//1200
-//1280
-//1440
-//1920

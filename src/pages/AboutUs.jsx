@@ -8,12 +8,35 @@ import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import Hotline from "../components/Hotline";
 import BackToTop from "../components/BackToTop";
+import {useSEO} from "../hooks/useSEO";
+import SEO from "../components/SEO";
 
 
 const AboutUs = () => {
     const [isHovered] = useState(false);
 
+    const { seoData } = useSEO('/giới-thiệu');
+
+    const defaultSEO = {
+        metaTitle: 'Giới thiệu - Wood Plus',
+        metaDescription: 'Tìm hiểu về Wood Plus - Đơn vị chuyên thiết kế và thi công nội thất gỗ cao cấp',
+        metaKeywords: ['giới thiệu wood plus', 'về chúng tôi', 'nội thất gỗ']
+    };
+
+    const seo = seoData || defaultSEO;
+
     return (
+        <>
+            <SEO
+                title={seo.metaTitle}
+                description={seo.metaDescription}
+                keywords={seo.metaKeywords || []}
+                ogImage={seo.ogImage}
+                ogTitle={seo.ogTitle}
+                ogDescription={seo.ogDescription}
+                pathname="/giới-thiệu"
+            />
+
         <main className="bg-[#0F0F0F] ">
             {/* Hero Section */}
             <div
@@ -323,6 +346,7 @@ const AboutUs = () => {
             <Hotline/>
             <BackToTop/>
         </main>
+        </>
     );
 };
 

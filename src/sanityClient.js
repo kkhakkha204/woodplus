@@ -3,9 +3,9 @@ import imageUrlBuilder from '@sanity/image-url';
 
 // Tạo client Sanity
 export const client = sanityClient({
-    projectId: '3vq0ymwj', // Thay bằng Project ID của bạn
+    projectId: 'fu5tttj6', // Thay bằng Project ID của bạn
     dataset: 'production',         // Dataset bạn sử dụng (thường là 'production')
-    apiVersion: '2022-03-07',      // Ngày API phiên bản
+    apiVersion: '2025-10-09',      // Ngày API phiên bản
     useCdn: true,                  // Sử dụng CDN để tăng tốc độ
 });
 

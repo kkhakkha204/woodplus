@@ -10,11 +10,33 @@ import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import Hotline from "../components/Hotline";
 import BackToTop from "../components/BackToTop";
+import {useSEO} from "../hooks/useSEO";
+import SEO from "../components/SEO";
 
 const FullService = () => {
     const [isHovered] = useState(false);
 
+    const { seoData } = useSEO('/trọn-gói');
+
+    const defaultSEO = {
+        metaTitle: 'Thi công trọn gói - Wood Plus',
+        metaDescription: 'Dịch vụ thiết kế và thi công nội thất trọn gói từ A-Z, tiết kiệm thời gian và chi phí',
+        metaKeywords: ['thi công trọn gói', 'nội thất trọn gói', 'gói nội thất hoàn thiện']
+    };
+
+    const seo = seoData || defaultSEO;
     return (
+        <>
+            <SEO
+                title={seo.metaTitle}
+                description={seo.metaDescription}
+                keywords={seo.metaKeywords || []}
+                ogImage={seo.ogImage}
+                ogTitle={seo.ogTitle}
+                ogDescription={seo.ogDescription}
+                pathname="/trọn-gói"
+            />
+
         <main className="bg-[#0F0F0F] ">
             {/* Hero Section */}
             <div
@@ -346,6 +368,7 @@ Hỗ trợ Hồ sơ Cấp phép XD</span>
             <BackToTop/>
 
         </main>
+        </>
     );
 };
 

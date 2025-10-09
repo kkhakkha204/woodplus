@@ -10,11 +10,33 @@ import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import Hotline from "../components/Hotline";
 import BackToTop from "../components/BackToTop";
+import {useSEO} from "../hooks/useSEO";
+import SEO from "../components/SEO";
 
 const Design = () => {
     const [isHovered] = useState(false);
 
+    const { seoData } = useSEO('/thiết-kế');
+
+    const defaultSEO = {
+        metaTitle: 'Thiết kế nội thất - Wood Plus',
+        metaDescription: 'Dịch vụ thiết kế nội thất gỗ chuyên nghiệp, sáng tạo và độc đáo',
+        metaKeywords: ['thiết kế nội thất', 'thiết kế nội thất gỗ', 'bản vẽ nội thất']
+    };
+
+    const seo = seoData || defaultSEO;
     return (
+        <>
+            <SEO
+                title={seo.metaTitle}
+                description={seo.metaDescription}
+                keywords={seo.metaKeywords || []}
+                ogImage={seo.ogImage}
+                ogTitle={seo.ogTitle}
+                ogDescription={seo.ogDescription}
+                pathname="/thiết-kế"
+            />
+
         <main className="bg-[#0F0F0F] ">
             {/* Hero Section */}
             <div
@@ -310,6 +332,7 @@ Hỗ trợ Hồ sơ Cấp phép XD</span>
             <BackToTop/>
 
         </main>
+        </>
     );
 };
 

@@ -4,6 +4,8 @@ import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import Hotline from "../components/Hotline";
 import BackToTop from "../components/BackToTop";
+import {useSEO} from "../hooks/useSEO";
+import SEO from "../components/SEO";
 
 const Contact = () => {
     const [ten, setTen] = useState("");
@@ -57,7 +59,27 @@ const Contact = () => {
 
     const closePopup = () => setShowPopup(false);
 
+    const { seoData } = useSEO('/liên-hệ');
+
+    const defaultSEO = {
+        metaTitle: 'Liên hệ - Wood Plus',
+        metaDescription: 'Liên hệ với Wood Plus để được tư vấn thiết kế và thi công nội thất gỗ cao cấp',
+        metaKeywords: ['liên hệ wood plus', 'tư vấn nội thất', 'báo giá nội thất']
+    };
+
+    const seo = seoData || defaultSEO;
     return (
+        <>
+            <SEO
+                title={seo.metaTitle}
+                description={seo.metaDescription}
+                keywords={seo.metaKeywords || []}
+                ogImage={seo.ogImage}
+                ogTitle={seo.ogTitle}
+                ogDescription={seo.ogDescription}
+                pathname="/liên-hệ"
+            />
+
         <main className="bg-[#0F0F0F] pt-20 sm:pt-20">
             {/* HeroSection */}
             <div className="relative bg-cover bg-center h-[300px] md:h-[400px]">
@@ -189,6 +211,7 @@ const Contact = () => {
             <BackToTop/>
 
         </main>
+        </>
     );
 };
 

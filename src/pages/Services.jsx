@@ -11,11 +11,33 @@ import ServicesSection from "../components/ServicesSection";
 import Hotline from "../components/Hotline";
 import BackToTop from "../components/BackToTop";
 import WorkProcess from "../components/WorkProcess";
+import {useSEO} from "../hooks/useSEO";
+import SEO from "../components/SEO";
 
 const Services = () => {
     const [isHovered] = useState(false);
 
+    const { seoData } = useSEO('/dịch-vụ');
+
+    const defaultSEO = {
+        metaTitle: 'Dịch vụ - Wood Plus',
+        metaDescription: 'Các dịch vụ thiết kế, thi công và thi công trọn gói nội thất gỗ cao cấp',
+        metaKeywords: ['dịch vụ nội thất', 'thiết kế nội thất', 'thi công nội thất']
+    };
+
+    const seo = seoData || defaultSEO;
     return (
+        <>
+            <SEO
+                title={seo.metaTitle}
+                description={seo.metaDescription}
+                keywords={seo.metaKeywords || []}
+                ogImage={seo.ogImage}
+                ogTitle={seo.ogTitle}
+                ogDescription={seo.ogDescription}
+                pathname="/dịch-vụ"
+            />
+
         <main className="bg-[#0F0F0F]">
             {/* Hero Section */}
             <div
@@ -316,6 +338,7 @@ const Services = () => {
             <BackToTop/>
 
         </main>
+        </>
     );
 };
 

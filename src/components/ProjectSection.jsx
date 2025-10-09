@@ -16,7 +16,7 @@ const ProjectSection = () => {
     useEffect(() => {
         client
             .fetch(
-                `*[_type == "project" && isFeatured == true] | order(completionDate desc) {
+                `*[_type == "project" && featured == true] | order(completionDate desc) {
               _id,
               title,
               slug,
