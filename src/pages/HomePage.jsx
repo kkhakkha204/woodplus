@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React from "react";
 
 
 import {TbArrowForwardUp,} from "react-icons/tb";
@@ -19,8 +19,7 @@ import SEO from "../components/SEO";
 
 
 const HomePage = () => {
-    const [isHovered] = useState(false);
-    const { seoData, loading } = useSEO('/');
+    const { seoData } = useSEO('/');
 
     const defaultSEO = {
         metaTitle: 'Wood Plus - Thi công nội thất gỗ cao cấp',
@@ -94,7 +93,7 @@ const HomePage = () => {
 
                         >
         <span className="hidden lg:inline text-[18px]">
-            {isHovered ? "Xem dự án" : <TbArrowForwardUp className="inline-block text-[25px]"/>}
+            <TbArrowForwardUp className="inline-block text-[25px]"/>
         </span>
 
                             <span className="lg:hidden text-[14px] sm:text-[15px] font-semibold">
@@ -168,11 +167,7 @@ const HomePage = () => {
                                     >
                                         {/* Hiển thị icon trên màn hình lớn */}
                                         <span className="hidden sm:inline text-[18px]">
-                                            {!isHovered ? (
-                                                <TbArrowForwardUp className="inline-block text-[25px]"/>
-                                            ) : (
-                                                "Xem thêm"
-                                            )}
+                                            <TbArrowForwardUp className="inline-block text-[25px]"/>
                                         </span>
 
                                         {/* Hiển thị chữ trên điện thoại và máy tính bảng */}

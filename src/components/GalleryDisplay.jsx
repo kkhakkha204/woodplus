@@ -32,7 +32,7 @@ const GalleryDisplay = ({ images, layout }) => {
                         <div key={idx} className="relative overflow-hidden rounded-lg shadow-lg group">
                             <img
                                 src={urlFor(image).url()}
-                                alt={`Gallery Image ${idx + 1}`}
+                                alt={`Gallery item ${idx + 1}`}
                                 className="w-full h-[300px] object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -48,7 +48,7 @@ const GalleryDisplay = ({ images, layout }) => {
                         <div key={idx} className="px-2">
                             <img
                                 src={urlFor(image).url()}
-                                alt={`Gallery Image ${idx + 1}`}
+                                alt={`Gallery item ${idx + 1}`}
                                 className="w-full h-[400px] object-cover rounded-lg shadow-md"
                             />
                         </div>

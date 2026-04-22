@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {TbArrowForwardUp} from "react-icons/tb";
 import DarkSpacing from "../components/DarkSpacing";
 
@@ -15,8 +15,6 @@ import {useSEO} from "../hooks/useSEO";
 import SEO from "../components/SEO";
 
 const Construction = () => {
-    const [isHovered] = useState(false);
-
     const { seoData } = useSEO('/thi-công');
 
     const defaultSEO = {
@@ -105,7 +103,7 @@ const Construction = () => {
                             >
                                 {/* Hiển thị icon trên màn hình lớn */}
                                 <span className="hidden lg:inline text-[18px]">
-                    {isHovered ? "Xem dự án" : <TbArrowForwardUp className="inline-block text-[25px]"/>}
+                    <TbArrowForwardUp className="inline-block text-[25px]"/>
                 </span>
 
                                 {/* Hiển thị chữ trên điện thoại và máy tính bảng */}
@@ -139,7 +137,7 @@ const Construction = () => {
                                 <img
                                     className="w-full sm:w-auto max-h-[250px] sm:max-h-[400px] lg:max-h-none object-cover"
                                     src="/assets/images/contruction/20_CShading_LightMix.jpg"
-                                    alt="about Us image"
+                                    alt="WoodPlus thi công showcase"
                                 />
                             </div>
 
@@ -147,7 +145,7 @@ const Construction = () => {
                             <img
                                 className="w-full sm:w-auto max-h-[250px] sm:max-h-[400px] lg:max-h-none object-cover sm:ml-0 ml-auto"
                                 src="/assets/images/contruction/n7_Interactive-LightMix.jpg"
-                                alt="about Us image"
+                                alt="WoodPlus thi công detail"
                             />
                         </div>
 

@@ -9,17 +9,17 @@ const ContactPopup = () => {
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
     const [loading, setLoading] = useState(false);
-    const [popupMessage, setPopupMessage] = useState("");
-    const [showPopup, setShowPopup] = useState(false);
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         if (!ten.trim() || !soDienThoai.trim()) {
-            setPopupMessage("Bạn chưa nhập đủ thông tin!");
-            setShowPopup(true);
+            setError("Bạn chưa nhập đủ thông tin!");
+            setSuccess("");
             return;
         }
 
+        setError("");
+        setSuccess("");
         setLoading(true);
 
         // Google Forms URL (Dùng URL formResponse)
@@ -39,20 +39,19 @@ const ContactPopup = () => {
                 mode: "no-cors", // Chặn lỗi CORS
             });
 
-            setPopupMessage("Thông tin của bạn đã được gửi thành công!");
+            setSuccess("Thông tin của bạn đã được gửi thành công!");
+            setError("");
             setTen("");
             setSoDienThoai("");
             setEmail("");
             setNhuCau("");
         } catch (error) {
-            setPopupMessage("Có lỗi xảy ra khi gửi thông tin.");
+            setError("Có lỗi xảy ra khi gửi thông tin.");
+            setSuccess("");
         } finally {
-            setShowPopup(true);
             setLoading(false);
         }
     };
-
-    const closePopup = () => setShowPopup(false);
 
     return (
         <>
