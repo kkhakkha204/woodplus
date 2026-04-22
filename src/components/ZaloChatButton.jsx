@@ -4,7 +4,7 @@ import React from "react";
 const ZaloChatButton = () => {
     return (
         <a
-            href="https://zalo.me/0967775868"
+            href="https://zalo.me/0961656586"
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-14 right-1 sm:bottom-24 sm:right-10 bg-[#272727] text-white  py-[0.25rem] px-[0.285rem] sm:py-1.5 sm:px-1.5  border-2 font-medium sm:font-bold transition duration-300 flex items-center gap-2"

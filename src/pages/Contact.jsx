@@ -181,7 +181,7 @@ const Contact = () => {
                             <h2 className="text-[20px] md:text-[24px] font-medium mb-6 text-white"> Thông tin liên
                                 hệ </h2>
                             <p className="mb-4 text-lg text-gray-100">
-                                <strong>Hotline:</strong> <br/> 096 777 5868 | 096 165 6586
+                                <strong>Hotline:</strong> <br/> 096 165 6586
                             </p>
                             <p className="mb-4 text-lg text-gray-100">
                                 <strong>Gmail:</strong> nhadepwoodplus@gmail.com

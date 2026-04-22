@@ -251,24 +251,60 @@ const AboutUs = () => {
                     <div
                         className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
 
-                        <div className="grid gap-16 lg:grid-cols-3">
+                        <div className="grid gap-16 px-0 lg:grid-cols-2 mb-16 sm:px-40">
                             <div>
                                 <div
                                     className="relative overflow-hidden transition duration-300 transform shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                                     <img
-                                        className="object-cover w-64 mx-auto sm:w-80 lg:w-full h-72 sm:h-96 lg:h-64 xl:h-96"
-                                        src="/assets/images/aboutus/aboutus4.jpg"
+                                        className="object-cover w-64 mx-auto sm:w-80 lg:w-full h-72 sm:h-120 lg:h-80 xl:h-96"
+                                        src="/assets/images/aboutus/CEO.webp"
                                         alt="Person"
                                     />
                                     <div
                                         className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                                         <p className="mb-1 text-lg font-bold text-gray-100">
-                                            Oliver Aguilerra
+                                            NGUYỄN VĂN MINH
                                         </p>
-                                        <p className="mb-4 text-xs text-gray-100">Product Manager</p>
-                                        <p className="mb-4 text-xs tracking-wide text-gray-400">
-                                            Vincent Van Gogh’s most popular painting, The Starry Night.
+                                        <p className="mb-4 text-xs text-gray-100">CEO - Kiến Trúc Sư Trưởng</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div
+                                    className="relative overflow-hidden transition duration-300 transform shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                                    <img
+                                        className="object-cover w-64 mx-auto sm:w-80 lg:w-full h-72 sm:h-120 lg:h-80 xl:h-96"
+                                        src="/assets/images/aboutus/KTS.webp"
+                                        alt="Person"
+                                    />
+                                    <div
+                                        className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                                        <p className="mb-1 text-lg font-bold text-gray-100">
+                                            LÊ THẾ DUYỆT
                                         </p>
+                                        <p className="mb-4 text-xs text-gray-100">Kiến Trúc Sư</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+
+                        <div className="grid gap-16 lg:grid-cols-3 ">
+                            <div>
+                                <div
+                                    className="relative overflow-hidden transition duration-300 transform shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                                    <img
+                                        className="object-cover w-64 mx-auto sm:w-80 lg:w-full h-72 sm:h-96 lg:h-64 xl:h-96"
+                                        src="/assets/images/aboutus/TPThietKe.webp"
+                                        alt="Person"
+                                    />
+                                    <div
+                                        className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                                        <p className="mb-1 text-lg font-bold text-gray-100">
+                                            NGUYỄN QUANG THẢO
+                                        </p>
+                                        <p className="mb-4 text-xs text-gray-100">TP. Thiết kế</p>
 
                                     </div>
                                 </div>
@@ -278,18 +314,15 @@ const AboutUs = () => {
                                     className="relative overflow-hidden transition duration-300 transform shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                                     <img
                                         className="object-cover w-64 mx-auto sm:w-80 lg:w-full h-72 sm:h-96 lg:h-64 xl:h-96"
-                                        src="/assets/images/aboutus/aboutus4.jpg"
+                                        src="/assets/images/aboutus/TPKinhDoanh.webp"
                                         alt="Person"
                                     />
                                     <div
                                         className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                                         <p className="mb-1 text-lg font-bold text-gray-100">
-                                            Oliver Aguilerra
+                                            DƯ TÙNG LÂM
                                         </p>
-                                        <p className="mb-4 text-xs text-gray-100">Product Manager</p>
-                                        <p className="mb-4 text-xs tracking-wide text-gray-400">
-                                            Vincent Van Gogh’s most popular painting, The Starry Night.
-                                        </p>
+                                        <p className="mb-4 text-xs text-gray-100">TP. Kinh Doanh</p>
 
                                     </div>
                                 </div>
@@ -299,18 +332,15 @@ const AboutUs = () => {
                                     className="relative overflow-hidden transition duration-300 transform shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                                     <img
                                         className="object-cover w-64 mx-auto sm:w-80 lg:w-full h-72 sm:h-96 lg:h-64 xl:h-96"
-                                        src="/assets/images/aboutus/aboutus4.jpg"
+                                        src="/assets/images/aboutus/TPThiCong.webp"
                                         alt="Person"
                                     />
                                     <div
                                         className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                                         <p className="mb-1 text-lg font-bold text-gray-100">
-                                            Oliver Aguilerra
+                                            ĐOÀN ĐẮC PHÓNG
                                         </p>
-                                        <p className="mb-4 text-xs text-gray-100">Product Manager</p>
-                                        <p className="mb-4 text-xs tracking-wide text-gray-400">
-                                            Vincent Van Gogh’s most popular painting, The Starry Night.
-                                        </p>
+                                        <p className="mb-4 text-xs text-gray-100">TP. Thi Công</p>
 
                                     </div>
                                 </div>

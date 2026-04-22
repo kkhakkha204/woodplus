@@ -3,7 +3,7 @@ import React from 'react';
 const Hotline = () => {
     return (
         <a
-            href="tel:0967775868" // Khi click, sẽ gọi số hotline trực tiếp
+            href="tel:0961656586" // Khi click, sẽ gọi số hotline trực tiếp
             className="fixed bottom-1 left-1 sm:bottom-10 sm:left-10 bg-[#272727] text-white py-[0.45rem] px-2 sm:py-2 sm:px-4 border-2 font-medium sm:font-bold transition duration-300 flex items-center gap-2 hover:bg-[#BEAB81] hover:text-black"
         >
             {/* Icon Điện Thoại */}
@@ -12,7 +12,7 @@ const Hotline = () => {
             </svg>
 
             {/* Hiển thị chữ "Gọi ngay" trên màn hình lớn */}
-            <span className="hidden sm:block">096 777 5868</span>
+            <span className="hidden sm:block">096 165 6586</span>
         </a>
     );
 };

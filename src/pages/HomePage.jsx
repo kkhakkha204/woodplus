@@ -168,12 +168,12 @@ const HomePage = () => {
                                     >
                                         {/* Hiển thị icon trên màn hình lớn */}
                                         <span className="hidden sm:inline text-[18px]">
-        {!isHovered ? (
-            <TbArrowForwardUp className="inline-block text-[25px]"/>
-        ) : (
-            "Xem thêm"
-        )}
-    </span>
+                                            {!isHovered ? (
+                                                <TbArrowForwardUp className="inline-block text-[25px]"/>
+                                            ) : (
+                                                "Xem thêm"
+                                            )}
+                                        </span>
 
                                         {/* Hiển thị chữ trên điện thoại và máy tính bảng */}
                                         <span className="sm:hidden text-[14px] font-semibold">
@@ -222,6 +222,62 @@ const HomePage = () => {
             <div className="hidden md:block"><DarkSpacing/></div>
 
             <Testimonials/>
+
+            <LightSpacing/>
+            <div className="w-full bg-[#e7e5e4] text-[#222] mt-14 md:mt-0">
+                            {/* Section Đội ngũ WoodPlus */}
+                            <div className="w-full max-w-[1620px] px-[10px] mx-auto pb-[40px]">
+                                {/* Thẻ divtext */}
+                                <div className="text-center mb-12">
+                                    <h3 className="font-Tangerine text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#AF9A70] ">WoodPlus</h3>
+                                    <h2 className="text-[30px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#222] mt-2">
+                                        GÓI THIẾT KẾ</h2>
+                                </div>
+            
+                                {/* Thẻ đội ngũ */}
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
+                                    <div className="flex justify-center items-center">
+                                        <img
+                                            src="/assets/images/herosection/Goi-TK-Kien-truc-WoodPlus.webp"
+                                            alt="Gói Thiết Kế Kiến Trúc WoodPlus"
+                                            className="w-full h-auto object-contain grayscale"
+                                        />
+                                    </div>
+                                    <div className="flex justify-center items-center">
+                                        <img
+                                            src="/assets/images/herosection/Goi-TK-Noi-That-WoodPlus.webp"
+                                            alt="Gói Thiết Kế Nội Thất WoodPlus"
+                                            className="w-full h-auto object-contain grayscale"
+                                        />
+                                    </div>
+                                    <div className="flex justify-center items-center">
+                                        <img
+                                            src="/assets/images/herosection/Goi-TK-VIP-WoodPlus.webp"
+                                            alt="Gói Thiết Kế VIP WoodPlus"
+                                            className="w-full h-auto object-contain grayscale"
+                                        />
+                                    </div>
+                                    <div className="flex justify-center items-center">
+                                        <img
+                                            src="/assets/images/herosection/Thiet-ke-tron-goi-WoodPlus.webp"
+                                            alt="Thiết Kế Trọn Gói WoodPlus"
+                                            className="w-full h-auto object-contain grayscale"
+                                        />
+                                    </div>
+                                </div>
+                                {/* Nút liên hệ và tư vấn */}
+                                <div className="text-center mt-12 space-x-1 flex justify-center items-center">
+                                    {/* Nút Liên hệ */}
+                                    <Link
+                                        to="/liên-hệ"
+                                        className="w-[130px] sm:w-[150px] md:w-[200px] h-[40px] md:h-[45px] bg-[#272727] text-[#C4B58E] font-semibold text-[14px] sm:text-[16px] md:text-[18px] italic rounded-xl border border-white hover:bg-[#D8CCA6] hover:text-black transition duration-300 flex items-center justify-center"
+                                    >
+                                        Tư vấn miễn phí
+                                    </Link>
+                                </div>
+            
+                            </div>
+                        </div>
 
             <div className="hidden md:block"><DarkSpacing/></div>
 

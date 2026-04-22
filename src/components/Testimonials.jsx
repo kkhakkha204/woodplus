@@ -40,7 +40,7 @@ const Testimonials = () => {
                 <div className="relative space-y-8">
                     {[
                         {name: "Chị Hiền Nguyễn", location: "Biệt thự La Phù", img: "tes4.jpg", review: "Ngôi nhà là tâm huyết, và chọn WoodPlus là quyết định sáng suốt. Cảm ơn đội ngũ đã mang đến căn nhà đúng mong muốn của gia đình."},
-                        {name: "Chị Yến", location: "Duplex Royal City", img: "tes2.jpg", review: "Dù mặt bằng căn hộ khó, WoodPlus vẫn hoàn thiện tối đa cả thẩm mỹ lẫn công năng. Đội ngũ trẻ đầy tâm huyết đã biến mọi ý tưởng thành hiện thực."}
+                        {name: "Chị Yến", location: "Duplex Royal City", img: "chiyen.webp", review: "Dù mặt bằng căn hộ khó, WoodPlus vẫn hoàn thiện tối đa cả thẩm mỹ lẫn công năng. Đội ngũ trẻ đầy tâm huyết đã biến mọi ý tưởng thành hiện thực."}
                     ].map((testimonial, index) => (
                         <div key={index} className="relative w-full max-w-[650px] h-[300px] md:h-[400px] mx-auto">
                             <img src={`/assets/images/testimonials/${testimonial.img}`} alt={testimonial.name} className="w-full h-full object-cover" />
@@ -76,7 +76,7 @@ const Testimonials = () => {
                     </div>
 
                     {[
-                        {name: "Anh Đức Quân", location: "Eco City Thanh Trì", img: "tes3.jpg", review: "Nhà đẹp, hiện đại với giá hợp lý, đội ngũ tư vấn trẻ trung, chuyên nghiệp, nhiệt tình. Highly recommend!"},
+                        {name: "Anh Đức Quân", location: "Eco City Thanh Trì", img: "anhquan.webp", review: "Nhà đẹp, hiện đại với giá hợp lý, đội ngũ tư vấn trẻ trung, chuyên nghiệp, nhiệt tình. Highly recommend!"},
                         {name: "Youtuber Lê Hoàng Nam", location: "Ocean Park", img: "tes1.webp", review: "Nhà không chỉ đẹp mà còn khiến mọi người trầm trồ, tự hào. Mong phong cách Indochine trở nên phổ biến, cảm ơn ekip WoodPlus đã biến ý tưởng thành hiện thực."}
                     ].map((testimonial, index) => (
                         <div key={index} className="relative w-full max-w-[650px] h-[300px] md:h-[400px] mx-auto md:mx-0">
