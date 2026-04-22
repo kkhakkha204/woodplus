@@ -25,7 +25,7 @@ const Footer = () => {
                         <ul>
                             <li><Link to="/giới-thiệu" className="text-[#CECECE] hover:text-white">Giới thiệu</Link></li>
                             <li><Link to="/dịch-vụ" className="text-[#CECECE] hover:text-white">Dịch vụ</Link></li>
-                            <li><Link to="/dự-án" className="text-[#CECECE] hover:text-white">Dự án</Link></li>
+                            <li><Link to="/projects" className="text-[#CECECE] hover:text-white">Dự án</Link></li>
                             <li><Link to="/news" className="text-[#CECECE] hover:text-white">Blog</Link></li>
                             <li><Link to="/liên-hệ" className="text-[#CECECE] hover:text-white">Tư vấn miễn phí</Link></li>
                         </ul>
