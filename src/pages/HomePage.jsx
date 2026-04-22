@@ -235,28 +235,28 @@ const HomePage = () => {
                                         <img
                                             src="/assets/images/herosection/Goi-TK-Kien-truc-WoodPlus.webp"
                                             alt="Gói Thiết Kế Kiến Trúc WoodPlus"
-                                            className="w-full h-auto object-contain grayscale"
+                                            className="w-full h-auto object-contain "
                                         />
                                     </div>
                                     <div className="flex justify-center items-center">
                                         <img
                                             src="/assets/images/herosection/Goi-TK-Noi-That-WoodPlus.webp"
                                             alt="Gói Thiết Kế Nội Thất WoodPlus"
-                                            className="w-full h-auto object-contain grayscale"
+                                            className="w-full h-auto object-contain "
                                         />
                                     </div>
                                     <div className="flex justify-center items-center">
                                         <img
                                             src="/assets/images/herosection/Goi-TK-VIP-WoodPlus.webp"
                                             alt="Gói Thiết Kế VIP WoodPlus"
-                                            className="w-full h-auto object-contain grayscale"
+                                            className="w-full h-auto object-contain "
                                         />
                                     </div>
                                     <div className="flex justify-center items-center">
                                         <img
                                             src="/assets/images/herosection/Thiet-ke-tron-goi-WoodPlus.webp"
                                             alt="Thiết Kế Trọn Gói WoodPlus"
-                                            className="w-full h-auto object-contain grayscale"
+                                            className="w-full h-auto object-contain "
                                         />
                                     </div>
                                 </div>
