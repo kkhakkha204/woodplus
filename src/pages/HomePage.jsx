@@ -233,28 +233,28 @@ const HomePage = () => {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
                                     <div className="flex justify-center items-center">
                                         <img
-                                            src="/assets/images/herosection/Goi-TK-Kien-truc-WoodPlus.webp"
+                                            src="/assets/images/herosection/thietke.webp"
                                             alt="Gói Thiết Kế Kiến Trúc WoodPlus"
                                             className="w-full h-auto object-contain "
                                         />
                                     </div>
                                     <div className="flex justify-center items-center">
                                         <img
-                                            src="/assets/images/herosection/Goi-TK-Noi-That-WoodPlus.webp"
+                                            src="/assets/images/herosection/noithat.webp"
                                             alt="Gói Thiết Kế Nội Thất WoodPlus"
                                             className="w-full h-auto object-contain "
                                         />
                                     </div>
                                     <div className="flex justify-center items-center">
                                         <img
-                                            src="/assets/images/herosection/Goi-TK-VIP-WoodPlus.webp"
+                                            src="/assets/images/herosection/tknt.webp"
                                             alt="Gói Thiết Kế VIP WoodPlus"
                                             className="w-full h-auto object-contain "
                                         />
                                     </div>
                                     <div className="flex justify-center items-center">
                                         <img
-                                            src="/assets/images/herosection/Thiet-ke-tron-goi-WoodPlus.webp"
+                                            src="/assets/images/herosection/vip.webp"
                                             alt="Thiết Kế Trọn Gói WoodPlus"
                                             className="w-full h-auto object-contain "
                                         />
