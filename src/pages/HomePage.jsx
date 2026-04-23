@@ -233,7 +233,7 @@ const HomePage = () => {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
                                     <div className="flex justify-center items-center">
                                         <img
-                                            src="/assets/images/herosection/thietke.webp"
+                                            src="/assets/images/herosection/kientruc.webp"
                                             alt="Gói Thiết Kế Kiến Trúc WoodPlus"
                                             className="w-full h-auto object-contain "
                                         />
@@ -247,7 +247,7 @@ const HomePage = () => {
                                     </div>
                                     <div className="flex justify-center items-center">
                                         <img
-                                            src="/assets/images/herosection/tknt.webp"
+                                            src="/assets/images/herosection/ktnt.webp"
                                             alt="Gói Thiết Kế VIP WoodPlus"
                                             className="w-full h-auto object-contain "
                                         />
