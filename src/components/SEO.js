@@ -11,7 +11,7 @@ const SEO = ({
                  ogDescription,
                  pathname = '/'
              }) => {
-    const siteUrl = 'https://woodplus.vn'; // Thay bằng domain của bạn
+    const siteUrl = 'https://www.nhadepwoodplus.com/'; // Thay bằng domain của bạn
     const fullUrl = `${siteUrl}${pathname}`;
 
     const ogImageUrl = ogImage
