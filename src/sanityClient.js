@@ -1,20 +1,25 @@
-import sanityClient from '@sanity/client';
+import { createClient } from '@sanity/client';
 import imageUrlBuilder from '@sanity/image-url';
 
-// Tạo client Sanity
-export const client = sanityClient({
-    projectId: 'fu5tttj6', // Thay bằng Project ID của bạn
-    dataset: 'production',         // Dataset bạn sử dụng (thường là 'production')
-    apiVersion: '2025-10-09',      // Ngày API phiên bản
-    useCdn: true,                  // Sử dụng CDN để tăng tốc độ
+const projectId = process.env.REACT_APP_SANITY_PROJECT_ID || 'fu5tttj6';
+const dataset = process.env.REACT_APP_SANITY_DATASET || 'production';
+const apiVersion = process.env.REACT_APP_SANITY_API_VERSION || '2025-10-09';
+const isProduction = process.env.NODE_ENV === 'production';
+const useLocalProxy = !isProduction && process.env.REACT_APP_SANITY_DISABLE_PROXY !== 'true';
+
+export const client = createClient({
+    projectId,
+    dataset,
+    apiVersion,
+    useCdn: false,
+    ...(useLocalProxy
+        ? {
+            apiHost: '/api/sanity',
+            useProjectHostname: false,
+        }
+        : {}),
 });
 
-// Tạo hàm `urlFor` để tạo URL từ hình ảnh Sanity
-const builder = imageUrlBuilder(client);
+const builder = imageUrlBuilder({ projectId, dataset });
 
 export const urlFor = (source) => builder.image(source);
-client
-    .fetch('*[_type == "news"]')
-    .then((data) => console.log('Data from Sanity:', data))
-    .catch((err) => console.error('Sanity error:', err));
-
