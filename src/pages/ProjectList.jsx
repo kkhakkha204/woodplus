@@ -10,6 +10,7 @@ import ZaloChatButton from "../components/ZaloChatButton";
 import { Link } from "react-router-dom";
 import Hotline from "../components/Hotline";
 import BackToTop from "../components/BackToTop";
+import { SITE_URL } from "../siteConfig";
 
 const ProjectList = () => {
     const [featuredProjects, setFeaturedProjects] = useState([]);
@@ -89,7 +90,7 @@ const ProjectList = () => {
     // Generate OG Image URL
     const ogImageUrl = seo.ogImage
         ? urlFor(seo.ogImage).width(1200).height(630).url()
-        : 'https://nhadepwoodplus.com/assets/images/projectList/heroSection.jpg';
+        : `${SITE_URL}/assets/images/projectList/heroSection.jpg`;
 
     return (
         <>
@@ -100,13 +101,13 @@ const ProjectList = () => {
                 {seo.metaKeywords && seo.metaKeywords.length > 0 && (
                     <meta name="keywords" content={seo.metaKeywords.join(', ')} />
                 )}
-                <link rel="canonical" href="https://nhadepwoodplus.com/projects" />
+                <link rel="canonical" href={`${SITE_URL}/projects`} />
 
                 {/* Open Graph / Facebook */}
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content={seo.ogTitle || seo.metaTitle} />
                 <meta property="og:description" content={seo.ogDescription || seo.metaDescription} />
-                <meta property="og:url" content="https://nhadepwoodplus.com/projects" />
+                <meta property="og:url" content={`${SITE_URL}/projects`} />
                 <meta property="og:image" content={ogImageUrl} />
                 <meta property="og:site_name" content="WoodPlus - Nội thất gỗ cao cấp" />
 
@@ -123,14 +124,14 @@ const ProjectList = () => {
                         "@type": "CollectionPage",
                         "name": seo.metaTitle,
                         "description": seo.metaDescription,
-                        "url": "https://nhadepwoodplus.com/projects",
+                        "url": `${SITE_URL}/projects`,
                         "publisher": {
                             "@type": "Organization",
                             "name": "WoodPlus",
-                            "url": "https://nhadepwoodplus.com",
+                            "url": SITE_URL,
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://nhadepwoodplus.com/logo.png"
+                                "url": `${SITE_URL}/assets/images/logo/logowp.png`
                             }
                         }
                     })}

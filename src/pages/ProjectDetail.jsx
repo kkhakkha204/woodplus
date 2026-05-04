@@ -8,6 +8,7 @@ import ContactPopup from "../components/ContactPopup";
 import ZaloChatButton from "../components/ZaloChatButton";
 import Hotline from "../components/Hotline";
 import BackToTop from "../components/BackToTop";
+import { SITE_URL } from "../siteConfig";
 
 const ProjectDetail = () => {
     const { slug } = useParams();
@@ -91,7 +92,7 @@ const ProjectDetail = () => {
     const pageTitle = `${project.title} - Dự án nội thất gỗ cao cấp | WoodPlus`;
     const pageDescription = project.excerpt || project.description || `Khám phá dự án ${project.title} - Thiết kế và thi công nội thất gỗ cao cấp bởi WoodPlus`;
     const pageImage = project.mainImage ? urlFor(project.mainImage).width(1200).height(630).url() : '';
-    const pageUrl = `https://nhadepwoodplus.com/project/${slug}`;
+    const pageUrl = `${SITE_URL}/project/${slug}`;
 
     return (
         <>
@@ -131,7 +132,7 @@ const ProjectDetail = () => {
                         "creator": {
                             "@type": "Organization",
                             "name": "WoodPlus",
-                            "url": "https://nhadepwoodplus.com"
+                            "url": SITE_URL
                         },
                         ...(project.clientName && {
                             "customer": {

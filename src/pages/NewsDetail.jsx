@@ -8,6 +8,7 @@ import ZaloChatButton from "../components/ZaloChatButton";
 import Hotline from "../components/Hotline";
 import BackToTop from "../components/BackToTop";
 import GalleryDisplay from "../components/GalleryDisplay";
+import { SITE_URL } from "../siteConfig";
 
 const NewsDetail = () => {
     const { slug } = useParams();
@@ -100,7 +101,7 @@ const NewsDetail = () => {
     const pageTitle = news.seo?.metaTitle || news.title;
     const pageDescription = news.seo?.metaDescription || news.excerpt;
     const pageImage = news.seo?.ogImage?.url || news.mainImage?.url;
-    const pageUrl = `${window.location.origin}/news/${slug}`;
+    const pageUrl = `${SITE_URL}/news/${slug}`;
     const canonicalUrl = news.seo?.canonicalUrl || pageUrl;
 
     return (
