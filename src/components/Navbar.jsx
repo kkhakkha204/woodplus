@@ -112,13 +112,13 @@ const Navbar = () => {
                 </div>
 
                 {/* Logo */}
-                <div className="xl:mx-[80px] 2xl:mx-[150px] flex-grow flex justify-center items-center">
+                <Link to="/" className="xl:mx-[80px] 2xl:mx-[150px] flex-grow flex justify-center items-center">
                     <img
                         src="/assets/images/logo/wp1.png"
                         alt="Woodplus Logo"
                         className="w-[66.25px] h-[50px] object-contain"
                     />
-                </div>
+                </Link>
 
                 {/* Thẻ divright */}
                 <div className="divright hidden xl:flex w-[663px] justify-between">
