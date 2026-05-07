@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
     return (
@@ -14,7 +14,7 @@ const ServicesSection = () => {
                         <h2 className="text-[24px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-white ">Dịch
                             vụ</h2>
                         <p className="w-[330px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] mx-auto text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
-                            Woodplus mang đến giải pháp trọn gói, từ thiết kế đến thi công hoàn thiện, trang trí nội
+                            WoodPlus mang đến giải pháp trọn gói, từ thiết kế đến thi công hoàn thiện, trang trí nội
                             thất, cá nhân hóa không gian sống. Chúng tôi kiến tạo những công trình tinh tế, hài hòa giữa
                             công năng & thẩm mỹ, nâng tầm giá trị sống cho chủ nhân.
                         </p>

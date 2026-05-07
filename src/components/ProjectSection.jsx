@@ -3,7 +3,7 @@ import { client, urlFor } from "../sanityClient";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import { TbArrowForwardUp } from "react-icons/tb";
-import {ChevronLeftIcon, ChevronRightIcon} from "@heroicons/react/24/outline";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 const ProjectSection = () => {
     const [featuredProjects, setFeaturedProjects] = useState([]);
@@ -68,7 +68,7 @@ const ProjectSection = () => {
         );
     };
 
-// Nút "Prev"
+    // Nút "Prev"
     const PrevArrow = (props) => {
         const { onClick } = props;
         return (
@@ -106,7 +106,7 @@ const ProjectSection = () => {
                     </h2>
                     <p className="w-[360px] sm:w-[310px] md:w-[350px] lg:w-[500px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#CECECE] mt-4">
                         Với gần 10 năm kinh nghiệm đồng hành cùng hàng trăm công trình trên khắp miền Bắc và toàn quốc.
-                        Woodplus mang đến những không gian sống tinh tế và đầy cảm hứng, đáp ứng mọi nhu cầu thẩm mỹ và công năng.
+                        WoodPlus mang đến những không gian sống tinh tế và đầy cảm hứng, đáp ứng mọi nhu cầu thẩm mỹ và công năng.
                     </p>
                 </div>
 
@@ -123,7 +123,7 @@ const ProjectSection = () => {
                                 : "lg:w-[290px] xl:w-[300px] 2xl:w-1/4 lg:h-[360px] xl:h-[400px] 2xl:h-[450px]";
 
                         return (
-                            <a  href={`/project/${project.slug.current}`}
+                            <a href={`/project/${project.slug.current}`}
                                 key={project._id} className={`${sizeClass}`}>
                                 <img
                                     src={urlFor(project.mainImage).url()}
@@ -180,7 +180,7 @@ const ProjectSection = () => {
                         <div>
                             {featuredProjects.slice(3, 4).map((project) => (
                                 <a href={`/project/${project.slug.current}`} key={project._id}
-                                     className="h-[400px] sm:h-[580px] w-[90vw] items-center justify-center mx-auto block">
+                                    className="h-[400px] sm:h-[580px] w-[90vw] items-center justify-center mx-auto block">
                                     <img
                                         src={urlFor(project.mainImage).url()}
                                         alt={project.title}
@@ -198,7 +198,7 @@ const ProjectSection = () => {
                         <div className="flex-row items-center justify-center gap-4 space-y-10 pb-12 mx-8">
                             {featuredProjects.slice(4, 6).map((project) => (
                                 <a href={`/project/${project.slug.current}`} key={project._id}
-                                     className="w-full sm:w-[550px] h-[200px] sm:h-[300px] sm:mx-auto block">
+                                    className="w-full sm:w-[550px] h-[200px] sm:h-[300px] sm:mx-auto block">
                                     <img
                                         src={urlFor(project.mainImage).url()}
                                         alt={project.title}
@@ -221,13 +221,13 @@ const ProjectSection = () => {
                         to="/projects"
                         className="w-[100px] h-[35px] sm:w-[115px] sm:h-[36px] lg:w-[125px] lg:h-[45px] flex items-center justify-center bg-gradient-to-r from-[#D0C49E] to-[#A79268] text-black font-semibold text-[18px] rounded-l-[10px] border-2 border-white hover:from-[#272727] hover:to-[#272727] hover:text-white transition duration-300"
                     >
-        <span className="hidden lg:inline text-[18px]">
-            {isHovered ? "Xem dự án" : <TbArrowForwardUp className="inline-block text-[25px]"/>}
-        </span>
+                        <span className="hidden lg:inline text-[18px]">
+                            {isHovered ? "Xem dự án" : <TbArrowForwardUp className="inline-block text-[25px]" />}
+                        </span>
 
                         <span className="lg:hidden text-[14px] sm:text-[15px] font-semibold">
-            Xem dự án
-        </span>
+                            Xem dự án
+                        </span>
                     </Link>
 
                     {/* Nút Tư vấn */}
