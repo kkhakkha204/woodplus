@@ -150,11 +150,11 @@ const HomePage = () => {
                                 <h2 className="text-[24px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#222222] ">Về
                                     WoodPlus</h2>
                                 <p className="w-[300px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] font-normal text-[#535353] mt-4">
-                                    Công ty CP Kiến trúc - Nội thất Woodplus là đơn vị uy tín hàng đầu trong lĩnh vực tư vấn thiết kế, thi công nội – ngoại thất tại khu vực phía Bắc. Với gần 10 năm kinh nghiệm và hàng trăm công trình đã hoàn thiện, Woodplus chuyên gia trong biệt thự, duplex – penthouse, liền kề, chung cư, văn phòng, quán cafe…, mang đến không gian sống đẳng cấp và tinh tế.
+                                    Công ty CP Kiến trúc - Nội thất WoodPlus là đơn vị uy tín hàng đầu trong lĩnh vực tư vấn thiết kế, thi công nội – ngoại thất tại khu vực phía Bắc. Với gần 10 năm kinh nghiệm và hàng trăm công trình đã hoàn thiện, WoodPlus chuyên gia trong biệt thự, duplex – penthouse, liền kề, chung cư, văn phòng, quán cafe…, mang đến không gian sống đẳng cấp và tinh tế.
                                 </p>
 
                                 <p className="hidden lg:block w-[260px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] mx-auto text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] text-[#535353] mt-4">
-                                    Với dịch vụ thi công trọn gói – chìa khóa trao tay, đội ngũ Kiến trúc sư & Kỹ sư dày dặn kinh nghiệm của Woodplus cam kết quy trình minh bạch, trung thực, tận tâm trong từng sản phẩm. Chúng tôi đồng hành cùng khách hàng để hiện thực hóa không gian sống hoàn mỹ, bền vững và đầy cảm hứng.
+                                    Với dịch vụ thi công trọn gói – chìa khóa trao tay, đội ngũ Kiến trúc sư & Kỹ sư dày dặn kinh nghiệm của WoodPlus cam kết quy trình minh bạch, trung thực, tận tâm trong từng sản phẩm. Chúng tôi đồng hành cùng khách hàng để hiện thực hóa không gian sống hoàn mỹ, bền vững và đầy cảm hứng.
                                 </p>
                                 <div className="flex lg:mt-12 space-x-1 ">
                                     {/* Nút Liên hệ */}
@@ -197,7 +197,7 @@ const HomePage = () => {
                                 />
                             </div>
                             <p className="text-center mx-auto lg:hidden w-[290px] sm:w-[310px] md:w-[350px] lg:w-[400px] xl:w-[450px] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] tracking-[0.01rem] text-[#535353] mt-4">
-                                Với dịch vụ thi công trọn gói – chìa khóa trao tay, đội ngũ Kiến trúc sư & Kỹ sư dày dặn kinh nghiệm của Woodplus cam kết quy trình minh bạch, trung thực, tận tâm trong từng sản phẩm. Chúng tôi đồng hành cùng khách hàng để hiện thực hóa không gian sống hoàn mỹ, bền vững và đầy cảm hứng.
+                                Với dịch vụ thi công trọn gói – chìa khóa trao tay, đội ngũ Kiến trúc sư & Kỹ sư dày dặn kinh nghiệm của WoodPlus cam kết quy trình minh bạch, trung thực, tận tâm trong từng sản phẩm. Chúng tôi đồng hành cùng khách hàng để hiện thực hóa không gian sống hoàn mỹ, bền vững và đầy cảm hứng.
                             </p>
                         </div>
 
