@@ -80,7 +80,7 @@ const HomePage = () => {
                         <p className="text-center text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] mt-4 max-w-[320px] sm:max-w-[380px] md:max-w-[450px] lg:max-w-[600px] 2xl:max-w-[700px] leading-relaxed">
                             Một công trình tốt là công trình đẹp về <span
                                 className=" ">thẩm mỹ</span>,
-                            cá nhân hóa để phù hợp với <span className=" ">chủ nhà.</span> Đồng hành cùng Woodplus để kiến tạo không gian sống đáng tự hào của bạn!
+                            cá nhân hóa để phù hợp với <span className=" ">chủ nhà.</span> Đồng hành cùng WoodPlus để kiến tạo không gian sống đáng tự hào của bạn!
                         </p>
 
 
